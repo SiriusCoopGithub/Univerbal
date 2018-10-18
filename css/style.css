@@ -9,8 +9,12 @@ body{
 }.form-container{
     
     padding: 50px 60px;
-    
-    
+       
+}
+.btn-success{
+  
+  background-color: #366cc8;
+ 
 }
 .menu-icone{
   font-size: 1.7rem;
@@ -47,6 +51,6 @@ float:right;
   line-height: 60px;
   bottom: 0;
   font-size: 1.7rem;
-  border:1px solid#EBEBEB;
+ border:1px solid#EBEBEB;
   
 }
