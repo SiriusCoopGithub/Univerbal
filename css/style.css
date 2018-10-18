@@ -14,7 +14,7 @@ body{
 .menu-icone{
   font-size: 1.7rem;
   border: 1px solid #366cc8;
-  
+  line-height: 60px;
 
 }
 .logo{
@@ -43,7 +43,7 @@ float:right;
 }
 .footer-menu-icone{
   
-  
+  line-height: 60px;
   border: 1px solid #366cc8;
   bottom: 0;
   
