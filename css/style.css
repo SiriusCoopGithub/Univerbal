@@ -1,8 +1,52 @@
-.form-container{
-    border: 0px solid black;
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  
+}.form-container{
+    
     padding: 50px 60px;
-    margin-top: 10rem;
-    -webkit-box-shadow: -1px 4px 24px 10px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 4px 24px 10px rgba(0,0,0,0.75);
-box-shadow: -1px 4px 24px 10px rgba(0,0,0,0.75);
+    
+    
+}
+.menu-icone{
+  font-size: 1.7rem;
+  border: 1px solid #366cc8;
+  
+
+}
+.logo{
+  text-align:center;
+  padding: 5rem;
+  color: blue;
+
+}
+.dropdown-menu-button{
+  background-color: #366cc8;
+  color: aliceblue;
+  font-size: 40px;
+  line-height: 40px;
+  border: 0;
+  border-radius: 1.5rem;
+float:right;
+}
+.contener{
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:inset 0 0 10px #000000;
+}
+.event1{
+  border: 1px solid #EBEBEB;
+  
+}
+.footer-menu-icone{
+  
+  
+  border: 1px solid #366cc8;
+  bottom: 0;
+  
+  font-size: 1.7rem;
+  
 }
