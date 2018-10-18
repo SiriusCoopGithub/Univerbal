@@ -4,6 +4,9 @@ body{
   width: 100%;
   margin: 0;
   padding:0;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:inset 0 0 10px #000000;
   
 }.form-container{
     
@@ -13,7 +16,7 @@ body{
 }
 .menu-icone{
   font-size: 1.7rem;
-  border: 1px solid #366cc8;
+  text-align: center;
   line-height: 60px;
 
 }
@@ -33,20 +36,16 @@ body{
 float:right;
 }
 .contener{
-  -moz-box-shadow:    inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow:inset 0 0 10px #000000;
+  text-align:center;
 }
 .event1{
   border: 1px solid #EBEBEB;
   
 }
 .footer-menu-icone{
-  
+  text-align:center;
   line-height: 60px;
-  border: 1px solid #366cc8;
   bottom: 0;
-  
   font-size: 1.7rem;
   
 }
