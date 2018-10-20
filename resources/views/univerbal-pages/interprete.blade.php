@@ -10,10 +10,12 @@
 </head>
 
 <body>
-    <div><h1>Interprete page</h1></div>
+    <div>
+        <h1>Interprete page</h1>
+    </div>
 
 
-<script src="/js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

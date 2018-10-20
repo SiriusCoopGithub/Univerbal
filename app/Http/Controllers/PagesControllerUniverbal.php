@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class PagesControllerUniverbal extends Controller
 {
   public function index(){
-    return view('pages.index');
+    return view('univerbal-pages.index');
   }
   public function login(){
-    return view('pages.login');
+    return view('univerbal-pages.login');
   }
   public function client(){
-    return view('pages.client');
+    return view('univerbal-pages.client');
   }
   public function interprete(){
-    return view('pages.interprete');
+    return view('univerbal-pages.interprete');
   }
   public function mdp(){
-    return view('pages.mdp');
+    return view('univerbal-pages.mdp');
   }
 }
