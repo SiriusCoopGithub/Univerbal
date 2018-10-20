@@ -10,18 +10,10 @@
 </head>
 
 <body>
-    <div>
-        <h1>index page</h1>
-    </div>
-    <div class="flex-center position-ref full-height">
+    <div><h1>MDP page</h1></div>
 
-        {{-- Try the example component from vue.js --}}
-        <div class="content" id="app">
-            <example-component></example-component>
-        </div>
-    </div>
 
-    <script src="/js/app.js"></script>
+<script src="/js/app.js"></script>
 </body>
 
 </html>

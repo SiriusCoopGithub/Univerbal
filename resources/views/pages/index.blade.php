@@ -10,12 +10,10 @@
 </head>
 
 <body>
-    <div>
-        <h1>MDP page</h1>
-    </div>
+    <div><h1>index page</h1></div>
 
 
-    <script src="/js/app.js"></script>
+<script src="/js/app.js"></script>
 </body>
 
 </html>
