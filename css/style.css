@@ -37,7 +37,7 @@ body {
 }
 
 .form-logo {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .h1 {
@@ -56,7 +56,7 @@ body {
 }
 
 .login-form {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .form-control {
@@ -91,8 +91,26 @@ body {
 input ::placeholder {
   padding: 0rem;
 }
+.info {
+  position: absolute;
+  display:inline-block;
+  color: #BFC4C7;
+  top: 1rem;
+  left: 20rem;
+  }
+.mail {
+  position: relative;
 
-/*Default form login*/
+}
+.flotte {
+  position: absolute;
+  display:inline-block;
+  color: #BFC4C7;
+  top: 1.2rem;
+  right: 1rem;
+  }
+
+/*fin Default form login*/
 
 
 
