@@ -33,6 +33,35 @@ body {
   font-family: Roboto-Medium;
   src: url(../police/Roboto/Roboto-Medium.ttf);
 }
+/*bouton tabs*/
+.nav-button{
+  background-color:#EBEBEB;
+}
+
+a:not([href]):not([tabindex]) {
+  color: blue;
+  text-decoration: none;
+ 
+}
+a:not([href]):not([tabindex]):hover{
+  color: blue;
+  text-decoration: none;
+ 
+}
+.btn-large {
+  height: 54px;
+  line-height: 54px;
+  font-size: 15px;
+  padding: 0 8rem;
+}
+
+
+
+
+
+
+
+/*Tab panels*/
 
 /*Default form login*/
 .text-center {
