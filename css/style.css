@@ -1,78 +1,97 @@
-
-body{
+body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding:0;
-font-size: 15px;
+  padding: 0;
+  font-size: 15px;
 
 }
+[class^="col-"], [class*=" col-"], .row{
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: Roboto-Bold;
   src: url(../police/Roboto/Roboto-Bold.ttf);
 }
+
 @font-face {
   font-family: Roboto-Regular;
   src: url(../police/Roboto/Roboto-Regular.ttf);
 }
-  @font-face {
-    font-family: Roboto-Light;
-    src: url(../police/Roboto/Roboto-Light.ttf);
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../police/Roboto/Roboto-Light.ttf);
 }
+
 @font-face {
   font-family: Roboto-Medium;
   src: url(../police/Roboto/Roboto-Medium.ttf);
 }
+
 /*Default form login*/
-.text-center{
+.text-center {
   padding: 2rem 2rem;
 }
-.form-logo{
+
+.form-logo {
   margin-top: 1rem;
 }
-.h1{
-  color:#468DF0;
+
+.h1 {
+  color: #468DF0;
   font-family: Roboto-Bold;
   height: 25px;
   font-size: 3.3rem;
-  }
-.h4{
-  height: 2px;
-  font-family:  Roboto-Light;
-  font-size:2rem;
-  color: #000000;
-  
 }
-.login-form{
+
+.h4 {
+  height: 2px;
+  font-family: Roboto-Light;
+  font-size: 2rem;
+  color: #000000;
+
+}
+
+.login-form {
   margin-top: 10rem;
 }
-.form-control{
- padding: 1.8rem 5rem;
- bottom: 3rem;
- 
+
+.form-control {
+  padding: 1.8rem 5rem;
+  bottom: 3rem;
+
 }
-.form-control:focus{
-  border-color:#468DF0;
+
+.form-control:focus {
+  border-color: #468DF0;
 }
-.mb-4, .my-4 {
+
+.mb-4,
+.my-4 {
   margin-bottom: 1.7rem !important;
 }
 
-.btn-info.focus, .btn-info:focus {
-  box-shadow: 0px 0px 0px 0.2rem rgba(23,162,184,0.5);
+.btn-info.focus,
+.btn-info:focus {
+  box-shadow: 0px 0px 0px 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 .btn-info {
   color: #fff;
   background-color: #468DF0;
   border-color: #468DF0;
-  padding: 1rem 5rem ;
+  padding: 1rem 5rem;
   font-family: Roboto-Medium;
   outline-offset: -4px;
 }
-input ::placeholder{
+
+input ::placeholder {
   padding: 0rem;
 }
+
 /*Default form login*/
 
 
@@ -81,71 +100,21 @@ input ::placeholder{
 
 
 
-.nav {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	padding-left: 0;
-	 
-	list-style: none;
-}
-.nav-tabs .nav-link {
-	border: 1px solid transparent;
-	border-top-left-radius: .25rem;
-	border-top-right-radius: .25rem;
-}
-.nav-link:focus, .nav-link:hover {
-  text-decoration: none;
-  color: red;
-}
+.nav-item {
 
-
-
-
-
-
-.nav-item{
-    
   font-size: 1.7rem;
 
-       
+
 }
-.menu-icone{
-  font-size: 1.7rem;
+
+#accordion i {
+  font-size: 1.3rem;
+}
+
+footer {
   text-align: center;
   line-height: 60px;
-  border:1px solid#EBEBEB;
-
-}
-
-.logo{
-  text-align:center;
-  padding: 5rem;
-  color: blue;
-
-}
-.dropdown-menu-button{
-  background-color: #366cc8;
-  color: aliceblue;
-  font-size: 40px;
-  line-height: 40px;
-  border: 0;
-  border-radius: 1.5rem;
-float:right;
-}
-.contener{
-  text-align:center;
-}
-.event1{
-  border: 1px solid #EBEBEB;
-  
-}
-footer{
-  text-align:center;
-  line-height: 60px;
   bottom: 0;
-  
- border:1px solid#EBEBEB;
-  
+  border: 1px solid#EBEBEB;
+
 }
