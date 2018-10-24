@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -19,6 +20,12 @@ h1 {
 }
 .my-2 {
   color: #468DF0;
+=======
+
+  margin: 0;
+  padding: 0;
+
+>>>>>>> d069b9c3546e1a71298923b17f29f4f58b68d66e
 
 }
 .my-3 {
@@ -166,11 +173,19 @@ h1 {
 
 /*collapsible*/
 .collapsible {
+<<<<<<< HEAD
 
+=======
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  margin: .0rem 0 1rem 0;
+>>>>>>> d069b9c3546e1a71298923b17f29f4f58b68d66e
   padding-bottom: 6rem;
 }
 
 .collapsible-header {
+<<<<<<< HEAD
   margin-top: 7rem;
 }
 
@@ -202,15 +217,49 @@ a:not([href]):not([tabindex]) {
 img {
   height: auto;
   width: 7rem;
+=======
+  display: flex;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-top: 4rem;
+>>>>>>> d069b9c3546e1a71298923b17f29f4f58b68d66e
 }
+  .collapsible-header i {
+    width: 0rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+  }
 
-/*collapsible*/
+  .collapsible p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 
+  }
 
+  .collapsible i {
+    color: #757575;
+  }
 
+  a:not([href]):not([tabindex]) {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 3rem;
+  }
 
+  img {
+    height: auto;
+    width: 7rem;
+  }
 
+  /*collapsible*/
 
+<<<<<<< HEAD
 footer {
   text-align: center;
 
@@ -264,3 +313,69 @@ footer {
   padding: 20px 40px;
 
 }
+=======
+
+
+
+
+
+  footer {
+    text-align: center;
+
+    bottom: 0;
+    border: 1px solid#EBEBEB;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+  }
+
+  .nav {
+    background-color: #EBEBEB;
+  }
+
+  .menu-footer .nav {
+    width: 100%;
+
+  }
+
+  .menu-footern ul {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .menu-footer li {
+    list-style-type: none;
+
+  }
+
+  .menu-footer ul li {
+    float: left;
+    position: relative;
+
+  }
+
+  .menu-footer ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .menu-footer a {
+    display: inline-block;
+    text-decoration: none;
+
+  }
+
+  .menu-footer ul li a {
+    padding: 20px 40px;
+
+  }
+>>>>>>> d069b9c3546e1a71298923b17f29f4f58b68d66e
