@@ -13,7 +13,7 @@ require('materialize-css');
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
+    // require('bootstrap');
 } catch (e) {}
 
 /**
