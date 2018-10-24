@@ -1,10 +1,73 @@
 body {
-  
+  font-size: 16px;
   margin: 0;
   padding: 0;
- 
+  height: 100%;
+  width: 100%;
 
 }
+
+/*Default form login*/
+.text-center {
+  margin: auto;
+}
+h1 {
+  margin-bottom: -3rem;
+}
+.h4 {
+  margin-top: -1rem;
+}
+.my-2 {
+  color: #468DF0;
+
+}
+.my-3 {
+  color: #BFC4C7;
+
+}
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+.form-logo {
+  margin-top: 4rem;
+}
+
+.login-form {
+  margin-top: 4rem;
+}
+
+.info {
+  position: absolute;
+  display: inline-block;
+  color: #BFC4C7;
+  top: 1rem;
+  left: 20rem;
+}
+
+.mail {
+  position: relative;
+
+}
+
+.flotte {
+  position: absolute;
+  display: inline-block;
+  color: #BFC4C7;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.connec {
+  width: 60% ;
+  margin: auto;
+
+}
+.my-4 {
+  text-align: center;
+
+}
+
+/*fin Default form login*/
 
 [class^="col-"],
 [class*=" col-"],
@@ -32,26 +95,33 @@ body {
   font-family: Roboto-Medium;
   src: url(../police/Roboto/Roboto-Medium.ttf);
 }
+
 /*bouton tabs*/
-.fa-briefcase{
+.fa-briefcase {
   font-size: 2rem;
 }
-.fa-calendar-check{
+
+.fa-calendar-check {
   font-size: 2rem;
 }
-.fa-history{
+
+.fa-history {
   font-size: 2rem;
 }
-.fa-list-ul{
+
+.fa-list-ul {
   font-size: 2rem;
 }
-.fa-user{
+
+.fa-user {
   font-size: 2rem;
 }
-.fa-sliders-h{
+
+.fa-sliders-h {
   font-size: 2rem;
 }
-.menu-button{
+
+.menu-button {
   width: 100%;
   background-color: #EBEBEB;
   position: fixed;
@@ -59,65 +129,77 @@ body {
   z-index: 9999;
 
 }
-.menu-button ul{
+
+.menu-button ul {
   margin: 0;
   padding: 0;
- 
+
 }
-.menu-button li{
+
+.menu-button li {
   list-style-type: none;
-  
+
 }
-.menu-button ul li{
+
+.menu-button ul li {
   float: left;
   position: relative;
-  
+
 }
-.menu-button ul::after{
+
+.menu-button ul::after {
   content: "";
-  display:table;
+  display: table;
   clear: both;
 }
 
-.menu-button a{
+.menu-button a {
   display: inline-block;
   text-decoration: none;
-  
+
 }
-.menu-button ul li a{
+
+.menu-button ul li a {
   padding: 20px 40px;
- 
+
 }
+
 /*collapsible*/
-.collapsible{
- 
+.collapsible {
+
   padding-bottom: 6rem;
 }
-.collapsible-header{
+
+.collapsible-header {
   margin-top: 7rem;
 }
+
 .collapsible-header i {
-	width: 0rem;
-	font-size: 1.6rem;
-	display: inline-block;
-	text-align: center;
-	margin-right: 1rem;
+  width: 0rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1rem;
 }
+
 .collapsible p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-	font-size: 1.3rem;
-	
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+
 }
+
 .collapsible i {
-color:#757575;
+  color: #757575;
 }
+
 a:not([href]):not([tabindex]) {
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 3rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 3rem;
 }
-img{
+
+img {
   height: auto;
   width: 7rem;
 }
@@ -131,7 +213,7 @@ img{
 
 footer {
   text-align: center;
- 
+
   bottom: 0;
   border: 1px solid#EBEBEB;
   position: fixed;
@@ -139,39 +221,46 @@ footer {
   z-index: 9999;
 
 }
-.nav{
+
+.nav {
   background-color: #EBEBEB;
 }
-.menu-footer .nav{
+
+.menu-footer .nav {
   width: 100%;
- 
-}
-.menu-footern ul{
-  margin: 0;
-  padding: 0;
- 
-}
-.menu-footer li{
-  list-style-type: none;
-  
-}
-.menu-footer ul li{
-  float: left;
-  position: relative;
-  
-}
-.menu-footer ul::after{
-  content: "";
-  display:table;
-  clear: both;
-}
-.menu-footer a{
-  display: inline-block;
-  text-decoration: none;
-  
+
 }
 
-.menu-footer ul li a{
+.menu-footern ul {
+  margin: 0;
+  padding: 0;
+
+}
+
+.menu-footer li {
+  list-style-type: none;
+
+}
+
+.menu-footer ul li {
+  float: left;
+  position: relative;
+
+}
+
+.menu-footer ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-footer a {
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.menu-footer ul li a {
   padding: 20px 40px;
- 
+
 }
