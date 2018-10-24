@@ -21,4 +21,7 @@ class PagesControllerUniverbal extends Controller
   public function mdp(){
     return view('pages.mdp');
   }
+  public function nath(){
+    return view('pages.nath');
+  }
 }

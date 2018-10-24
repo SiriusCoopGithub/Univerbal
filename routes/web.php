@@ -16,3 +16,4 @@ Route::get('interprete', 'PagesControllerUniverbal@interprete');
 Route::get('login', 'PagesControllerUniverbal@login');
 Route::get('client', 'PagesControllerUniverbal@client');
 Route::get('mdp', 'PagesControllerUniverbal@mdp');
+Route::get('nath', 'PagesControllerUniverbal@nath');
