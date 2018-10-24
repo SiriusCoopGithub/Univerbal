@@ -1,7 +1,7 @@
 @extends('layouts.head-html')
 
 @section('content')
-<div>
+<div class="#app">
     <h1>Client page</h1>
 </div>
 @endsection
