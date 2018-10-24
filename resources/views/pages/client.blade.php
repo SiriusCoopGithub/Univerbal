@@ -1,8 +1,7 @@
 @extends('layouts.head-html')
 
 @section('content')
-{{-- Début code HTML --}}
-
-
-{{-- Fin code HTML --}}
+<div>
+    <h1>Client page</h1>
+</div>
 @endsection

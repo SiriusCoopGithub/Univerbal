@@ -62,4 +62,4 @@ Placez votre code html entre les balises
 `npm install` -> Instal les dépendances node.js dans le dossier *node_modules*
 `php artisan serve` -> Cree un serveur http a l'adresse `http://127.0.0.1:8000`  
 `npm run dev` -> *build* le code html/css/js  
-`npm run watch` -> Rafraichit la page dans le navigateur automatiquement après chaque changement dans le code et que vous avez sauvegardé le fichier via `ctrl s` (sauvegarder le fichier)  
+`npm run watch` -> Rafraichit la page dans le navigateur automatiquement après chaque changement dans le code et que vous avez sauvegardé le fichier `ctrl s` (sauvegarder le fichier)  
