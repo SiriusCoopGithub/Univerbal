@@ -11,10 +11,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -23,13 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('pages.web.home');
     }
 
-    public function language(String $locale)
-    {
-        $locale = in_array($locale, config('app.locales')) ? $locale : config('app.fallback_locale');
-        session(['locale' => $locale]);
-        return back();
-    }
+    // public function language(String $locale)
+    // {
+    //     $locale = in_array($locale, config('app.locales')) ? $locale : config('app.fallback_locale');
+    //     session(['locale' => $locale]);
+    //     return back();
+    // }
 }
