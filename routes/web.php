@@ -11,15 +11,16 @@
 |
 */
 
-Route::get('/', 'PagesControllerApp@login');
-Route::get('index', 'PagesControllerApp@index');
-Route::get('interprete', 'PagesControllerApp@interprete');
-Route::get('login', 'PagesControllerApp@login');
-Route::get('client', 'PagesControllerApp@client');
-Route::get('mdp', 'PagesControllerApp@mdp');
+Route::get('/', 'PagesControllerWeb@index');
+Route::get('/app', 'AppUnvb\AppUnvbController@login');
+// Route::get('index', 'PagesControllerApp@index');
+// Route::get('interprete', 'PagesControllerApp@interprete');
+// Route::get('login', 'PagesControllerApp@login');
+// Route::get('client', 'PagesControllerApp@client');
+// Route::get('mdp', 'PagesControllerApp@mdp');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'PagesControllerWeb@dashboard')->name('dashboard');
 
 // Route::name('language')->get('language/{lang}', 'HomeController@language');
