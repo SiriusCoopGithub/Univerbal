@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', 'PagesControllerUniverbal@index');
-Route::get('interprete', 'PagesControllerUniverbal@interprete');
-Route::get('login', 'PagesControllerUniverbal@login');
-Route::get('client', 'PagesControllerUniverbal@client');
-Route::get('mdp', 'PagesControllerUniverbal@mdp');
+Route::get('/', 'PagesControllerApp@login');
+Route::get('index', 'PagesControllerApp@index');
+Route::get('interprete', 'PagesControllerApp@interprete');
+Route::get('login', 'PagesControllerApp@login');
+Route::get('client', 'PagesControllerApp@client');
+Route::get('mdp', 'PagesControllerApp@mdp');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::name('language')->get('language/{lang}', 'HomeController@language');
+// Route::name('language')->get('language/{lang}', 'HomeController@language');
