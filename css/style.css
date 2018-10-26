@@ -150,18 +150,18 @@ main {
   margin-top: 5rem;
 }
 
-.collapsible {
+.list-client {
   margin: .0rem 0 1rem 0;
   padding-bottom: 6rem;
   border: none;
 
 }
 
-.collapsible>li {
+.list-client e>li {
   margin-top: 0;
 }
 
-.collapsible-header {
+.list-client-header {
   display: flex;
   cursor: pointer;
   line-height: 1.5;
@@ -172,14 +172,14 @@ main {
   border: none;
   
 }
-.collapsible .list{
+.list-client-li{
   border-radius: 5px;
   -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
   box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
 }
 
-.collapsible-body {
+.list-client-body {
   border: none;
   padding: 2rem;
   margin: 0 0.533rem;
@@ -193,7 +193,7 @@ main {
   box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
 }
 
-.collapsible-header i {
+.list-client-header i {
   width: 1rem;
   font-size: 1.6rem;
   display: inline-block;
@@ -201,44 +201,44 @@ main {
   margin-right: 1rem;
 }
 
-.collapsible p {
+.list-client p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-family: Roboto-Regular;
   
 }
-.collapsible .paragraph {
+.list-client .paragraph {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-family: Roboto-Regular;
   color: #757575;
 }
-.collapsible .icone{
+.list-client .icone{
   width: 2rem;
   display: inline-block;
 }
-.collapsible .translator-Requirer {
+.list-client.translator-Requirer {
   font-family: Roboto-Bold;
 }
 
-.collapsible .language {
+.list-client .language {
   font-family: Roboto-Regular;
 }
 
-.collapsible .translator-name {
+.list-client .translator-name {
   font-family: Roboto-light;
   font-size: 1.333rem;
 }
-.collapsible .address {
+.list-client .address {
   font-family: client-name;
 }
-.collapsible .client-name {
+.list-client .client-name {
   font-family: Roboto-Regular;
   font-size: 1.333rem;
 }
-.collapsible i {
+.list-client i {
   color: #757575;
 }
 .bouton {
