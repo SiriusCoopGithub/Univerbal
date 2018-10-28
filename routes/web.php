@@ -13,11 +13,11 @@
 
 Route::get('/', 'PagesControllerWeb@index');
 Route::get('/app', 'AppUnvb\AppUnvbController@login');
-// Route::get('index', 'PagesControllerApp@index');
-// Route::get('interprete', 'PagesControllerApp@interprete');
-// Route::get('login', 'PagesControllerApp@login');
-// Route::get('client', 'PagesControllerApp@client');
-// Route::get('mdp', 'PagesControllerApp@mdp');
+Route::get('/app/index', 'AppUnvb\AppUnvbController@index');
+Route::get('/app/interprete', 'AppUnvb\AppUnvbController@interprete');
+Route::get('/app/login', 'AppUnvb\AppUnvbController@login');
+Route::get('/app/client', 'AppUnvb\AppUnvbController@client');
+Route::get('/app/mdp', 'AppUnvb\AppUnvbController@mdp');
 
 Auth::routes();
 

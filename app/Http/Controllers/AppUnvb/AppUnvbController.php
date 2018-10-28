@@ -21,17 +21,17 @@ class AppUnvbController extends Controller
 public function login(){
     return view('pages.app.login');
   }
-  // public function index(){
-  //   return view('pages.app.index');
-  // }
+  public function index(){
+    return view('pages.app.index');
+  }
 
-  // public function client(){
-  //   return view('pages.app.client');
-  // }
-  // public function interprete(){
-  //   return view('pages.app.interprete');
-  // }
-  // public function mdp(){
-  //   return view('pages.app.mdp');
-  // }
+  public function client(){
+    return view('pages.app.client');
+  }
+  public function interprete(){
+    return view('pages.app.interprete');
+  }
+  public function mdp(){
+    return view('pages.app.mdp');
+  }
 }

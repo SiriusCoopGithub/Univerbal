@@ -1,4 +1,4 @@
-@extends('layouts.head')
+@extends('layouts.html')
 
 @section('content')
 {{-- Début code HTML --}}

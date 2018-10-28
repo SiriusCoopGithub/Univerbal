@@ -1,3 +1,4 @@
+@section('head')
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
 
@@ -13,12 +14,4 @@
 
     <title>{{ config('app.name', 'Univerbal') }}</title>
 </head>
-
-<body>
-    <div class="container">
-        @yield('content')
-    </div>
-    <script src="{{ asset('/js/app.js') }}"></script>
-</body>
-
-</html>
+@endsection

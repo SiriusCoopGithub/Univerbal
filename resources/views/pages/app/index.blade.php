@@ -1,4 +1,7 @@
-@extends('layouts.head')
+@extends('layouts.partials.head')
+@extends('layouts.partials.body')
+
+@extends('layouts.html')
 
 @section('content')
 {{-- Début code HTML --}}

@@ -6,7 +6,7 @@ return [
      *
      * @var bool
      */
-    'status' => true,
+    'status' => false,
     /*
      * Available languages
      *
