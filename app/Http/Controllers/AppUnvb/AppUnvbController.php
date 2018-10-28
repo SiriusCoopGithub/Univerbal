@@ -18,11 +18,12 @@ class AppUnvbController extends Controller
   // {
   //     $this->middleware('auth');
   // }
-public function login(){
-    return view('pages.app.login');
-  }
   public function index(){
     return view('pages.app.index');
+  }
+
+  public function login(){
+      return view('pages.app.login');
   }
 
   public function client(){

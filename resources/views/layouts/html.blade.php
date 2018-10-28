@@ -1,12 +1,7 @@
 @include('layouts.partials.head')
 
 <body>
-
-
-    <div class="container">
-        @yield('container-content')
-    </div>
-
+    @yield('container-content')
     @include('layouts.partials.footer')
     @include('layouts.partials.scripts')
 </body>

@@ -1,8 +1,8 @@
 @extends('layouts.html')
-@include('layouts.partials.navbar')
-@section('container-content')
-{{-- Début code HTML --}}
 
+@section('container-content')
+@include('layouts.partials.index-navbar')
+{{-- Début code HTML --}}
 <div class="container">
 
     <div>

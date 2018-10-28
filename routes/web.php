@@ -12,10 +12,9 @@
 */
 
 Route::get('/', 'PagesControllerWeb@index');
-// Route::get('/app', 'AppUnvb\AppUnvbController@login');
-Route::get('/app', 'AppUnvb\AppUnvbController@index');
-Route::get('/app/interprete', 'AppUnvb\AppUnvbController@interprete');
+// Route::get('/login', 'PagesControllerWeb@login');
 Route::get('/app/login', 'AppUnvb\AppUnvbController@login');
+Route::get('/app/interprete', 'AppUnvb\AppUnvbController@interprete');
 Route::get('/app/client', 'AppUnvb\AppUnvbController@client');
 Route::get('/app/mdp', 'AppUnvb\AppUnvbController@mdp');
 
