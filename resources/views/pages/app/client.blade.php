@@ -1,6 +1,6 @@
 @extends('layouts.html')
 
-@section('content')
+@section('container-content')
 {{-- Début code HTML --}}
 <div>
     <h1>Client page</h1>

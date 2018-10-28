@@ -6,7 +6,7 @@
         }
     </style>
 @endsection
-@section('content')
+@section('container-content')
 <div class="container">
     <div class="row">
         <div class="card">

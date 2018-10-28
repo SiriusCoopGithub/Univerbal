@@ -50,7 +50,7 @@ Les pages sont nommées pour chaque type de client.
 **Attention**
 Placez votre code html entre les balises  
 ```
-@section('content')
+@section('container-content')
   {{-- Début code HTML --}}
 
   {{-- Fin code HTML --}}

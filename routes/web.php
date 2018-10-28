@@ -12,8 +12,8 @@
 */
 
 Route::get('/', 'PagesControllerWeb@index');
-Route::get('/app', 'AppUnvb\AppUnvbController@login');
-Route::get('/app/index', 'AppUnvb\AppUnvbController@index');
+// Route::get('/app', 'AppUnvb\AppUnvbController@login');
+Route::get('/app', 'AppUnvb\AppUnvbController@index');
 Route::get('/app/interprete', 'AppUnvb\AppUnvbController@interprete');
 Route::get('/app/login', 'AppUnvb\AppUnvbController@login');
 Route::get('/app/client', 'AppUnvb\AppUnvbController@client');

@@ -1,5 +1,3 @@
-@section('body')
-
 <body>
     @yield('navbar')
     <div class="container">
@@ -11,4 +9,3 @@
 </body>
 
 </html>
-@endsection
