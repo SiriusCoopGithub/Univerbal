@@ -22,7 +22,16 @@ const app = new Vue({
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems,  {
-      edge: 'left'
+    var instances = M.Sidenav.init(elems, {
+        edge: 'left'
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, {
+        accordion: false,
+        inDuration: 300,
+        outDuration: 300
     });
 });

@@ -29,10 +29,24 @@ class AppUnvbController extends Controller
   public function client(){
     return view('pages.app.client');
   }
+  public function clientProfile(){
+    return view('pages.app.client-profile');
+  }
+  public function clientOptions(){
+    return view('pages.app.client-options');
+  }
+
+
+
   public function interprete(){
     return view('pages.app.interprete');
   }
   public function mdp(){
     return view('pages.app.mdp');
   }
+  public function vuejs(){
+    return view('pages.app.vuejs');
+  }
+
+
 }

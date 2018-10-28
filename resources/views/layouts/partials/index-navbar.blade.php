@@ -12,6 +12,7 @@
             <li><a href="{{ url('/') }}/app/mdp">MDP</a></li>
             <li><a href="{{ url('/') }}/app/mdp-profile">MDP-profile</a></li>
             <li><a href="{{ url('/') }}/app/mdp-options">MDP-options</a></li>
+            <li><a href="{{ url('/') }}/app/vuejs">VueJS</a></li>
             <li><a href="{{ url('/') }}/app/login">Login</a></li>
         </ul>
     </div>
@@ -27,5 +28,6 @@
     <li><a href="{{ url('/') }}/app/mdp">MDP</a></li>
     <li><a href="{{ url('/') }}/app/mdp-profile">MDP-profile</a></li>
     <li><a href="{{ url('/') }}/app/mdp-options">MDP-options</a></li>
+    <li><a href="{{ url('/') }}/app/vuejs">VueJS</a></li>
     <li><a href="{{ url('/') }}/app/login">Login</a></li>
 </ul>

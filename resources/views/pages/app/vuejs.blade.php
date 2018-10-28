@@ -1,12 +1,12 @@
 @extends('layouts.html')
 
 @section('container-content')
-@include('layouts.partials.index-navbar')
+{{-- @include('layouts.partials.index-navbar') --}}
 {{-- Début code HTML --}}
 <div class="container">
 
     <div>
-        <h1>Index page</h1>
+        <h1>VueJs test page</h1>
     </div>
     <div id="app">
         <example-component></example-component>

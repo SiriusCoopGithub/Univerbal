@@ -16,7 +16,10 @@ Route::get('/', 'PagesControllerWeb@index');
 Route::get('/app/login', 'AppUnvb\AppUnvbController@login');
 Route::get('/app/interprete', 'AppUnvb\AppUnvbController@interprete');
 Route::get('/app/client', 'AppUnvb\AppUnvbController@client');
+Route::get('/app/client-profile', 'AppUnvb\AppUnvbController@clientProfile');
+Route::get('/app/client-options', 'AppUnvb\AppUnvbController@clientOptions');
 Route::get('/app/mdp', 'AppUnvb\AppUnvbController@mdp');
+Route::get('/app/vuejs', 'AppUnvb\AppUnvbController@vuejs');
 
 Auth::routes();
 
