@@ -39,8 +39,8 @@ body {
 .add-button {
   position: fixed;
   z-index: 9999;
-  bottom: 7.5rem;
-  right: 1.5rem;
+  bottom: 4.9rem;
+  right: 1rem;
   border-radius: 100%;
   width: 4.5rem;
   height: 4.5rem;
