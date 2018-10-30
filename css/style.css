@@ -264,7 +264,7 @@ a.bouton1 {
   color: #FF7920;
 }
 .bouton .fa-file-export{
-  margin-left: 5.8rem;
+  float: right;
   color: #A1A1A1;
 }
 
