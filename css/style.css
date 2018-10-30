@@ -263,6 +263,10 @@ a.bouton1 {
   margin-left: 3rem;
   color: #FF7920;
 }
+.bouton .fa-file-export{
+  margin-left: 5.8rem;
+  color: #A1A1A1;
+}
 
 
 
