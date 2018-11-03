@@ -29,6 +29,7 @@ body {
   background-color: #EFEFEF;
 }
 
+
 [class^="col-"],
 [class*=" col-"],
 .row {
@@ -262,6 +263,10 @@ a.bouton1 {
   color: #468DF0;
   margin-left: 3rem;
   color: #FF7920;
+}
+.bouton .fa-file-export{
+  float: right;
+  color: #A1A1A1;
 }
 
 
