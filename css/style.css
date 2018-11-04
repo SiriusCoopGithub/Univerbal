@@ -318,6 +318,11 @@ ul:not(.browser-default) {
 .menu-nav ul li {
   position: relative;
 }
+.menu-nav .icon-container{
+   position: relative;
+    text-align: center;
+    background-color: #FFFFFF;
+}
 .menu-nav .icon-container::after {
   position: absolute;
   content: "";
