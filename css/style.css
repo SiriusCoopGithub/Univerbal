@@ -439,3 +439,74 @@ input ::placeholder {
   }
 
 /*fin Default form login*/
+
+/*Debut ajout-mission*/
+
+.bordure {
+  margin-top: -4rem;
+  padding: 0 1rem;
+
+}
+.colo {
+  background-color: #468DF0;
+  color: #468DF0; 
+}
+
+.demande {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #468DF0;
+  color: #FFFFFF;
+
+}
+
+.demande p {
+  margin: 0;
+  padding: 0.5rem;
+
+}
+.fermer {
+
+  position: absolute;
+  display: inline-block;
+  color: #fafafa;
+  top: -0.5rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 9999;
+}
+.langue {
+  position: relative;
+  left: 1rem;
+}
+.envoyer {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 3rem;
+  background-color: #468DF0;
+  color: #FFFFFF;
+}
+.envoyer p {
+  position: absolute;
+  margin: 0;
+  padding: 0.5rem;
+  right: 1rem;
+}
+.resume {
+  padding: 0 1rem;
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.resume p {
+  display: inline-block; 
+}
+
+/*Fin ajout-mission*/
