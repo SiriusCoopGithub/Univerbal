@@ -1,17 +1,14 @@
+
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-// @import '~bootstrap/scss/bootstrap-grid';
 
-//Materialize
-@import "~materialize-css/sass/materialize.scss";
-
-// Custom Univerbal css
-@import 'univerbal';
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

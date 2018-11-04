@@ -1,65 +1,65 @@
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-# Univerbal Laravel & vue.js Boilerplate
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-Ce readme explique la marche à suivre pour installer Laravel et vue.js.  
+## About Laravel
 
-**Ne pas télécharger cette branche via GitHub sans en avoir reçu l'autorisation!!**
-**Chaque étape de la liste est à suivre rigoureusement!!**  
-**Les commandes sont à copier/coller tel quelle, ou vous pouvez les écrire vous-même, dans le terminal de vs code et bien sur elles sont exécutée par un ENTER**  
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
- *Certaines opérations peuvent prendre un certain temps en fonction de votre connexion internet, il est important d'attendre jusqu'a la fin!*
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-1. Sélectionner la branche **Laravel-Boilerplate** dans GitHub Desktop et faire un fetch (cela devrait normalement copier la branche dans votre dossier Univerbal)
-2. Cloner la branche en la nommant "*votre-prénom*-Laravel" (ex : Greg-Laravel)
-3. Ouvrir le projet dans vs code et ouvrir le terminal  
-3. Afin de créer le dossier 'vendor', copier/coller la commande  
- `composer install`  
-5. Afin de créer le dossier node_module, copier/coller la commande  
- `npm install`  
-6. Aller sur le google drive du projet **Univerbal** dans le dossier **Laravel** et copier/coller le fichier **.env** dans le dossier du projet sur votre ordinateur.  
- Comme Windows n'aime pas les fichier qui commence par un point (.), il vous faudra renommer ce fichier via vs code et rajouter ce point -> .env 
-6. Dans le terminal, exécutez la commande `php artisan key:generate`  
-7. Dans le terminal, exécutez la commande `npm run dev`  
-8. Exécutez une deuxième fois la commande `npm run dev`  
+Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
-Normalement, si tout c'est bien passé, vous devriez avoir Laravel installé et opérationnel.
+## Learning Laravel
 
-## Utiliser Laravel
-Les explications de comment utiliser Laravel et vue.js.  
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
-1. Ouvrez deux fenêtres de terminal en cliquant sur l'icône entre le **+** et la poubelle en haut à droite de la fenêtre du terminal.  
-2. Dans la fenêtre de gauche, exécutez la commande `php artisan serve`  
-Cette commande permet de lancer un serveur local à l'adresse `http://127.0.0.1:8000` accessible dans votre browser (ctrl clique gauche sur l'adresse ouvre automatiquement votre browser)  
-*Lorsque vous exécutez cette commande, le terminal se 'bloque' et vous ne pourrez plus l'utiliser tant que le serveur est lancé.  
-Pour arrêter le serveur, cliquez dans le terminal, et faite un `ctrl c`*
-3. Exécutez la commande `npm run watch` dans le terminal de droite et exécutez là pour que votre browser s'actualise lorsque vous faites un changement dans le code et que vous sauvegardez le fichier `ctrl s`  
-Si Chrome est installer sur votre ordinateur, il se lance automatiquement à l'adresse `http://localhost:3000` et affiche la page d'index.  
-A chaque fois que vous ferez un changement dans le code et que vous sauvegardez, le browser se rafraichit.  
-Vous pouvez copier l’adresse dans un autre navigateur de votre choix, la page se rafraichit sur tous les navigateurs en même temps.  
-*Lorsque vous exécutez cette commande, le terminal se 'bloque' et vous ne pourrez plus l'utiliser tant que le serveur est lancé.  
-Pour arrêter le serveur, cliquez dans le terminal, et faite un `ctrl c`*  
+If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
+## Laravel Sponsors
 
-## Ou coder dans Laravel??
-Dans quels dossiers placez votre code?
+We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
 
-Pour le css, placez votre code dans le fichier **_univerbal.scss** qui se trouve dans resources/sass
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
 
-Pour le code html, utiliser les fichier qui se trouve dans **resources/views/pages/**  
-Les pages sont nommées pour chaque type de client.  
-**Attention**
-Placez votre code html entre les balises  
-```
-@section('content')
-  {{-- Début code HTML --}}
+## Contributing
 
-  {{-- Fin code HTML --}}
-@endsection
-```
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-#### Récap de toutes les commandes
-`composer install` -> Instal les dependances php dans le dossier *vendor*  
-`npm install` -> Instal les dépendances node.js dans le dossier *node_modules*
-`php artisan serve` -> Cree un serveur http a l'adresse `http://127.0.0.1:8000`  
-`npm run dev` -> *build* le code html/css/js  
-`npm run watch` -> Rafraichit la page dans le navigateur automatiquement après chaque changement dans le code et que vous avez sauvegardé le fichier `ctrl s` (sauvegarder le fichier)  
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

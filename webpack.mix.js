@@ -11,13 +11,5 @@ const mix = require('laravel-mix');
  |
  */
 
-mix
-    .disableNotifications()
-    .js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .browserSync({
-        proxy: '127.0.0.1:8000',
-        // proxy: 'localhost',
-        port: '3000',
-        browser: 'chrome',
-    });
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
