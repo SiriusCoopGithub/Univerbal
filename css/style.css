@@ -361,3 +361,84 @@ ul:not(.browser-default) {
 }
 
 /*Footer*/
+
+/*Default form login*/
+.text-center {
+  padding: 2rem 2rem;
+}
+
+.form-logo {
+  margin-top: 3rem;
+}
+
+.h1 {
+  color: #468DF0;
+  font-family: Roboto-Bold;
+  height: 25px;
+  font-size: 3.3rem;
+}
+
+.h4 {
+  height: 2px;
+  font-family: Roboto-Light;
+  font-size: 2rem;
+  color: #000000;
+
+}
+
+.login-form {
+  margin-top: 6rem;
+}
+
+.form-control {
+  padding: 1.8rem 5rem;
+  bottom: 3rem;
+
+}
+
+.form-control:focus {
+  border-color: #468DF0;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom: 1.7rem !important;
+}
+
+.btn-info.focus,
+.btn-info:focus {
+  box-shadow: 0px 0px 0px 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #468DF0;
+  border-color: #468DF0;
+  padding: 1rem 5rem;
+  font-family: Roboto-Medium;
+  outline-offset: -4px;
+}
+
+input ::placeholder {
+  padding: 0rem;
+}
+.info {
+  position: absolute;
+  display:inline-block;
+  color: #BFC4C7;
+  top: 1rem;
+  left: 20rem;
+  }
+.mail {
+  position: relative;
+
+}
+.flotte {
+  position: absolute;
+  display:inline-block;
+  color: #BFC4C7;
+  top: 1.2rem;
+  right: 1rem;
+  }
+
+/*fin Default form login*/
