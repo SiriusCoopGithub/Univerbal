@@ -27,6 +27,7 @@ body {
   font-family: Roboto-Light;
   font-size: 15px;
   background-color: #EFEFEF;
+  
 }
 
 
@@ -71,6 +72,7 @@ body {
 header .icon-container {
   position: relative;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 header .icon-container::after {
@@ -257,6 +259,7 @@ main {
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: Roboto-Medium;
+  padding-top: 2rem;
 }
 
 a.bouton1 {
@@ -279,7 +282,7 @@ a.bouton1 {
 
 img {
   height: auto;
-  width: 7rem;
+  
 }
 
 /*collapsible*/
