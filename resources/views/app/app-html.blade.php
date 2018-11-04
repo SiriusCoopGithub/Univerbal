@@ -1,0 +1,14 @@
+@include('app._includes.app-head')
+
+<body>
+    {{-- Make vuejs covert the entire body --}}
+    <div id="vue-root">
+
+        @yield('app-content')
+        @include('app.partials.app-navbar')
+    </div>
+
+    @include('app._includes.app-scripts')
+</body>
+
+</html>
