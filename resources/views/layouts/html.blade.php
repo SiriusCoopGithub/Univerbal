@@ -2,11 +2,11 @@
 
 <body>
     {{-- Make vuejs covert the entire body --}}
-    <div id="vue-root">
+    {{-- <div id="vue-root"> --}}
 
         @yield('body-content')
 
-    </div>
+        {{-- </div> --}}
 
     @include('layouts._includes.scripts')
 </body>

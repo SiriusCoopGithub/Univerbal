@@ -15,9 +15,8 @@ mix
     .disableNotifications()
     .copyDirectory('resources/fonts', 'public/fonts')
     .copyDirectory('resources/img', 'public/img')
-    // .copyDirectory('resources/js/materialize.min.js', 'public/js')
+    .copyDirectory('resources/js/materialize.min.js', 'public/js')
     .js('resources/js/app.js', 'public/js')
-    // .js('resources/js/bootstrap.min.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .browserSync({
         proxy: '127.0.0.1:8000',
