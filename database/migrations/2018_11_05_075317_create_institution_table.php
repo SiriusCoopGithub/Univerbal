@@ -15,8 +15,10 @@ class CreateInstitutionTable extends Migration
     {
         Schema::create('institution', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('user_id');
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

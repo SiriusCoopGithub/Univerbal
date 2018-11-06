@@ -15,6 +15,9 @@ class CreateUserLangueTable extends Migration
     {
         Schema::create('user_langue', function (Blueprint $table) {
 
+            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('langue_id');
+
             $table->foreign('user_id')->references('id')->on('users')
             ->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('langue_id')->references('id')->on('langue')

@@ -16,14 +16,18 @@ class CreateMissionTable extends Migration
         Schema::create('mission', function (Blueprint $table) {
             $table->increments('id');
             $table->dateTime('date');
-            $table->text('objet');
-            $table->text('note_perso');
-            $table->text('note_interp');
-            $table->time('estimed_T');
-            $table->string('sexe_interp');
+            $table->text('objet', 120);
+            $table->text('note_perso', 120);
+            $table->text('note_interp', 120);
+            $table->time('estimed_time');
+            $table->string('sexe_interp', 1);
             $table->string('facture_num');
-            $table->tinyInteger('statuts');
+            $table->tinyInteger('statuts', 20);
+            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('institution_id');
+            $table->unsignedInteger('interprete_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
