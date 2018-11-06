@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\organisations_user;
 use Illuminate\Http\Request;
 
-class MissionController extends Controller
+class OrganisationsUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -40,10 +41,10 @@ class MissionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\organisations_user  $organisations_user
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(organisations_user $organisations_user)
     {
         //
     }
@@ -51,10 +52,10 @@ class MissionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\organisations_user  $organisations_user
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(organisations_user $organisations_user)
     {
         //
     }
@@ -63,10 +64,10 @@ class MissionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\organisations_user  $organisations_user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, organisations_user $organisations_user)
     {
         //
     }
@@ -74,10 +75,10 @@ class MissionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\organisations_user  $organisations_user
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(organisations_user $organisations_user)
     {
         //
     }

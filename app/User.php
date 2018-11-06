@@ -3,9 +3,9 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+use Laratrust\Traits\LaratrustUserTrait;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Laratrust\Traits\LaratrustUserTrait;
 
 class User extends Authenticatable
 {
@@ -29,4 +29,23 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Profile
+     */
+    public function profile(){
+      return $this->hasOne(Profiles::class);
+    }
+    /**
+     * Profile
+     */
+    public function adresse(){
+      return $this->hasOne(Adresses::class);
+    }
+    /**
+     * Profile
+     */
+    public function organisations(){
+      return $this->hasOne(Organisations::class);
+    }
 }

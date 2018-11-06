@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInstitutionTable extends Migration
+class CreateOptionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,18 @@ class CreateInstitutionTable extends Migration
      */
     public function up()
     {
-        Schema::create('institution', function (Blueprint $table) {
+        Schema::create('options', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-
+            $table->boolean('active');
+            $table->boolean('notification');
             $table->timestamps();
-            $table->softDeletes();
+
+            $table->foreign('user_id')
+                  ->references('id')
+                  ->on('users')
+                  ->onUpdate('cascade')
+                  ->onDelete('cascade');
         });
     }
 
@@ -29,6 +35,6 @@ class CreateInstitutionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('institution');
+        Schema::dropIfExists('options');
     }
 }
