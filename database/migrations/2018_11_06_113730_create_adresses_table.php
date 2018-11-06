@@ -22,11 +22,11 @@ class CreateAdressesTable extends Migration
           $table->text('country');
 
 
-          $table->foreign('users_id')
-                ->references('id')
-                ->on('users')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+          // $table->foreign('users_id')
+          //       ->references('id')
+          //       ->on('users')
+          //       ->onUpdate('cascade')
+          //       ->onDelete('cascade');
 
           $table->unique(['users_id', 'street_num', 'street_name', 'postal_code']);
 

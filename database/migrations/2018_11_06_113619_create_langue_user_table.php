@@ -17,17 +17,17 @@ class CreateLangueUserTable extends Migration
           $table->unsignedInteger('user_id');
           $table->unsignedInteger('langue_name');
 
-          $table->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+          // $table->foreign('user_id')
+          //       ->references('id')
+          //       ->on('users')
+          //       ->onUpdate('cascade')
+          //       ->onDelete('cascade');
 
-          $table->foreign('langue_name')
-                ->references('name')
-                ->on('langues')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+          // $table->foreign('langue_name')
+          //       ->references('name')
+          //       ->on('langues')
+          //       ->onUpdate('cascade')
+          //       ->onDelete('cascade');
 
           $table->primary(['user_id', 'langue_name']);
 

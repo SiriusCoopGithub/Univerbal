@@ -20,11 +20,11 @@ class CreateOptionsTable extends Migration
             $table->boolean('notification');
             $table->timestamps();
 
-            $table->foreign('user_id')
-                  ->references('id')
-                  ->on('users')
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
+            // $table->foreign('user_id')
+            //       ->references('id')
+            //       ->on('users')
+            //       ->onUpdate('cascade')
+            //       ->onDelete('cascade');
         });
     }
 

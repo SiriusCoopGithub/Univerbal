@@ -30,21 +30,21 @@ class CreateMissionsTable extends Migration
           $table->timestamps();
           $table->softDeletes();
 
-          $table->foreign('langue_name')
-                ->references('name')
-                ->on('langues')
-                ->onUpdate('cascade');
-          $table->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onUpdate('cascade');
-          $table->foreign('organisation_id')
-                ->references('id')
-                ->on('organisations');
-          $table->foreign('interprete_id')
-                ->references('id')
-                ->on('users')
-                ->onUpdate('cascade');
+          // $table->foreign('langue_name')
+          //       ->references('name')
+          //       ->on('langues')
+          //       ->onUpdate('cascade');
+          // $table->foreign('user_id')
+          //       ->references('id')
+          //       ->on('users')
+          //       ->onUpdate('cascade');
+          // $table->foreign('organisation_id')
+          //       ->references('id')
+          //       ->on('organisations');
+          // $table->foreign('interprete_id')
+          //       ->references('id')
+          //       ->on('users')
+          //       ->onUpdate('cascade');
 
           // $table->primary(['id']);
         });

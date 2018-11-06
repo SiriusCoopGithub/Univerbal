@@ -15,19 +15,28 @@ class CreateOrganisationsTable extends Migration
     {
         Schema::create('organisations', function (Blueprint $table) {
           $table->increments('id');
-          $table->unsignedInteger('contact_id');
-          $table->unsignedInteger('profile_id');
+
+          $table->string('name', 100)->unique();
+
+          // $table->unsignedInteger('user_id');
+          // $table->unsignedInteger('contact_id');
+          // $table->unsignedInteger('profile_id');
 
 
-          $table->foreign('contact_id')
-                ->references('id')
-                ->on('users')
-                ->onUpdate('cascade');
+          // $table->foreign('user_id')
+          //       ->references('id')
+          //       ->on('users')
+          //       ->onUpdate('cascade');
 
-          $table->foreign('profile_id')
-                ->references('id')
-                ->on('profiles')
-                ->onUpdate('cascade');
+          // $table->foreign('contact_id')
+          //       ->references('id')
+          //       ->on('users')
+          //       ->onUpdate('cascade');
+
+          // $table->foreign('profile_id')
+          //       ->references('id')
+          //       ->on('profiles')
+          //       ->onUpdate('cascade');
 
           $table->timestamps();
           $table->softDeletes();

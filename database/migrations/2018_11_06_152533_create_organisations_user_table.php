@@ -14,21 +14,23 @@ class CreateOrganisationsUserTable extends Migration
     public function up()
     {
         Schema::create('organisations_user', function (Blueprint $table) {
-            $table->increments('id');
+            // $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('organisation_id');
 
-            $table->foreign('user_id')
-                  ->references('id')
-                  ->on('users')
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
+            // $table->foreign('user_id')
+            //       ->references('id')
+            //       ->on('users')
+            //       ->onUpdate('cascade')
+            //       ->onDelete('cascade');
 
-            $table->foreign('organisation_id')
-                  ->references('id')
-                  ->on('organisation')
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
+            // $table->foreign('organisation_id')
+            //       ->references('id')
+            //       ->on('organisation')
+            //       ->onUpdate('cascade')
+            //       ->onDelete('cascade');
+
+            $table->primary(['user_id', 'organisation_id']);
 
             $table->timestamps();
         });
