@@ -729,7 +729,8 @@ label {
 }
 
 main .contact {
-  margin-bottom: 4rem;
+  padding-bottom: 6rem;
+  margin: 0.333rem 0.533rem;
 }
 
 .contact-li {
