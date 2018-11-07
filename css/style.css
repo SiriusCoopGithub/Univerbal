@@ -583,7 +583,7 @@ input ::placeholder {
   position: relative;
 }
 
-.camera-button {
+.main-profile .camera-button {
   position: fixed;
   z-index: 9999;
   right: 1rem;
@@ -596,6 +596,8 @@ input ::placeholder {
   -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
   box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
+
+  
 }
 
 
@@ -659,7 +661,7 @@ main .contact {
 
 .contact-header .border-bottom {
   border-bottom: 1px solid #757575;
-
+  padding-bottom: 2rem;
 }
 
 .border-bottom h6 {
@@ -678,6 +680,11 @@ main .contact {
   color: #A1A1A1;
   font-size: 1rem;
   font-family: Robot-Regular;
+}
+.contact-header .organisation{
+  color: #000000;
+    font-size: 1rem;
+    font-family: Roboto-Regular;
 }
 
 
