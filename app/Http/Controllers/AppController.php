@@ -17,13 +17,43 @@ class AppController extends Controller
     // }
 
     /**
-     * Show the application dashboard.
+     * Show the application index.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('app.app');
+      return redirect()->route('app.missions');
+    }
+
+    /**
+     * Show the application index.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function missions()
+    {
+        return view('app.missions');
+    }
+
+    /**
+     * Show the application user profile.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function profile()
+    {
+        return view('app.profile');
+    }
+
+    /**
+     * Show the application user options.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function options()
+    {
+        return view('app.options');
     }
 
 }

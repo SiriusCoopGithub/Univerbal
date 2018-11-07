@@ -4,7 +4,7 @@
 
 <div class="add-button">
     <a href="javascript:void(0)">
-        <img src="img/plus-icon.png" alt="plus icon">
+        <img src="{{ asset('img/plus-icon.png') }}" alt="plus icon">
     </a>
 </div>
 
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col s3">
                             <div>
-                                <img src="img/profile-image.png" alt="" />
+                                <img src="{{ asset('img/profile-image.png') }}" alt="profile placeholder" />
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="col s3">
                             <div>
-                                <img src="img/profile-image.png" alt="" />
+                                <img src="{{ asset('img/profile-image.png') }}" alt="profile placeholder" />
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                         </div>
                         <div class="col s3">
                             <div>
-                                <img src="img/profile-image.png" alt="" />
+                                <img src="{{ asset('img/profile-image.png') }}" alt="profile placeholder" />
                             </div>
                         </div>
                     </div>

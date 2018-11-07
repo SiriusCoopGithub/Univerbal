@@ -15,7 +15,8 @@ class CreateMissionsTable extends Migration
     {
         Schema::create('missions', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('langue_name');
+          $table->string('langue_1');
+          $table->string('langue_2');
           $table->dateTime('date');
           $table->text('objet', 120);
           $table->text('note_perso', 120);
@@ -30,7 +31,11 @@ class CreateMissionsTable extends Migration
           $table->timestamps();
           $table->softDeletes();
 
-          // $table->foreign('langue_name')
+          // $table->foreign('langue_1')
+          //       ->references('name')
+          //       ->on('langues')
+          //       ->onUpdate('cascade');
+          // $table->foreign('langue_2')
           //       ->references('name')
           //       ->on('langues')
           //       ->onUpdate('cascade');

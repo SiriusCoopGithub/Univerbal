@@ -30,6 +30,20 @@ class RegisterController extends Controller
      */
     protected $redirectTo = '/home';
 
+
+    /**
+     * Override the redirectTo
+     */
+    protected function redirectTo()
+    {
+        // if (auth()->user()->role_id == 1) {
+        //     return '/admin';
+        // }
+        return '/app';
+    }
+
+
+
     /**
      * Create a new controller instance.
      *

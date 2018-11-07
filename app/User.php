@@ -36,16 +36,25 @@ class User extends Authenticatable
     public function profile(){
       return $this->hasOne(Profiles::class);
     }
+
     /**
-     * Profile
+     * adresse
      */
     public function adresse(){
       return $this->hasOne(Adresses::class);
     }
+
     /**
-     * Profile
+     * organisations
      */
     public function organisations(){
       return $this->hasOne(Organisations::class);
+    }
+
+    /**
+     * missions
+     */
+    public function missions(){
+      return $this->hasOne(Missions::class);
     }
 }

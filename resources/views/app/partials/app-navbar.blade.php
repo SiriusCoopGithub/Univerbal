@@ -4,7 +4,7 @@
         <div class="col s4 icon-container">
             <ul>
                 <li>
-                    <a href="pageclient.html">
+                    <a href="{{ route('app.missions') }}">
                         <i class="fas fa-list-ul "></i>
                     </a>
                 </li>
@@ -12,12 +12,18 @@
         </div>
         <div class="col s4 icon-container">
             <ul>
-                <li><a href="profil.html"><i class="fas fa-user"></i></a></li>
+                <li>
+                    <a href="{{ route('app.profile') }}">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="col s4 icon-container">
             <ul>
-                <li><a href="option.html"><i class="fas fa-sliders-h"></i>
+                <li>
+                    <a href="{{ route('app.options') }}">
+                        <i class="fas fa-sliders-h"></i>
                     </a>
                 </li>
             </ul>

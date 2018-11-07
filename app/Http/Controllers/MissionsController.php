@@ -46,7 +46,7 @@ class MissionsController extends Controller
      */
     public function show(Missions $missions)
     {
-        //
+
     }
 
     /**
