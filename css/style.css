@@ -666,3 +666,124 @@ label {
 .menu-nav2 ul li a i{
     color: #ff5722 !important;
 }
+
+
+/*debut profil client*/
+.edit-button {
+  position: fixed;
+  right: 0;
+  top: 1rem;
+  font-size: 1.7rem;
+  color: #757575;
+}
+
+.main-profile {
+  position: relative;
+}
+
+.main-profile .camera-button {
+  position: fixed;
+  z-index: 9999;
+  right: 1rem;
+  border-radius: 100%;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 6rem;
+  left: 18rem;
+  background-color: #FF7920F0;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
+
+  
+}
+
+
+.camera-button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  width: 1.7rem;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.profile-image {
+  text-align: center;
+}
+
+.profile-image img {
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.profile-name h1 {
+  font-family: Roboto-Regular;
+  color: #757575;
+  font-size: 2.5rem;
+}
+
+main .contact {
+  margin-bottom: 4rem;
+}
+
+.contact-li {
+  border-radius: 5px;
+}
+
+.contact-header {
+  display: flex;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #fff;
+  font-size: 1.333rem;
+  border: none;
+
+}
+
+.contact-header i {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1rem;
+  margin: 0.333rem 0.533rem;
+  color: #757575;
+  margin-top: 1rem;
+}
+
+.contact-header .border-bottom {
+  border-bottom: 1px solid #757575;
+  padding-bottom: 2rem;
+}
+
+.border-bottom h6 {
+  color: #000000;
+  font-size: 1rem;
+  font-family: Roboto-Regular;
+}
+
+.border-bottom span {
+  color: #A1A1A1;
+  font-size: 1rem;
+  font-family: Robot-Regular;
+}
+
+.contact-header .border-bottom-0 {
+  color: #A1A1A1;
+  font-size: 1rem;
+  font-family: Robot-Regular;
+}
+.contact-header .organisation{
+  color: #000000;
+    font-size: 1rem;
+    font-family: Roboto-Regular;
+}
+
+
+/*fin profil client*/
