@@ -20,7 +20,6 @@
 
 
 body {
-<<<<<<< HEAD
     width: 100%;
     height: 100%;
     margin: 0;
@@ -28,15 +27,6 @@ body {
     font-family: Roboto-Light;
     font-size: 15px;
     background-color: #EFEFEF;
-=======
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Roboto-Light;
-  font-size: 15px;
-  background-color: #EFEFEF;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 
 }
 
@@ -153,10 +143,6 @@ header .icon-container:last-child::after {
 }
 
 .menu-button button i.active {
-<<<<<<< HEAD
-    color:#FF7920F0;
-    text-shadow: none ;
-=======
   color: #FF7920F0;
   text-shadow: none;
 }
@@ -179,7 +165,6 @@ header .icon-container:last-child::after {
   
   position: absolute;
   margin-top: 2rem;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 
@@ -200,8 +185,6 @@ main {
 }
 
 .list-client-header {
-<<<<<<< HEAD
-    display: flex;
     cursor: pointer;
     line-height: 1.5;
     padding: 1rem;
@@ -216,58 +199,10 @@ main {
     -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
     box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
-=======
-  display: flex;
-  cursor: pointer;
-  line-height: 1.5;
-  padding: 1rem;
-  margin: 0.333rem 0.533rem;
-  background-color: #fff;
-  font-size: 1.333rem;
-  border: none;
-
 }
-
-.list-client-li {
-  border-radius: 5px;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
-}
-
-.list-client-body {
-    border: none;
-    padding: 2rem;
-    margin: 0 0.533rem;
-    margin-top: -0.333rem;
-    background-color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    -webkit-box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
-}
-<<<<<<< HEAD
-.list-client-body .paragraph{
-    color: #757575;
-    font-family:Roboto-Regular;
-    font-size: 1rem;
 }
 .list-client-body p{
     color: #000000;
-=======
-
-.list-client-body .paragraph {
-  color: #757575;
-  font-family: Roboto-Regular;
-  font-size: 1rem;
-}
-
-.list-client-body p {
-  color: #000000;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 
 
 }
@@ -281,17 +216,10 @@ main {
 }
 
 .list-client p {
-<<<<<<< HEAD
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-family: Roboto-Regular;
-=======
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-family: Roboto-Regular;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 
 }
 
@@ -302,16 +230,9 @@ main {
     font-family: Roboto-Regular;
     color: #757575;
 }
-<<<<<<< HEAD
 .list-client .icone{
     width: 2rem;
     display: inline-block;
-=======
-
-.list-client .icone {
-  width: 2rem;
-  display: inline-block;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 .list-client.translator-Requirer {
@@ -352,16 +273,9 @@ a.bouton1 {
     margin-left: 3rem;
     color: #FF7920;
 }
-<<<<<<< HEAD
 .bouton .fa-file-export{
     float: right;
     color: #A1A1A1;
-=======
-
-.bouton .fa-file-export {
-  float: right;
-  color: #A1A1A1;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 
@@ -383,7 +297,6 @@ img {
 
 
 .menu-nav {
-<<<<<<< HEAD
     text-align: center;
     bottom: 0;
     position: fixed;
@@ -394,18 +307,6 @@ img {
     -webkit-box-shadow: 0px -4px 6px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px -4px 6px 0px rgba(0,0,0,0.2);
     box-shadow: 0px -4px 6px 0px rgba(0,0,0,0.2);
-=======
-  text-align: center;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  width: 100%;
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.2);
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 .menu-nav ul {
@@ -427,18 +328,10 @@ ul:not(.browser-default) {
 .menu-nav ul li {
     position: relative;
 }
-<<<<<<< HEAD
 .menu-nav .icon-container{
     position: relative;
     text-align: center;
     background-color: #FFFFFF;
-=======
-
-.menu-nav .icon-container {
-  position: relative;
-  text-align: center;
-  background-color: #FFFFFF;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 .menu-nav .icon-container::after {
@@ -484,13 +377,8 @@ ul:not(.browser-default) {
 }
 
 .menu-nav ul li a i.active {
-<<<<<<< HEAD
     color:#FF7920F0;
     text-shadow: none ;
-=======
-  color: #FF7920F0;
-  text-shadow: none;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 /*Footer*/
@@ -557,41 +445,23 @@ input ::placeholder {
 }
 
 .info {
-<<<<<<< HEAD
     position: absolute;
     display:inline-block;
     color: #BFC4C7;
     top: 1rem;
     left: 20rem;
 }
-=======
-  position: absolute;
-  display: inline-block;
-  color: #BFC4C7;
-  top: 1rem;
-  left: 20rem;
-}
-
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 .mail {
     position: relative;
 
 }
 
 .flotte {
-<<<<<<< HEAD
     position: absolute;
     display:inline-block;
     color: #BFC4C7;
     top: 1.2rem;
     right: 1rem;
-=======
-  position: absolute;
-  display: inline-block;
-  color: #BFC4C7;
-  top: 1.2rem;
-  right: 1rem;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 /*fin Default form login*/
@@ -605,13 +475,8 @@ input ::placeholder {
 }
 
 .colo {
-<<<<<<< HEAD
     background-color: #468DF0;
     color: #468DF0; 
-=======
-  background-color: #468DF0;
-  color: #468DF0;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 .demande {
@@ -675,21 +540,16 @@ input ::placeholder {
 }
 
 .resume p {
-<<<<<<< HEAD
     display: inline-block; 
 }
 .adresseRdv {
     top: -2rem;
     padding: 1rem;
 
-=======
-  display: inline-block;
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
 }
 
 /*Fin ajout-mission*/
 
-<<<<<<< HEAD
 /* Date Display */
 .datepicker-date-display {
 
@@ -806,124 +666,3 @@ label {
 .menu-nav2 ul li a i{
     color: #ff5722 !important;
 }
-=======
-/*debut profil client*/
-.edit-button {
-  position: fixed;
-  right: 0;
-  top: 1rem;
-  font-size: 1.7rem;
-  color: #757575;
-}
-
-.main-profile {
-  position: relative;
-}
-
-.main-profile .camera-button {
-  position: fixed;
-  z-index: 9999;
-  right: 1rem;
-  border-radius: 100%;
-  width: 3.5rem;
-  height: 3.5rem;
-  top: 6rem;
-  left: 18rem;
-  background-color: #FF7920F0;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
-  box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
-
-  
-}
-
-
-.camera-button img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: auto;
-  width: 1.7rem;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.profile-image {
-  text-align: center;
-}
-
-.profile-image img {
-  width: 10rem;
-  height: auto;
-  margin-top: 2rem;
-}
-
-.profile-name h1 {
-  font-family: Roboto-Regular;
-  color: #757575;
-  font-size: 2.5rem;
-}
-
-main .contact {
-  margin-bottom: 4rem;
-}
-
-.contact-li {
-  border-radius: 5px;
-}
-
-.contact-header {
-  display: flex;
-  cursor: pointer;
-  line-height: 1.5;
-  padding: 1rem;
-  background-color: #fff;
-  font-size: 1.333rem;
-  border: none;
-
-}
-
-.contact-header i {
-  font-size: 1.6rem;
-  display: inline-block;
-  text-align: center;
-  margin-right: 1rem;
-  margin: 0.333rem 0.533rem;
-  color: #757575;
-  margin-top: 1rem;
-}
-
-.contact-header .border-bottom {
-  border-bottom: 1px solid #757575;
-  padding-bottom: 2rem;
-}
-
-.border-bottom h6 {
-  color: #000000;
-  font-size: 1rem;
-  font-family: Roboto-Regular;
-}
-
-.border-bottom span {
-  color: #A1A1A1;
-  font-size: 1rem;
-  font-family: Robot-Regular;
-}
-
-.contact-header .border-bottom-0 {
-  color: #A1A1A1;
-  font-size: 1rem;
-  font-family: Robot-Regular;
-}
-.contact-header .organisation{
-  color: #000000;
-    font-size: 1rem;
-    font-family: Roboto-Regular;
-}
-
-
-/*fin profil client*/
->>>>>>> 2d679f855ecdda811c85c611a489958d9d7331f6
