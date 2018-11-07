@@ -868,9 +868,7 @@ label {
 }
 
 main .contact {
-  position:relative;
-  bottom: 4rem;
-  margin: 0.333rem 0.533rem;
+  margin-bottom: 4rem;
 }
 
 .contact-li {
@@ -899,7 +897,7 @@ main .contact {
 }
 
 .contact-header .border-bottom {
-  border-bottom: 0.5px solid #757575;
+  border-bottom: 1px solid #757575;
   padding-bottom: 2rem;
 }
 
