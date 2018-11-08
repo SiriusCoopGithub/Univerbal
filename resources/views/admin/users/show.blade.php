@@ -17,17 +17,19 @@
         <tr>
             <th>Champ</th>
             <th>Valeur</th>
-
         </tr>
     </thead>
 
     <tbody>
-        @foreach ($users as $user)
+        {{-- @foreach ($users as $user) --}}
         <tr>
             <td>{{$user->id}}</td>
             <td>{{$user->name}}</td>
+            <td>{{$user->email}}</td>
+            <td>{{$user->type}}</td>
+            <td>{{$user->created_at}}</td>
         </tr>
-        @endforeach
+        {{-- @endforeach --}}
 
         {{-- <td>{{$user->email}}</td>
         <td>0475/52.26.22</td>

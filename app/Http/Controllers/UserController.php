@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Role;
 use App\User;
+use App\Http\Requests\CreateUserRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -39,22 +40,13 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateUserRequest $request)
     {
-        $this->validate($request, [
-          'name' => 'required|max:50',
-          'email' => 'required|email|unique:users',
-          'user-type' => 'required'
-        ]);
-
-        if(Request::has('password') && !empty($request->password)){
-          $password = trim($request->password);
-        }
 
         $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->type = $request->usertype;
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        // $user->type = $request->input('usertype');
         $user->password = Hash::make($password);
         $user->save();
 
@@ -62,7 +54,7 @@ class UserController extends Controller
         //   $user->syncRoles(explode(',', $request->roles));
         // }
 
-        return redirect()->route('users.show', $user->id);
+        return view('admin.users.show', ['user' => $user->id]);
     }
 
     /**
@@ -74,9 +66,9 @@ class UserController extends Controller
     public function show($id)
     {
       // dd(User::where('id', $id));
-      $users = User::where('id', $id)->get();
+      $user = User::find($id);
       // dd($user);
-      return view("admin.users.show")->withUsers($users);
+      return view('admin.users.show', ['user' => $user]);
     }
 
     /**

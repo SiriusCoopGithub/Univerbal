@@ -16,9 +16,10 @@
             @csrf
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input id="name" type="text" class="validate">
+                    <input id="name" type="text" class="validate" value="{{ old('name') }}">
                     <label for="name">Name</label>
                 </div>
+                {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
             </div>
             <div class="row">
                 <div class="input-field col s6 m4 l6">
@@ -38,7 +39,7 @@
                     </p>
                 </div>
             </div>
-
+            {!! $errors->first('usertype', '<div class="invalid">:message</div>') !!}
             {{-- @foreach ($roles as $role)
             <div class="input-field col s12 m4 l12">
 
@@ -57,12 +58,15 @@
                     <label for="password">Password</label>
                 </div>
 
-                <div class="input-field col s6 m4 l6">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-            </div>
 
+            </div>
+            <div class="row">
+              <div class="input-field col s6 m4 l6">
+                <input id="email" type="email" class="validate" value="{{ old('email') }}">
+                <label for="email">Email</label>
+            </div>
+            </div>
+            {!! $errors->first('email', '<div class="invalid">:message</div>') !!}
 
             <div class="row">
                 <div class="col s12">
