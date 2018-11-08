@@ -7,27 +7,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
               crossorigin="anonymous">
-        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="css/materialize.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="js/materialize.js" type="text/javascript"></script>
         <script src="js/js.js" type="text/javascript"></script>
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <style>
-            [type="checkbox"].filled-in:checked + span:not(.lever):after {
-                top: 0;
-                width: 20px;
-                height: 20px;
-                border: 2px solid #C3DAFF;
-                background-color: #3B86FF;
-                z-index: 0;
-            }
-        </style>
-        <script>
-            $(document).ready(function () {
-                $('select').material_select();
-            });
-        </script>
+
+
         <title>Ajout-Mission</title>
     </head>
 
@@ -43,130 +30,135 @@
                     <p class="fermer"><i class="fas fa-times"></i></p>
                 </div>
                 </div>
+
         </header>
         <main>
             <div class="bordure">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="input-field col s12">                           
+                        <div class="input-field col s12">
                             <select>
-                                <option value="" disabled selected>Langue</option>
+                                <option value="#" disabled selected>Langue</option>
                                 <option value="Anglais">Anglais</option>
                                 <option value="Allemand">Allemand</option>
                                 <option value="Néerlandais">Néerlandais</option>
                             </select>
 
                         </div>
+                        
                     </div>
-                </div>
-                <form action="#">
-                    <p>
-                        <label>
-                            <input type="checkbox" class="filled-in"  />
-                            <span>Femme</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" class="filled-in"  />
-                            <span>Homme</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" class="filled-in" checked="checked" />
-                            <span>Pas d'importance</span>
-                        </label>
-                    </p>
-                </form>
-                <hr>
-                <form class = "col s12">
-                    <div class = "row">
-
-
-                        <div class="col s6">
-                            <label>Date</label> 
-                            <input type = "text" class = "datepicker" /> 
-                        </div>
-                        <div class="col s6">
-                            <label>Heure</label>
-                            <i class="far fa-clock"></i> 
-                            <input type="text" id="time" class="timepicker">
-
-                        </div>
-                    </div>            
-                </form> 
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field  col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Nom de l'intervenant</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea2" class="materialize-textarea"></textarea>
-                                <label for="textarea2">Nom du bénéficiaire</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <label class="adresseRdv">Adresse du rendez-vous</label>
-                <div class="row">
-                    <div class="col s4">
-                        <button class="btn blue darken-1">Défaut</button>
-                    </div>
-                    <div class="col s6">
-                        <button class="btn blue darken-1">Autre</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea3" class="materialize-textarea"></textarea>
-                                <label for="textarea3">Objet de la prestation</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <form class ="col s12">
                     <div class="row">
-                        <div class="col s6">
-                            <label>Temps estimé</label>
-                            <i class="far fa-clock"></i> 
-                            <input type="time" id="time" class="timepicker">
+                    <div class="col s12">
+                    <form action="#">
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Femme</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Homme</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span>Pas d'importance</span>
+                            </label>
+                        </p>
+                    </form>
+                    </div>
+                    </div>
+                    <hr>
+                    <form class="col s12">
+                        <div class="row">
 
+
+                            <div class="col s6">
+                                <label>Date</label>
+                                <input type="text" class="datepicker" />
+                            </div>
+                            <div class="col s6">
+                                <label>Heure</label>
+                                <input type="text" id="time" class="timepicker">
+
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field  col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Nom de l'intervenant</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea2" class="materialize-textarea"></textarea>
+                                    <label for="textarea2">Nom du bénéficiaire</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <label>Adresse du rendez-vous</label>
+                    <div class="row">
+                        <div class="col s4">
+                            <button class="btn blue darken-1">Défaut</button>
+                        </div>
+                        <div class="col s6">
+                            <button class="btn blue darken-1">Autre</button>
                         </div>
                     </div>
-                </form>
+                    <hr>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea3" class="materialize-textarea"></textarea>
+                                    <label for="textarea3">Objet de la prestation</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="col s6">
+                                <label>Temps estimé</label>
+                                <input type="time" id="time" class="timepicker">
 
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea4" class="materialize-textarea"></textarea>
-                                <label for="textarea4">Note de l'interprète</label>
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea5" class="materialize-textarea"></textarea>
-                                <label for="textarea5">Note personelle</label>
+
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea4" class="materialize-textarea"></textarea>
+                                    <label for="textarea4">Note de l'interprète</label>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea5" class="materialize-textarea"></textarea>
+                                    <label for="textarea5">Note personelle</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
             <ul>
@@ -176,7 +168,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col s12">
-                                    <h5 style="font-weight:bold">Résumé</h5> 
+                                    <h5 style="font-weight:bold">Résumé</h5>
                                 </div>
                             </div>
                             <div class="row">
