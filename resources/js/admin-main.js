@@ -9,7 +9,6 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
 require('./admin-bootstrap');
 
 
@@ -20,87 +19,19 @@ require('./admin-bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#vue-root'
+const vueAdmin = new Vue({
+    el: '#vue-admin'
 });
 
+
+/**
+ * The Admin JQuery .ready(fonction)
+ */
 $(document).ready(function() {
 
-    const colaps = document.querySelectorAll('.collapsible');
-    const colapsInstances = M.Collapsible.init(colaps, {
-        accordion: false,
-        inDuration: 300,
-        outDuration: 300
-    });
-
-    const datePicker = document.querySelectorAll('.datepicker');
-    const dateInstances = M.Datepicker.init(datePicker, {
-        firstDay: 1,
-        format: 'dd mmm yyyy',
-        showClearBtn: true,
-        i18n: {
-            months: [
-                'Janvier',
-                'Février',
-                'Mars',
-                'Avril',
-                'Mai',
-                'Juin',
-                'Juillet',
-                'Août',
-                'Septembre',
-                'Octobre',
-                'Novembre',
-                'Decembre'
-            ],
-            monthsShort: [
-                'Jan',
-                'Feb',
-                'Mar',
-                'Apr',
-                'Mai',
-                'Juin',
-                'Jul',
-                'Août',
-                'Sep',
-                'Oct',
-                'Nov',
-                'Dec'
-            ],
-            weekdays: [
-                'Dimanche',
-                'Lundi',
-                'Mardi',
-                'Mercredi',
-                'Jeudi',
-                'Vendredi',
-                'Samedi'
-            ],
-            weekdaysShort: [
-                'Dim',
-                'Lun',
-                'Mar',
-                'Mer',
-                'Jeu',
-                'Ven',
-                'Sam'
-            ],
-            weekdaysAbbrev: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
-        }
-    });
-
-    const hourPicker = document.querySelectorAll('.timepicker');
-    const instances = M.Timepicker.init(hourPicker, {
-        defaultTime: 'now',
-        twelveHour: false,
-        showClearBtn: true,
-    });
-
-    const selectForm = document.querySelectorAll('select');
-    const formInstances = M.FormSelect.init(selectForm, {});
-    console.log("ready!");
+    console.log("Admin js loaded");
 });
 
 // $('select').material_select();

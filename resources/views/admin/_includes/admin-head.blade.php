@@ -28,9 +28,10 @@
     <link href="{{ asset('css/admin-main.css') }}" rel="stylesheet">
     <style>
         /* header, */
-        main,
+        /* main,
         footer {
-            padding-left: 300px;
+            padding-left: 150px;
+            margin-left: 25px;
         }
 
         #sidenav-1 {
@@ -39,7 +40,7 @@
 
         .sub-header {
             margin-left: 15px;
-        }
+        } */
 
     </style>
 </head>

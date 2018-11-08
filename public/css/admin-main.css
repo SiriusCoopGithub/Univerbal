@@ -539,3 +539,29 @@ input ::placeholder {
 * The css for the admin dashboard
 */
 
+.sidenav {
+  top: 65px;
+}
+
+.sidenav h5 {
+  padding-left: 15px;
+}
+
+.container {
+  /* margin: 0 auto; */
+  max-width: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 100%;
+  }
+}
+

@@ -1,12 +1,12 @@
-<header>
+<div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
-            <a href="{{ route('admin.index') }}" class="brand-logo">&nbsp{{ config('app.name', 'Laravel') }} Admin
+            <a href="{{ route('admin.index') }}" class="brand-logo">&nbsp{{ config('app.name', 'Laravel') }} SuperAdmin
                 Dashboard</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 @auth
                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
+                  document.getElementById('logout-form').submit();">
                         Logout
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -20,4 +20,4 @@
             </ul>
         </div>
     </nav>
-</header>
+</div>

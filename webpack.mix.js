@@ -16,6 +16,8 @@ mix
     .copyDirectory('resources/fonts', 'public/fonts')
     .copyDirectory('resources/img', 'public/img')
     // .copyDirectory('resources/js/materialize.min.js', 'public/js')
+    .js('resources/js/main.js', 'public/js')
+    // .sass('resources/sass/app-main.scss', 'public/css')
     .js('resources/js/app-main.js', 'public/js')
     .sass('resources/sass/app-main.scss', 'public/css')
     .js('resources/js/admin-main.js', 'public/js')
