@@ -3,7 +3,10 @@
 <body>
 
     <div class="container">
-        @include('admin.partials.admin-navbar')</div>
+        @include('admin.partials.admin-navbar')
+    </div>
+
+
     <div class="row">
         {{-- <div class="col s12">
         </div> --}}
@@ -12,15 +15,14 @@
         </div>
         <div class="col s12 m8 l9">
             <div class="row">
+
                 @yield('admin-content')
             </div>
         </div>
-
-    </div>
-
     </div>
 
     @include('admin._includes.admin-scripts')
+    @yield('script-create-user-password')
 </body>
 
 </html>

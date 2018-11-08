@@ -19,11 +19,12 @@ require('./admin-bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('admin-component', require('./components/AdminComponent.vue'));
+// Vue.component('vue-admin-create-user', require('./components/AdminCreateUser.vue'));
 
-const vueAdmin = new Vue({
-    el: '#vue-admin'
-});
+// const vueAdmin = new Vue({
+//     el: '#vue-admin'
+// });
 
 
 /**

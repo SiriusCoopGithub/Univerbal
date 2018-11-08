@@ -11,6 +11,14 @@ return [
             'users' => 'c,r,u,d',
             'profile' => 'c,r,u,d'
         ],
+        'MDPGuestAdmin' => [
+            'users' => 'r',
+            'profile' => 'r'
+        ],
+        // 'ClientAdmin' => [
+        //   'users' => 'c,r,u,d',
+        //   'profile' => 'c,r,u,d'
+        // ],
         'client' => [
             'profile' => 'c,r,u'
         ],

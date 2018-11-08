@@ -9,7 +9,6 @@
         <a href="{{route('users.create')}}" class=" waves-effect waves-light btn-small">Create new user</a>
     </div>
 </div>
-
 <hr class="col s12 m4 l12">
 <table class="highlight col s12 m4 l12">
     <thead>
