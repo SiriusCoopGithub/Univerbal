@@ -27,7 +27,6 @@ body {
   font-family: Roboto-Light;
   font-size: 15px;
   background-color: #EFEFEF;
-  
 }
 
 
@@ -72,7 +71,6 @@ body {
 header .icon-container {
   position: relative;
   text-align: center;
-  background-color: #FFFFFF;
 }
 
 header .icon-container::after {
@@ -259,7 +257,6 @@ main {
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: Roboto-Medium;
-  padding-top: 2rem;
 }
 
 a.bouton1 {
@@ -282,7 +279,7 @@ a.bouton1 {
 
 img {
   height: auto;
-  width: 5.476rem;
+  width: 7rem;
 }
 
 /*collapsible*/
@@ -317,11 +314,6 @@ ul:not(.browser-default) {
 }
 .menu-nav ul li {
   position: relative;
-}
-.menu-nav .icon-container{
-   position: relative;
-    text-align: center;
-    background-color: #FFFFFF;
 }
 .menu-nav .icon-container::after {
   position: absolute;
@@ -366,155 +358,3 @@ ul:not(.browser-default) {
 }
 
 /*Footer*/
-
-/*Default form login*/
-.text-center {
-  padding: 2rem 2rem;
-}
-
-.form-logo {
-  margin-top: 3rem;
-}
-
-.h1 {
-  color: #468DF0;
-  font-family: Roboto-Bold;
-  height: 25px;
-  font-size: 3.3rem;
-}
-
-.h4 {
-  height: 2px;
-  font-family: Roboto-Light;
-  font-size: 2rem;
-  color: #000000;
-
-}
-
-.login-form {
-  margin-top: 6rem;
-}
-
-.form-control {
-  padding: 1.8rem 5rem;
-  bottom: 3rem;
-
-}
-
-.form-control:focus {
-  border-color: #468DF0;
-}
-
-.mb-4,
-.my-4 {
-  margin-bottom: 1.7rem !important;
-}
-
-.btn-info.focus,
-.btn-info:focus {
-  box-shadow: 0px 0px 0px 0.2rem rgba(23, 162, 184, 0.5);
-}
-
-.btn-info {
-  color: #fff;
-  background-color: #468DF0;
-  border-color: #468DF0;
-  padding: 1rem 5rem;
-  font-family: Roboto-Medium;
-  outline-offset: -4px;
-}
-
-input ::placeholder {
-  padding: 0rem;
-}
-.info {
-  position: absolute;
-  display:inline-block;
-  color: #BFC4C7;
-  top: 1rem;
-  left: 20rem;
-  }
-.mail {
-  position: relative;
-
-}
-.flotte {
-  position: absolute;
-  display:inline-block;
-  color: #BFC4C7;
-  top: 1.2rem;
-  right: 1rem;
-  }
-
-/*fin Default form login*/
-
-/*Debut ajout-mission*/
-
-.bordure {
-  margin-top: -4rem;
-  padding: 0 1rem;
-
-}
-.colo {
-  background-color: #468DF0;
-  color: #468DF0; 
-}
-
-.demande {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  height: 3rem;
-  background-color: #468DF0;
-  color: #FFFFFF;
-
-}
-
-.demande p {
-  margin: 0;
-  padding: 0.5rem;
-
-}
-.fermer {
-
-  position: absolute;
-  display: inline-block;
-  color: #fafafa;
-  top: -0.5rem;
-  left: 2rem;
-  width: 2rem;
-  height: 2rem;
-  z-index: 9999;
-}
-.langue {
-  position: relative;
-  left: 1rem;
-}
-.envoyer {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  width: 100%;
-  height: 3rem;
-  background-color: #468DF0;
-  color: #FFFFFF;
-}
-.envoyer p {
-  position: absolute;
-  margin: 0;
-  padding: 0.5rem;
-  right: 1rem;
-}
-.resume {
-  padding: 0 1rem;
-  display: flex;
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-.resume p {
-  display: inline-block; 
-}
-
-/*Fin ajout-mission*/
