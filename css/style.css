@@ -214,7 +214,7 @@ main {
     -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
     box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.2);
 }
-}
+
 
 .list-client-body p {
     color: #000000;
@@ -310,7 +310,7 @@ img {
 
 /*collapsible*/
 
-/*Footer*/
+/*DEBUT MENU NAV EN FOOTER*/
 
 
 .menu-nav {
@@ -399,9 +399,9 @@ ul:not(.browser-default) {
     text-shadow: none;
 }
 
-/*Footer*/
+/*FIN MENU NAV EN FOOTER*/
 
-/*Default form login*/
+/* DEBUT DEFAULT LOGIN PAGE*/
 .text-center {
     padding: 2rem 2rem;
 }
@@ -483,9 +483,9 @@ input ::placeholder {
     right: 1rem;
 }
 
-/*fin Default form login*/
+/*FIN DEFAULT LOGIN FORM*/
 
-/*Debut ajout-mission*/
+/*DEBUT AJOUT-MISSION*/
 
 .bordure {
     margin-top: -4rem;
@@ -568,9 +568,9 @@ input ::placeholder {
 
 }
 
-/*Fin ajout-mission*/
+/*FIN AJOUT-MISSION*/
 
-/* Date Display */
+/* DEBUT DATE DISPLAY*/
 .datepicker-date-display {
 
     background-color: #468DF0;
@@ -623,8 +623,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
     background-color: #468DF0;
     color: #fff;
 }
+/* FIN DATE DISPLAY*/
 
-/*bouton adresse de rendez-vous*/
+/*BOUTON ADRESS DE RENDEZ VOUS*/
 .blue.darken-1 {
     background-color: #468DF0 !important;
 }
@@ -648,14 +649,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
     font-size: 16px;
     font-weight: bold;
 }
-
 label {
     font-size: 1rem;
-
 }
-
-
-
 
 [type="checkbox"].filled-in:checked+span:not(.lever):after {
     top: 0;
@@ -665,9 +661,7 @@ label {
     background-color: #3B86FF;
     z-index: 0;
 }
-
-/*page options*/
-
+/*DEBUT PAGES OPTIONS*/
 .option {
     position: relative;
     display: inline-block;
@@ -708,12 +702,9 @@ label {
     background-color: #ff5722;
 }
 
-.menu-nav2 ul li a i {
-    color: #ff5722 !important;
-}
+/*FIN PAGES OPTIONS*/
 
-
-/*debut profil client*/
+/*DEBUT PAGE CLIENTS*/
 .edit-button {
     position: fixed;
     z-index: 100;
@@ -893,4 +884,4 @@ main .contact {
 }
 
 
-/*fin profil client*/
+/*FIN PAGE CLIENTS*/
