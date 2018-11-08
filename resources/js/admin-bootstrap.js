@@ -1,10 +1,6 @@
-// window._ = require('lodash');
-// window.Popper = require('popper.js').default;
-
-
-
-
-
+/**
+ * We'll load Vue, Vue router and VueX
+ */
 window.Vue = require('vue');
 window.Vuex = require('vuex');
 window.VueRouter = require('vue-router');
@@ -21,16 +17,21 @@ try {
     // require('bootstrap');
 } catch (e) {}
 
+
+/**
+ * Load the Materialize js
+ */
 // require('materialize-css');
+
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
-
 window.axios = require('axios');
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
 
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
@@ -62,3 +63,7 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+
+// window._ = require('lodash');
+// window.Popper = require('popper.js').default;

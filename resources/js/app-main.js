@@ -1,10 +1,14 @@
 /**
+ * The loader js for the app
+ */
+
+/**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('./app-bootstrap');
 
 
 
@@ -20,6 +24,11 @@ const app = new Vue({
     el: '#vue-root'
 });
 
+
+/**
+ * The main JQuery .ready(fonction)
+ *
+ */
 $(document).ready(function() {
 
     const colaps = document.querySelectorAll('.collapsible');

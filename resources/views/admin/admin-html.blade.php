@@ -3,7 +3,6 @@
 <body>
     @yield('admin-content')
 
-
     @include('admin._includes.admin-scripts')
 </body>
 

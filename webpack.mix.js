@@ -16,8 +16,10 @@ mix
     .copyDirectory('resources/fonts', 'public/fonts')
     .copyDirectory('resources/img', 'public/img')
     // .copyDirectory('resources/js/materialize.min.js', 'public/js')
-    .js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
+    .js('resources/js/app-main.js', 'public/js')
+    .sass('resources/sass/app-main.scss', 'public/css')
+    .js('resources/js/admin-main.js', 'public/js')
+    .sass('resources/sass/admin-main.scss', 'public/css')
     .browserSync({
         proxy: '127.0.0.1:8000',
         port: '3000',

@@ -1,0 +1,20 @@
+/**
+* The scss loader for the admin dashboard
+*/
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Materialize
+// @import '~materialize-css/sass/materialize';
+
+// Fontawesome
+// @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+
+// Import the main for the app
+@import 'main';
+
+
+// Import the css for the dashboard
+@import 'admin-dashboard';
