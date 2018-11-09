@@ -35,4 +35,5 @@ Route::prefix('admin')->middleware('role:superadmin')->group(function(){
   Route::get('/', 'AdminController@index')->name('admin.index');
   Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
   Route::resource('/users', 'UserController');
+  Route::get('/valideform', 'FormController@valideform');
 });

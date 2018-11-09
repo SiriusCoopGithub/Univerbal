@@ -14,8 +14,10 @@ class CreateLangueUserTable extends Migration
     public function up()
     {
         Schema::create('langue_user', function (Blueprint $table) {
+          $table->primary(['user_id', 'langue_id']);
+
           $table->unsignedInteger('user_id');
-          $table->unsignedInteger('langue_name');
+          $table->unsignedInteger('langue_id');
 
           // $table->foreign('user_id')
           //       ->references('id')
@@ -23,15 +25,11 @@ class CreateLangueUserTable extends Migration
           //       ->onUpdate('cascade')
           //       ->onDelete('cascade');
 
-          // $table->foreign('langue_name')
-          //       ->references('name')
+          // $table->foreign('langue_id')
+          //       ->references('id')
           //       ->on('langues')
           //       ->onUpdate('cascade')
           //       ->onDelete('cascade');
-
-          $table->primary(['user_id', 'langue_name']);
-
-          $table->timestamps();
         });
     }
 

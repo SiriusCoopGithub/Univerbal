@@ -14,10 +14,12 @@ class CreateAdressesTable extends Migration
     public function up()
     {
         Schema::create('adresses', function (Blueprint $table) {
-          $table->unsignedInteger('users_id');
-          $table->unsignedInteger('street_num');
+          $table->increments('id');
+          $table->unsignedInteger('profile_id');
+          $table->unsignedSmallInteger('street_num');
+          $table->string('box_num', 10);
           $table->text('street_name');
-          $table->unsignedInteger('postal_code');
+          $table->unsignedSmallInteger('postal_code');
           $table->text('city_name');
           $table->text('country');
 
@@ -27,8 +29,6 @@ class CreateAdressesTable extends Migration
           //       ->on('users')
           //       ->onUpdate('cascade')
           //       ->onDelete('cascade');
-
-          $table->unique(['users_id', 'street_num', 'street_name', 'postal_code']);
 
           $table->timestamps();
         });

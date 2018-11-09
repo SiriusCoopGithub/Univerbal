@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Missions;
+use App\Mission;
 use Illuminate\Http\Request;
 
 class MissionsController extends Controller
@@ -44,7 +44,7 @@ class MissionsController extends Controller
      * @param  \App\Missions  $missions
      * @return \Illuminate\Http\Response
      */
-    public function show(Missions $missions)
+    public function show(Mission $mission)
     {
 
     }
@@ -55,7 +55,7 @@ class MissionsController extends Controller
      * @param  \App\Missions  $missions
      * @return \Illuminate\Http\Response
      */
-    public function edit(Missions $missions)
+    public function edit(Mission $mission)
     {
         //
     }
@@ -67,7 +67,7 @@ class MissionsController extends Controller
      * @param  \App\Missions  $missions
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Missions $missions)
+    public function update(Request $request, Mission $mission)
     {
         //
     }
@@ -78,7 +78,7 @@ class MissionsController extends Controller
      * @param  \App\Missions  $missions
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Missions $missions)
+    public function destroy(Mission $mission)
     {
         //
     }

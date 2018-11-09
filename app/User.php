@@ -2,6 +2,10 @@
 
 namespace App;
 
+use App\Option;
+use App\Mission;
+use App\Profile;
+use App\Organisation;
 use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -18,7 +22,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'type'
+        'name', 'email', 'password',
     ];
 
     /**
@@ -31,30 +35,44 @@ class User extends Authenticatable
     ];
 
     /**
+     * Add an user
+     */
+    // public function addUser($request){
+    //     $user = User::create([
+    //         'name'      => request('name'),
+    //         'email'     => request('email'),
+    //         'password'  => Hash::make(request('password')),
+    //     ]);
+
+    //     return $user;
+    // }
+
+
+    /**
      * Profile
      */
     public function profile(){
-      return $this->hasOne(Profiles::class);
+      return $this->hasOne(Profile::class);
     }
 
     /**
-     * adresse
+     * Option
      */
-    public function adresse(){
-      return $this->hasOne(Adresses::class);
+    public function option(){
+      return $this->hasOne(Option::class);
     }
 
     /**
-     * organisations
+     * Organisation
      */
-    public function organisations(){
-      return $this->hasOne(Organisations::class);
+    public function option(){
+      return $this->hasOne(Organisation::class);
     }
 
     /**
-     * missions
+     * Mission
      */
-    public function missions(){
-      return $this->hasOne(Missions::class);
+    public function mission(){
+      return $this->hasMany(Mission::class);
     }
 }

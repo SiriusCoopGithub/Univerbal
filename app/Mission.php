@@ -2,16 +2,15 @@
 
 namespace App;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Mission extends Model
 {
-    public function showAll(){
-      return $this->hasMany(Missions::class);
-    }
-
-    public function show(Missions $missions)
-    {
-
+    /**
+     * Mission
+     */
+    public function user(){
+      return $this->belongsTo(User::class);
     }
 }

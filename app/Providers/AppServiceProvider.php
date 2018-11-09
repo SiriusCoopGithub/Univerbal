@@ -14,8 +14,19 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Enable foreign key support for SQLITE databases
+
+        /**
+         *  Enable foreign key support for SQLITE databases
+         */
         Schema::enableForeignKeyConstraints();
+
+        /**
+         *
+         */
+        Relation::morphMap([
+          'users' => 'App\User',
+          'organisations' => 'App\Organisation',
+        ]);
     }
 
     /**

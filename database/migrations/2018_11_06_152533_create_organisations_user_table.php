@@ -14,7 +14,7 @@ class CreateOrganisationsUserTable extends Migration
     public function up()
     {
         Schema::create('organisations_user', function (Blueprint $table) {
-            // $table->increments('id');
+            $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('organisation_id');
 
@@ -30,7 +30,7 @@ class CreateOrganisationsUserTable extends Migration
             //       ->onUpdate('cascade')
             //       ->onDelete('cascade');
 
-            $table->primary(['user_id', 'organisation_id']);
+            // $table->primary(['user_id', 'organisation_id']);
 
             $table->timestamps();
         });

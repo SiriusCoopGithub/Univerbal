@@ -23,7 +23,7 @@ class CreateMissionsTable extends Migration
           $table->text('note_interp', 120);
           $table->time('estimed_time');
           $table->string('sexe_interp', 1);
-          $table->string('facture_num');
+          $table->string('facture_num')->nullable();
           $table->tinyInteger('statuts');
           $table->unsignedInteger('user_id');
           $table->unsignedInteger('organisation_id');
