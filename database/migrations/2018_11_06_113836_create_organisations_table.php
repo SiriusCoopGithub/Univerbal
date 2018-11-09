@@ -17,25 +17,11 @@ class CreateOrganisationsTable extends Migration
           $table->increments('id');
 
           $table->string('name', 100)->unique();
-
-          // $table->unsignedInteger('user_id');
-          // $table->unsignedInteger('contact_id');
-          // $table->unsignedInteger('profile_id');
-
-
-          // $table->foreign('user_id')
-          //       ->references('id')
-          //       ->on('users')
-          //       ->onUpdate('cascade');
+          $table->unsignedInteger('contact_id')->nullable();
 
           // $table->foreign('contact_id')
           //       ->references('id')
           //       ->on('users')
-          //       ->onUpdate('cascade');
-
-          // $table->foreign('profile_id')
-          //       ->references('id')
-          //       ->on('profiles')
           //       ->onUpdate('cascade');
 
           $table->timestamps();

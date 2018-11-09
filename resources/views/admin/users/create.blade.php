@@ -7,7 +7,7 @@
     </div>
 
 </div>
-
+{{-- {{dd(route('users.store'))}} --}}
 <hr class="col s12 m4 l12">
 <div id="vue-admin-create-user">
 
@@ -61,10 +61,10 @@
 
             </div>
             <div class="row">
-              <div class="input-field col s6 m4 l6">
-                <input id="email" type="email" class="validate" value="{{ old('email') }}">
-                <label for="email">Email</label>
-            </div>
+                <div class="input-field col s6 m4 l6">
+                    <input id="email" type="email" class="validate" value="{{ old('email') }}">
+                    <label for="email">Email</label>
+                </div>
             </div>
             {!! $errors->first('email', '<div class="invalid">:message</div>') !!}
 

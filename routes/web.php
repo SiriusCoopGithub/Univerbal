@@ -34,6 +34,5 @@ Route::prefix('app')->middleware('role:superadmin|admin|user')->group(function()
 Route::prefix('admin')->middleware('role:superadmin')->group(function(){
   Route::get('/', 'AdminController@index')->name('admin.index');
   Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
-  Route::get('/vue', 'UserController@vue');
   Route::resource('/users', 'UserController');
 });

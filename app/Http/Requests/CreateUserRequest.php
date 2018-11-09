@@ -13,7 +13,7 @@ class CreateUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -27,7 +27,7 @@ class CreateUserRequest extends FormRequest
           'nom' => 'bail|required|between:4,20|alpha',
           'email' => 'bail|required|unique:users|email',
           'password' => 'bail|required|between:6,16',
-          // 'usertype' => 'bail|required'
+          'type' => 'bail|required'
         ];
     }
 }
