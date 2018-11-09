@@ -43,14 +43,14 @@ class UserController extends Controller
     public function store(CreateUserRequest $request)
     {
 
-        // $user = User::addUser($request);
-        // dd($request()->all());
 
-        $user = User::create([
-          'name'      => request('name'),
-          'email'     => request('email'),
-          'password'  => Hash::make(request('password')),
-        ]);
+        $user->create($request->all());
+
+        // $user = User::create([
+        //   'name'      => request('name'),
+        //   'email'     => request('email'),
+        //   'password'  => Hash::make(request('password')),
+        // ]);
 
         return view('admin.users.show', compact('user'));
     }

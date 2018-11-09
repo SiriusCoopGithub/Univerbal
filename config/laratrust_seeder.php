@@ -5,28 +5,44 @@ return [
         'superadmin' => [
             'acl' => 'c,r,u,d',
             'users' => 'c,r,u,d',
-            'profile' => 'c,r,u,d'
+            'profiles' => 'c,r,u,d',
+            'organisations' => 'c,r,u,d',
+            'missions' => 'c,r,u,d',
+            'langues' => 'c,r,u,d',
         ],
-        'admin' => [
+        'MDPAdmin' => [
             'users' => 'c,r,u,d',
-            'profile' => 'c,r,u,d'
+            'profiles' => 'c,r,u,d',
+            'organisations' => 'c,r,u,d',
+            'missions' => 'c,r,u,d',
+            'langues' => 'c,r,u,d',
         ],
         'MDPGuestAdmin' => [
             'users' => 'r',
-            'profile' => 'r'
+            'profiles' => 'r'
         ],
         // 'ClientAdmin' => [
         //   'users' => 'c,r,u,d',
         //   'profile' => 'c,r,u,d'
         // ],
-        'client' => [
-            'profile' => 'c,r,u'
+      //   'commanditaireAdmin' => [
+      //     'users' => 'c,r,u,d',
+      //     'profiles' => 'c,r,u,d'
+      // ],
+        'commanditaire' => [
+            'profiles' => 'r,u',
+            'missions' => 'c,r,u',
         ],
         'interprete' => [
-            'profile' => 'r,u'
+            'profiles' => 'r,u',
+            'missions' => 'r,u',
         ],
         'user' => [
-            'profile' => 'r'
+          'users' => 'r',
+          'profiles' => 'r',
+          'organisations' => 'r',
+          'missions' => 'r',
+          'langues' => 'r',
         ],
     ],
     // 'permission_structure' => [

@@ -35,17 +35,12 @@ class User extends Authenticatable
     ];
 
     /**
-     * Add an user
+     * Hash the password of the user before storing it in the DB
      */
-    // public function addUser($request){
-    //     $user = User::create([
-    //         'name'      => request('name'),
-    //         'email'     => request('email'),
-    //         'password'  => Hash::make(request('password')),
-    //     ]);
-
-    //     return $user;
-    // }
+    public function setPasswordAttribute($userPassword)
+    {
+        return $this->attributes['password'] = Hash::needsRehash($userPassword) ? Hash::make($userPassword) : $userPassword;
+    }
 
 
     /**
@@ -65,7 +60,7 @@ class User extends Authenticatable
     /**
      * Organisation
      */
-    public function option(){
+    public function organisation(){
       return $this->hasOne(Organisation::class);
     }
 
