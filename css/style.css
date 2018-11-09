@@ -504,6 +504,12 @@ input ::placeholder {
     padding: 0 1rem;
 
 }
+.bordure-gauche {
+    padding-left: 0.7rem;
+}
+.bordure-droite {
+    padding-right: 0.7rem;
+}
 
 .colo {
     background-color: #468DF0;
