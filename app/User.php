@@ -6,6 +6,7 @@ use App\Option;
 use App\Mission;
 use App\Profile;
 use App\Organisation;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
