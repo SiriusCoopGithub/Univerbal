@@ -17,19 +17,24 @@ class DatabaseSeeder extends Seeder
         // App\Organisation::unguard();
         // App\Profile::unguard();
         // App\Adresse::unguard();
-        App\Langue::unguard();
+        // App\Langue::unguard();
+        App\Country::unguard();
+
 
         // $this->call(LaratrustSeeder::class);
         // $this->call(UsersTableSeeder::class);
         // $this->call(OrganisationsTableSeeder::class);
         // $this->call(AdressesTableSeeder::class);
-        $this->call(LangueTableSeeder::class);
+        // $this->call(LangueTableSeeder::class);
+        $this->call(CountriesTableSeeder::class);
 
-        // Disabled all mass assignements protection
+
+        // Enabled all mass assignements protection
         // App\User::reguard();
         // App\Organisation::reguard();
         // App\Profile::reguard();
         // App\Adresse::reguard();
-        App\Langue::reguard();
+        // App\Langue::reguard();
+        App\Country::reguard();
     }
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class LangueTableSeeder extends Seeder
+class CountriesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,13 +12,13 @@ class LangueTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('langues')->delete();
-      $json = File::get("database/data/langues.json");
+      DB::table('countries')->delete();
+      $json = File::get("database/data/country.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
-        App\Langue::create(array(
-          'abbr_langue' => $obj->abbr_langue,
-          'langue_name' => $obj->langue_name,
+        App\Country::create(array(
+          'abbr_country' => $obj->abbr_country,
+          'country_name' => $obj->country_name,
         ));
       }
     }
