@@ -43,14 +43,14 @@ class UserController extends Controller
     public function store(CreateUserRequest $request)
     {
 
+        dd($request);
+        // $user = User::create($request->all());
 
-        $user->create($request->all());
-
-        // $user = User::create([
-        //   'name'      => request('name'),
-        //   'email'     => request('email'),
-        //   'password'  => Hash::make(request('password')),
-        // ]);
+        $user = User::create([
+          'name'      => request('name'),
+          'email'     => request('email'),
+          'password'  => request('password'),
+        ]);
 
         return view('admin.users.show', compact('user'));
     }
@@ -103,14 +103,4 @@ class UserController extends Controller
         //
     }
 
-    /**
-     * Profile for the user.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function profile()
-    {
-        return $this->morphMany(Profile::class, 'belongsTo');
-    }
 }

@@ -44,12 +44,18 @@ class User extends Authenticatable
     }
 
 
-    /**
-     * Profile
+
+   /**
+     * Profile for the user.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
      */
-    public function profile(){
-      return $this->hasOne(Profile::class);
+    public function profile()
+    {
+        return $this->morphMany(Profile::class, 'profilable');
     }
+
 
     /**
      * Option

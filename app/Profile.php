@@ -25,7 +25,7 @@ class Profile extends Model
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function belongsTo(){
+    public function profilable(){
       return $this->morphTo();
     }
 }

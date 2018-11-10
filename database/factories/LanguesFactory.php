@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\langues::class, function (Faker $faker) {
+$factory->define(App\langue::class, function (Faker $faker) {
     return [
         //
     ];

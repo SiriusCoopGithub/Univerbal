@@ -13,7 +13,7 @@ class Organisation extends Model
      */
     public function profile()
     {
-        return $this->morphMany(Profile::class, 'belongsTo');
+        return $this->morphMany(Profile::class, 'profilable');
     }
 
     /**

@@ -15,16 +15,16 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
           $table->increments('id');
-          $table->morphs('belongsTo');
+          $table->morphs('profilable');
           $table->string('user_type', ['admin', 'interprete', 'commanditaire']);
-          $table->string('lastname', 50)->nullable();
-          $table->string('firstname', 50)->nullable();
+          $table->string('last_name', 50)->nullable();
+          $table->string('first_name', 50)->nullable();
           $table->string('organisation_abbr', 50)->nullable();
           $table->string('gsm', 24)->nullable();
           $table->string('telephone', 24)->nullable();
           $table->string('email', 100)->nullable();
           $table->string('titre', 100)->nullable();
-          $table->string('sexe', 1)->nullable();
+          $table->string('genre', 1)->nullable();
 
           // $table->foreign('user_id')
           //       ->references('id')

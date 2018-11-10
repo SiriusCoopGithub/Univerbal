@@ -15,15 +15,15 @@ class CreateMissionsTable extends Migration
     {
         Schema::create('missions', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('langue_1');
-          $table->string('langue_2');
-          $table->dateTime('date');
-          $table->text('objet', 120);
-          $table->text('note_perso', 120);
-          $table->text('note_interp', 120);
-          $table->time('estimed_time');
-          $table->string('sexe_interp', 1);
-          $table->string('facture_num')->nullable();
+          // $table->string('langue_1');
+          // $table->string('langue_2');
+          // $table->dateTime('date');
+          // $table->text('objet', 120);
+          // $table->text('note_perso', 120);
+          // $table->text('note_interp', 120);
+          // $table->time('estimed_time');
+          // $table->string('sexe_interp', 1);
+          // $table->string('facture_num')->nullable();
           $table->tinyInteger('statuts');
           $table->unsignedInteger('user_id');
           $table->unsignedInteger('organisation_id');
