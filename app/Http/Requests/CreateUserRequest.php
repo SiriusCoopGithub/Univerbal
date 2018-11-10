@@ -24,9 +24,10 @@ class CreateUserRequest extends FormRequest
     public function rules()
     {
         return [
-          'name' => 'bail|required|between:1,50|alpha',
-          'email' => 'bail|required|unique:users|email',
-          'password' => 'bail|required|between:6,16',
+          'name'      => 'bail|required|between:1,50|alpha',
+          'email'     => 'bail|required|unique:users|email',
+          'active'    => 'bail|required|boolean',
+          'password'  => 'bail|required|between:6,16',
         ];
     }
 }
