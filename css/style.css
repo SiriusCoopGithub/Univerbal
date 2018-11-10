@@ -17,7 +17,10 @@
     font-family: Roboto-Medium;
     src: url(../font/Roboto/Roboto-Medium.ttf);
 }
-
+@font-face{
+    font-family: Roboto-Thin;
+    src: url(../font/Roboto/Roboto-Thin.ttf);
+}
 
 body {
     width: 100%;
