@@ -1,7 +1,7 @@
 @extends('layouts.html')
 
 @section('body-content')
-@include('layouts.partials.navbar-default')
+@include('layouts._partials.navbar-default')
 
 <main class="py-4">
     @yield('content')

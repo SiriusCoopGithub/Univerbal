@@ -1,5 +1,5 @@
 @extends('admin.admin-html')
-
+@section('title', 'Admin Dashboard')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">

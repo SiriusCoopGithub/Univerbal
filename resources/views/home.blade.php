@@ -1,7 +1,7 @@
 @extends('layouts.html')
 
 @section('body-content')
-@include('layouts.partials.navbar-default')
+@include('layouts._partials.navbar-default')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
