@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\organisations_user;
+use App\organisation_user;
 use Illuminate\Http\Request;
 
-class OrganisationsUserController extends Controller
+class OrganisationUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OrganisationsUserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\organisations_user  $organisations_user
+     * @param  \App\organisation_user  $organisation_user
      * @return \Illuminate\Http\Response
      */
-    public function show(organisations_user $organisations_user)
+    public function show(organisation_user $organisation_user)
     {
         //
     }
@@ -52,10 +52,10 @@ class OrganisationsUserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\organisations_user  $organisations_user
+     * @param  \App\organisation_user  $organisation_user
      * @return \Illuminate\Http\Response
      */
-    public function edit(organisations_user $organisations_user)
+    public function edit(organisation_user $organisation_user)
     {
         //
     }
@@ -64,10 +64,10 @@ class OrganisationsUserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\organisations_user  $organisations_user
+     * @param  \App\organisation_user  $organisation_user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, organisations_user $organisations_user)
+    public function update(Request $request, organisation_user $organisation_user)
     {
         //
     }
@@ -75,10 +75,10 @@ class OrganisationsUserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\organisations_user  $organisations_user
+     * @param  \App\organisation_user  $organisation_user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(organisations_user $organisations_user)
+    public function destroy(organisation_user $organisation_user)
     {
         //
     }

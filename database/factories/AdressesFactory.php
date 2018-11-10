@@ -10,6 +10,6 @@ $factory->define(App\Adresse::class, function (Faker $faker) {
       'street_name' => $faker->streetName(),
       'postal_code' => $faker->postcode(),
       'city_name' => $faker->city(),
-      'country' => $faker->country(),
+      'country' => $faker->randomElement(['Belgique', 'Belgique']),
     ];
 });

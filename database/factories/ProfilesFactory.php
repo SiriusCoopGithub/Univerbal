@@ -8,10 +8,10 @@ $factory->define(App\Profile::class, function (Faker $faker) {
       'last_name' => $faker->lastName(),
       'first_name' => $faker->firstName(),
       'organisation_abbr' => $faker->tld(),
-      'gsm' => $faker->e164PhoneNumber(),
-      'telephone' => $faker->e164PhoneNumber(),
+      'gsm' => $faker->PhoneNumber(),
+      'telephone' => $faker->PhoneNumber(),
       'email' => $faker->unique()->safeEmail,
-      // 'titre' => $faker->title($gender = null|'male'|'female'),
+      'titre' => $faker->randomElement(['Dr.', 'Assistant Social', 'Pr.', 'Medecin Croix Rouge', 'Travailleur Social', 'Mr.']),
       'genre' => $faker->randomElement(['f', 'h']),
     ];
 });
