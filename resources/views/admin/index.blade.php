@@ -1,4 +1,4 @@
-@extends('admin.admin-html')
+@extends('admin.admin-html') @section('title', 'Create User')
 @section('title', 'Admin Dashboard')
 @section('admin-content')
 

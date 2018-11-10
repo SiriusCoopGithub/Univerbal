@@ -1,4 +1,5 @@
 @extends('admin.admin-html')
+@section('title', 'Create User')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
