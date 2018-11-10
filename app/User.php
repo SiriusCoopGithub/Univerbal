@@ -23,8 +23,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'email', 'password',
     ];
+    // protected $fillable = [
+    //     'name', 'email', 'password',
+    // ];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -68,7 +71,7 @@ class User extends Authenticatable
      * Organisation
      */
     public function organisation(){
-      return $this->hasOne(Organisation::class);
+      return $this->belongsToMany(Organisation::class)->withTimestamps();
     }
 
     /**

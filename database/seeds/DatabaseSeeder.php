@@ -17,12 +17,13 @@ class DatabaseSeeder extends Seeder
         App\Organisation::unguard();
         App\Profile::unguard();
         App\Adresse::unguard();
+        App\organisation_user::unguard();
 
         // $this->call(LaratrustSeeder::class);
         $this->call(UsersTableSeeder::class);
         $this->call(OrganisationsTableSeeder::class);
         $this->call(AdressesTableSeeder::class);
-        // $this->call(AdressesTableSeeder::class);
+        $this->call(OrganisationUserTableSeeder::class);
 
     }
 }

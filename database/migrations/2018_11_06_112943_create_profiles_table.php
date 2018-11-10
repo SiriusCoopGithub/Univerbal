@@ -17,6 +17,7 @@ class CreateProfilesTable extends Migration
           $table->increments('id');
           $table->morphs('profilable');
           $table->string('user_type', ['admin', 'interprete', 'commanditaire']);
+          $table->string('name', 50)->nullable();
           $table->string('last_name', 50)->nullable();
           $table->string('first_name', 50)->nullable();
           $table->string('organisation_abbr', 50)->nullable();
