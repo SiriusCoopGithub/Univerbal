@@ -68,7 +68,7 @@ class User extends Authenticatable
      * Organisation
      */
     public function organisation(){
-      return $this->hasOne(Organisation::class);
+      return $this->belongsToMany(Organisation::class);
     }
 
     /**
