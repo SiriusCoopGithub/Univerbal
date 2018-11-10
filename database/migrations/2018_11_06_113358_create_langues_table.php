@@ -20,6 +20,7 @@ class CreateLanguesTable extends Migration
             $table->string('dialect')->nullable();
             $table->string('country', 100)->nullable();
             $table->string('description')->nullable();
+            $table->boolean('active')->default(false);
             $table->timestamps();
 
             // $table->primary(['name', 'country']);
