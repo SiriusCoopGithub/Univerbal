@@ -32,9 +32,10 @@ class LoginController extends Controller
      */
     protected function redirectTo()
     {
-        // if (auth()->user()->role_id == 1) {
-        //     return '/admin';
-        // }
+        if(auth()->user()->hasRole(['superadmin|admin']))
+        {
+            return route('admin.index');
+        }
         return '/app';
     }
 
