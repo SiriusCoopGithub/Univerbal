@@ -11,7 +11,7 @@ class OrganisationsTableSeeder extends Seeder
      */
     public function run()
     {
-      factory(App\Organisation::class, 10)->create()->each(function($u) {
+      factory(App\Organisation::class, 5)->create()->each(function($u) {
         $u->profile()->save(factory(App\Profile::class)->make());
       });
     }
