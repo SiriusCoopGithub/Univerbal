@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\admin;
 
 use App\Role;
+use App\Permission;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateRoleRequest;
 
 class RolesAdminController extends Controller
 {
@@ -16,6 +18,7 @@ class RolesAdminController extends Controller
     public function index()
     {
       $roles = Role::orderBy('id', 'asc')->get();
+
       return view('admin.acl.roles.index')->withRoles($roles);
 
     }
@@ -28,7 +31,7 @@ class RolesAdminController extends Controller
     public function create()
     {
       $roles = Role::all();
-      return view('admin.acl.roles.index')->withRoles($roles);
+      return view('admin.acl.roles.create')->withRoles($roles);
     }
 
     /**
@@ -37,16 +40,15 @@ class RolesAdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateRoleRequest $request)
     {
-      $roles = Role::create([
-        'name'      => request('name'),
-        'email'     => request('email'),
-        'active'    => request('active'),
-        'password'  => request('password'),
+      $role = Role::create([
+        'name'          => request('name'),
+        'display_name'  => request('display_name'),
+        'description'   => request('description'),
       ]);
 
-      return view('admin.acl.roles.index', compact('roles'));
+      return view('admin.acl.roles.show', compact('role'));
     }
 
     /**
@@ -58,7 +60,6 @@ class RolesAdminController extends Controller
     public function show($id)
     {
       $role = Role::findOrFail($id);
-      // dd($role);
       return view('admin.acl.roles.show', ['role' => $role]);
     }
 
@@ -70,7 +71,9 @@ class RolesAdminController extends Controller
      */
     public function edit($id)
     {
-        //
+      $role = Role::findOrFail($id);
+      // $roles = Role::orderBy('id', 'asc')->get();
+      return view('admin.acl.roles.edit', compact('role'));
     }
 
     /**
@@ -82,7 +85,14 @@ class RolesAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $role = Role::findOrFail($id)->update([
+        'name'          => $request->name,
+        'display_name'  => $request->display_name,
+        'description'   => $request->description,
+      ]);
+
+      $roles = Role::orderBy('id', 'asc')->get();
+      return view('admin.acl.roles.index')->withRoles($roles);
     }
 
     /**
@@ -93,6 +103,9 @@ class RolesAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $role = Role::where('id', $id)->delete();
+
+      $roles = Role::orderBy('id', 'asc')->get();
+      return view('admin.acl.roles.index')->withRoles($roles);
     }
 }

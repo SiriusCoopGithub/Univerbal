@@ -2,9 +2,11 @@
 
 namespace App;
 
+use App\Role;
 use App\Option;
 use App\Mission;
 use App\Profile;
+use App\Permission;
 use App\Organisation;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Notifications\Notifiable;
@@ -67,14 +69,43 @@ class User extends Authenticatable
     /**
      * Organisation
      */
-    public function organisation(){
+    public function organisations(){
       return $this->belongsToMany(Organisation::class);
     }
 
     /**
+     * Organisation
+     */
+    // public function organisationname(){
+    //   return $this->belongsToMany(Organisation::class)->select('name');
+    // }
+
+    /**
      * Mission
      */
-    public function mission(){
+    public function missions(){
       return $this->hasMany(Mission::class);
+    }
+
+
+    /**
+     * Role
+     */
+    public function roles(){
+      return $this->belongsToMany(Role::class);
+    }
+
+    /**
+     * Role
+     */
+    public function permissions(){
+      return $this->belongsToMany(Permission::class);
+    }
+
+    /**
+     * Role
+     */
+    public function teams(){
+      return $this->belongsToMany(Team::class);
     }
 }

@@ -19,9 +19,17 @@ class Organisation extends Model
     /**
      * users for each organisations.
      */
-    public function users()
+    public function user()
     {
         return $this->belongsToMany(User::class);
     }
+
+    /**
+     * users for each organisations.
+     */
+    // public function username()
+    // {
+    //     return $this->belongsToMany(User::class)->select('name');
+    // }
 
 }

@@ -20,6 +20,7 @@
             <th>Tél</th>
             <th>Type</th>
             <th>Organisation</th>
+            <th>Actif</th>
             <th>Crée le</th>
             <th>Profile</th>
             <th>Edit</th>
@@ -28,21 +29,25 @@
     {{-- {{dd($users)}} --}}
     <tbody>
         @foreach ($users as $user)
+        {{-- {{dd($users)}} --}}
         <tr>
             <td>{{$user->id}}</td>
             <td>{{$user->name}}</td>
             <td>{{$user->email}}</td>
             <td>0475/52.26.22</td>
 
-            @if(!empty($user->roles))
+            {{-- {{ dd($user->role) }} --}}
+            @if($user->role !== null)
             @foreach ($user->roles as $role)
-            <td> {{ ( $role->name != '') ? $role->name : 'Default' }}</td>
+            {{-- <td> {{ ( $role->name == NULL) ? $role->name : 'Default' }}</td> --}}
+            <td>azeazeaze</td>
             @endforeach
             @else
             <td>dfdsfdsf</td>
             @endif
 
-            <td>C.H.U.</td>
+            <td>chu</td>
+            <td>{{$user->active}}</td>
 
             <td>{{$user->created_at->toFormattedDateString()}}</td>
             <td>

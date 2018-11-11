@@ -6,6 +6,7 @@ use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateUserRequest;
 
 class UsersAdminController extends Controller
 {
@@ -17,7 +18,8 @@ class UsersAdminController extends Controller
      */
     public function index()
     {
-        $users = User::with(['roles', 'profile', 'organisation'])->get();
+        $users = User::all();
+        // $users = User::where('active', 1)->get();
         return view('admin.users.index')->withUsers($users);
     }
 

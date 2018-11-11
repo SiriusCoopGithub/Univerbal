@@ -27,7 +27,7 @@
     </div>
 
     @include('admin._includes.admin-scripts')
-    @yield('script-create-user-password')
+    @yield('script')
 </body>
 
 </html>
