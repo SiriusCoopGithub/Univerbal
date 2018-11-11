@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\admin;
 
-use App\Role;
-use App\User;
+use App\Team;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UsersAdminController extends Controller
+class TeamsAdminController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -17,8 +15,9 @@ class UsersAdminController extends Controller
      */
     public function index()
     {
-        $users = User::with(['roles', 'profile', 'organisation'])->get();
-        return view('admin.users.index')->withUsers($users);
+      $teams = Team::orderBy('id', 'asc')->get();
+      return view('admin.acl.teams.index')->withTeams($teams);
+
     }
 
     /**
@@ -28,30 +27,26 @@ class UsersAdminController extends Controller
      */
     public function create()
     {
-      $roles = Role::all();
-      return view('admin.users.create')->withRoles($roles);
+      $teams = Team::all();
+      return view('admin.acl.teams.index')->withTeams($teams);
     }
 
     /**
-     * Store a newly created user in storage.
+     * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateUserRequest $request)
+    public function store(Request $request)
     {
+      $teams = Team::create([
+        'name'      => request('name'),
+        'email'     => request('email'),
+        'active'    => request('active'),
+        'password'  => request('password'),
+      ]);
 
-        // dd($request);
-        // $user = User::create($request->all());
-
-        $user = User::create([
-          'name'      => request('name'),
-          'email'     => request('email'),
-          'active'    => request('active'),
-          'password'  => request('password'),
-        ]);
-
-        return view('admin.users.show', compact('user'));
+      return view('admin.acl.teams.index', compact('teams'));
     }
 
     /**
@@ -62,9 +57,8 @@ class UsersAdminController extends Controller
      */
     public function show($id)
     {
-
-      $user = User::findOrFail($id);
-      return view('admin.users.show', ['user' => $user]);
+      $teams = Team::findOrFail($id);
+      return view('admin.acl.teams.index', ['teams' => $teams]);
     }
 
     /**
@@ -100,5 +94,4 @@ class UsersAdminController extends Controller
     {
         //
     }
-
 }

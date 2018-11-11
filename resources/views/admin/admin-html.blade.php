@@ -1,6 +1,11 @@
 @include('admin._includes.admin-head')
 
 <body>
+    {{-- <div class="add-button">
+        <a href="javascript:void(0)">
+            <img src="img/plus-icon.png" alt="plus icon">
+        </a>
+    </div> --}}
 
     <div class="container">
         @include('admin._partials.admin-navbar')

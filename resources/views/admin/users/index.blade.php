@@ -34,25 +34,16 @@
             <td>{{$user->email}}</td>
             <td>0475/52.26.22</td>
 
+            @if(!empty($user->roles))
             @foreach ($user->roles as $role)
-            @if ($role)
-            <td>
-                @if ($role->name)
-                {{ $role->name }}
-                @endif
-            </td>
-            @else
-            <td>
-                None
-            </td>
-            @endif
+            <td> {{ ( $role->name != '') ? $role->name : 'Default' }}</td>
             @endforeach
+            @else
+            <td>dfdsfdsf</td>
+            @endif
 
-
-
-            {{-- <td>{{$user->profile->user_type}}</td> --}}
-            <td>Interprete</td>
             <td>C.H.U.</td>
+
             <td>{{$user->created_at->toFormattedDateString()}}</td>
             <td>
                 <a href="{{route('users.show', $user->id)}}" class="waves-effect waves-light btn-small">

@@ -18,10 +18,12 @@
         <li><a href="{{ route('admin.index') }}">Commanditaires</a></li>
         <li><a href="{{ route('admin.index') }}">Intervenants</a></li>
     </ul>
+    @role('superadmin')
     <h5 class="sub-header">ADMINISTRATION</h5>
     <ul>
-        <li><a href="#">Roles</a></li>
-        <li><a href="#">Permissions</a></li>
-        <li><a href="http://localhost:3000/admin/vue">Teams</a></li>
+        <li><a href="{{route('roles.index')}}">Roles</a></li>
+        <li><a href="{{route('permissions.index')}}">Permissions</a></li>
+        <li><a href="{{route('teams.index')}}">Teams</a></li>
     </ul>
+    @endrole
 </div>

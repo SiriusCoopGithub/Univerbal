@@ -11,10 +11,11 @@
 // Fontawesome
 // @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
-
 // Import the main for the app
-@import 'main';
+// @import 'main';
 
+// Import the fonts scss
+@import 'fonts';
 
 // Import the css for the dashboard
-@import '_admin-dashboard';
+@import 'admin-dashboard';

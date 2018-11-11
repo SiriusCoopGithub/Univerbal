@@ -34,12 +34,16 @@ Auth::routes();
 
 
 Route::namespace('Admin')->group(function(){
-  Route::prefix('admin')->middleware('role:superadmin')->group(function(){
+  Route::prefix('admin')->middleware('role:superadmin|MDPAdmin')->group(function(){
 
-    Route::get('/', 'AdminDashboardController@index')->name('admin.index');
-    Route::get('/dashboard', 'AdminDashboardController@dashboard')->name('admin.dashboard');
+    Route::get('/', 'DashboardAdminController@index')->name('admin.index');
+    Route::get('/dashboard', 'DashboardAdminController@dashboard')->name('admin.dashboard');
 
     Route::resource('/users', 'UsersAdminController');
+
+    Route::resource('/roles', 'RolesAdminController');
+    Route::resource('/permissions', 'PermissionsAdminController');
+    Route::resource('/teams', 'TeamsAdminController');
     // Route::resource('/organisations', 'OrganisationsController');
 
   });

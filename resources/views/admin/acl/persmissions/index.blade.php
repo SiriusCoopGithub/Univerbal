@@ -1,13 +1,13 @@
 @extends('admin.admin-html')
-@section('title', 'Create User')
+@section('title', 'Permissions')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
     <div class="col  s12 m4 l10">
-        <h4 class="left-align">Manage Users</h4>
+        <h4 class="left-align">Manage Permissions</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('users.create')}}" class=" waves-effect waves-light btn-small">Create new user</a>
+        <a href="{{route('users.create')}}" class=" waves-effect waves-light btn-small">Create Permissions</a>
     </div>
 </div>
 <hr class="col s12 m4 l12">
@@ -16,33 +16,27 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Email</th>
-            <th>Tél</th>
-            <th>Type</th>
-            <th>Organisation</th>
-            <th>Crée le</th>
-            <th>Profile</th>
+            <th>Slug</th>
+            <th>Description</th>
+            <th>Details</th>
             <th>Edit</th>
         </tr>
     </thead>
 
     <tbody>
-        @foreach ($users as $user)
+        @foreach ($persmissions as $permission)
         <tr>
-            <td>{{$user->id}}</td>
-            <td>{{$user->name}}</td>
-            <td>{{$user->email}}</td>
-            <td>0475/52.26.22</td>
-            <td>Commanditaire</td>
-            <td>C.H.U.</td>
-            <td>{{$user->created_at->toFormattedDateString()}}</td>
+            <td>{{$permission->id}}</td>
+            <td>{{$permission->display_name}}</td>
+            <td>{{$permission->name}}</td>
+            <td>{{$permission->description}}</td>
             <td>
-                <a href="{{route('users.show', $user->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('permissions.show', $permission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">remove_red_eye</i>
                 </a>
             </td>
             <td>
-                <a href="{{route('users.edit', $user->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('permissions.edit', $permission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>
                 </a>
             </td>
@@ -50,15 +44,5 @@
         @endforeach
     </tbody>
 </table>
-{{-- <div class=" col s12 m4 l10">
-    <ul class="pagination">
-        {{$users->links()}}
-    </ul>
-</div> --}}
-
-
-
-
-
 
 @endsection

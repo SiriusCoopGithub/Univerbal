@@ -24,11 +24,12 @@
 
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input name="email" id="email" type="email" class="validate" value="{{ old('email') }}" required>
-                    <label for="email">Email</label>
+                    <input name="display_name" id="display_name" type="text" class="validate" value="{{ old('display_name') }}"
+                        required>
+                    <label for="email">Display Name</label>
                 </div>
             </div>
-            {!! $errors->first('email', '<div class="invalid">:message</div>') !!}
+            {!! $errors->first('display_name', '<div class="invalid">:message</div>') !!}
 
             <div class="row">
                 <div class="input-field col s12 m4 l12">
