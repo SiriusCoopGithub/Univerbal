@@ -34,6 +34,71 @@
         </header>
         <main>
             <div class="bordure">
+ <!--début modal choix de langue
+            <div class="container">
+
+                <a href="#terms" class="btn couleur-bleu modal-trigger">Langue</a>
+
+
+                <div class="modal" id="terms">
+                    <div class="modal-content">
+                        <h6>Rechercher une langue</h6>
+                        <ul>
+                            <li>
+                                <nav>
+                                    <div class="nav-wrapper couleur-bleu">
+                                        <form>
+                                            <div class="input-field">
+                                                <input id="search" type="search" required>
+                                                <label class="label-icon" for="search"><i class="fas fa-search couleur-gris"></i></label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </li>
+                        </ul>
+                    </div>
+                    <div >
+                        <div class="row">
+                            <form action="#">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio" checked  />
+                                            <span>Anglais</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Allemand</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Espagnol</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Italien</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Néerlandais</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ fin modal choix de langue-->
                 <div class="container-fluid">
                     <div class="row">
                         <div class="input-field col s12">
@@ -235,6 +300,9 @@
         <script>
             const timer = document.querySelector('.timepicker');
             M.Timepicker.init(timer, {});
+            $(document).ready(function () {
+                $('.modal').modal();
+            });
         </script>
     </body>
 

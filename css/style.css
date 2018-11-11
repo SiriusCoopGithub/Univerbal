@@ -230,32 +230,6 @@ main {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-family: Roboto-Regular;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .list-client .icone {
@@ -584,6 +558,12 @@ input ::placeholder {
     top: -2rem;
     padding: 1rem;
 
+}
+.couleur-bleu {
+        background-color: #468DF0;
+}
+.couleur-gris {
+ color: #707070;
 }
 
 
