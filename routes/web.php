@@ -36,9 +36,10 @@ Auth::routes();
 Route::namespace('Admin')->group(function(){
   Route::prefix('admin')->middleware('role:superadmin')->group(function(){
 
-    Route::get('/', 'AdminController@index')->name('admin.index');
-    Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
-    Route::resource('/users', 'AdminUsersController');
+    Route::get('/', 'AdminDashboardController@index')->name('admin.index');
+    Route::get('/dashboard', 'AdminDashboardController@dashboard')->name('admin.dashboard');
+
+    Route::resource('/users', 'UsersAdminController');
     // Route::resource('/organisations', 'OrganisationsController');
 
   });

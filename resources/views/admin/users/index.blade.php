@@ -25,7 +25,7 @@
             <th>Edit</th>
         </tr>
     </thead>
-    {{dd($users)}}
+    {{-- {{dd($users)}} --}}
     <tbody>
         @foreach ($users as $user)
         <tr>
