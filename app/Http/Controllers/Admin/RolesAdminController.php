@@ -57,8 +57,9 @@ class RolesAdminController extends Controller
      */
     public function show($id)
     {
-      $roles = Role::findOrFail($id);
-      return view('admin.acl.roles.index', ['roles' => $roles]);
+      $role = Role::findOrFail($id);
+      // dd($role);
+      return view('admin.acl.roles.show', ['role' => $role]);
     }
 
     /**
