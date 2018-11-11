@@ -24,20 +24,25 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('app')->middleware('role:superadmin|admin|user')->group(function(){
-  Route::get('/', 'AppController@index')->name('app.index');
-  Route::get('/missions', 'AppController@missions')->name('app.missions');
-  Route::get('/profile', 'AppController@profile')->name('app.profile');
-  Route::get('/options', 'AppController@options')->name('app.options');
-});
+// Route::prefix('app')->middleware('role:superadmin|admin|user')->group(function(){
+//   Route::get('/', 'AppController@index')->name('app.index');
+//   Route::get('/missions', 'AppController@missions')->name('app.missions');
+//   Route::get('/profile', 'AppController@profile')->name('app.profile');
+//   Route::get('/options', 'AppController@options')->name('app.options');
+// });
 
-Route::prefix('admin')->middleware('role:superadmin')->group(function(){
-  Route::get('/', 'AdminController@index')->name('admin.index');
-  Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
-  Route::resource('/users', 'UserController');
-  // Route::resource('/organisations', 'OrganisationsController');
-});
 
+
+Route::namespace('Admin')->group(function(){
+  Route::prefix('admin')->middleware('role:superadmin')->group(function(){
+
+    Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
+    Route::resource('/users', 'AdminUsersController');
+    // Route::resource('/organisations', 'OrganisationsController');
+
+  });
+});
 
 
 // Route::prefix('missions')->middleware('role:superadmin|admin|user')->group(function(){

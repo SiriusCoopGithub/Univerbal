@@ -1,16 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Role;
-use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use App\Http\Requests\CreateUserRequest;
+use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class MissionsAdminController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -18,9 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with(['roles', 'profile', 'organisation'])->get();
-        // $users = User::orderBy('id', 'asc')->get();
-        return view('admin.users.index')->withUsers($users);
+        //
     }
 
     /**
@@ -30,31 +24,18 @@ class UserController extends Controller
      */
     public function create()
     {
-      $roles = Role::all();
-
-      return view('admin.users.create')->withRoles($roles);
+        //
     }
 
     /**
-     * Store a newly created user in storage.
+     * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateUserRequest $request)
+    public function store(Request $request)
     {
-
-        // dd($request);
-        // $user = User::create($request->all());
-
-        $user = User::create([
-          'name'      => request('name'),
-          'email'     => request('email'),
-          'active'    => request('active'),
-          'password'  => request('password'),
-        ]);
-
-        return view('admin.users.show', compact('user'));
+        //
     }
 
     /**
@@ -65,10 +46,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-      // dd(User::where('id', $id));
-      $user = User::findOrFail($id);
-      // dd($user);
-      return view('admin.users.show', ['user' => $user]);
+        //
     }
 
     /**
@@ -104,5 +82,4 @@ class UserController extends Controller
     {
         //
     }
-
 }

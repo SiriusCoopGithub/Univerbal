@@ -6,9 +6,20 @@
     <ul>
         <li><a href="{{ route('admin.index') }}">Dashboard</a></li>
     </ul>
+    <h5 class=" sub-header">Missions</h5>
+    <ul>
+        <li><a href="{{ route('admin.index') }}">En Cours</a></li>
+        <li><a href="{{ route('admin.index') }}">Disponible</a></li>
+        <li><a href="{{ route('admin.index') }}">Historique</a></li>
+    </ul>
+    <h5 class=" sub-header"><a href="{{route('users.index')}}">Utilisateur</a></h5>
+    <ul>
+        <li><a href="{{route('users.index')}}">Interprètes</a></li>
+        <li><a href="{{ route('admin.index') }}">Commanditaires</a></li>
+        <li><a href="{{ route('admin.index') }}">Intervenants</a></li>
+    </ul>
     <h5 class="sub-header">ADMINISTRATION</h5>
     <ul>
-        <li><a href="{{route('users.index')}}">Users</a></li>
         <li><a href="#">Roles</a></li>
         <li><a href="#">Permissions</a></li>
         <li><a href="http://localhost:3000/admin/vue">Teams</a></li>

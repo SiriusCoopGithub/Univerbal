@@ -1,14 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Role;
-use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use App\Http\Requests\CreateUserRequest;
+use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class UsersAdminController extends Controller
 {
 
     /**

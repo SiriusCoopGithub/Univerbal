@@ -1,5 +1,5 @@
 @extends('admin.admin-html')
-@section('title', 'All User')
+@section('title', 'Manage Users')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
@@ -25,7 +25,7 @@
             <th>Edit</th>
         </tr>
     </thead>
-
+    {{dd($users)}}
     <tbody>
         @foreach ($users as $user)
         <tr>
@@ -33,7 +33,25 @@
             <td>{{$user->name}}</td>
             <td>{{$user->email}}</td>
             <td>0475/52.26.22</td>
-            <td>Commanditaire</td>
+
+            @foreach ($user->roles as $role)
+            @if ($role)
+            <td>
+                @if ($role->name)
+                {{ $role->name }}
+                @endif
+            </td>
+            @else
+            <td>
+                None
+            </td>
+            @endif
+            @endforeach
+
+
+
+            {{-- <td>{{$user->profile->user_type}}</td> --}}
+            <td>Interprete</td>
             <td>C.H.U.</td>
             <td>{{$user->created_at->toFormattedDateString()}}</td>
             <td>
