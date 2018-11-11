@@ -754,7 +754,7 @@ label {
     border-radius: 100%;
     width: 2.66rem;
     height: 2.66rem;
-    background-color: #FF7920F0;
+    background-color:rgba(255, 115, 70, 100);
 }
 
 .main-profile .profile-image-container .camera-button img {
