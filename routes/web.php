@@ -11,9 +11,6 @@
 |
 */
 
-/**
- * Before Laratrust
- */
 
 Route::get('/', function () {
     return view('auth.login');
@@ -24,7 +21,7 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::namespace('App')->group(function(){
-  Route::prefix('app')->middleware('role:superadmin|MDPAdmin|MDPGuestAdmin|commanditaire|interprete')->group(function(){
+  Route::prefix('app')->group(function(){
     Route::get('/', 'AppController@index')->name('app.index');
     Route::get('/missions', 'AppController@missions')->name('app.missions');
     Route::get('/profile', 'AppController@profile')->name('app.profile');
@@ -34,7 +31,7 @@ Route::namespace('App')->group(function(){
 
 
 Route::namespace('Admin')->group(function(){
-  Route::prefix('admin')->middleware('role:superadmin|MDPAdmin')->group(function(){
+  Route::prefix('admin')->group(function(){
 
     Route::get('/', 'DashboardAdminController@index')->name('admin.index');
     Route::get('/dashboard', 'DashboardAdminController@dashboard')->name('admin.dashboard');

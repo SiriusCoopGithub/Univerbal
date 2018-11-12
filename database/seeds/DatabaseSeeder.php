@@ -21,7 +21,6 @@ class DatabaseSeeder extends Seeder
         App\Country::unguard();
 
         // Import all seeders
-        $this->call(LaratrustSeeder::class);
         $this->call(UsersTableSeeder::class);
         $this->call(OrganisationsTableSeeder::class);
         $this->call(AdressesTableSeeder::class);

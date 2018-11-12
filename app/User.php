@@ -10,13 +10,11 @@ use App\Permission;
 use App\Organisation;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Notifications\Notifiable;
-use Laratrust\Traits\LaratrustUserTrait;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use LaratrustUserTrait;
     use Notifiable;
 
     /**
