@@ -30,11 +30,6 @@
             <td>{{$permission->guard_name}}</td>
             <td>{{$permission->created_at->toFormattedDateString()}}</td>
             <td>
-                <a href="{{route('permissions.show', $permission->id)}}" class="waves-effect waves-light btn-small">
-                    <i class="tiny material-icons">remove_red_eye</i>
-                </a>
-            </td>
-            <td>
                 <a href="{{route('permissions.edit', $permission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>
                 </a>

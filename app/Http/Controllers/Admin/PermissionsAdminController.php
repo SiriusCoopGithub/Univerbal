@@ -41,6 +41,7 @@ class PermissionsAdminController extends Controller
      */
     public function store(CreatePermissionRequest $request)
     {
+      // dd($request);
       $permissions = Permission::create([
         'name'  => request('name'),
       ]);
@@ -56,8 +57,8 @@ class PermissionsAdminController extends Controller
      */
     public function show($id)
     {
-      $permissions = Permission::findOrFail($id);
-      return view('admin.acl.permissions.index', ['permissions' => $permissions]);
+      $permission = Permission::findOrFail($id);
+      return view('admin.acl.permissions.show', compact('permission'));
     }
 
     /**
