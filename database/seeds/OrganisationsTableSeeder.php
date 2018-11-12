@@ -12,7 +12,7 @@ class OrganisationsTableSeeder extends Seeder
     public function run()
     {
       factory(App\Organisation::class, 5)->create()->each(function($u) {
-        $u->profile()->save(factory(App\Profile::class)->make());
+        $u->profilable()->save(factory(App\Profile::class)->make());
       });
     }
 }

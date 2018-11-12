@@ -28,6 +28,12 @@ class AppServiceProvider extends ServiceProvider
           'users' => 'App\User',
           'organisations' => 'App\Organisation',
         ]);
+
+        /**
+         * Please note that in Laravel 5.4 the default character set is changed to utf8mb4,
+         * therefore if you are running MariaDB or MYSQL version lower than 5.7.7 you may get this error when trying to    * run migration files
+        */
+        Schema::defaultStringLength(191);
     }
 
     /**

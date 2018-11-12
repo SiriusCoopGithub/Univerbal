@@ -18,12 +18,12 @@
         <li><a href="{{ route('admin.index') }}">Commanditaires</a></li>
         <li><a href="{{ route('admin.index') }}">Intervenants</a></li>
     </ul>
-    @role('superadmin')
+    {{-- @role('superadmin')
     <h5 class="sub-header">ADMINISTRATION</h5>
     <ul>
         <li><a href="{{route('roles.index')}}">Roles</a></li>
         <li><a href="{{route('permissions.index')}}">Permissions</a></li>
         <li><a href="{{route('teams.index')}}">Teams</a></li>
     </ul>
-    @endrole
+    @endrole --}}
 </div>

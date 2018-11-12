@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Role;
+
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -30,8 +30,9 @@ class UsersAdminController extends Controller
      */
     public function create()
     {
-      $roles = Role::all();
-      return view('admin.users.create')->withRoles($roles);
+      // $roles = Role::all();
+      // return view('admin.users.create')->withRoles($roles);
+      return view('admin.users.create');
     }
 
     /**

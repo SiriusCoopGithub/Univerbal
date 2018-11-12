@@ -38,9 +38,9 @@ Route::namespace('Admin')->group(function(){
 
     Route::resource('/users', 'UsersAdminController');
 
-    Route::resource('/roles', 'RolesAdminController');
-    Route::resource('/permissions', 'PermissionsAdminController');
-    Route::resource('/teams', 'TeamsAdminController');
+    // Route::resource('/roles', 'RolesAdminController');
+    // Route::resource('/permissions', 'PermissionsAdminController');
+    // Route::resource('/teams', 'TeamsAdminController');
     // Route::resource('/organisations', 'OrganisationsController');
 
   });

@@ -16,6 +16,7 @@
                 @endauth
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="dropdown1">{{ Auth::user()->name }}</a>
+
                 </li>
             </ul>
         </div>
