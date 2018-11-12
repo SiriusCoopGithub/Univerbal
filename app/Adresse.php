@@ -7,6 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Adresse extends Model
 {
+
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+      'street_num', 'box_num', 'street_name', 'postal_code', 'box_num,'
+  ];
+
     public function profile(){
       return $this->hasMany(Adresse::class);
     }

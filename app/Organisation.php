@@ -11,7 +11,7 @@ class Organisation extends Model
     /**
      * Profile for the organisation.
      */
-    public function profile()
+    public function profilable()
     {
         return $this->morphMany(Profile::class, 'profilable');
     }

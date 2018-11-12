@@ -16,12 +16,12 @@ class CreateAdressesTable extends Migration
         Schema::create('adresses', function (Blueprint $table) {
           $table->increments('id');
           $table->unsignedInteger('profile_id');
-          $table->unsignedSmallInteger('street_num');
-          $table->string('box_num', 10);
-          $table->text('street_name');
-          $table->unsignedSmallInteger('postal_code');
-          $table->text('city_name');
-          $table->text('country');
+          $table->unsignedSmallInteger('street_num')->nullable();
+          $table->string('box_num', 10)->nullable();
+          $table->text('street_name')->nullable();
+          $table->unsignedSmallInteger('postal_code')->nullable();
+          $table->text('city_name')->nullable();
+          $table->text('country')->nullable()->default('Belgique');
 
 
           // $table->foreign('users_id')

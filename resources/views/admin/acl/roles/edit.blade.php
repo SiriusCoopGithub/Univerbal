@@ -76,7 +76,7 @@
             @else
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') ? old('display_name') : $role->name }} "
+                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') ? old('name') : $role->name }} "
                         required>
                     <label for="name">Name</label>
                 </div>
@@ -85,7 +85,7 @@
             @endif
             <div class="row">
                 <div class="input-field col s12 m4 l6">
-                    <input name="description" id="description" type="text" class="validate" value="{{ old('description') ? old('display_name') : $role->description }}">
+                    <input name="description" id="description" type="text" class="validate" value="{{ old('description') ? old('description') : $role->description }}">
                     <label for="description">Description</label>
                 </div>
                 {!! $errors->first('description', '<div class="invalid">:message</div>') !!}

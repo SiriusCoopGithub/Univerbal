@@ -43,22 +43,21 @@
                     <p class="flotte"><i class="fas fa-lock fa-lg"></i></p>
                 </div>
 
-                <div class="form-group">
+                {{-- <div class="form-group"> --}}
                     <div class="col-md-6 col-md-offset-4">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember
-                                Me
-                            </label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="remember-password" id="remember-password"
+                                {{ old('remember') ? 'checked' : '' }}>
+                            <label class="custom-control-label" for="remember-password">Se souvenir de moi</label>
                         </div>
                     </div>
-                </div>
+                    {{-- </div> --}}
 
                 <!-- Sign in button -->
                 <button class="btn btn-info btn-block my-4" type="submit">CONNECTION</button>
 
                 <!-- Password Request -->
-                <p><a href="{{ route('password.request') }}">Mot de passe oublié ?</a></p>
+                {{-- <p><a href="{{ route('password.request') }}">Mot de passe oublié ?</a></p> --}}
             </div>
         </form>
         <!-- Default form login -->

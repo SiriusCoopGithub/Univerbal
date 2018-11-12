@@ -20,7 +20,7 @@ class Role extends LaratrustRole
       /**
      * Role
      */
-    public function permissions(){
-      return $this->belongsToMany(Permission::class);
-    }
+    // public function permissions(){
+    //   return $this->belongsToMany(Permission::class);
+    // }
 }

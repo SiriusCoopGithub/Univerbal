@@ -53,7 +53,7 @@ class User extends Authenticatable
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function profile()
+    public function profilable()
     {
         return $this->morphMany(Profile::class, 'profilable');
     }

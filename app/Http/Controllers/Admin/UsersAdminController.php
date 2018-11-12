@@ -53,6 +53,28 @@ class UsersAdminController extends Controller
           'password'  => request('password'),
         ]);
 
+
+
+        $profilable = $user->profilable()->create([
+          'user_type'   => request('user_type'),
+          'last_name'   => request('name'),
+          'first_name'  => request('first_name'),
+          'gsm'         => request('gsm'),
+          'telephone'   => request('telephone'),
+          'email'       => request('email'),
+          'titre'       => request('titre'),
+          'genre'       => request('genre'),
+        ]);
+
+        $adresse = $profilable->adresse()->create([
+          'street_num'  => request('street_num'),
+          'box_num'     => request('box_num'),
+          'street_name' => request('street_name'),
+          'postal_code' => request('postal_code'),
+          'city_name'   => request('city_name'),
+          'country'   => 'Belgique',
+        ]);
+
         return view('admin.users.show', compact('user'));
     }
 
