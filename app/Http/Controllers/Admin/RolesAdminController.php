@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Role;
-use App\Permission;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateRoleRequest;
 
@@ -43,9 +42,7 @@ class RolesAdminController extends Controller
     public function store(CreateRoleRequest $request)
     {
       $role = Role::create([
-        'name'          => request('name'),
-        'display_name'  => request('display_name'),
-        'description'   => request('description'),
+        'name'        => request('name'),
       ]);
 
       return view('admin.acl.roles.show', compact('role'));
@@ -72,7 +69,6 @@ class RolesAdminController extends Controller
     public function edit($id)
     {
       $role = Role::findOrFail($id);
-      // $roles = Role::orderBy('id', 'asc')->get();
       return view('admin.acl.roles.edit', compact('role'));
     }
 
@@ -86,9 +82,7 @@ class RolesAdminController extends Controller
     public function update(Request $request, $id)
     {
       $role = Role::findOrFail($id)->update([
-        'name'          => $request->name,
-        'display_name'  => $request->display_name,
-        'description'   => $request->description,
+        'name'  => $request->name,
       ]);
 
       $roles = Role::orderBy('id', 'asc')->get();

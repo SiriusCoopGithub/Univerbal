@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Permission;
+
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
+use Spatie\Permission\Models\Permission;
+use App\Http\Requests\CreatePermissionRequest;
 
 class PermissionsAdminController extends Controller
 {
@@ -16,7 +19,7 @@ class PermissionsAdminController extends Controller
     public function index()
     {
       $permissions = Permission::orderBy('id', 'asc')->get();
-      return view('admin.acl.permissions.index')->withRoles($permissions);
+      return view('admin.acl.permissions.index')->withPermissions($permissions);
     }
 
     /**
@@ -36,13 +39,10 @@ class PermissionsAdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreatePermissionRequest $request)
     {
       $permissions = Permission::create([
-        'name'      => request('name'),
-        'email'     => request('email'),
-        'active'    => request('active'),
-        'password'  => request('password'),
+        'name'  => request('name'),
       ]);
 
       return view('admin.acl.permissions.index', compact('permissions'));
@@ -68,7 +68,8 @@ class PermissionsAdminController extends Controller
      */
     public function edit($id)
     {
-        //
+      $permission = Permission::findOrFail($id);
+      return view('admin.acl.roles.edit', compact('permission'));
     }
 
     /**
@@ -80,7 +81,12 @@ class PermissionsAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $permission = Permission::findOrFail($id)->update([
+        'name'  => $request->name,
+      ]);
+
+      $permissions = Permission::orderBy('id', 'asc')->get();
+      return view('admin.acl.roles.index')->withRoles($permissions);
     }
 
     /**
@@ -91,6 +97,9 @@ class PermissionsAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $permission = Permission::where('id', $id)->delete();
+
+      $permissions = Permission::orderBy('id', 'asc')->get();
+      return view('admin.acl.roles.index')->withRoles($permissions);
     }
 }

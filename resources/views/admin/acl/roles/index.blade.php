@@ -21,8 +21,7 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Slug</th>
-            <th>Description</th>
+            <th>Guard Name</th>
             <th>Créer le</th>
             <th>Edit</th>
         </tr>
@@ -32,11 +31,9 @@
         @foreach ($roles as $role)
         <tr>
             <td>{{$role->id}}</td>
-            <td>{{$role->display_name}}</td>
             <td>{{$role->name}}</td>
-            <td>{{$role->description}}</td>
+            <td>{{$role->guard_name}}</td>
             <td>{{$role->created_at->toFormattedDateString()}}</td>
-
             <td>
                 <a href="{{route('roles.edit', $role->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>

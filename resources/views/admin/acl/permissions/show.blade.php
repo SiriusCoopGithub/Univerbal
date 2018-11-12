@@ -1,13 +1,13 @@
 @extends('admin.admin-html')
-@section('title', 'Roles Details')
+@section('title', 'Permission Details')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
     <div class="col  s12 m4 l10">
-        <h4 class="left-align">Roles Details</h4>
+        <h4 class="left-align">Permission Details</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('roles.create')}}" class=" waves-effect waves-light btn-small">Create new Roles</a>
+        <a href="{{route('permissions.create')}}" class=" waves-effect waves-light btn-small">Create new Permission</a>
     </div>
 </div>
 <hr class="col s12 m4 l12">
@@ -26,20 +26,16 @@
 
     <tbody>
         <tr>
-            <td>{{$role->id}}</td>
-            <td>{{$role->name}}</td>
-            <td>{{$role->guard_name}}</td>
-            <td>{{$role->created_at->toFormattedDateString()}}</td>
+            <td>{{$permission->id}}</td>
+            <td>{{$permission->name}}</td>
+            <td>{{$permission->guard_name}}</td>
+            <td>{{$permission->created_at->toFormattedDateString()}}</td>
             <td>
-                <a href="{{route('roles.edit', $role->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('roles.edit', $permission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>
                 </a>
             </td>
         </tr>
     </tbody>
 </table>
-
-
-
-
 @endsection

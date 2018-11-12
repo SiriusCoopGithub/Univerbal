@@ -7,7 +7,7 @@
         <h4 class="left-align">Manage Permissions</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('users.create')}}" class=" waves-effect waves-light btn-small">Create Permissions</a>
+        <a href="{{route('permissions.create')}}" class=" waves-effect waves-light btn-small">Create Permissions</a>
     </div>
 </div>
 <hr class="col s12 m4 l12">
@@ -16,20 +16,19 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Slug</th>
-            <th>Description</th>
-            <th>Details</th>
+            <th>Guard Name</th>
+            <th>Créer le</th>
             <th>Edit</th>
         </tr>
     </thead>
 
     <tbody>
-        @foreach ($persmissions as $permission)
+        @foreach ($permissions as $permission)
         <tr>
             <td>{{$permission->id}}</td>
-            <td>{{$permission->display_name}}</td>
             <td>{{$permission->name}}</td>
-            <td>{{$permission->description}}</td>
+            <td>{{$permission->guard_name}}</td>
+            <td>{{$permission->created_at->toFormattedDateString()}}</td>
             <td>
                 <a href="{{route('permissions.show', $permission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">remove_red_eye</i>

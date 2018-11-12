@@ -3,10 +3,10 @@
 @section('admin-content')
 <div class="col s12 m4 l12 valign-wrapper ">
     <div class="col  s12 m4 l10">
-        <h4 class="left-align">Roles Details</h4>
+        <h4 class="left-align">Role Detail</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('users.create')}}" class=" waves-effect waves-light btn-small">Create new Roles</a>
+        <a href="{{route('roles.create')}}" class=" waves-effect waves-light btn-small">Create new Role</a>
     </div>
 </div>
 
@@ -18,8 +18,7 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Display Name</th>
-            <th>Description</th>
+            <th>Guard Name</th>
             <th>Créer le</th>
             <th>delete</th>
         </tr>
@@ -29,8 +28,7 @@
         <tr>
             <td>{{$role->id}}</td>
             <td>{{$role->name}}</td>
-            <td>{{$role->display_name}}</td>
-            <td>{{$role->description}}</td>
+            <td>{{$role->guard_name}}</td>
             <td>{{$role->created_at->toFormattedDateString()}}</td>
 
             @if($role->name === 'superadmin')
@@ -56,18 +54,11 @@
         <form class="col s6 m4 l6" action="{{route('roles.update', $role->id)}}" method="POST">
             @csrf
             @method('PATCH')
+
+            @if($role->name === 'SuperAdmin')
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input name="display_name" id="display_name" type="text" class="validate" value="{{ old('display_name') ? old('display_name') : $role->display_name }}"
-                        required>
-                    <label for="display_name">Display Name</label>
-                    {!! $errors->first('display_name', '<div class="invalid">:message</div>') !!}
-                </div>
-            </div>
-            @if($role->name === 'superadmin')
-            <div class="row">
-                <div class="input-field col s6 m4 l6">
-                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') ? old('display_name') : $role->name }} "
+                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') ? old('guard_name') : $role->name }} "
                         disabled>
                     <label for="name">Name</label>
                 </div>
@@ -83,13 +74,6 @@
                 {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
             </div>
             @endif
-            <div class="row">
-                <div class="input-field col s12 m4 l6">
-                    <input name="description" id="description" type="text" class="validate" value="{{ old('description') ? old('description') : $role->description }}">
-                    <label for="description">Description</label>
-                </div>
-                {!! $errors->first('description', '<div class="invalid">:message</div>') !!}
-            </div>
 
             <div class="row">
                 <div class="col s12">
@@ -101,7 +85,7 @@
     </div>
 </div>
 <hr class="col s12 m4 l12">
-
+{{--
 <div class="col s12 m4 l12">
     <form class="col s6 m4 l6" action="{{route('permissions.update', $role->id)}}" method="POST">
         @csrf
@@ -132,7 +116,7 @@
                         </label>
                     </td>
                     <td>{{$permission->id}}</td>
-                    <td>{{$permission->display_name}}</td>
+                    <td>{{$permission->guard_name}}</td>
                 </tr>
                 @endforeach
             </tbody>
@@ -142,5 +126,5 @@
             </button>
         </div>
     </form>
-</div>
+</div> --}}
 @endsection

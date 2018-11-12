@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Role;
-use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\CreateUserRequest;
@@ -18,7 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with(['roles', 'profile', 'organisation'])->get();
+        $users = User::all();
         // $users = User::orderBy('id', 'asc')->get();
         return view('admin.users.index')->withUsers($users);
     }
@@ -30,9 +28,9 @@ class UserController extends Controller
      */
     public function create()
     {
-      $roles = Role::all();
 
-      return view('admin.users.create')->withRoles($roles);
+
+      return view('admin.users.create');
     }
 
     /**
