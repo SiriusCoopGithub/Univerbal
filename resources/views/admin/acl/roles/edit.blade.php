@@ -106,7 +106,7 @@
     <form class="col s6 m4 l6" action="{{route('permissions.update', $role->id)}}" method="POST">
         @csrf
         @method('PATCH')
-        <table class="highlight col s12 m4 l3">
+        <table class="highlight col s12 m4 l6">
             <thead>
                 <tr>
                     <th>
@@ -126,9 +126,8 @@
 
                 <tr>
                     <td>
-                        <label for="">
-                            <input type="checkbox" checked="checked" id="{{$permission->id}}" name="{{$permission->id}}"
-                                value="{{$permission->id}}" />
+                        <label for="{{$permission->id}}">
+                            <input type="checkbox" checked id="{{$permission->id}}" name="{{$permission->id}}" value="{{$permission->id}}" />
                             <span></span>
                         </label>
                     </td>
@@ -138,6 +137,10 @@
                 @endforeach
             </tbody>
         </table>
+        <div class="col s12">
+            <button class="btn waves-effect waves-light" type="submit">Submit<i class="material-icons right">send</i>
+            </button>
+        </div>
     </form>
 </div>
 @endsection
