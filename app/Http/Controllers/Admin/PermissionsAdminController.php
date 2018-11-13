@@ -29,8 +29,7 @@ class PermissionsAdminController extends Controller
      */
     public function create()
     {
-      $permissions = Permission::all();
-      return view('admin.acl.permissions.create')->withPermissions($permissions);
+      return view('admin.acl.permissions.create');
     }
 
     /**
@@ -41,9 +40,8 @@ class PermissionsAdminController extends Controller
      */
     public function store(CreatePermissionRequest $request)
     {
-      // dd($request);
       $permissions = Permission::create([
-        'name'  => request('name'),
+        'name'  =>  $request->input('name'),
       ]);
 
       return view('admin.acl.permissions.index', compact('permissions'));
@@ -70,7 +68,7 @@ class PermissionsAdminController extends Controller
     public function edit($id)
     {
       $permission = Permission::findOrFail($id);
-      return view('admin.acl.roles.edit', compact('permission'));
+      return view('admin.acl.permissions.edit', compact('permission'));
     }
 
     /**
@@ -83,11 +81,10 @@ class PermissionsAdminController extends Controller
     public function update(Request $request, $id)
     {
       $permission = Permission::findOrFail($id)->update([
-        'name'  => $request->name,
+        'name'  => $request->input('name'),
       ]);
 
-      $permissions = Permission::orderBy('id', 'asc')->get();
-      return view('admin.acl.roles.index')->withRoles($permissions);
+      return redirect()->route('permissions.index');
     }
 
     /**
@@ -100,7 +97,6 @@ class PermissionsAdminController extends Controller
     {
       $permission = Permission::where('id', $id)->delete();
 
-      $permissions = Permission::orderBy('id', 'asc')->get();
-      return view('admin.acl.roles.index')->withRoles($permissions);
+      return redirect()->route('permissions.index');
     }
 }

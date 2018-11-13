@@ -6,6 +6,7 @@ use App\Profile;
 use App\Organisation;
 use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Traits\HasRoles;
+use App\Http\Requests\CreateUserRequest;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -81,5 +82,41 @@ class User extends Authenticatable
     public function missions(){
       return $this->hasMany(Mission::class);
     }
+
+    /**
+     * Create a user
+     */
+    // public function scopeStoreNewUser(CreateUserRequest $request){
+
+    //   $this->create([
+    //     'name'      => $request->input('name'),
+    //     'email'     => $request->input('email'),
+    //     'active'    => $request->input('active'),
+    //     'password'  => $request->input('password'),
+    //   ]);
+
+    //   $profilable = $this->profilable()->create([
+    //     'user_type'   => $request->input('user_type'),
+    //     'last_name'   => $request->input('name'),
+    //     'first_name'  => $request->input('first_name'),
+    //     'gsm'         => $request->input('gsm'),
+    //     'telephone'   => $request->input('telephone'),
+    //     'email'       => $request->input('email'),
+    //     'titre'       => $request->input('titre'),
+    //     'genre'       => $request->input('genre'),
+    //   ]);
+
+    //   $adresse = $profilable->adresse()->create([
+    //     'street_num'  => $request->input('street_num'),
+    //     'box_num'     => $request->input('box_num'),
+    //     'street_name' => $request->input('street_name'),
+    //     'postal_code' => $request->input('postal_code'),
+    //     'city_name'   => $request->input('city_name'),
+    //     'country'   => 'Belgique',
+    //   ]);
+
+    //   return $this;
+
+    // }
 
 }

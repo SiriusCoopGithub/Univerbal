@@ -58,7 +58,7 @@
             @if($role->name === 'SuperAdmin')
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') ? old('guard_name') : $role->name }} "
+                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') ? old('name') : $role->name }} "
                         disabled>
                     <label for="name">Name</label>
                 </div>
@@ -85,46 +85,4 @@
     </div>
 </div>
 <hr class="col s12 m4 l12">
-{{--
-<div class="col s12 m4 l12">
-    <form class="col s6 m4 l6" action="{{route('permissions.update', $role->id)}}" method="POST">
-        @csrf
-        @method('PATCH')
-        <table class="highlight col s12 m4 l6">
-            <thead>
-                <tr>
-                    <th>
-                        <label for="">
-                            <input type="checkbox" />
-                            <span></span>
-                        </label>
-                    </th>
-                    <th>ID</th>
-                    <th>Name</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                @foreach ($role->permissions as $permission )
-
-                <tr>
-                    <td>
-                        <label for="{{$permission->id}}">
-                            <input type="checkbox" checked id="{{$permission->id}}" name="{{$permission->id}}" value="{{$permission->id}}" />
-                            <span></span>
-                        </label>
-                    </td>
-                    <td>{{$permission->id}}</td>
-                    <td>{{$permission->guard_name}}</td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-        <div class="col s12">
-            <button class="btn waves-effect waves-light" type="submit">Submit<i class="material-icons right">send</i>
-            </button>
-        </div>
-    </form>
-</div> --}}
 @endsection

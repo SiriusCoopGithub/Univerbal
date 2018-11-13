@@ -17,9 +17,7 @@ class RolesAdminController extends Controller
     public function index()
     {
       $roles = Role::orderBy('id', 'asc')->get();
-
       return view('admin.acl.roles.index')->withRoles($roles);
-
     }
 
     /**
@@ -29,8 +27,7 @@ class RolesAdminController extends Controller
      */
     public function create()
     {
-      $roles = Role::all();
-      return view('admin.acl.roles.create')->withRoles($roles);
+      return view('admin.acl.roles.create');
     }
 
     /**

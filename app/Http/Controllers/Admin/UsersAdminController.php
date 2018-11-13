@@ -18,8 +18,7 @@ class UsersAdminController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        // $users = User::where('active', 1)->get();
+        $users = User::orderBy('id', 'asc')->get();
         return view('admin.users.index')->withUsers($users);
     }
 
@@ -30,8 +29,6 @@ class UsersAdminController extends Controller
      */
     public function create()
     {
-      // $roles = Role::all();
-      // return view('admin.users.create')->withRoles($roles);
       return view('admin.users.create');
     }
 
@@ -43,38 +40,36 @@ class UsersAdminController extends Controller
      */
     public function store(CreateUserRequest $request)
     {
-
         // dd($request);
-        // $user = User::create($request->all());
 
         $user = User::create([
-          'name'      => request('name'),
-          'email'     => request('email'),
-          'active'    => request('active'),
-          'password'  => request('password'),
+          'name'      => $request->input('name'),
+          'email'     => $request->input('email'),
+          'active'    => $request->input('active'),
+          'password'  => $request->input('password'),
         ]);
 
-
-
         $profilable = $user->profilable()->create([
-          'user_type'   => request('user_type'),
-          'last_name'   => request('name'),
-          'first_name'  => request('first_name'),
-          'gsm'         => request('gsm'),
-          'telephone'   => request('telephone'),
-          'email'       => request('email'),
-          'titre'       => request('titre'),
-          'genre'       => request('genre'),
+          'user_type'   => $request->input('user_type'),
+          'last_name'   => $request->input('name'),
+          'first_name'  => $request->input('first_name'),
+          'gsm'         => $request->input('gsm'),
+          'telephone'   => $request->input('telephone'),
+          'email'       => $request->input('email'),
+          'titre'       => $request->input('titre'),
+          'genre'       => $request->input('genre'),
         ]);
 
         $adresse = $profilable->adresse()->create([
-          'street_num'  => request('street_num'),
-          'box_num'     => request('box_num'),
-          'street_name' => request('street_name'),
-          'postal_code' => request('postal_code'),
-          'city_name'   => request('city_name'),
+          'street_num'  => $request->input('street_num'),
+          'box_num'     => $request->input('box_num'),
+          'street_name' => $request->input('street_name'),
+          'postal_code' => $request->input('postal_code'),
+          'city_name'   => $request->input('city_name'),
           'country'   => 'Belgique',
         ]);
+
+        // $user = User::storeNewUser($request);
 
         return view('admin.users.show', compact('user'));
     }
@@ -87,9 +82,8 @@ class UsersAdminController extends Controller
      */
     public function show($id)
     {
-
       $user = User::findOrFail($id);
-      return view('admin.users.show', ['user' => $user]);
+      return view('admin.users.show', compact('user'));
     }
 
     /**
@@ -100,7 +94,8 @@ class UsersAdminController extends Controller
      */
     public function edit($id)
     {
-        //
+      $user = User::findOrFail($id);
+      return view('admin.users.edit', compact('user'));
     }
 
     /**
@@ -112,7 +107,35 @@ class UsersAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+      $user = User::findOrFail($id)->update([
+        'name'        => $request->input('name'),
+        'email'       => $request->input('email'),
+        'active'      => $request->input('active'),
+        'password'    => $request->input('password'),
+      ]);
+
+      $profilable = $user->profilable()->update([
+        'user_type'   => $request->input('user_type'),
+        'last_name'   => $request->input('name'),
+        'first_name'  => $request->input('first_name'),
+        'gsm'         => $request->input('gsm'),
+        'telephone'   => $request->input('telephone'),
+        'email'       => $request->input('email'),
+        'titre'       => $request->input('titre'),
+        'genre'       => $request->input('genre'),
+      ]);
+
+      $adresse = $profilable->adresse()->update([
+        'street_num'  => $request->input('street_num'),
+        'box_num'     => $request->input('box_num'),
+        'street_name' => $request->input('street_name'),
+        'postal_code' => $request->input('postal_code'),
+        'city_name'   => $request->input('city_name'),
+        'country'   => 'Belgique',
+      ]);
+
+      return view('admin.users.show', compact('user'));
     }
 
     /**
@@ -123,7 +146,8 @@ class UsersAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $user = User::where('id', $id)->delete();
+      return redirect()->route('users.index');
     }
 
 }
