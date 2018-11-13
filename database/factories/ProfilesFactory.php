@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Profile::class, function (Faker $faker) {
     return [
-      'user_type' => $faker->randomElement(['admin', 'interprete', 'commanditaire']),
+      // 'user_type' => $faker->randomElement(['admin', 'interprete', 'commanditaire']),
       'last_name' => $faker->lastName(),
       'first_name' => $faker->firstName(),
       'organisation_abbr' => $faker->tld(),

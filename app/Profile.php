@@ -14,7 +14,7 @@ class Profile extends Model
      * @var array
      */
     protected $fillable = [
-      'user_type', 'last_name', 'first_name', 'gsm', 'telephone', 'email', 'titre', 'genre'
+      'last_name', 'first_name', 'organisation_abbr', 'gsm', 'telephone', 'email', 'titre', 'genre'
   ];
 
     /**

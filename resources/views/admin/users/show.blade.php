@@ -46,15 +46,4 @@
 
     </tbody>
 </table>
-{{-- <div class=" col s12 m4 l10">
-    <ul class="pagination">
-        {{$users->links()}}
-    </ul>
-</div> --}}
-
-
-
-
-
-
 @endsection

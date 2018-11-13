@@ -36,7 +36,7 @@
             <td>{{$user->email}}</td>
             <td>0475/52.26.22</td>
 
-            {{-- {{ dd($user->role) }} --}}
+            {{-- {{ dd($user->roles()) }} --}}
             @if($user->role !== null)
             @foreach ($user->roles as $role)
             {{-- <td> {{ ( $role->name == NULL) ? $role->name : 'Default' }}</td> --}}
@@ -64,15 +64,4 @@
         @endforeach
     </tbody>
 </table>
-{{-- <div class=" col s12 m4 l10">
-    <ul class="pagination">
-        {{$users->links()}}
-    </ul>
-</div> --}}
-
-
-
-
-
-
 @endsection

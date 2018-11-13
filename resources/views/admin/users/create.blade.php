@@ -13,8 +13,8 @@
 <div id="vue-admin-create-user">
     <form class="col s6 m4 l6" action="{{route('users.store')}}" method="POST">
         <div class="col s12 m4 l12">
-
             @csrf
+
             <div class="row">
                 <div class="input-field col s6 m4 l4">
                     <input name="name" id="name" type="text" class="validate" value="{{ old('name') }}" required>
@@ -53,21 +53,6 @@
 
             <div class="row">
                 <div class="input-field col s6 m4 l3">
-                    <label for="commanditaire">
-                        <input id="commanditaire" name="user_type" type="radio" value="{{ old('commanditaire') ? old('commanditaire') : 'commanditaire' }}"
-                            required />
-                        <span>Commanditaire</span>
-                    </label>
-                </div>
-
-                <div class="input-field col s6 m4 l3">
-                    <label for="interprete">
-                        <input id="interprete" name="user_type" value="{{ old('interprete') ? old('interprete') : 'interprete'  }}"
-                            type="radio" />
-                        <span>Interprete</span>
-                    </label>
-                </div>
-                <div class="input-field col s6 m4 l3">
                     <label for="men">
                         <input id="men" name="genre" type="radio" value="{{ old('genre') ? old('genre') : 'h' }}"
                             required />
@@ -81,6 +66,15 @@
                         <span>Femme</span>
                     </label>
                 </div>
+
+                @foreach ($roles as $role)
+                <div class="input-field col s6 m4 l3">
+                    <label for="{{$role->name}}">
+                        <input id="{{$role->name}}" name="roles[]" type="radio" value="{{ old($role->id) ? old($role->id) : $role->id}}" />
+                        <span>{{$role->name}}</span>
+                    </label>
+                </div>
+                @endforeach
 
             </div>
 
@@ -141,7 +135,6 @@
                 {!! $errors->first('telephone', '<div class="invalid">:message</div>') !!}
             </div>
 
-
             <div class="row">
                 <div class="input-field col s12 m4 l6">
                     <input name="password" id="password" type="password" class="validate" minlength="6" required>
@@ -177,7 +170,7 @@
 @endsection
 
 @section('script-create-user-password')
-<script>
+{{-- <script>
     const vueAdminCreateUserPassword = new Vue({
         el: '#vue-admin-create-user',
         data: {
@@ -186,35 +179,5 @@
         }
     });
 
-</script>
+</script> --}}
 @endsection
-
-{{-- <div class="row">
-    <div class="input-field col s6 m4 l6">
-        <p>
-            <label for="commanditaire">
-                <input id="commanditaire" name="usertype" value="commanditaire" type="radio" />
-                <span>Commanditaire</span>
-            </label>
-        </p>
-    </div>
-    <div class="input-field col s6 m4 l6">
-        <p>
-            <label for="interprete">
-                <input id="interprete" name="usertype" value="interprete" type="radio" />
-                <span>Interprete</span>
-            </label>
-        </p>
-    </div>
-</div>
-{!! $errors->first('usertype', '<div class="invalid">:message</div>') !!} --}}
-{{-- @foreach ($roles as $role)
-<div class="input-field col s12 m4 l12">
-
-    <label>
-        <input type="checkbox" :native-value="{{$role->id}}" />
-        <span>{{$role->display_name}}</span>
-    </label>
-
-</div>
-@endforeach --}}

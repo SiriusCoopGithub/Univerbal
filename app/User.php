@@ -33,6 +33,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    // protected $with = ['profilable.users'];
+    // protected $withOrganisations = ['profilable.organisations'];
+
     /**
      * Hash the password of the user before storing it in the DB
      */

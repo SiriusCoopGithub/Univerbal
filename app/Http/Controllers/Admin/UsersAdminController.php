@@ -4,13 +4,18 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\User;
+use App\Adresse;
+use App\Profile;
+use App\Organisation;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\EditUserRequest;
 use App\Http\Requests\CreateUserRequest;
 
 class UsersAdminController extends Controller
 {
+
 
     /**
      * Display a listing of the resource.
@@ -30,7 +35,8 @@ class UsersAdminController extends Controller
      */
     public function create()
     {
-      return view('admin.users.create');
+      $roles = Role::where('name', 'NOT LIKE', '%'.'Admin')->get();
+      return view('admin.users.create', compact('roles'));
     }
 
     /**
@@ -50,8 +56,7 @@ class UsersAdminController extends Controller
           'password'  => $request->input('password'),
         ]);
 
-        $profilable = $user->profilable()->create([
-          'user_type'   => $request->input('user_type'),
+        $profile = $user->profilable()->create([
           'last_name'   => $request->input('name'),
           'first_name'  => $request->input('first_name'),
           'gsm'         => $request->input('gsm'),
@@ -70,14 +75,14 @@ class UsersAdminController extends Controller
           'country'   => 'Belgique',
         ]);
 
-        $role = $request->input('user_type');
-        //Checking if a role was selected
-        if (isset($role)) {
-
-          $role_r = Role::where('name', '=', $role)->firstOrFail();
-          $user->assignRole($role_r); //Assigning role to user
+        $roles = $request->input('roles');
+        // dd($roles);
+        if (isset($roles)) {
+          foreach ($roles as $role) {
+            $role_r = Role::where('id', '=', $role)->firstOrFail();
+            $user->assignRole($role_r); //Assigning role to user
+            }
         }
-
 
         return view('admin.users.show', compact('user'));
     }
@@ -91,7 +96,8 @@ class UsersAdminController extends Controller
     public function show($id)
     {
       $user = User::findOrFail($id);
-      return view('admin.users.show', compact('user'));
+      $roles = Role::get();
+      return view('admin.users.show', compact('user', 'roles'));
     }
 
     /**
@@ -102,8 +108,20 @@ class UsersAdminController extends Controller
      */
     public function edit($id)
     {
-      $user = User::findOrFail($id);
-      return view('admin.users.edit', compact('user'));
+      $user = User::with(['profilable', 'roles' => function ($query) {
+        $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
+      }])->findOrFail($id);
+      // $user = User::with(['profilable', 'roles'])->findOrFail($id);
+      $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
+      // dd($adresse);
+      // $user = User::with(['profiles', 'adresses', ['roles' => function ($query) {
+      //   $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
+      // }]])->findOrFail($id);
+
+      // dd($user);
+      // $roles = Role::where('name', 'NOT LIKE', '%'.'Admin')->get();
+      $allRoles = Role::get();
+      return view('admin.users.edit', compact('user', 'allRoles', 'adresse'));
     }
 
     /**
@@ -113,42 +131,25 @@ class UsersAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(CreateUserRequest $request, $id)
+    public function update(EditUserRequest $request, $id)
     {
+      // dd($request);
+      $user = User::findOrFail($id);
+      $user->update($request->all());
 
-      $user = User::findOrFail($id)->update([
-        'name'        => $request->input('name'),
-        'email'       => $request->input('email'),
-        'active'      => $request->input('active'),
-        'password'    => $request->input('password'),
-      ]);
+      // dd($user);
+      // if ($request->has('password')) $user->update(['password'  => $request->input('password')]);
 
-      $profilable = $user->profilable()->update([
-        'user_type'   => $request->input('user_type'),
-        'last_name'   => $request->input('name'),
-        'first_name'  => $request->input('first_name'),
-        'gsm'         => $request->input('gsm'),
-        'telephone'   => $request->input('telephone'),
-        'email'       => $request->input('email'),
-        'titre'       => $request->input('titre'),
-        'genre'       => $request->input('genre'),
-      ]);
+      $user->profilable()->update($request->all());
+      $profile->adresse()->update($request->all());
 
-      $adresse = $profilable->adresse()->update([
-        'street_num'  => $request->input('street_num'),
-        'box_num'     => $request->input('box_num'),
-        'street_name' => $request->input('street_name'),
-        'postal_code' => $request->input('postal_code'),
-        'city_name'   => $request->input('city_name'),
-        'country'   => 'Belgique',
-      ]);
+      $roles = $request->input('roles');
 
-      $role = $request->input('user_type');
-      //Checking if a role was selected
-      if (isset($role)) {
-
-        $role_r = Role::where('name', '=', $role)->firstOrFail();
-        $user->assignRole($role_r); //Assigning role to user
+      if (isset($roles)) {
+        $user->roles()->sync($roles);
+      }
+      else {
+        $user->roles()->detach();
       }
 
       return view('admin.users.show', compact('user'));
