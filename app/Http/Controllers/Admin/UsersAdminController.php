@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateUserRequest;
 
@@ -69,7 +70,14 @@ class UsersAdminController extends Controller
           'country'   => 'Belgique',
         ]);
 
-        // $user = User::storeNewUser($request);
+        $role = $request->input('user_type');
+        //Checking if a role was selected
+        if (isset($role)) {
+
+          $role_r = Role::where('name', '=', $role)->firstOrFail();
+          $user->assignRole($role_r); //Assigning role to user
+        }
+
 
         return view('admin.users.show', compact('user'));
     }
@@ -105,7 +113,7 @@ class UsersAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CreateUserRequest $request, $id)
     {
 
       $user = User::findOrFail($id)->update([
@@ -134,6 +142,14 @@ class UsersAdminController extends Controller
         'city_name'   => $request->input('city_name'),
         'country'   => 'Belgique',
       ]);
+
+      $role = $request->input('user_type');
+      //Checking if a role was selected
+      if (isset($role)) {
+
+        $role_r = Role::where('name', '=', $role)->firstOrFail();
+        $user->assignRole($role_r); //Assigning role to user
+      }
 
       return view('admin.users.show', compact('user'));
     }
