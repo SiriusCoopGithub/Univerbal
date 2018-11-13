@@ -42,7 +42,7 @@ class RolesAdminController extends Controller
     public function store(CreateRoleRequest $request)
     {
       $role = Role::create([
-        'name'        => request('name'),
+        'name' => $request->input('name'),
       ]);
 
       return view('admin.acl.roles.show', compact('role'));
@@ -57,7 +57,7 @@ class RolesAdminController extends Controller
     public function show($id)
     {
       $role = Role::findOrFail($id);
-      return view('admin.acl.roles.show', ['role' => $role]);
+      return view('admin.acl.roles.show', compact('role'));
     }
 
     /**
@@ -82,11 +82,10 @@ class RolesAdminController extends Controller
     public function update(Request $request, $id)
     {
       $role = Role::findOrFail($id)->update([
-        'name'  => $request->name,
+        'name'  => $request->input('name'),
       ]);
 
-      $roles = Role::orderBy('id', 'asc')->get();
-      return view('admin.acl.roles.index')->withRoles($roles);
+      return redirect()->route('roles.index');
     }
 
     /**
@@ -99,7 +98,6 @@ class RolesAdminController extends Controller
     {
       $role = Role::where('id', $id)->delete();
 
-      $roles = Role::orderBy('id', 'asc')->get();
-      return view('admin.acl.roles.index')->withRoles($roles);
+      return redirect()->route('roles.index');
     }
 }
