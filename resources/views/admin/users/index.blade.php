@@ -26,10 +26,10 @@
             <th>Edit</th>
         </tr>
     </thead>
-    {{-- {{dd($users)}} --}}
+
     <tbody>
         @foreach ($users as $user)
-        {{-- {{dd($users)}} --}}
+
         <tr>
             <td>{{$user->id}}</td>
             <td>{{$user->name}}</td>

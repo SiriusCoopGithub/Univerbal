@@ -106,6 +106,9 @@ Vue.component('admin-component', __webpack_require__(45));
  */
 $(document).ready(function () {
 
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var instances = M.Dropdown.init(elems, {});
+
   console.log("Admin js loaded");
 });
 

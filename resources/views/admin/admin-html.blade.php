@@ -8,21 +8,19 @@
     </div> --}}
 
     <div class="container">
-        @include('admin._partials.admin-navbar')
-    </div>
+        <div class="row">
+            <div class="col s12 m4 l12">
+                @include('admin._partials.admin-navbar')
+            </div>
 
+            <div class="col s3 m4 l2">
+                @include('admin._partials.admin-sidebar')
+            </div>
 
-    <div class="row">
-        {{-- <div class="col s12">
-        </div> --}}
-        <div class="col s12 m4 l3">
-            @include('admin._partials.admin-sidebar')
-        </div>
-        <div class="col s12 m8 l9">
-            <div class="row">
-
+            <div class="col s9 m8 l10">
                 @yield('admin-content')
             </div>
+
         </div>
     </div>
 
