@@ -1,64 +1,139 @@
 <!-- LEFT SIDEBAR	 -->
+{{-- {{dd(Request::path())}} --}}
+<div class="sidebar-dashboard-menu">
+    <div class="row">
+        <div class="col s12 m4 l12">
 
-<div class="sidebar-dashboard-menu navbar-fixed">
+            <a href="{{route('users.index')}}" class="menu-title {{ setActive('admin/missions', 'active') }}">
+                <h5 class="sub-header hoverable">
+                    <span>
+                        <i class="fas fa-list-ul"></i>
+                        MISSIONS
+                    </span>
+                </h5>
+            </a>
 
-    <h5 class="sub-header"><i class="fas fa-list-ul"></i>Missions</h5>
-    <hr class="col s12 m4 l12">
-    <a class="menu-link" href="dashboard.html" class="">
-        <div class="menu-item hoverable">
-            <i class="fas fa-hourglass-half"></i><span>En cours</span>
-        </div>
-    </a>
-    <div class="divider"></div>
-    <a href="dashboard.html" class="">
-        <div class="menu-item hoverable">
-            <i class="far fa-calendar-check"></i><span>validées</span>
-        </div>
-    </a>
-    <div class="divider"></div>
-    <a href="#">
-        <div class="menu-item hoverable">
-            <i class="fas fa-history"></i><span>Historique</span>
-        </div>
-    </a>
-    <div class="divider"></div>
+            <div class="divider menu-sidebar"></div>
 
-    <h5 class="sub-header"><i class="fas fa-user"></i>Utilisateurs</h5>
-    <hr class="col s12 m4 l10">
+            <a class="menu-link" href="dashboard.html" class="">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-hourglass-half"></i>
+                        En cours
+                    </span>
+                </div>
+            </a>
 
-    <a href="{{route('users.index')}}">
-        <div class="menu-item hoverable">
-            <i class="fas fa-microphone"></i><span>Interpretes<i class=""></i></span>
-        </div>
-    </a>
-    <a href="">
-        <div class="menu-item hoverable">
-            <i class="fas fa-briefcase"></i><span>Commanditaire<i class=""></i></span>
-        </div>
-    </a>
-    <a href="">
-        <div class="menu-item hoverable">
-            <i class="fas fa-building"></i><span>Organisations<i class=""></i></span>
-        </div>
-    </a>
+            <div class="divider divider-link"></div>
 
-    <h5 class="sub-header">ADMINISTRATION</h5>
-    <hr class="col s12 m4 l12">
-    <a href="{{route('roles.index')}}">
-        <div class="menu-item hoverable">
-            <i class="fas fa-user"></i><span>Roles<i class=""></i></span>
+            <a href="dashboard.html" class="">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="far fa-calendar-check"></i>
+                        validées
+                    </span>
+                </div>
+            </a>
+
+            <div class="divider divider-link"></div>
+
+            <a href="#">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-history"></i>
+                        Historique
+                    </span>
+                </div>
+            </a>
+
+
+            <div class="divider divider-link"></div>
+            <a href="{{route('users.index')}}" class="menu-title {{ setActive('admin/users', 'active') }}">
+                <h5 class="sub-header hoverable">
+                    <span>
+                        <i class="fas fa-user"></i>
+                        UTILISATEURS
+                    </span>
+                </h5>
+            </a>
+
+            <div class="divider menu-sidebar"></div>
+
+            <a href="{{route('users.index')}}">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-microphone"></i>
+                        Interpretes
+                    </span>
+                </div>
+            </a>
+
+            <div class="divider divider-link"></div>
+
+            <a href="">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-briefcase"></i>
+                        Commanditaire
+                    </span>
+                </div>
+            </a>
+
+            <div class="divider divider-link"></div>
+
+            <a href="">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-building"></i>
+                        Organisations
+                    </span>
+                </div>
+            </a>
+
+
+            <div class="divider divider-link"></div>
+
+
+            <a href="{{route('users.index')}}" class="menu-title ">
+                <h5 class="sub-header hoverable">
+                    <span>
+                        <i class="fas fa-tachometer-alt"></i>
+                        ADMINISTRATION
+                    </span>
+                </h5>
+            </a>
+
+            <div class="divider menu-sidebar"></div>
+
+            <a href="{{route('roles.index')}}" class="menu-item {{ setActive('admin/roles', 'active') }}">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-address-card"></i>
+                        Roles
+                    </span>
+                </div>
+            </a>
+            <div class="divider divider-link"></div>
+            <a href="{{route('permissions.index')}}" class="menu-title {{ setActive('admin/permissions', 'active') }}">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-key"></i>
+                        Permissions
+                    </span>
+                </div>
+            </a>
+            <div class="divider divider-link"></div>
+            <a href="{{route('langues.index')}}" class="menu-title {{ setActive('admin/langues', 'active') }}">
+                <div class="menu-item hoverable valign-wrapper">
+                    <span>
+                        <i class="fas fa-globe-americas"></i>
+                        Langues
+                    </span>
+                </div>
+            </a>
+            <div class="divider divider-link"></div>
         </div>
-    </a>
-    <a href="{{route('permissions.index')}}">
-        <div class="menu-item hoverable">
-            <i class="fas fa-user"></i><span>Permissions<i class=""></i></span>
-        </div>
-    </a>
-    <a href="{{route('langues.index')}}">
-        <div class="menu-item hoverable">
-            <i class="fas fa-user"></i><span>Langues<i class=""></i></span>
-        </div>
-    </a>
+    </div>
 </div>
 
 {{-- <main class="col s12 m4 l2">

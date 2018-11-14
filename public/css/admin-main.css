@@ -31,20 +31,20 @@
   src: url(/fonts/Roboto-Thin.ttf?89e2666c24d37055bcb60e9d2d9f7e35);
 }
 
-/**
-* The css for the admin dashboard
-*/
-
-.container {
-  /* margin: 0 auto; */
-  max-width: 100% !important;
-  width: 100% !important;
+html {
+  line-height: 1.5;
+  font-family: Roboto;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /*DASHBOARD CSS*/
 
-html {
-  font-family: Roboto;
+.container {
+  min-width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .clearfix::after {
@@ -53,21 +53,18 @@ html {
   display: table;
 }
 
-#row-navabr,
-.row,
-.col {
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-nav {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #468DF0;
   width: 100%;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-  z-index: 99;
+  z-index: 2;
+  height: 5.6rem;
 }
 
 .dashboard-add-button {
@@ -92,7 +89,10 @@ nav {
 }
 
 .menu {
+  display: block;
   color: #FFFFFF;
+  padding-left: 25rem;
+  height: 5.6rem;
 }
 
 .menu-navbar .search-input-container {
@@ -124,12 +124,19 @@ nav {
 
 .menu-navbar-ul {
   float: right;
-  display: inline-block;
-  padding: 0.8rem 2rem;
+  padding-right: 0.8rem;
+  height: auto;
+  line-height: 5.6rem;
+  margin: 0;
 }
 
 .menu-navbar-ul li {
   display: inline-block;
+}
+
+.menu-navbar-ul li span {
+  margin-right: 10px;
+  font-size: 1.6rem;
 }
 
 .menu-navbar img {
@@ -149,17 +156,25 @@ nav {
   font-size: 1.2rem;
 }
 
-.logo-dashboard {
+.main-dashboard .logo-dashboard {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
   text-align: center;
   background-color: #E4E4E4;
-  max-height: 60px;
+  height: 5.6rem;
+  width: 23rem;
 }
 
-.logo-img {
-  background-image: url(/images/logo.png?f01b143261e921957bb94d3a53e10696);
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-height: 60px;
+.main-dashboard .logo-dashboard .logo-img {
+  position: relative;
+  display: inline-block;
+}
+
+.main-dashboard .logo-dashboard .logo-img img {
+  width: 2.5rem;
+  height: auto;
 }
 
 .main-dashboard .univerbal {
@@ -185,13 +200,13 @@ nav {
   font-size: 2.5rem;
 }
 
-main {
-  margin-top: 6rem;
-}
-
-.sidebar-dashboard-menu {
+.main-dashboard-menu {
   position: fixed;
-  z-index: 1;
+  z-index: 4;
+  top: 5.6rem;
+  left: 0;
+  display: inline-block;
+  width: 23rem;
   height: 100%;
   background-color: #FFFFFF;
   overflow-y: auto;
@@ -200,50 +215,8 @@ main {
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
 }
 
-.sub-header {
-  margin: 2rem 0 0.4rem 0.4rem;
-  line-height: 2rem;
-  font-size: 1.8rem;
-  color: #468DF0;
-  font-family: Roboto-Regular;
-}
-
-.sub-header > i {
-  font-size: 1.6rem;
-  width: 1.6rem;
-  padding: 0;
-  margin: 0 0.5rem 0 1.5rem;
-}
-
-.menu-link {
-  width: 100%;
-}
-
-.menu-item span {
-  line-height: 1.6rem;
-  font-size: 1.4rem;
-}
-
-.sidebar-dashboard-menu .menu-item a {
-  line-height: 2rem;
-  font-size: 1.4rem;
-  margin: 1rem 0;
-  padding: 0.3rem 0.5rem;
-  color: #468DF0;
-  font-family: Roboto-Regular;
-}
-
-div.menu-item i {
-  width: 1.6rem;
-  padding: 0;
-  margin: 0 0.5rem 0 2.5rem;
-  font-size: 1.2rem;
-}
-
-.sidebar-dashboard-menu .menu-item a.active {
-  background-color: #E0E0E0;
-  color: #FF7920;
-  display: block;
+.main-dashboard-menu .menu-item .menu-down-icon {
+  margin-left: 9rem;
 }
 
 .row {
@@ -259,8 +232,9 @@ div.menu-item i {
 }
 
 .container-class1 {
-  margin-left: 35.33rem;
-  margin-top: 14.06rem;
+  margin-left: 30.33rem;
+  margin-top: 10.06rem;
+  margin-right: 10rem;
 }
 
 .container-class1 .container-class1-title p,
@@ -282,15 +256,83 @@ div.menu-item i {
   font-size: 3.6rem;
 }
 
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 100% !important;
-  }
+.divider {
+  border: 0;
+  width: 100%;
+  height: 1px;
 }
 
-@media only screen and (min-width: 601px) {
-  .container {
-    width: 100% !important;
-  }
+.menu-sidebar {
+  color: #b1b1b1;
+  background-color: #b1b1b1;
+}
+
+.divider-link {
+  color: #b1b1b18e;
+  background-color: #b1b1b18e;
+}
+
+.sub-header {
+  margin: 2rem 0 0.4rem 0;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  color: #468DF0;
+  font-family: Roboto-Medium;
+}
+
+.sub-header i {
+  margin-right: 0.5rem;
+  margin-left: 0.4rem;
+}
+
+div.menu-item i {
+  width: 1.6rem;
+  padding: 0;
+  margin: 0 0.5rem 0 2.5rem;
+  font-size: 1.2rem;
+}
+
+.sidebar-dashboard-menu .menu-item a {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  padding: 0.3rem 0.5rem;
+  color: #468DF0;
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+.menu-item span {
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.menu-item {
+  height: 3rem;
+}
+
+a.menu-item.active span,
+a.menu-title.active span {
+  color: #FF7920;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  color: #fff;
+  background-color: #468DF0;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: #FF7920;
+}
+
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
+.btn-floating:focus {
+  background-color: #FF7920;
 }
 

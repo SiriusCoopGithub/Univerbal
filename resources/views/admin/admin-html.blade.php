@@ -7,22 +7,26 @@
         </a>
     </div> --}}
 
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m4 l12">
-                @include('admin._partials.admin-navbar')
-            </div>
+    <main class="main-dashboard">
+        @include('admin._partials.admin-navbar')
+        </div>
 
-            <div class="col s3 m4 l2">
-                @include('admin._partials.admin-sidebar')
-            </div>
+        <div class="main-dashboard-menu">
+            @include('admin._partials.admin-sidebar')
+        </div>
+    </main>
 
-            <div class="col s9 m8 l10">
+
+    <div class="container-class1">
+        <div class="container">
+            <div class="row">
                 @yield('admin-content')
             </div>
 
         </div>
+
     </div>
+
 
     @include('admin._includes.admin-scripts')
     @yield('script')

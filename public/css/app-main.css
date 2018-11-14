@@ -31,6 +31,13 @@
   src: url(/fonts/Roboto-Thin.ttf?89e2666c24d37055bcb60e9d2d9f7e35);
 }
 
+html {
+  line-height: 1.5;
+  font-family: Roboto;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
 /**
 * The main css for the entire application (app & dashboard)
 */
