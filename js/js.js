@@ -52,13 +52,13 @@ var dateInstances = M.Datepicker.init(datePicker, {
     i18n: {
         months: [
             'Janvier',
-            'Février',
+            'Fï¿½vrier',
             'Mars',
             'Avril',
             'Mai',
             'Juin',
             'Juillet',
-            'Août',
+            'Aoï¿½t',
             'Septembre',
             'Octobre',
             'Novembre',
@@ -72,7 +72,7 @@ var dateInstances = M.Datepicker.init(datePicker, {
             'Mai',
             'Juin',
             'Jul',
-            'Août',
+            'Aoï¿½t',
             'Sep',
             'Oct',
             'Nov',
@@ -123,4 +123,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, options);
 });
+/*DASBOARDUTILISATEUR JS*/
+
+$(document).click(function(){
+    $(".fa-chevron-up").click(function(){
+     $(".menu-item-ul").toggle();
+ });
+ });
+
 

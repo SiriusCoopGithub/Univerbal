@@ -17,7 +17,8 @@
     font-family: Roboto-Medium;
     src: url(../font/Roboto/Roboto-Medium.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: Roboto-Thin;
     src: url(../font/Roboto/Roboto-Thin.ttf);
 }
@@ -628,6 +629,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
     background-color: #468DF0;
     color: #fff;
 }
+
 /* FIN DATE DISPLAY*/
 
 /*BOUTON ADRESS DE RENDEZ VOUS*/
@@ -654,6 +656,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
     font-size: 16px;
     font-weight: bold;
 }
+
 label {
     font-size: 1rem;
 }
@@ -666,6 +669,7 @@ label {
     background-color: #3B86FF;
     z-index: 0;
 }
+
 /*DEBUT PAGES OPTIONS*/
 .option {
     position: relative;
@@ -754,7 +758,7 @@ label {
     border-radius: 100%;
     width: 2.66rem;
     height: 2.66rem;
-    background-color:rgba(255, 115, 70, 100);
+    background-color: rgba(255, 115, 70, 100);
 }
 
 .main-profile .profile-image-container .camera-button img {
@@ -1059,6 +1063,3 @@ input#search {
     border-bottom: 0.5px solid #E4E4E4;
    
 }
-
-
-
