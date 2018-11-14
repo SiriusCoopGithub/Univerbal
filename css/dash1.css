@@ -47,7 +47,7 @@ header {
 .menu {
     display: block;
     color: #FFFFFF;
-    padding-left: 25rem;
+    padding-left: 26rem;
     height: 5.6rem;
 }
 
@@ -116,7 +116,7 @@ header {
     text-align: center;
     background-color: #E4E4E4;
     height: 5.6rem;
-    width: 23rem;
+    width: 25rem;
 }
 
 .main-dashboard .logo-dashboard .logo-img {
@@ -163,7 +163,7 @@ main {
     top: 5.6rem;
     left: 0;
     display: inline-block;
-    width: 23rem;
+    width: 25rem;
     height: 100%;
     background-color: #FFFFFF;
     overflow-y: auto;
@@ -187,17 +187,21 @@ main {
 
 
 }
-.main-dashboard-menu .menu-item i{
+
+.main-dashboard-menu .menu-item i {
     padding-right: 0.8rem;
 }
+
 .main-dashboard-menu .menu-item .menu-down-icon {
     margin-left: 7rem;
 }
+
 .row {
     border-bottom: 1px solid #E4E4E4;
 
 
 }
+
 .container-row {
     background-color: #FFFFFF;
     margin-right: 8.66rem;
@@ -230,10 +234,20 @@ main {
     font-family: Roboto-Thin;
     font-size: 3.6rem;
 }
+
 /*DASHBOARD UTILISATEUR*/
-.menu-item ul{
+.menu-item .menu-item-ul li .sub-menu {
     display: none;
-    }
-    .menu-item ul a{
-        margin-left:3rem;
-    }
+}
+
+.menu-item .menu-item-ul li .sub-menu li a {
+    padding-left: 3em;
+}
+
+.menu-item .menu-item-ul li:hover .sub-menu {
+    display: block;
+}
+
+.menu-item .menu-item-ul li:hover i.fa-chevron-down::before {
+    content: "\f077";
+}

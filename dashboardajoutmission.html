@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="css/materialize.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/dash1.css" rel="stylesheet" type="text/css">
+    <title>dashboardutilisateur</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            <div class="">
+                <span class="">
+                    <i class="fas fa-times menu-navbar-i"></i>
+                    <p>Nouvelle demande</p>
+                </span>
+            </div>
+        </div>
+
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col s4">
+                <div class="">
+                    <select>
+                        <option value="disabled selected">Langue</option>
+                        <option value="Anglais">Anglais</option>
+                        <option value="Allemand">Allemand</option>
+                        <option value="Néerlandais">Néerlandais</option>
+                    </select>
+                    <form action="#">
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Femme</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>Homme</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span>Pas d'importance</span>
+                            </label>
+                        </p>
+                    </form>
+                </div>
+                <div class="">
+                    <label>Date</label>
+                    <input type="text" class="datepicker" />
+                </div>
+                <div class="">
+                    <label>Heure</label>
+                    <i class="far fa-clock"></i>
+                    <input type="text" id="time" class="timepicker">
+                </div>
+                <form class="">
+                    <div class="input-field  col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Nom de l'intervenant</label>
+                    </div>
+                </form>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Nom de l'intervenant</label>
+                <div class="input-field  col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Nom du beneficiaire</label>
+                </div>
+                <label class=""></label>Adresse du rendez-vous</label>
+
+                <div class="mission-bouton">
+                    <div>
+                        <button class="btn blue darken-1">Défaut</button>
+                    </div>
+                    <div class="">
+                        <button class="btn blue darken-1">Autre</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <p class="paragraph">
+                    <p>Objet de l'entretient</p>
+                    <span>Rendez-vous pour un bilan de santé</span>
+                    <p class="paragraph">
+                        <p>Temps Estimé</p>
+                        <span>02 : 00</span>
+                        <p class="paragraph">
+                            <p>Note à l'interprète</p>
+                            <span>Rendez-vous au 4ème étage avec le Dr Maboul.
+                                Penser à amener le formulaire C432.
+                                Bla, bla, bla...</span>
+                            <p class="paragraph">
+                                <p>Note personelle</p>
+                                <span>Dossier 508410. Ne pas oublier de demander le formulaire C432.
+                                    Bla, bla, bla...</span>
+            </div>
+            <div col s4>
+                <li class="">
+                    <div class="">
+                        <p class="date"> <span class="icone"><i class="far fa-calendar-alt"></i></span>
+                            16/10/2018 08:15</p>
+                        <p class="translator-Requirer"><span class="icone"><i class="fas fa-user"></i></span>
+                            <strong>Mr Spoch</strong> </p>
+                        <p class="language"><span class="icone"><i class="fas fa-globe-americas"></i></span>
+                            Espagnol</p>
+                        <p class="translator-name"><span class="icone"><i class="fas fa-microphone"></i></span>
+                            Michal JACKSON</p>
+                    </div>
+                    <div>
+                        <img src="img/profile-image.png" alt="" />
+                    </div>
+
+                    <div class="">
+                        <p class="address">
+                            <span class="icone">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </span>
+
+                            <a href="https://www.google.co.in/maps/place/FGTB+Li%C3%A8ge/@50.639303,5.5684423,565m/data=!3m1!1e3!4m5!3m4!1s0x47c0fa0551ac6143:0x8d46c5306aab7990!8m2!3d50.639303!4d5.570631"
+                                target="_blank">Place Saint Paul, 4000 Liège
+                            </a>
+                        </p>
+
+                        <p class="client-name"><span class="icone"><i class="fas fa-briefcase"></i></span> Dr
+                            Maboul</p>
+                        <p class="paragraph">
+                            <p>Objet de l'entretient</p>
+                            <span>Rendez-vous pour un bilan de santé</span>
+                            <p class="paragraph">
+                                <p>Temps Estimé</p>
+                                <span>02 : 00</span>
+                                <p class="paragraph">
+                                    <p>Note à l'interprète</p>
+                                    <span>Rendez-vous au 4ème étage avec le Dr Maboul.
+                                        Penser à amener le formulaire C432.
+                                        Bla, bla, bla...</span>
+                                    <p class="paragraph">
+                                        <p>Note personelle</p>
+                                        <span>Dossier 508410. Ne pas oublier de demander le formulaire C432.
+                                            Bla, bla, bla...</span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="">
+            <div class="">
+                <p>Enregistre</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
