@@ -1,171 +1,222 @@
 /*DASHBOARD CSS*/
-.left{
-    padding: 0;
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-input#search {
-    background-image: url(../img/icon_search.png);
-    background-repeat: no-repeat;
-    text-indent: 20px;
-    border: none;
-}
-#navbar-left {
-    background-color: #468DF0;
-    color: #FFFFFF;
-    margin-right:0;
+
+header {
     position: fixed;
-    width: 100%;
-    height: 3.8rem;
-    z-index: 9999;
-    margin-left: 15.8rem;
     top:0;
+    left: 0;
+    right: 0;
+    background-color: #468DF0;
+    width: 100%;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
-#navbar-left ul{
-    list-style: none;
-    padding:4rem;
-    margin: 0;
-    display: inline-flex;
-}
-#navbar-left li{
-    margin-left:24rem;
-}
-#navbar-left  img {
-    top: 0;
-    margin-top: -1rem;
-    position: absolute;
-   
-}
-#navbar-left a{
-    color: #FFFFFF;
-    font-size: 1.4rem;
-    text-decoration: none;
-    top: 0;
-    position: absolute;
-    margin-top: -1rem;
-    margin-left: 14rem;
-}
-.navbar-left-ul{
-    float: right;
-    position: absolute;
-    top: 0;
-    margin-right: 4rem;
-
-}
-#linkref {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 1.5rem;
-}
-
-
-
-
-
-
-.main-dashboard img {
-    width: 2.5rem;
-    height: auto;
-    margin-left: 2.5rem;
+.dashboard-add-button {
     position: fixed;
     z-index: 9999;
+    bottom: 4.9rem;
+    right: 6rem;
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: rgba(255, 115, 70, 100);
+    
+}
+.dashboard-add-button img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 1.7rem;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    display: block;
+    color: #FFFFFF;
+    padding-left: 25rem;
+    height: 5.6rem;
+}
+
+.menu-navbar .search-input-container {
+    position: relative;
+    display: inline-block;
+    width: 42%;
+    padding: 1.3rem 0;
+}
+
+.menu-navbar input.menu-navbar-search{
+    display: block;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    width: 100%;
+    padding-left: 2rem;
+    font-family: "Roboto-Light";
+    font-size: 1.2rem;
+}
+
+.menu-navbar i.menu-navbar-i{
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 0;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menu-navbar-ul {
+    float: right;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+}
+.menu-navbar-ul li {
+    display: inline-block;
+}
+.menu-navbar img{
+    width: 3.605rem;
+    height: 3.605rem;
+}
+.menu-navbar-ul .linkref-container{
+    vertical-align: top;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.menu-navbar-ul .linkref-container .linkref {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.main-dashboard .logo-dashboard {
+    position: fixed;
+    z-index: 3;
     top:0;
+    left: 0;
+    text-align: center;
+    background-color: #E4E4E4;
+    height: 5.6rem;
+    width: 23rem;
+}
+
+.main-dashboard .logo-dashboard .logo-img {
+    position: relative;
+    display: inline-block;
+}
+
+.main-dashboard .logo-dashboard .logo-img img {
+    width: 2.5rem;
+    height: auto;
     
 }
 
 .main-dashboard .univerbal {
+    position: relative;
+    display: inline-block;
     font-size: 1.5rem;
     color: #468DF0;
     font-family: Roboto-Bold;
-    margin-left: 5rem;
-    margin-top: -5rem;
-    position: fixed;
-    z-index: 9999;
 }
 
-.main-dashboard .univerbal span {
-    margin-top: -2rem;
-    padding-top: -22rem;
+.main-dashboard .univerbal .univerbal-social {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: Roboto-Light;
-    position: absolute;
+    margin-top: -1rem;
 }
 
-
-
-.bashboard-nav-bar .bashboard-nav-bar-search input {
-    border: none;
-}
-
-/*.main-left-nav {
-    display: inline-block;
+.main-dashboard .univerbal p {
+    color: #468DF0;
+    font-family: Roboto-Bold;
     margin: 0;
-    border: 0px solid;
-    color: #707070;
-    
-    box-shadow: 0px 2px 20px 3px rgba(0, 0, 0, 0.05);*/
-
-/*MAIN*/
-.main-dashboard {
-    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
 }
 
-.logo-dashboard {
-    position: relative;
+main {
+    margin-top: 6rem;
 }
 
 .main-dashboard-menu {
-    position: absolute;
-    background-color: #FFFFFF;
-    height: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: 4;
+    top: 5.6rem;
+    left: 0;
+    display: inline-block;
+    width: 23rem;
+    height: 100%;
+    background-color: #FFFFFF;
+    overflow-y: auto;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
 }
 
-.main-dashboard-menu div {
-    padding: 1rem;
-
-}
-
-.main-dashboard-menu span {
-    margin-left: 1rem;
-}
-
-.main-dashboard-menu i {
+.main-dashboard-menu .menu-item a {
+    line-height: 4rem;
     font-size: 1.6rem;
+    padding: 0.8rem;
     color: #468DF0;
+    font-family: Roboto-Regular;
 }
-.main-dashboard-menu .active{
+.main-dashboard-menu .menu-item a.active {
     background-color: #E0E0E0;
-    color: #FF7920;
+    color:#FF7920;
+    display:block;
+    
+    
+}
+.main-dashboard-menu .menu-item .menu-down-icon{
+    margin-left: 9rem;
 }
 
-
-
-.validation {
-    padding-left: 21.5%;
-    font-size: 3.8rem;
-    font-family: Roboto-Thin;
-    color: #000000;
-
+.row{
+    border-bottom: 1px solid #E4E4E4;
+    
+    
 }
-
-.class1 {
-    width: 78%;
-    margin-right: 0;
+.container-row{
     background-color: #FFFFFF;
-
-
+    margin-right: 8.66rem;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
 }
-.class1 .row div{
-    border-bottom: 0.5px solid #E4E4E4;
+
+.container-class1{
+    margin-left: 35.33rem;
+    margin-top: 14.06rem;
    
 }
+.container-class1 .container-class1-title p, .container-class1 .container-class1-title span{
+    font-size: 1.2rem;
+    font-family: Roboto-Medium;
+    color: #000000;
+}
 
+.container-class1 .container-class1-item p, .container-class1 .container-class1-item span{
+    font-size: 1.2rem;
+    font-family: Roboto-Regular;
+    color: black;
+}
+.container-class1 .validation{
+    font-family: Roboto-Thin;
+    font-size: 3.6rem;
+    
+
+}
 
 
