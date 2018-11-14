@@ -18,7 +18,20 @@ class Adresse extends Model
       'street_num', 'box_num', 'street_name', 'postal_code', 'box_num,'
   ];
 
+
+    /**
+     *
+     */
     public function profile(){
       return $this->hasMany(Adresse::class);
+    }
+
+
+    /**
+     * Get all of the posts for the country.
+     */
+    public function userAdress()
+    {
+        return $this->hasManyThrough('App\User', 'App\Profile');
     }
 }

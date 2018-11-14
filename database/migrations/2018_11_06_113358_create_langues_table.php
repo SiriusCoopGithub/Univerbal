@@ -15,12 +15,12 @@ class CreateLanguesTable extends Migration
     {
         Schema::create('langues', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('abbr_langue', 24);
-            $table->string('langue_name', 24);
+            $table->string('abbr_langue', 6);
+            $table->string('langue_name', 50);
             $table->string('dialect')->nullable();
-            $table->string('country', 100)->nullable();
-            $table->string('description')->nullable();
-            $table->boolean('active')->default(false);
+            $table->string('country', 50)->nullable();
+            $table->string('description', 120)->nullable();
+            $table->boolean('active')->nullable()->default(false);
             $table->timestamps();
 
             // $table->primary(['name', 'country']);

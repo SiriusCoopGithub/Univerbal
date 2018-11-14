@@ -17,6 +17,10 @@ class Profile extends Model
       'last_name', 'first_name', 'organisation_abbr', 'gsm', 'telephone', 'email', 'titre', 'genre'
   ];
 
+    public function getFillable() {
+        return $this->fillable;
+    }
+
     /**
      * Profile for the organisation.
      *

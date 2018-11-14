@@ -44,8 +44,15 @@
                 {!! $errors->first('organisation', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l6">
-                    <input name="langue" id="langue" type="text" class="validate" value="{{ old('langue') }}" required>
-                    <label for="langue">Langue</label>
+                    {{-- <input name="langue" id="langue" type="text" class="validate" value="{{ old('langue') }}"
+                        required>
+                    <label for="langue">Langue</label> --}}
+                    <label>Choix des langues</label>
+                    <select class="browser-default">
+                        <option value="Langue1">Langue 1</option>
+                        <option value="Langue2">Langue 2</option>
+                        <option value="Langue3">Langue 3</option>
+                    </select>
                 </div>
                 {!! $errors->first('langue', '<div class="invalid">:message</div>') !!}
 
@@ -169,15 +176,34 @@
 
 @endsection
 
-@section('script-create-user-password')
-{{-- <script>
-    const vueAdminCreateUserPassword = new Vue({
-        el: '#vue-admin-create-user',
-        data: {
-            msg: 'coucou',
-            // rolesSelected: "{!! old('roles') ? old('roles') : '' !!}",
-        }
+@section('script')
+<script>
+    // const vueAdminCreateUserPassword = new Vue({
+    //     el: '#vue-admin-create-user',
+    //     data: {
+    //         msg: 'coucou',
+    //         // rolesSelected: "{!! old('roles') ? old('roles') : '' !!}",
+    //     }
+    // });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, {
+
+        });
+        console.log('elems : ', elems);
+
+        var instance = M.FormSelect.getInstance('Langue1');
+        console.log('M.FormSelect.getInstance() : ', M.FormSelect);
+
+        // instance.getSelectedValues();
+        console.log('instance.getSelectedValues() : ', instance.getSelectedValues(elems));
+
     });
 
-</script> --}}
+    $(document).ready(function() {
+        $('select').not('.disabled').formSelect();
+    });
+
+</script>
 @endsection

@@ -24,6 +24,10 @@ class User extends Authenticatable
         'name', 'email', 'active', 'password',
     ];
 
+    public function getFillable() {
+      return $this->fillable;
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -41,7 +45,11 @@ class User extends Authenticatable
      */
     public function setPasswordAttribute($userPassword)
     {
+      if ( $userPassword !== null & $userPassword !== "" )
+      {
+        // $this->attributes['password'] = bcrypt($password);
         return $this->attributes['password'] = Hash::needsRehash($userPassword) ? Hash::make($userPassword) : $userPassword;
+      }
     }
 
 
@@ -85,41 +93,5 @@ class User extends Authenticatable
     public function missions(){
       return $this->hasMany(Mission::class);
     }
-
-    /**
-     * Create a user
-     */
-    // public function scopeStoreNewUser(CreateUserRequest $request){
-
-    //   $this->create([
-    //     'name'      => $request->input('name'),
-    //     'email'     => $request->input('email'),
-    //     'active'    => $request->input('active'),
-    //     'password'  => $request->input('password'),
-    //   ]);
-
-    //   $profilable = $this->profilable()->create([
-    //     'user_type'   => $request->input('user_type'),
-    //     'last_name'   => $request->input('name'),
-    //     'first_name'  => $request->input('first_name'),
-    //     'gsm'         => $request->input('gsm'),
-    //     'telephone'   => $request->input('telephone'),
-    //     'email'       => $request->input('email'),
-    //     'titre'       => $request->input('titre'),
-    //     'genre'       => $request->input('genre'),
-    //   ]);
-
-    //   $adresse = $profilable->adresse()->create([
-    //     'street_num'  => $request->input('street_num'),
-    //     'box_num'     => $request->input('box_num'),
-    //     'street_name' => $request->input('street_name'),
-    //     'postal_code' => $request->input('postal_code'),
-    //     'city_name'   => $request->input('city_name'),
-    //     'country'   => 'Belgique',
-    //   ]);
-
-    //   return $this;
-
-    // }
 
 }

@@ -11,11 +11,7 @@
     </div>
 </div>
 <hr class="col s12 m4 l12">
-@if (session('status'))
-<div class="alert alert-success">
-    {{ session('status') }}
-</div>
-@endif
+
 <table class="highlight col s12 m4 l12">
     <thead>
         <tr>

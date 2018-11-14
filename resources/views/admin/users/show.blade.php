@@ -1,4 +1,5 @@
 @extends('admin.admin-html')
+@section('title', 'Show User')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
@@ -15,7 +16,9 @@
 <table class="highlight col s12 m4 l12">
     <thead>
         <tr>
-            <th>Champ</th>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>E-mail</th>
             <th>Valeur</th>
         </tr>
     </thead>

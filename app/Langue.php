@@ -12,6 +12,6 @@ class Langue extends Model
      * @var array
      */
     protected $fillable = [
-      'abbr_langue', 'langue_name',
+      'abbr_langue', 'langue_name', 'active', 'description', 'dialect', 'country'
   ];
 }

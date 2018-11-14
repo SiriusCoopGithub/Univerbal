@@ -36,7 +36,8 @@ class UsersAdminController extends Controller
     public function create()
     {
       $roles = Role::where('name', 'NOT LIKE', '%'.'Admin')->get();
-      return view('admin.users.create', compact('roles'));
+      $organisation = Organisation::all();
+      return view('admin.users.create', compact('roles', 'organisation'));
     }
 
     /**
@@ -47,7 +48,7 @@ class UsersAdminController extends Controller
      */
     public function store(CreateUserRequest $request)
     {
-        // dd($request);
+        dd($request);
 
         $user = User::create([
           'name'      => $request->input('name'),
@@ -66,13 +67,17 @@ class UsersAdminController extends Controller
           'genre'       => $request->input('genre'),
         ]);
 
-        $adresse = $profilable->adresse()->create([
+        $adresse = $profile->adresse()->create([
           'street_num'  => $request->input('street_num'),
           'box_num'     => $request->input('box_num'),
           'street_name' => $request->input('street_name'),
           'postal_code' => $request->input('postal_code'),
           'city_name'   => $request->input('city_name'),
           'country'   => 'Belgique',
+        ]);
+
+        $organisation = $user->organisation()->create([
+
         ]);
 
         $roles = $request->input('roles');
@@ -95,9 +100,15 @@ class UsersAdminController extends Controller
      */
     public function show($id)
     {
-      $user = User::findOrFail($id);
-      $roles = Role::get();
-      return view('admin.users.show', compact('user', 'roles'));
+      $user = User::with(['profilable', 'organisations', 'missions', 'roles' => function ($query) {
+        $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
+      }])->findOrFail($id);
+
+      $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
+
+      $allRoles = Role::get();
+
+      return view('admin.users.show', compact('user', 'allRoles', 'adresse'));
     }
 
     /**
@@ -111,16 +122,11 @@ class UsersAdminController extends Controller
       $user = User::with(['profilable', 'roles' => function ($query) {
         $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
       }])->findOrFail($id);
-      // $user = User::with(['profilable', 'roles'])->findOrFail($id);
-      $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
-      // dd($adresse);
-      // $user = User::with(['profiles', 'adresses', ['roles' => function ($query) {
-      //   $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
-      // }]])->findOrFail($id);
 
-      // dd($user);
-      // $roles = Role::where('name', 'NOT LIKE', '%'.'Admin')->get();
+      $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
+
       $allRoles = Role::get();
+
       return view('admin.users.edit', compact('user', 'allRoles', 'adresse'));
     }
 
@@ -134,14 +140,35 @@ class UsersAdminController extends Controller
     public function update(EditUserRequest $request, $id)
     {
       // dd($request);
+
       $user = User::findOrFail($id);
-      $user->update($request->all());
 
-      // dd($user);
-      // if ($request->has('password')) $user->update(['password'  => $request->input('password')]);
+      $user->update([
+        'name'      => $request->input('name'),
+        'email'     => $request->input('email'),
+        'active'    => $request->input('active'),
+        'password'  => $request->input('password'),
+      ]);
 
-      $user->profilable()->update($request->all());
-      $profile->adresse()->update($request->all());
+      $user->profilable()->update([
+      'last_name'   => $request->input('name'),
+      'first_name'  => $request->input('first_name'),
+      'gsm'         => $request->input('gsm'),
+      'telephone'   => $request->input('telephone'),
+      'email'       => $request->input('email'),
+      'titre'       => $request->input('titre'),
+      'genre'       => $request->input('genre'),
+      ]);
+
+      $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
+      $adresse->update([
+        'street_num'  => $request->input('street_num'),
+        'box_num'     => $request->input('box_num'),
+        'street_name' => $request->input('street_name'),
+        'postal_code' => $request->input('postal_code'),
+        'city_name'   => $request->input('city_name'),
+        'country'   => 'Belgique',
+      ]);
 
       $roles = $request->input('roles');
 

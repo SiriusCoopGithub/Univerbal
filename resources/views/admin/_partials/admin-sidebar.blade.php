@@ -23,6 +23,7 @@
     <ul>
         <li><a href="{{route('roles.index')}}">Roles</a></li>
         <li><a href="{{route('permissions.index')}}">Permissions</a></li>
+        <li><a href="{{route('langues.index')}}">Langues</a></li>
     </ul>
     {{-- @endrole --}}
 </div>

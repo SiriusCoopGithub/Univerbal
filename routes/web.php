@@ -40,7 +40,9 @@ Route::namespace('Admin')->group(function(){
 
     Route::resource('/roles', 'RolesAdminController');
     Route::resource('/permissions', 'PermissionsAdminController');
-    // Route::resource('/organisations', 'OrganisationsController');
+    Route::patch('/langues/actived/{langue}', 'LanguesAdminController@actived')->name('langues.actived');
+    Route::resource('/langues', 'LanguesAdminController');
+    Route::resource('/organisations', 'OrganisationsAdminController');
 
   });
 });
