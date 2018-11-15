@@ -9,10 +9,25 @@ class UsersTableSeeder extends Seeder
      *
      * @return void
      */
+    // public function run()
+    // {
+    //   factory(App\User::class, 10)->create()->each(function($u) {
+    //     $u->profilable()->save(factory(App\Profile::class)->make());
+    //   });
+    // }
     public function run()
     {
-      factory(App\User::class, 10)->create()->each(function($u) {
-        $u->profilable()->save(factory(App\Profile::class)->make());
-      });
+      DB::table('users')->delete();
+      $json = File::get("database/data/users.json");
+      $data = json_decode($json);
+      foreach ($data as $obj) {
+        App\Langue::create(array(
+          'id' => $obj->id,
+          'active' => $obj->active,
+          'email' => $obj->email,
+          'name' => $obj->name,
+          'password' => $obj->password,
+        ));
+      }
     }
 }

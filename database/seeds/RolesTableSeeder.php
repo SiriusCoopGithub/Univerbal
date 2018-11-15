@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class OrganisationsTableSeeder extends Seeder
+class RolesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,15 +11,15 @@ class OrganisationsTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('organisations')->delete();
-      $json = File::get("database/data/organisations.json");
+      DB::table('roles')->delete();
+      $json = File::get("database/data/roles.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
         App\Langue::create(array(
           'id' => $obj->id,
-          'contact_id' => $obj->contact_id,
+          'guard_name' => $obj->guard_name,
           'name' => $obj->name,
         ));
-      }
     }
+  }
 }

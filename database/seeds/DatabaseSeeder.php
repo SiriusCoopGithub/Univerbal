@@ -23,7 +23,9 @@ class DatabaseSeeder extends Seeder
         // Import all seeders
         $this->call(UsersTableSeeder::class);
         $this->call(OrganisationsTableSeeder::class);
+        $this->call(ProfilesTableSeeder::class);
         $this->call(AdressesTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
         $this->call(LangueTableSeeder::class);
         $this->call(CountriesTableSeeder::class);
 
