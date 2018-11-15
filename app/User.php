@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Langue;
 use App\Profile;
 use App\Organisation;
 use Illuminate\Support\Facades\Hash;
@@ -65,7 +66,6 @@ class User extends Authenticatable
         return $this->morphMany(Profile::class, 'profilable');
     }
 
-
     /**
      * Option
      */
@@ -81,17 +81,17 @@ class User extends Authenticatable
     }
 
     /**
-     * Organisation
-     */
-    // public function organisationname(){
-    //   return $this->belongsToMany(Organisation::class)->select('name');
-    // }
-
-    /**
      * Mission
      */
     public function missions(){
       return $this->hasMany(Mission::class);
+    }
+
+    /**
+     * Langue
+     */
+    public function langue(){
+      return $this->belongsToMany(Langue::class);
     }
 
 }

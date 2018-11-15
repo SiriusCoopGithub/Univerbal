@@ -15,18 +15,18 @@ class CreateMissionsTable extends Migration
     {
         Schema::create('missions', function (Blueprint $table) {
           $table->increments('id');
-          $table->unsignedInteger('langue_id');
           $table->dateTime('date');
-          $table->text('objet', 120);
-          $table->text('note_perso', 120);
-          $table->text('note_interp', 120);
+          $table->unsignedInteger('user_id');
+          $table->text('objet', 120)->nullable();
+          $table->text('note_perso', 120)->nullable();
+          $table->text('note_interp', 120)->nullable();
           $table->time('estimed_time');
           $table->string('sexe_interp', 1);
           $table->string('facture_num')->nullable();
-          $table->tinyInteger('statuts');
-          $table->unsignedInteger('user_id');
+          $table->enum('statuts', ['active', 'selected', 'completed']);
           $table->unsignedInteger('organisation_id');
-          $table->unsignedInteger('interprete_id');
+          $table->unsignedInteger('interprete_id')->nullable();
+          $table->unsignedInteger('created_by');
           $table->timestamps();
           $table->softDeletes();
 

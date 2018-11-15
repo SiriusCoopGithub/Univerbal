@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\User;
+use App\Langue;
 use App\Mission;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\CreateMissonRequest;
 
 class MissionsAdminController extends Controller
@@ -17,8 +21,8 @@ class MissionsAdminController extends Controller
      */
     public function index()
     {
-        $mission = Mission::orderBy('id', 'asc')->get();
-        return view('admin.missions.index')->withMissions($mission);
+        $missions = Mission::orderBy('id', 'asc')->get();
+        return view('admin.missions.index')->withMissions($missions);
     }
 
     /**
@@ -28,7 +32,13 @@ class MissionsAdminController extends Controller
      */
     public function create()
     {
-      return view('admin.missions.create');
+
+      $commanditaire = User::role('commanditaire')->get();
+      $interprete = User::role('interprete')->get();
+      $langues = Langue::orderBy('id', 'asc')->get();
+
+
+      return view('admin.missions.create', compact('commanditaire', 'interprete'));
     }
 
     /**
@@ -39,33 +49,33 @@ class MissionsAdminController extends Controller
      */
     public function store(CreateMissonRequest $request)
     {
-        // dd($request);
-        $mission = Mission::create([
-          'name'      => $request->input('name'),
-          'email'     => $request->input('email'),
-          'active'    => $request->input('active'),
-          'password'  => $request->input('password'),
-        ]);
+      // dd($request);
+      $createdBy = Auth::user();
 
-        $profilable = $mission->profilable()->create([
-          'user_type'   => $request->input('user_type'),
-          'last_name'   => $request->input('name'),
-          'first_name'  => $request->input('first_name'),
-          'gsm'         => $request->input('gsm'),
-          'telephone'   => $request->input('telephone'),
-          'email'       => $request->input('email'),
-          'titre'       => $request->input('titre'),
-          'genre'       => $request->input('genre'),
-        ]);
+      $userName = $request->input('name');
 
-        $adresse = $profilable->adresse()->create([
-          'street_num'  => $request->input('street_num'),
-          'box_num'     => $request->input('box_num'),
-          'street_name' => $request->input('street_name'),
-          'postal_code' => $request->input('postal_code'),
-          'city_name'   => $request->input('city_name'),
-          'country'   => 'Belgique',
-        ]);
+      $user = User::where('name', '=', $userName )->first();
+      // $user = $request->input('user_id');
+
+      $mission = Mission::create([
+        'date'            => $request->input('date'),
+        'objet'           => $request->input('email'),
+        'note_perso'      => $request->input('note_perso'),
+        'note_interp'     => $request->input('note_interp'),
+        'estimed_time'    => $request->input('estimed_time'),
+        'sexe_interp'     => $request->input('sexe_interp'),
+        'facture_num'     => $request->input('facture_num'),
+        'statut'          => $request->input('statut'),
+        'organisation_id' => $request->input('organisation_id'),
+        'interprete_id'   => $request->input('interprete_id'),
+        'created_by'      => $createdBy,
+      ]);
+
+      $user->mission()->associate($mission);
+
+      $user->save();
+
+
 
         return view('admin.users.show', compact('Mission'));
     }
@@ -101,37 +111,23 @@ class MissionsAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CreateMissonRequest $request, $id)
     {
 
       $mission = Mission::findOrFail($id)->update([
-        'name'        => $request->input('name'),
-        'email'       => $request->input('email'),
-        'active'      => $request->input('active'),
-        'password'    => $request->input('password'),
+        'date'            => $request->input('date'),
+        'objet'           => $request->input('email'),
+        'note_perso'      => $request->input('note_perso'),
+        'note_interp'     => $request->input('note_interp'),
+        'estimed_time'    => $request->input('estimed_time'),
+        'sexe_interp'     => $request->input('sexe_interp'),
+        'facture_num'     => $request->input('facture_num'),
+        'statut'          => $request->input('statut'),
+        'organisation_id' => $request->input('organisation_id'),
+        'interprete_id'   => $request->input('interprete_id'),
       ]);
 
-      $profilable = $mission->profilable()->update([
-        'user_type'   => $request->input('user_type'),
-        'last_name'   => $request->input('name'),
-        'first_name'  => $request->input('first_name'),
-        'gsm'         => $request->input('gsm'),
-        'telephone'   => $request->input('telephone'),
-        'email'       => $request->input('email'),
-        'titre'       => $request->input('titre'),
-        'genre'       => $request->input('genre'),
-      ]);
-
-      $adresse = $profilable->adresse()->update([
-        'street_num'  => $request->input('street_num'),
-        'box_num'     => $request->input('box_num'),
-        'street_name' => $request->input('street_name'),
-        'postal_code' => $request->input('postal_code'),
-        'city_name'   => $request->input('city_name'),
-        'country'   => 'Belgique',
-      ]);
-
-      return view('admin.users.show', compact('Mission'));
+      return view('admin.mission.show', compact('Mission'));
     }
 
     /**
@@ -143,7 +139,7 @@ class MissionsAdminController extends Controller
     public function destroy($id)
     {
       $mission = Mission::where('id', $id)->delete();
-      return redirect()->route('users.index');
+      return redirect()->route('mission.index');
     }
 
 }
