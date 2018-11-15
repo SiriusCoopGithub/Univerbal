@@ -1,0 +1,241 @@
+/*DEBUT AJOUT-MISSION*/
+
+body {
+    background-color: #FFFFFF;
+}
+
+.bordure {
+    margin-top: -4rem;
+    padding: 0 1rem;
+
+}
+.bordure-gauche {
+    padding-left: 0.7rem;
+}
+.bordure-droite {
+    padding-right: 0.7rem;
+}
+
+.colo {
+    background-color: #468DF0;
+    color: #468DF0;
+}
+
+.demande {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    background-color: #468DF0;
+    color: #FFFFFF;
+
+}
+
+.demande p {
+    margin: 0.2rem 0;
+    padding: 0.5rem;
+
+}
+
+.fermer {
+
+    position: absolute;
+    display: inline-block;
+    color: #fafafa;
+    top: -0.4rem;
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+
+    z-index: 9999;
+}
+
+.langue {
+    position: relative;
+    left: 1rem;
+}
+
+.envoyer {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 3rem;
+    background-color: #468DF0;
+    color: #FFFFFF;
+}
+
+.envoyer p {
+    position: absolute;
+    margin: 0;
+    padding: 0.5rem;
+    right: 1rem;
+}
+
+.resume {
+    padding: 0 1rem;
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.resume p {
+    display: inline-block;
+}
+
+.adresseRdv {
+    top: -2rem;
+    padding: 1rem;
+
+}
+.couleur-bleu {
+        background-color: #468DF0;
+}
+.couleur-gris {
+ color: #707070;
+}
+.notice {
+    font-size: 0.9rem;
+}
+
+
+
+/* Date Display */
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #468df0;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #468DF0 !important;
+}
+
+.datepicker-date-display {
+    background-color: #468DF0;
+}
+
+.timepicker-digital-display {
+    background-color: #468DF0;
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #468DF0;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #468DF0;
+    -webkit-box-shadow: 0 1px 0 0 #468DF0;
+    box-shadow: 0 1px 0 0 #468DF0;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #468DF0;
+    -webkit-box-shadow: 0 1px 0 0 #468DF0;
+    box-shadow: 0 1px 0 0 #468DF0;
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #468DF0;
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+    color: #468DF0;
+    padding: 0 1rem;
+}
+
+.timepicker-close {
+    color: #468DF0;
+}
+
+.timepicker-canvas line {
+    stroke: #468DF0;
+}
+
+.timepicker-canvas-bearing {
+    fill: #468DF0;
+}
+
+.timepicker-canvas-bg {
+    fill: #468DF0;
+}
+
+.datepicker-table td.is-today {
+    color: #468DF0;
+}
+
+.datepicker-table td.is-selected {
+    background-color: #468DF0;
+    color: #fff;
+}
+
+/*bouton adresse de rendez-vous*/
+.blue.darken-1 {
+    background-color: #468DF0 !important;
+}
+
+.btn,
+.btn-large,
+.btn-small,
+.btn blue darken-1 {
+    border-radius: 5px;
+    padding: 0 28px;
+    text-transform: none;
+}
+
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.btn-large,
+.btn-small,
+.btn-flat {
+    font-size: 16px;
+    font-weight: bold;
+}
+/*bouton type radio*/
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #468DF0;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #468DF0;
+}
+
+label {
+    font-size: 1rem;
+
+}
+
+.icone-opt {
+    width: 2rem;
+    display: inline-block;
+    color: #757575;
+}
+
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C3DAFF;
+    background-color: #3B86FF;
+    z-index: 0;
+}
+
+/*Fin ajout-mission*/

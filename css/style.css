@@ -30,6 +30,9 @@ body {
 
 }
 
+.remove-white-space {
+    font-size: 0;
+}
 
 [class^="col-"],
 [class*=" col-"],
@@ -46,7 +49,7 @@ body {
     border-radius: 100%;
     width: 4.5rem;
     height: 4.5rem;
-    background-color: #FF7920F0;
+    background-color: rgba(255, 115, 70, 100);
     -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
     box-shadow: 0.3rem 0.3rem 0.3rem 0.07rem rgba(0, 0, 0, 0.23);
@@ -147,6 +150,34 @@ header .icon-container:last-child::after {
     text-shadow: none;
 }
 
+.menu-button .icon-container button .icon {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-button .icon-container span {
+    position: absolute;
+    right: -25%;
+    top: 70%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    background-color: red;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 100%;
+    line-height: 1rem;
+    width: 1rem;
+    z-index: 2;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
 
 /*collapsible*/
 main {
@@ -165,7 +196,6 @@ main {
 }
 
 .list-client-header {
-    display: flex;
     cursor: pointer;
     line-height: 1.5;
     padding: 1rem;
@@ -184,17 +214,8 @@ main {
 }
 
 .list-client-body {
-    border: none;
-    padding: 2rem;
-    margin: 0 0.533rem;
-    margin-top: -0.333rem;
     background-color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    -webkit-box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0rem 0.07rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
+    margin: 0 0.533rem;
 }
 
 .list-client-body .paragraph {
@@ -205,8 +226,6 @@ main {
 
 .list-client-body p {
     color: #000000;
-
-
 }
 
 .list-client-header i {
@@ -230,6 +249,7 @@ main {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-family: Roboto-Regular;
+    color: #757575;
 }
 
 .list-client .icone {
@@ -289,14 +309,14 @@ a.bouton1 {
     padding: 0;
 }
 
-img {
+.collapsible-header img {
     height: auto;
     width: 5.476rem;
 }
 
 /*collapsible*/
 
-/*Footer*/
+/*DEBUT MENU NAV EN FOOTER*/
 
 
 .menu-nav {
@@ -385,557 +405,8 @@ ul:not(.browser-default) {
     text-shadow: none;
 }
 
-/*Footer*/
+/*FIN MENU NAV EN FOOTER*/
 
-/*Default form login*/
-.text-center {
-    padding: 2rem 2rem;
-}
 
-.form-logo {
-    margin-top: 3rem;
-}
 
-.h1 {
-    color: #468DF0;
-    font-family: Roboto-Bold;
-    height: 25px;
-    font-size: 3.3rem;
-}
 
-.h4 {
-    height: 2px;
-    font-family: Roboto-Light;
-    font-size: 2rem;
-    color: #000000;
-
-}
-
-.login-form {
-    margin-top: 6rem;
-}
-
-.form-control {
-    padding: 1.8rem 5rem;
-    bottom: 3rem;
-
-}
-
-.form-control:focus {
-    border-color: #468DF0;
-}
-
-.mb-4,
-.my-4 {
-    margin-bottom: 1.7rem !important;
-}
-
-.btn-info.focus,
-.btn-info:focus {
-    box-shadow: 0px 0px 0px 0.2rem rgba(23, 162, 184, 0.5);
-}
-
-.btn-info {
-    color: #fff;
-    background-color: #468DF0;
-    border-color: #468DF0;
-    padding: 1rem 5rem;
-    font-family: Roboto-Medium;
-    outline-offset: -4px;
-}
-
-input ::placeholder {
-    padding: 0rem;
-}
-
-.info {
-    position: absolute;
-    display: inline-block;
-    color: #BFC4C7;
-    top: 1rem;
-    left: 20rem;
-}
-
-.mail {
-    position: relative;
-
-}
-
-.flotte {
-    position: absolute;
-    display: inline-block;
-    color: #BFC4C7;
-    top: 1.2rem;
-    right: 1rem;
-}
-
-/*fin Default form login*/
-
-/*Debut ajout-mission*/
-
-.bordure {
-    margin-top: -4rem;
-    padding: 0 1rem;
-
-}
-.bordure-gauche {
-    padding-left: 0.7rem;
-}
-.bordure-droite {
-    padding-right: 0.7rem;
-}
-
-.colo {
-    background-color: #468DF0;
-    color: #468DF0;
-}
-
-.demande {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    height: 3rem;
-    background-color: #468DF0;
-    color: #FFFFFF;
-
-}
-
-.demande p {
-    margin: 0.2rem 0;
-    padding: 0.5rem;
-
-}
-
-.fermer {
-
-    position: absolute;
-    display: inline-block;
-    color: #fafafa;
-    top: -0.4rem;
-    left: 2rem;
-    width: 2rem;
-    height: 2rem;
-
-    z-index: 9999;
-}
-
-.langue {
-    position: relative;
-    left: 1rem;
-}
-
-.envoyer {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    height: 3rem;
-    background-color: #468DF0;
-    color: #FFFFFF;
-}
-
-.envoyer p {
-    position: absolute;
-    margin: 0;
-    padding: 0.5rem;
-    right: 1rem;
-}
-
-.resume {
-    padding: 0 1rem;
-    display: flex;
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.resume p {
-    display: inline-block;
-}
-
-.adresseRdv {
-    top: -2rem;
-    padding: 1rem;
-
-}
-.couleur-bleu {
-        background-color: #468DF0;
-}
-.couleur-gris {
- color: #707070;
-}
-
-
-
-/* Date Display */
-.select-wrapper input.select-dropdown:focus {
-    border-bottom: 1px solid #468df0;
-}
-
-.dropdown-content li>a,
-.dropdown-content li>span {
-    color: #468DF0 !important;
-}
-
-.datepicker-date-display {
-    background-color: #468DF0;
-}
-
-.timepicker-digital-display {
-    background-color: #468DF0;
-}
-
-textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #468DF0;
-}
-
-textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #468DF0;
-    -webkit-box-shadow: 0 1px 0 0 #468DF0;
-    box-shadow: 0 1px 0 0 #468DF0;
-}
-
-input:not([type]):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=url]:not(.browser-default):focus:not([readonly]),
-input[type=time]:not(.browser-default):focus:not([readonly]),
-input[type=date]:not(.browser-default):focus:not([readonly]),
-input[type=datetime]:not(.browser-default):focus:not([readonly]),
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-input[type=tel]:not(.browser-default):focus:not([readonly]),
-input[type=number]:not(.browser-default):focus:not([readonly]),
-input[type=search]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #468DF0;
-    -webkit-box-shadow: 0 1px 0 0 #468DF0;
-    box-shadow: 0 1px 0 0 #468DF0;
-}
-
-textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #468DF0;
-}
-
-.datepicker-cancel,
-.datepicker-clear,
-.datepicker-today,
-.datepicker-done {
-    color: #468DF0;
-    padding: 0 1rem;
-}
-
-.timepicker-close {
-    color: #468DF0;
-}
-
-.timepicker-canvas line {
-    stroke: #468DF0;
-}
-
-.timepicker-canvas-bearing {
-    fill: #468DF0;
-}
-
-.timepicker-canvas-bg {
-    fill: #468DF0;
-}
-
-.datepicker-table td.is-today {
-    color: #468DF0;
-}
-
-.datepicker-table td.is-selected {
-    background-color: #468DF0;
-    color: #fff;
-}
-
-/*bouton adresse de rendez-vous*/
-.blue.darken-1 {
-    background-color: #468DF0 !important;
-}
-
-.btn,
-.btn-large,
-.btn-small,
-.btn blue darken-1 {
-    border-radius: 5px;
-    padding: 0 28px;
-    text-transform: none;
-}
-
-.btn,
-.btn-large,
-.btn-small,
-.btn-floating,
-.btn-large,
-.btn-small,
-.btn-flat {
-    font-size: 16px;
-    font-weight: bold;
-}
-/*bouton type radio*/
-[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
-    background-color: #468DF0;
-}
-[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
-    border: 2px solid #468DF0;
-}
-
-label {
-    font-size: 1rem;
-
-}
-
-
-
-
-[type="checkbox"].filled-in:checked+span:not(.lever):after {
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #C3DAFF;
-    background-color: #3B86FF;
-    z-index: 0;
-}
-
-/*Fin ajout-mission*/
-
-
-
-
-/*page options*/
-
-.option {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    text-align: left;
-    width: 100%;
-    height: 3rem;
-    background-color: #468DF0;
-    color: #FFFFFF;
-}
-
-.option p {
-    margin: 0.7rem 1rem;
-}
-body {
-    background-color: #fff;
-}
-.bordure-option {
-
-    padding: 0 1rem;
-
-}
-.option-list {
-    display: flex;
-    font-family: Roboto-regular;
-    line-height: 1.5;
-    color: #757575;
-
-    font-size: 1.333rem;
-    border: none;
-}
-.icone-opt {
-    width: 2rem;
-    display: inline-block;
-    color: #757575;
-}
-
-.switch label input[type=checkbox]:checked+.lever {
-    background-color: #ffaa8f;
-}
-
-.switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #ff5722;
-}
-
-
-/*FIN PAGES OPTIONS*/
-
-/*DEBUT PAGE CLIENTS*/
-.fond-gris {
-    background-color: #EFEFEF;
-}
-.edit-button {
-    position: fixed;
-    z-index: 100;
-    right: 0;
-    top: 1rem;
-    font-size: 1.7rem;
-    color: #757575;
-    cursor: pointer;
-    padding-right: 0.66rem;
-}
-
-.main-profile {
-    position: relative;
-}
-
-.profile-image-container {
-    position: relative;
-    text-align: center;
-}
-
-.profile-image-container .profile-image {
-    position: relative;
-    display: inline-block;
-}
-
-.profile-image-container .profile-image .image {
-    width: 10rem;
-    height: auto;
-    margin-top: 2rem;
-}
-
-.main-profile .profile-image-container .camera-button {
-    position: absolute;
-    z-index: 9999;
-    right: -12%;
-    top: 55%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border-radius: 100%;
-    width: 2.66rem;
-    height: 2.66rem;
-    background-color: #FF7920F0;
-}
-
-.main-profile .profile-image-container .camera-button img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: auto;
-    width: 1.33rem;
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-
-.profile-name h1 {
-    font-family: Roboto-Regular;
-    color: #757575;
-    font-size: 2rem;
-    padding-left: 0.53rem;
-    margin: 1.3rem 0;
-    margin-top: 2rem;
-}
-
-.no-margin {
-    margin: 0;
-}
-
-main .contact {
-    padding-bottom: 6rem;
-    margin: 0.333rem 0.533rem;
-    background-color: #fff;
-    overflow-x: hidden;
-}
-
-.contact-li {
-    border-radius: 5px;
-}
-
-.contact-header {
-    display: flex;
-    cursor: pointer;
-    line-height: 1.5;
-    padding: 0;
-    font-size: 1.333rem;
-    border: none;
-
-}
-
-.contact-header .icon-container {
-    margin-top: 2rem;
-}
-
-.contact-header .icon-container i {
-    font-size: 1.6rem;
-    display: inline-block;
-    text-align: center;
-    margin-right: 1rem;
-    margin: 0.333rem 0.533rem;
-    color: #757575;
-}
-
-.contact-header .border-bottom {
-    position: relative;
-    padding-bottom: 0.3rem;
-}
-
-.contact-header .border-bottom::after {
-    content: "";
-    position: absolute;
-    left: 30%;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.12);
-}
-
-.border-bottom h6 {
-    color: #000000;
-    font-size: 1rem;
-    font-family: Roboto-Regular;
-    margin-bottom: 0;
-}
-
-.border-bottom span {
-    color: #A1A1A1;
-    font-size: 1rem;
-    font-family: Roboto-Regular;
-}
-
-.contact-header .border-bottom-0 {
-    color: #A1A1A1;
-    font-size: 1rem;
-    font-family: Roboto-Regular;
-}
-
-.contact-header .langue-demande {
-    margin: 2.1rem 0;
-}
-
-.contact-header .langue-demande h6,
-.contact-header .langue-parle h6,
-.contact-header .mail h6,
-.contact-header .telephone h6,
-.contact-header .organisation h6 {
-    margin: 0;
-    margin-bottom: 0.3rem;
-}
-
-.contact-header .langue-parle {
-    margin: 2.1rem 0;
-    margin-bottom: 1rem;
-}
-
-.contact-header .mail,
-.contact-header .telephone,
-.contact-header .organisation {
-    margin-top: 2rem;
-}
-
-
-.contact-header .organisation {
-    color: #000000;
-    font-size: 1rem;
-    font-family: Roboto-Regular;
-    padding-top: 0.76rem;
-}
-
-.contact-header .organisation h6 {
-    margin: 0;
-}
-
-
-/*FIN PAGE CLIENTS*/

@@ -1,0 +1,183 @@
+
+/*DEBUT PAGES CLIENTS PROFILS*/
+
+.edit-button {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 1rem;
+    font-size: 1.7rem;
+    color: #757575;
+    cursor: pointer;
+    padding-right: 0.66rem;
+}
+
+.main-profile {
+    position: relative;
+}
+
+.profile-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.profile-image-container .profile-image {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image-container .profile-image .image {
+    width: 10rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.main-profile .profile-image-container .camera-button {
+    position: absolute;
+    z-index: 9999;
+    right: -12%;
+    top: 55%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 100%;
+    width: 2.66rem;
+    height: 2.66rem;
+    background-color: #FF7920F0;
+}
+
+.main-profile .profile-image-container .camera-button img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 1.33rem;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.profile-name h1 {
+    font-family: Roboto-Regular;
+    color: #757575;
+    font-size: 2rem;
+    padding-left: 0.53rem;
+    margin: 1.3rem 0;
+    margin-top: 2rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+main .contact {
+    padding-bottom: 6rem;
+    margin: 0.333rem 0.533rem;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.contact-li {
+    border-radius: 5px;
+}
+
+.contact-header {
+    display: flex;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 0;
+    font-size: 1.333rem;
+    border: none;
+
+}
+
+.contact-header .icon-container {
+    margin-top: 2rem;
+}
+
+.contact-header .icon-container i {
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+    margin: 0.333rem 0.533rem;
+    color: #757575;
+}
+
+.contact-header .border-bottom {
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+.contact-header .border-bottom::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.border-bottom h6 {
+    color: #000000;
+    font-size: 1rem;
+    font-family: Roboto-Regular;
+    margin-bottom: 0;
+}
+
+.border-bottom span {
+    color: #A1A1A1;
+    font-size: 1rem;
+    font-family: Roboto-Regular;
+}
+
+.contact-header .border-bottom-0 {
+    color: #A1A1A1;
+    font-size: 1rem;
+    font-family: Roboto-Regular;
+}
+
+.contact-header .langue-demande {
+    margin: 2.1rem 0;
+}
+
+.contact-header .langue-demande h6,
+.contact-header .langue-parle h6,
+.contact-header .mail h6,
+.contact-header .telephone h6,
+.contact-header .organisation h6 {
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+
+.contact-header .langue-parle {
+    margin: 2.1rem 0;
+    margin-bottom: 1rem;
+}
+
+.contact-header .mail,
+.contact-header .telephone,
+.contact-header .organisation {
+    margin-top: 2rem;
+}
+
+
+.contact-header .organisation {
+    color: #000000;
+    font-size: 1rem;
+    font-family: Roboto-Regular;
+    padding-top: 0.76rem;
+}
+
+.contact-header .organisation h6 {
+    margin: 0;
+}
+
+
+/*FIN PAGES CLIENTS PROFILS*/
