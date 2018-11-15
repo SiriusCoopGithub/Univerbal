@@ -67,6 +67,10 @@ class UsersAdminController extends Controller
           'genre'       => $request->input('genre'),
         ]);
 
+        $organisation = $user->orgnanisation()->create([
+
+        ]);
+
         $adresse = $profile->adresse()->create([
           'street_num'  => $request->input('street_num'),
           'box_num'     => $request->input('box_num'),
@@ -119,15 +123,17 @@ class UsersAdminController extends Controller
      */
     public function edit($id)
     {
-      $user = User::with(['profilable', 'roles' => function ($query) {
+      $user = User::with(['roles' => function ($query) {
         $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
       }])->findOrFail($id);
+
+      $profile = Profile::where('id', '=', $user['profilable'][0]->id )->first();
 
       $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
 
       $allRoles = Role::get();
 
-      return view('admin.users.edit', compact('user', 'allRoles', 'adresse'));
+      return view('admin.users.edit', compact('user', 'allRoles', 'adresse', 'profile'));
     }
 
     /**

@@ -177,33 +177,4 @@
 @endsection
 
 @section('script')
-<script>
-    // const vueAdminCreateUserPassword = new Vue({
-    //     el: '#vue-admin-create-user',
-    //     data: {
-    //         msg: 'coucou',
-    //         // rolesSelected: "{!! old('roles') ? old('roles') : '' !!}",
-    //     }
-    // });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems, {
-
-        });
-        console.log('elems : ', elems);
-
-        var instance = M.FormSelect.getInstance('Langue1');
-        console.log('M.FormSelect.getInstance() : ', M.FormSelect);
-
-        // instance.getSelectedValues();
-        console.log('instance.getSelectedValues() : ', instance.getSelectedValues(elems));
-
-    });
-
-    $(document).ready(function() {
-        $('select').not('.disabled').formSelect();
-    });
-
-</script>
 @endsection

@@ -81,7 +81,7 @@
 
             <div class="divider divider-link"></div>
 
-            <a href="">
+            <a href="{{route('organisations.index')}}">
                 <div class="menu-item hoverable valign-wrapper">
                     <span>
                         <i class="fas fa-building"></i>

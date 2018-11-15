@@ -8,7 +8,7 @@
     </div>
 
 </div>
-{{-- {{dd($user['profilable'][0]->genre)}} --}}
+{{-- {{dd(is_null($profile->genre))}} --}}
 
 <hr class="col s12 m4 l12">
 <div id="vue-admin-create-user">
@@ -25,13 +25,13 @@
                 {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l4">
-                    <input name="first_name" id="first_name" type="text" class="validate" value="{{ old($user['profilable'][0]->first_name) ? old($user['profilable'][0]->first_name) : $user['profilable'][0]->first_name}}">
+                    <input name="first_name" id="first_name" type="text" class="validate" value="{{ old($profile->first_name) ? old($profile->first_name) : $profile->first_name}}">
                     <label for="first_name">Prenom</label>
                 </div>
                 {!! $errors->first('first_name', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l4">
-                    <input name="titre" id="titre" type="text" class="validate" value="{{ old($user->titre) ? old($user->titre) : $user['profilable'][0]->titre}}">
+                    <input name="titre" id="titre" type="text" class="validate" value="{{ old($user->titre) ? old($user->titre) : $profile->titre}}">
                     <label for="titre">Titre</label>
                 </div>
             </div>
@@ -54,15 +54,16 @@
             <div class="row">
                 <div class="input-field col s6 m4 l3">
                     <label for="men">
-                        <input id="men" name="genre" type="radio" value="{{ old($user->genre) ? old($user->genre) : $user['profilable'][0]->genre }}" />
+                        <input id="men" name="genre" type="radio" value="{{ old($profile->genre) ? old($profile->genre) : $profile->genre }}"
+                            {{$profile->genre === 'h' ? 'checked' : '' }} />
                         <span>Homme</span>
                     </label>
                 </div>
 
                 <div class="input-field col s6 m4 l3">
                     <label for="women">
-                        <input id="women" name="genre" value="{{ old($user->genre) ? old($user->genre) : $user['profilable'][0]->genre }}"
-                            type="radio" />
+                        <input id="women" name="genre" type="radio" value="{{ old($profile->genre) ? old($profile->genre) : $profile->genre }}"
+                            {{$profile->genre === 'f' ? 'checked' : '' }} />
                         <span>Femme</span>
                     </label>
                 </div>
@@ -124,13 +125,13 @@
                 {!! $errors->first('email', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l3">
-                    <input name="gsm" id="gsm" type="text" class="validate" value="{{ old($user->gsm) ? old($user->gsm) : $user->gsm}}">
+                    <input name="gsm" id="gsm" type="text" class="validate" value="{{ old($profile->gsm) ? old($profile->gsm) : $profile->gsm}}">
                     <label for="gsm">GSM</label>
                 </div>
                 {!! $errors->first('gsm', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l3">
-                    <input name="telephone" id="telephone" type="text" class="validate" value="{{ old($user['profilable'][0]->telephone) ? old($user['profilable'][0]->telephone) : $user['profilable'][0]->telephone}}">
+                    <input name="telephone" id="telephone" type="text" class="validate" value="{{ old($profile->telephone) ? old($profile->telephone) : $profile->telephone}}">
                     <label for="telephone">Telephone</label>
                 </div>
                 {!! $errors->first('telephone', '<div class="invalid">:message</div>') !!}

@@ -16,17 +16,13 @@
         </div>
     </main>
 
-
     <div class="container-class1">
         <div class="container">
             <div class="row">
                 @yield('admin-content')
             </div>
-
         </div>
-
     </div>
-
 
     @include('admin._includes.admin-scripts')
     @yield('script')

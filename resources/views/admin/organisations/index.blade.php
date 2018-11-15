@@ -1,13 +1,13 @@
 @extends('admin.admin-html')
-@section('title', 'Create User')
+@section('title', 'Manage Organisations')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
     <div class="col  s12 m4 l10">
-        <h4 class="left-align">Manage Users</h4>
+        <h4 class="left-align">Manage Organisations</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('users.create')}}" class=" waves-effect waves-light btn-small">Create new user</a>
+        <a href="{{route('organisations.create')}}" class=" waves-effect waves-light btn-small">Create new Organisation</a>
     </div>
 </div>
 <hr class="col s12 m4 l12">
@@ -17,48 +17,36 @@
             <th>ID</th>
             <th>Name</th>
             <th>Abbr</th>
-            <th>Tél</th>
             <th>Email</th>
+            <th>Tél</th>
             <th>Contact</th>
-            <th>Crée le</th>
             <th>Profile</th>
             <th>Edit</th>
         </tr>
     </thead>
 
     <tbody>
-        {{-- @foreach ($users as $user)
-        <tr>
-            <td>{{$user->id}}</td>
-            <td>{{$user->name}}</td>
-            <td>{{$user->email}}</td>
-            <td>0475/52.26.22</td>
-            <td>Commanditaire</td>
-            <td>C.H.U.</td>
-            <td>{{$user->created_at->toFormattedDateString()}}</td>
+        @foreach ($organisations as $organisation)
+
+        <tr class="hoverable">
+            <td>{{$organisation->id}}</td>
+            <td>{{$organisation->name}}</td>
+            <td>{{$organisation->organisation_abbr}}</td>
+            <td>{{$organisation->email}}</td>
+            <td>{{$organisation->telephone}}</td>
+            <td>{{$organisation->contact_id}}</td>
             <td>
-                <a href="{{route('users.show', $user->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('organisations.show', $organisation->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">remove_red_eye</i>
                 </a>
             </td>
             <td>
-                <a href="{{route('users.edit', $user->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('organisations.edit', $organisation->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>
                 </a>
             </td>
         </tr>
-        @endforeach --}}
+        @endforeach
     </tbody>
 </table>
-{{-- <div class=" col s12 m4 l10">
-    <ul class="pagination">
-        {{$users->links()}}
-    </ul>
-</div> --}}
-
-
-
-
-
-
 @endsection
