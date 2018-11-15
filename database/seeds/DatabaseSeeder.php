@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         App\Organisation::unguard();
         App\Profile::unguard();
         App\Adresse::unguard();
+        App\Roles::unguard();
         App\Langue::unguard();
         App\Country::unguard();
 
@@ -35,6 +36,7 @@ class DatabaseSeeder extends Seeder
         App\Organisation::reguard();
         App\Profile::reguard();
         App\Adresse::reguard();
+        App\Roles::reguard();
         App\Langue::reguard();
         App\Country::reguard();
     }
