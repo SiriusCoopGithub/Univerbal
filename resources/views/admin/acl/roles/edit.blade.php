@@ -6,7 +6,7 @@
         <h4 class="left-align">Role Detail</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('roles.create')}}" class=" waves-effect waves-light btn-small">Create new Role</a>
+        <a href="{{route('roles.create')}}" class=" waves-effect waves-light btn-small">Create new</a>
     </div>
 </div>
 

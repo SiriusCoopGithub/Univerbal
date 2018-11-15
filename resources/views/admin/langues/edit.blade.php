@@ -6,7 +6,7 @@
         <h4 class="left-align"></h4>Langue Detail</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('langues.create')}}" class=" waves-effect waves-light btn-small">Create new Langue</a>
+        <a href="{{route('langues.create')}}" class=" waves-effect waves-light btn-small"></a>
     </div>
 </div>
 
