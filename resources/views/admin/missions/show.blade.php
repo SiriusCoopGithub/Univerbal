@@ -1,13 +1,13 @@
 @extends('admin.admin-html')
-@section('title', 'Manage Organisations')
+@section('title', 'Missions')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
     <div class="col  s12 m4 l10">
-        <h4 class="left-align">Manage Organisations</h4>
+        <h4 class="left-align">Details Missions</h4>
     </div>
     <div class="col s12 m4 l2 right-align ">
-        <a href="{{route('organisations.create')}}" class=" waves-effect waves-light btn-small">Create new</a>
+        <a href="{{route('missions.create')}}" class=" waves-effect waves-light btn-small">Create new</a>
     </div>
 </div>
 <hr class="col s12 m4 l12">
@@ -15,35 +15,48 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Abbr</th>
-            <th>Email</th>
-            <th>Tél</th>
-            <th>Contact</th>
-            <th>Profile</th>
+            <th>Date</th>
+            <th>Commanditaire</th>
+            <th>Langue</th>
+            <th>Statut</th>
+            <th>Interprete</th>
+            <th>Details</th>
             <th>Edit</th>
         </tr>
     </thead>
 
     <tbody>
+
+        {{-- {{dd($mission->user)}} --}}
         <tr class="hoverable">
-            <td>{{$organisation->id}}</td>
-            <td>{{$organisation->name}}</td>
-            <td>{{$organisation->abbr}}</td>
-            <td>{{$organisation->email}}</td>
-            <td>{{$organisation->telephone}}</td>
-            <td>{{$organisation->contact_id}}</td>
+            <td>{{$mission->id}}</td>
+            <td>{{$mission->date}}</td>
             <td>
-                <a href="{{route('organisations.show', $organisation->id)}}" class="waves-effect waves-light btn-small">
+                @foreach ($mission->user()->get() as $user)
+                <i>{{$user->name}}</i>
+                @endforeach
+            </td>
+            <td>
+                @foreach ($mission->langue()->get() as $langue)
+                {{-- {{dd($langue)}} --}}
+                <i>{{$langue->name}}</i>
+                <i>{{$langue->name}}</i>
+                @endforeach
+            </td>
+            <td>{{$mission->statut}}</td>
+            <td>{{$mission->interprete_id}}</td>
+            <td>
+                <a href="{{route('missions.show', $mission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">remove_red_eye</i>
                 </a>
             </td>
             <td>
-                <a href="{{route('organisations.edit', $organisation->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('organisations.edit', $mission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>
                 </a>
             </td>
         </tr>
+
     </tbody>
 </table>
 @endsection

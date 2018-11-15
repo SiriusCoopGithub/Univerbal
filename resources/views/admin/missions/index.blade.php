@@ -29,23 +29,30 @@
         @foreach ($missions as $mission)
 
         <tr class="hoverable">
-            <td>{{$missions->id}}</td>
-            <td>{{$missions->date}}</td>
+            <td>{{$mission->id}}</td>
+            <td>{{$mission->date}}</td>
             <td>
-                @foreach ($mission->$langues as $langue)
+                @foreach ($mission->user()->get() as $user)
+                <i>{{$user->name}}</i>
+                @endforeach
+            </td>
+
+            <td>
+                {{-- {{dd($mission->langue)}} --}}
+                @foreach ($mission->langue as $langue)
                 <i>{{$langue->name}}</i>
                 <i>{{$langue->name}}</i>
                 @endforeach
             </td>
-            <td>{{$missions->statut}}</td>
-            <td>{{$missions->interprete_id}}</td>
+            <td>{{$mission->statuts}}</td>
+            <td>{{$mission->interprete_id}}</td>
             <td>
-                <a href="{{route('missions.show', $missions->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('missions.show', $mission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">remove_red_eye</i>
                 </a>
             </td>
             <td>
-                <a href="{{route('organisations.edit', $missions->id)}}" class="waves-effect waves-light btn-small">
+                <a href="{{route('organisations.edit', $mission->id)}}" class="waves-effect waves-light btn-small">
                     <i class="tiny material-icons">mode_edit</i>
                 </a>
             </td>

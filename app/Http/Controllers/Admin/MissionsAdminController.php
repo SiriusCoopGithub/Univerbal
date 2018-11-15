@@ -5,11 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\User;
 use App\Langue;
 use App\Mission;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Requests\CreateMissonRequest;
+use App\Http\Requests\CreateMissionRequest;
 
 class MissionsAdminController extends Controller
 {
@@ -21,7 +22,7 @@ class MissionsAdminController extends Controller
      */
     public function index()
     {
-        $missions = Mission::with('langues')->orderBy('id', 'asc')->get();
+        $missions = Mission::with('langue', 'user')->orderBy('name', 'asc')->get();
         return view('admin.missions.index', compact('missions'));
     }
 
@@ -33,11 +34,11 @@ class MissionsAdminController extends Controller
     public function create()
     {
 
-      $commanditaire = User::role('commanditaire')->get();
-      $interprete = User::role('interprete')->get();
-      $langues = Langue::get();
+      $commanditaires = User::role('commanditaire')->get();
+      $interpretes = User::role('interprete')->get();
+      $langues = Langue::where('active', '=', '1')->get();
 
-      return view('admin.missions.create', compact('commanditaire', 'interprete', 'langues'));
+      return view('admin.missions.create', compact('commanditaires', 'interpretes', 'langues'));
     }
 
     /**
@@ -46,37 +47,62 @@ class MissionsAdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateMissonRequest $request)
+    public function store(CreateMissionRequest $request)
     {
-      // dd($request);
+      $hours = $request->input('hourstime');
+      $date = $request->input('datetime');
+      $time = $date . ' ' . $hours;
+      $validedTime = Carbon::parse($time);
+
       $createdBy = Auth::user();
+      $user = $request->input('users');
+      $user = User::findorfail($user);
+      $organisation = $user->organisations()->first();
 
-      $userName = $request->input('name');
+      if ($request->input('genre') == 'na') {
+        $sexe_interp = 'b';
+      }
+      else {
+        $sexe_interp = $request->input('genre');
+      }
 
-      $user = User::where('name', '=', $userName )->first();
-      // $user = $request->input('user_id');
+      if($request->input('interprete_id') !== null) {
+        $statuts = 'selected';
+      }
+      else {
+        $statuts = 'active';
+      }
+
+      $facture_num = Carbon::now();
 
       $mission = Mission::create([
-        'date'            => $request->input('date'),
-        'objet'           => $request->input('email'),
+        'user_id'         => $user->id,
+        'date'            => $validedTime,
+        'objet'           => $request->input('objet'),
         'note_perso'      => $request->input('note_perso'),
         'note_interp'     => $request->input('note_interp'),
         'estimed_time'    => $request->input('estimed_time'),
-        'sexe_interp'     => $request->input('sexe_interp'),
-        'facture_num'     => $request->input('facture_num'),
-        'statut'          => $request->input('statut'),
-        'organisation_id' => $request->input('organisation_id'),
+        'sexe_interp'     => $sexe_interp,
+        'facture_num'     => $facture_num,
+        'statuts'         => $statuts,
+        'organisation_id' => $organisation->id,
         'interprete_id'   => $request->input('interprete_id'),
-        'created_by'      => $createdBy,
+        'created_by'      => $createdBy->id,
       ]);
 
-      $user->mission()->associate($mission);
+      $langue1 = $request->input('langue1');
+      $langue1 = $request->input('langue2');
 
-      $user->save();
+      if (isset($langue1)) {
+        $mission->langue()->sync($langue1);
+      }
+      if (isset($langue2)) {
+        $mission->langue()->sync($langue2);
+      }
 
+      // dd($mission);
 
-
-        return view('admin.users.show', compact('Mission'));
+      return redirect()->route('missions.show', $mission->id);
     }
 
     /**
@@ -87,8 +113,8 @@ class MissionsAdminController extends Controller
      */
     public function show($id)
     {
-      $mission = Mission::findOrFail($id);
-      return view('admin.users.show', compact('Mission'));
+      $mission = Mission::with('langue', 'user')->findOrFail($id);
+      return view('admin.missions.show', compact('mission'));
     }
 
     /**
