@@ -40,7 +40,3 @@ $(document).ready(function() {
     const formInstances = M.FormSelect.init(selectForm, {});
     console.log("App js loaded");
 });
-
-// $('select').material_select();
-// M.updateTextFields();
-// $('select').not('.disabled').formSelect();

@@ -39,7 +39,3 @@ $(document).ready(function() {
 
     console.log("Admin js loaded");
 });
-
-// $('select').material_select();
-// M.updateTextFields();
-// $('select').not('.disabled').formSelect();
