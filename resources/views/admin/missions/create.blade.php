@@ -16,18 +16,99 @@
             @csrf
 
             <div class="row">
-                <div class="input-field col s6 m4 l4">
-                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') }}" required>
-                    <label for="name">Langue</label>
-                </div>
-                {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 
-                <div class="input-field col s6 m4 l4">
-                    <input name="organisation_abbr" id="organisation_abbr" type="text" class="validate" value="{{ old('organisation_abbr') }}"
-                        required>
-                    <label for="organisation_abbr">Abbr</label>
+                <div class="row">
+                    <div class="input-field col s6 m4 l6">
+                        <select name="langue1">
+                            <option value="#" disabled selected>Choix de la premiere langue</option>
+                            <option>{{ old($langues->name) ? old($langues->name) : $langues->name}}</option>
+                            @foreach ($langues as $organisation)
+                            <option value="{{$langues->id}}">{{$langues->name}}</option>
+                            @endforeach
+                        </select>
+                        <label for="organisation">Langue 1</label>
+                    </div>
+                    <div class="input-field col s6 m4 l6">
+                        <select name="langue2">
+                            <option value="#" disabled selected>Choix de la deuxième langue</option>
+                            <option>{{ old($langues->name) ? old($langues->name) : $langues->name}}</option>
+                            @foreach ($langues as $organisation)
+                            <option value="{{$langues->id}}">{{$langues->name}}</option>
+                            @endforeach
+                        </select>
+                        <label for="organisation">Langue 2</label>
+                    </div>
                 </div>
-                {!! $errors->first('organisation_abbr', '<div class="invalid">:message</div>') !!}
+
+                <div class="row">
+                    <div class="input-field col s6 m4 l3">
+                        <label for="men">
+                            <input id="men" name="genre" type="radio" value="{{ old('genre') ? old('genre') : 'h' }}"
+                                required />
+                            <span>Homme</span>
+                        </label>
+                    </div>
+
+                    <div class="input-field col s6 m4 l3">
+                        <label for="women">
+                            <input id="women" name="genre" value="{{ old('genre') ? old('genre') : 'f' }}" type="radio" />
+                            <span>Femme</span>
+                        </label>
+                    </div>
+
+                    <div class="input-field col s6 m4 l3">
+                        <label for="na">
+                            <input id="na" name="genre" value="{{ old('genre') ? old('genre') : 'na' }}" type="radio" />
+                            <span>Pas d'importance</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 m4 l3">
+                        <div class="col s6">
+                            <label>Date</label>
+                            <input type="text" class="datepicker" required />
+                        </div>
+                        <div class="col s6">
+                            <label>Heure</label>
+                            <input type="text" id="time" class="timepicker" required />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="input-field col s6 m4 l6">
+                        <select name="users">
+                            <option>{{ old($commanditaire->name) ? old($commanditaire->name) : $commanditaire->name}}</option>
+                            @foreach ($commanditaires as $commanditaire)
+                            <option value="{{$commanditaire->id}}">{{$commanditaire->name}}</option>
+                            @endforeach
+                        </select>
+                        <label for="users">Nom de l'intervenant</label>
+                    </div>
+
+                    <div class="input-field col s6 m4 l6">
+                        <select name="interprete_id">
+                            <option>{{ old($interprete->name) ? old($interprete->name) : $interprete->name}}</option>
+                            @foreach ($interpretes as $interprete)
+                            <option value="{{$interprete->id}}">{{$interprete->name}}</option>
+                            @endforeach
+                        </select>
+                        <label for="users">Nom de l'interprète</label>
+                    </div>
+
+                    <div class="input-field col s6 m4 l4">
+                        <input name="beneficiaire" id="beneficiaire" type="text" class="validate" value="{{ old('beneficiaire') }}">
+                        <label for="user_id">Nom du bénéficiaire</label>
+                    </div>
+                </div>
+
+                <div class="input-field col s6 m4 l2">
+                    <input name="estimed_time" id="estimed_time" type="number" class="validate" min="1" max="8" value="{{ old('estimed_time') }}">
+                    <label for="estimed_time">Temps estimé</label>
+                </div>
+                {!! $errors->first('estimed_time', '<div class="invalid">:message</div>') !!}
 
                 <div class="row">
                     <div class="input-field col s6 m4 l2">
@@ -49,7 +130,6 @@
                         <label for="street_name">Rue</label>
                     </div>
                     {!! $errors->first('street_name', '<div class="invalid">:message</div>') !!}
-
                 </div>
 
                 <div class="row">
@@ -69,20 +149,20 @@
 
                 <div class="row">
                     <div class="input-field col s6 m4 l6">
-                        <input name="email" id="email" type="email" class="validate" value="{{ old('email') }}">
-                        <label for="email">Email</label>
+                        <input name="objet" id="objet" type="textarea" class="validate" value="{{ old('objet') }}">
+                        <label for="objet">Objet de la prestation</label>
                     </div>
                     {!! $errors->first('email', '<div class="invalid">:message</div>') !!}
 
-                    <div class="input-field col s6 m4 l3">
-                        <input name="gsm" id="gsm" type="text" class="validate" value="{{ old('gsm') }}">
-                        <label for="gsm">GSM</label>
+                    <div class="input-field col s6 m4 l6">
+                        <input name="note_interp" id="note_interp" type="textarea" class="validate" value="{{ old('note_interp') }}">
+                        <label for="telephone">Note à l'interprète</label>
                     </div>
-                    {!! $errors->first('gsm', '<div class="invalid">:message</div>') !!}
+                    {!! $errors->first('telephone', '<div class="invalid">:message</div>') !!}
 
-                    <div class="input-field col s6 m4 l3">
-                        <input name="telephone" id="telephone" type="text" class="validate" value="{{ old('telephone') }}">
-                        <label for="telephone">Telephone</label>
+                    <div class="input-field col s6 m4 l6">
+                        <input name="note_perso" id="note_perso" type="textarea" class="validate" value="{{ old('note_perso') }}">
+                        <label for="note_perso">Note personnelle</label>
                     </div>
                     {!! $errors->first('telephone', '<div class="invalid">:message</div>') !!}
                 </div>
@@ -100,4 +180,70 @@
 @endsection
 
 @section('script')
+
+<script>
+    var datePicker = document.querySelectorAll('.datepicker');
+    var dateInstances = M.Datepicker.init(datePicker, {
+        firstDay: 1,
+        format: 'dd mmm yyyy',
+        showClearBtn: true,
+        i18n: {
+            months: [
+                'Janvier',
+                'Février',
+                'Mars',
+                'Avril',
+                'Mai',
+                'Juin',
+                'Juillet',
+                'Août',
+                'Septembre',
+                'Octobre',
+                'Novembre',
+                'Decembre'
+            ],
+            monthsShort: [
+                'Jan',
+                'Feb',
+                'Mar',
+                'Apr',
+                'Mai',
+                'Juin',
+                'Jul',
+                'Août',
+                'Sep',
+                'Oct',
+                'Nov',
+                'Dec'
+            ],
+            weekdays: [
+                'Dimanche',
+                'Lundi',
+                'Mardi',
+                'Mercredi',
+                'Jeudi',
+                'Vendredi',
+                'Samedi'
+            ],
+            weekdaysShort: [
+                'Dim',
+                'Lun',
+                'Mar',
+                'Mer',
+                'Jeu',
+                'Ven',
+                'Sam'
+            ],
+            weekdaysAbbrev: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
+        }
+    });
+
+    var hourPicker = document.querySelectorAll('.timepicker');
+    var instances = M.Timepicker.init(hourPicker, {
+        defaultTime: 'now',
+        twelveHour: false,
+        showClearBtn: true,
+    });
+
+</script>
 @endsection

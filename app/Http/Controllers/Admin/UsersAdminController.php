@@ -25,8 +25,11 @@ class UsersAdminController extends Controller
      */
     public function index()
     {
-        $users = User::orderBy('id', 'asc')->get();
-        return view('admin.users.index')->withUsers($users);
+
+      $users = User::with(['organisations', 'roles', 'profilable'])->get();
+
+        // $users = User::orderBy('id', 'asc')->get();
+      return view('admin.users.index', compact('users'));
     }
 
     /**
@@ -127,6 +130,8 @@ class UsersAdminController extends Controller
         $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
       }])->findOrFail($id);
 
+      $organisation = Organisation::where('id', '=', $user['profilable'][0]->id )->first();
+      $roles = Role::where('id', '=', $user['profilable'][0]->id )->first();
       $adresse = Adresse::where('id', '=', $user['profilable'][0]->id )->first();
 
       $allRoles = Role::get();

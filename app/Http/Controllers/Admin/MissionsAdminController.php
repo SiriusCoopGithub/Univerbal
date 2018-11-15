@@ -21,8 +21,8 @@ class MissionsAdminController extends Controller
      */
     public function index()
     {
-        $missions = Mission::orderBy('id', 'asc')->get();
-        return view('admin.missions.index')->withMissions($missions);
+        $missions = Mission::with('langues')->orderBy('id', 'asc')->get();
+        return view('admin.missions.index', compact('missions'));
     }
 
     /**
@@ -35,10 +35,9 @@ class MissionsAdminController extends Controller
 
       $commanditaire = User::role('commanditaire')->get();
       $interprete = User::role('interprete')->get();
-      $langues = Langue::orderBy('id', 'asc')->get();
+      $langues = Langue::get();
 
-
-      return view('admin.missions.create', compact('commanditaire', 'interprete'));
+      return view('admin.missions.create', compact('commanditaire', 'interprete', 'langues'));
     }
 
     /**

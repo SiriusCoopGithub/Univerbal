@@ -7,7 +7,7 @@ $factory->define(App\Profile::class, function (Faker $faker) {
       // 'user_type' => $faker->randomElement(['admin', 'interprete', 'commanditaire']),
       'last_name' => $faker->lastName(),
       'first_name' => $faker->firstName(),
-      'organisation_abbr' => $faker->tld(),
+      'abbr' => $faker->tld(),
       'gsm' => $faker->PhoneNumber(),
       'telephone' => $faker->PhoneNumber(),
       'email' => $faker->unique()->safeEmail,

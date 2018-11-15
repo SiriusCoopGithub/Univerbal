@@ -47,7 +47,7 @@ class OrganisationsAdminController extends Controller
         ]);
 
         $profilable = $organisation->profilable()->create([
-          'organisation_abbr' => $request->input('organisation_abbr'),
+          'abbr' => $request->input('abbr'),
           'gsm'               => $request->input('gsm'),
           'telephone'         => $request->input('telephone'),
           'email'             => $request->input('email'),
@@ -109,10 +109,10 @@ class OrganisationsAdminController extends Controller
 
       $organisation->update([
         'name'      => $request->input('name'),
+        'abbr'      => $request->input('abbr'),
       ]);
 
       $organisation->profilable()->update([
-      'organisation_abbr' => $request->input('organisation_abbr'),
       'gsm'               => $request->input('gsm'),
       'telephone'         => $request->input('telephone'),
       'email'             => $request->input('email'),

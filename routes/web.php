@@ -43,6 +43,7 @@ Route::namespace('Admin')->group(function(){
     Route::patch('/langues/actived/{langue}', 'LanguesAdminController@actived')->name('langues.actived');
     Route::resource('/langues', 'LanguesAdminController');
     Route::resource('/organisations', 'OrganisationsAdminController');
+    Route::resource('/missions', 'MissionsAdminController');
 
   });
 });

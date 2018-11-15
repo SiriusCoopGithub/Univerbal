@@ -25,10 +25,10 @@
                     {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 
                     <div class="input-field col s6 m4 l4">
-                        <input name="organisation_abbr" id="organisation_abbr" type="text" class="validate" value="{{ old($profile->organisation_abbr) ? old($profile->organisation_abbr) : $profile->organisation_abbr}}">
-                        <label for="organisation_abbr">Abbr</label>
+                        <input name="abbr" id="abbr" type="text" class="validate" value="{{ old($profile->abbr) ? old($profile->abbr) : $profile->abbr}}">
+                        <label for="abbr">Abbr</label>
                     </div>
-                    {!! $errors->first('organisation_abbr', '<div class="invalid">:message</div>') !!}
+                    {!! $errors->first('abbr', '<div class="invalid">:message</div>') !!}
                 </div>
 
                 <div class="row">

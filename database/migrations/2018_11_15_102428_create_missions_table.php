@@ -18,6 +18,7 @@ class CreateMissionsTable extends Migration
           $table->dateTime('date');
           $table->unsignedInteger('user_id');
           $table->text('objet', 120)->nullable();
+          $table->text('beneficiaire', 120)->nullable();
           $table->text('note_perso', 120)->nullable();
           $table->text('note_interp', 120)->nullable();
           $table->time('estimed_time');

@@ -26,12 +26,17 @@
     </thead>
 
     <tbody>
-        @foreach ($missions as $missions)
+        @foreach ($missions as $mission)
 
         <tr class="hoverable">
             <td>{{$missions->id}}</td>
             <td>{{$missions->date}}</td>
-            <td>{{$langue->name}}</td>
+            <td>
+                @foreach ($mission->$langues as $langue)
+                <i>{{$langue->name}}</i>
+                <i>{{$langue->name}}</i>
+                @endforeach
+            </td>
             <td>{{$missions->statut}}</td>
             <td>{{$missions->interprete_id}}</td>
             <td>

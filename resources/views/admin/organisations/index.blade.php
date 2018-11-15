@@ -32,7 +32,7 @@
             <td>{{$organisation->id}}</td>
             <td>{{$organisation->name}}</td>
             @foreach ($organisation->profilable as $profile)
-            <td>{{$profile->organisation_abbr}}</td>
+            <td>{{$profile->abbr}}</td>
             <td>{{$profile->email}}</td>
             <td>{{$profile->telephone}}</td>
             @endforeach

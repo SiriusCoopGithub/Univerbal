@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col s12 m4 l12">
 
-            <a href="{{route('users.index')}}" class="menu-title {{ setActive('admin/missions', 'active') }}">
+            <a href="{{route('missions.index')}}" class="menu-title {{ setActive('admin/missions', 'active') }}">
                 <h5 class="sub-header hoverable">
                     <span>
                         <i class="fas fa-list-ul"></i>

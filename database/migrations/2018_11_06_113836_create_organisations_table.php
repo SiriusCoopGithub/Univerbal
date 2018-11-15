@@ -17,6 +17,7 @@ class CreateOrganisationsTable extends Migration
           $table->increments('id');
 
           $table->string('name', 100)->unique();
+          $table->string('abbr', 50)->nullable();
           $table->unsignedInteger('contact_id')->nullable();
 
           // $table->foreign('contact_id')

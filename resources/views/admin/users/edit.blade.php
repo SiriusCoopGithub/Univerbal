@@ -40,7 +40,7 @@
 
                 <div class="input-field col s6 m4 l6">
                     <select name="organisation">
-                        <option>{{ old($organisation->name) ? old($organisation->name) : $organisation->name}}</option>
+                        <option></option>
                         @foreach ($organisations as $organisation)
                         <option value="{{$organisation->id}}">{{$organisation->name}}</option>
                         @endforeach

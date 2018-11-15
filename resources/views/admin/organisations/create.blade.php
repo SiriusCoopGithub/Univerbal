@@ -23,11 +23,11 @@
                 {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l4">
-                    <input name="organisation_abbr" id="organisation_abbr" type="text" class="validate" value="{{ old('organisation_abbr') }}"
+                    <input name="abbr" id="abbr" type="text" class="validate" value="{{ old('abbr') }}"
                         required>
-                    <label for="organisation_abbr">Abbr</label>
+                    <label for="abbr">Abbr</label>
                 </div>
-                {!! $errors->first('organisation_abbr', '<div class="invalid">:message</div>') !!}
+                {!! $errors->first('abbr', '<div class="invalid">:message</div>') !!}
 
                 <div class="row">
                     <div class="input-field col s6 m4 l2">

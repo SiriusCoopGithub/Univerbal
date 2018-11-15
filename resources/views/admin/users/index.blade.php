@@ -16,37 +16,33 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Email</th>
-            <th>Tél</th>
             <th>Type</th>
             <th>Organisation</th>
+            <th>Tél</th>
+            <th>Email</th>
             <th>Actif</th>
             <th>Crée le</th>
             <th>Profile</th>
             <th>Edit</th>
         </tr>
     </thead>
-
+    {{-- {{dd($users)}} --}}
     <tbody>
         @foreach ($users as $user)
 
         <tr class="hoverable">
             <td>{{$user->id}}</td>
             <td>{{$user->name}}</td>
-            <td>{{$user->email}}</td>
-            <td>0475/52.26.22</td>
-
-            {{-- {{ dd($user->roles()) }} --}}
-            @if($user->role !== null)
             @foreach ($user->roles as $role)
-            {{-- <td> {{ ( $role->name == NULL) ? $role->name : 'Default' }}</td> --}}
-            <td>azeazeaze</td>
+            <td>{{$role->name}}</td>
             @endforeach
-            @else
-            <td>dfdsfdsf</td>
-            @endif
-
-            <td>chu</td>
+            @foreach ($user->organisations as $orga)
+            <td>{{$orga->abbr}}</td>
+            @endforeach
+            @foreach ($user->profilable as $profile)
+            <td>{{$profile->telephone}}</td>
+            <td>{{$user->email}}</td>
+            @endforeach
             <td>{{$user->active}}</td>
 
             <td>{{$user->created_at->toFormattedDateString()}}</td>

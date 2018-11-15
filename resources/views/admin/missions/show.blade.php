@@ -29,7 +29,7 @@
         <tr class="hoverable">
             <td>{{$organisation->id}}</td>
             <td>{{$organisation->name}}</td>
-            <td>{{$organisation->organisation_abbr}}</td>
+            <td>{{$organisation->abbr}}</td>
             <td>{{$organisation->email}}</td>
             <td>{{$organisation->telephone}}</td>
             <td>{{$organisation->contact_id}}</td>
