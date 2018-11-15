@@ -18,18 +18,18 @@
 
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input name="langue_name" id="langue_name" type="text" class="validate" value="{{ old('langue_name') }}"
+                    <input name="name" id="name" type="text" class="validate" value="{{ old('name') }}"
                         required>
-                    <label for="langue_name">Name</label>
+                    <label for="name">Name</label>
                 </div>
-                {!! $errors->first('langue_name', '<div class="invalid">:message</div>') !!}
+                {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l6">
-                    <input name="abbr_langue" id="abbr_langue" type="text" class="validate" value="{{ old('abbr_langue') }}"
+                    <input name="abbr" id="abbr" type="text" class="validate" value="{{ old('abbr') }}"
                         required>
-                    <label for="abbr_langue">Abbr</label>
+                    <label for="abbr">Abbr</label>
                 </div>
-                {!! $errors->first('abbr_langue', '<div class="invalid">:message</div>') !!}
+                {!! $errors->first('abbr', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l6">
                     <input name="dialect" id="dialect" type="text" class="validate" value="{{ old('dialect')}}">

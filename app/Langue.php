@@ -14,7 +14,7 @@ class Langue extends Model
      * @var array
      */
     protected $fillable = [
-      'abbr_langue', 'langue_name', 'active', 'description', 'dialect', 'country'
+      'abbr', 'name', 'active', 'description', 'dialect', 'country'
   ];
 
       /**
@@ -26,7 +26,7 @@ class Langue extends Model
     }
 
     /**
-     * Get the users .
+     * Get the langues .
      */
     public function missions()
     {

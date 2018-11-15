@@ -17,8 +17,8 @@ class LangueTableSeeder extends Seeder
       $data = json_decode($json);
       foreach ($data as $obj) {
         App\Langue::create(array(
-          'abbr_langue' => $obj->abbr_langue,
-          'langue_name' => $obj->langue_name,
+          'abbr' => $obj->abbr,
+          'name' => $obj->name,
         ));
       }
     }

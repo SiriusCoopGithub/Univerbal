@@ -24,8 +24,8 @@ class CreateLangueRequest extends FormRequest
     public function rules()
     {
         return [
-          'langue_name' => 'bail|required|between:1,50|string',
-          'abbr_langue' => 'bail|required|between:1,6|string',
+          'name' => 'bail|required|between:1,50|string',
+          'abbr' => 'bail|required|between:1,6|string',
           'dialect'     => 'bail|nullable|between:1,50|string',
           'country'     => 'bail|nullable|between:1,50|string',
           'description' => 'bail|nullable|between:1,120|string',

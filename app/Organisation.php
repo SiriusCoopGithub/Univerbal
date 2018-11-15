@@ -34,6 +34,13 @@ class Organisation extends Model
     }
 
     /**
+     * Mission
+     */
+    public function missions(){
+      return $this->hasMany(Mission::class);
+    }
+
+    /**
      * users for each organisations.
      */
     // public function username()

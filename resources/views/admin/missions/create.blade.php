@@ -1,24 +1,24 @@
 @extends('admin.admin-html')
-@section('title', 'Create Organisation')
+@section('title', 'Create Mission')
 @section('admin-content')
 
 <div class="col s12 m4 l12 valign-wrapper ">
     <div class="col  s12 m4 l12">
-        <h4 class="left-align">Create Organisation</h4>
+        <h4 class="left-align">Create Mission</h4>
     </div>
 
 </div>
 {{-- {{dd(route('users.store'))}} --}}
 <hr class="col s12 m4 l12">
 <div id="vue-admin-create-user">
-    <form class="col s6 m4 l6" action="{{route('organisations.store')}}" method="POST">
+    <form class="col s6 m4 l6" action="{{route('missions.store')}}" method="POST">
         <div class="col s12 m4 l12">
             @csrf
 
             <div class="row">
                 <div class="input-field col s6 m4 l4">
                     <input name="name" id="name" type="text" class="validate" value="{{ old('name') }}" required>
-                    <label for="name">Nom</label>
+                    <label for="name">Langue</label>
                 </div>
                 {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 

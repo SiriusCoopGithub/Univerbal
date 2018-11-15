@@ -36,15 +36,15 @@
                 <form method="POST" action="{{route('langues.actived', $langue->id)}}">
                     @method('PATCH')
                     @csrf
-                    <label for="{{$langue->langue_name}}">
-                        <input id="{{$langue->langue_name}}" name="active" type="checkbox" value="{{ old($langue->id) ? old($langue->id) : $langue->id}}"
+                    <label for="{{$langue->name}}">
+                        <input id="{{$langue->name}}" name="active" type="checkbox" value="{{ old($langue->id) ? old($langue->id) : $langue->id}}"
                             onChange="this.form.submit()" {{ $langue->active ? 'checked' : ''}} />
                         <span></span>
                     </label>
                 </form>
             </td>
-            <td>{{$langue->langue_name}}</td>
-            <td>{{$langue->abbr_langue}}</td>
+            <td>{{$langue->name}}</td>
+            <td>{{$langue->abbr}}</td>
             <td>{{$langue->dialect}}</td>
             <td>{{$langue->country}}</td>
             <td>{{$langue->description}}</td>

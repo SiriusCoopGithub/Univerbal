@@ -54,7 +54,7 @@
                     <select name="langue">
                         <option></option>
                         @foreach ($langues as $langue)
-                        <option value="{{$langue->id}}">{{$langue->langue_name}}</option>
+                        <option value="{{$langue->id}}">{{$langue->name}}</option>
                         @endforeach
                     </select>
                     <label for="langue">langue</label>

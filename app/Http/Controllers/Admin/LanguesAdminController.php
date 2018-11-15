@@ -39,8 +39,8 @@ class LanguesAdminController extends Controller
   public function store(CreateLangueRequest $request)
   {
     $langue = Langue::create([
-      'langue_name' => $request->input('langue_name'),
-      'abbr_langue' => $request->input('abbr_langue'),
+      'name' => $request->input('name'),
+      'abbr' => $request->input('abbr'),
       'dialect'     => $request->input('dialect'),
       'country'     => $request->input('country'),
       'description' => $request->input('description'),
@@ -99,8 +99,8 @@ class LanguesAdminController extends Controller
   public function update(CreateLangueRequest $request, $id)
   {
     $langue = Langue::findOrFail($id)->update([
-      'langue_name' => $request->input('langue_name'),
-      'abbr_langue' => $request->input('abbr_langue'),
+      'name' => $request->input('name'),
+      'abbr' => $request->input('abbr'),
       'dialect'     => $request->input('dialect'),
       'country'     => $request->input('country'),
       'description' => $request->input('description'),

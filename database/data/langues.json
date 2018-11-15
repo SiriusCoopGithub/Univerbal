@@ -1,2437 +1,2437 @@
 [{
         "abbr_langue": "ab",
-        "langue_name": "abkhaze"
+        "name": "abkhaze"
     },
     {
-        "abbr_langue": "ace",
-        "langue_name": "aceh"
+        "abbr": "ace",
+        "name": "aceh"
     },
     {
-        "abbr_langue": "ach",
-        "langue_name": "acoli"
+        "abbr": "ach",
+        "name": "acoli"
     },
     {
-        "abbr_langue": "ada",
-        "langue_name": "adangme"
+        "abbr": "ada",
+        "name": "adangme"
     },
     {
-        "abbr_langue": "ady",
-        "langue_name": "adyghéen"
+        "abbr": "ady",
+        "name": "adyghéen"
     },
     {
-        "abbr_langue": "aa",
-        "langue_name": "afar"
+        "abbr": "aa",
+        "name": "afar"
     },
     {
-        "abbr_langue": "afh",
-        "langue_name": "afrihili"
+        "abbr": "afh",
+        "name": "afrihili"
     },
     {
-        "abbr_langue": "af",
-        "langue_name": "afrikaans"
+        "abbr": "af",
+        "name": "afrikaans"
     },
     {
-        "abbr_langue": "agq",
-        "langue_name": "aghem"
+        "abbr": "agq",
+        "name": "aghem"
     },
     {
-        "abbr_langue": "ain",
-        "langue_name": "aïnou"
+        "abbr": "ain",
+        "name": "aïnou"
     },
     {
-        "abbr_langue": "ak",
-        "langue_name": "akan"
+        "abbr": "ak",
+        "name": "akan"
     },
     {
-        "abbr_langue": "akk",
-        "langue_name": "akkadien"
+        "abbr": "akk",
+        "name": "akkadien"
     },
     {
-        "abbr_langue": "bss",
-        "langue_name": "akoose"
+        "abbr": "bss",
+        "name": "akoose"
     },
     {
-        "abbr_langue": "akz",
-        "langue_name": "Alabama"
+        "abbr": "akz",
+        "name": "Alabama"
     },
     {
-        "abbr_langue": "sq",
-        "langue_name": "albanais"
+        "abbr": "sq",
+        "name": "albanais"
     },
     {
-        "abbr_langue": "ale",
-        "langue_name": "aléoute"
+        "abbr": "ale",
+        "name": "aléoute"
     },
     {
-        "abbr_langue": "arq",
-        "langue_name": "Algerian Arabic"
+        "abbr": "arq",
+        "name": "Algerian Arabic"
     },
     {
-        "abbr_langue": "de",
-        "langue_name": "allemand"
+        "abbr": "de",
+        "name": "allemand"
     },
     {
-        "abbr_langue": "de_AT",
-        "langue_name": "allemand autrichien"
+        "abbr": "de_AT",
+        "name": "allemand autrichien"
     },
     {
-        "abbr_langue": "de_CH",
-        "langue_name": "allemand suisse"
+        "abbr": "de_CH",
+        "name": "allemand suisse"
     },
     {
-        "abbr_langue": "alt",
-        "langue_name": "altaï du Sud"
+        "abbr": "alt",
+        "name": "altaï du Sud"
     },
     {
-        "abbr_langue": "zgh",
-        "langue_name": "amazighe standard marocain"
+        "abbr": "zgh",
+        "name": "amazighe standard marocain"
     },
     {
-        "abbr_langue": "ase",
-        "langue_name": "American Sign Language"
+        "abbr": "ase",
+        "name": "American Sign Language"
     },
     {
-        "abbr_langue": "am",
-        "langue_name": "amharique"
+        "abbr": "am",
+        "name": "amharique"
     },
     {
-        "abbr_langue": "ang",
-        "langue_name": "ancien anglais"
+        "abbr": "ang",
+        "name": "ancien anglais"
     },
     {
-        "abbr_langue": "fro",
-        "langue_name": "ancien français"
+        "abbr": "fro",
+        "name": "ancien français"
     },
     {
-        "abbr_langue": "goh",
-        "langue_name": "ancien haut allemand"
+        "abbr": "goh",
+        "name": "ancien haut allemand"
     },
     {
-        "abbr_langue": "sga",
-        "langue_name": "ancien irlandais"
+        "abbr": "sga",
+        "name": "ancien irlandais"
     },
     {
-        "abbr_langue": "anp",
-        "langue_name": "angika"
+        "abbr": "anp",
+        "name": "angika"
     },
     {
-        "abbr_langue": "en",
-        "langue_name": "anglais"
+        "abbr": "en",
+        "name": "anglais"
     },
     {
-        "abbr_langue": "en_US",
-        "langue_name": "anglais américain"
+        "abbr": "en_US",
+        "name": "anglais américain"
     },
     {
-        "abbr_langue": "en_AU",
-        "langue_name": "anglais australien"
+        "abbr": "en_AU",
+        "name": "anglais australien"
     },
     {
-        "abbr_langue": "en_GB",
-        "langue_name": "anglais britannique"
+        "abbr": "en_GB",
+        "name": "anglais britannique"
     },
     {
-        "abbr_langue": "en_CA",
-        "langue_name": "anglais canadien"
+        "abbr": "en_CA",
+        "name": "anglais canadien"
     },
     {
-        "abbr_langue": "njo",
-        "langue_name": "Ao Naga"
+        "abbr": "njo",
+        "name": "Ao Naga"
     },
     {
-        "abbr_langue": "ar",
-        "langue_name": "arabe"
+        "abbr": "ar",
+        "name": "arabe"
     },
     {
-        "abbr_langue": "ar_001",
-        "langue_name": "arabe standard moderne"
+        "abbr": "ar_001",
+        "name": "arabe standard moderne"
     },
     {
-        "abbr_langue": "shu",
-        "langue_name": "arabe tchadien"
+        "abbr": "shu",
+        "name": "arabe tchadien"
     },
     {
-        "abbr_langue": "an",
-        "langue_name": "aragonais"
+        "abbr": "an",
+        "name": "aragonais"
     },
     {
-        "abbr_langue": "arc",
-        "langue_name": "araméen"
+        "abbr": "arc",
+        "name": "araméen"
     },
     {
-        "abbr_langue": "sam",
-        "langue_name": "araméen samaritain"
+        "abbr": "sam",
+        "name": "araméen samaritain"
     },
     {
-        "abbr_langue": "aro",
-        "langue_name": "Araona"
+        "abbr": "aro",
+        "name": "Araona"
     },
     {
-        "abbr_langue": "arp",
-        "langue_name": "arapaho"
+        "abbr": "arp",
+        "name": "arapaho"
     },
     {
-        "abbr_langue": "arn",
-        "langue_name": "araukan"
+        "abbr": "arn",
+        "name": "araukan"
     },
     {
-        "abbr_langue": "arw",
-        "langue_name": "arawak"
+        "abbr": "arw",
+        "name": "arawak"
     },
     {
-        "abbr_langue": "hy",
-        "langue_name": "arménien"
+        "abbr": "hy",
+        "name": "arménien"
     },
     {
-        "abbr_langue": "as",
-        "langue_name": "assamais"
+        "abbr": "as",
+        "name": "assamais"
     },
     {
-        "abbr_langue": "asa",
-        "langue_name": "assou"
+        "abbr": "asa",
+        "name": "assou"
     },
     {
-        "abbr_langue": "ast",
-        "langue_name": "asturien"
+        "abbr": "ast",
+        "name": "asturien"
     },
     {
-        "abbr_langue": "cch",
-        "langue_name": "atsam"
+        "abbr": "cch",
+        "name": "atsam"
     },
     {
-        "abbr_langue": "av",
-        "langue_name": "avar"
+        "abbr": "av",
+        "name": "avar"
     },
     {
-        "abbr_langue": "ae",
-        "langue_name": "avestique"
+        "abbr": "ae",
+        "name": "avestique"
     },
     {
-        "abbr_langue": "awa",
-        "langue_name": "awadhi"
+        "abbr": "awa",
+        "name": "awadhi"
     },
     {
-        "abbr_langue": "ay",
-        "langue_name": "aymara"
+        "abbr": "ay",
+        "name": "aymara"
     },
     {
-        "abbr_langue": "az",
-        "langue_name": "azéri"
+        "abbr": "az",
+        "name": "azéri"
     },
     {
-        "abbr_langue": "ba",
-        "langue_name": "bachkir"
+        "abbr": "ba",
+        "name": "bachkir"
     },
     {
-        "abbr_langue": "bfq",
-        "langue_name": "Badaga"
+        "abbr": "bfq",
+        "name": "Badaga"
     },
     {
-        "abbr_langue": "ksf",
-        "langue_name": "bafia"
+        "abbr": "ksf",
+        "name": "bafia"
     },
     {
-        "abbr_langue": "bfd",
-        "langue_name": "bafut"
+        "abbr": "bfd",
+        "name": "bafut"
     },
     {
-        "abbr_langue": "bqi",
-        "langue_name": "Bakhtiari"
+        "abbr": "bqi",
+        "name": "Bakhtiari"
     },
     {
-        "abbr_langue": "ban",
-        "langue_name": "balinais"
+        "abbr": "ban",
+        "name": "balinais"
     },
     {
-        "abbr_langue": "bal",
-        "langue_name": "baloutchi"
+        "abbr": "bal",
+        "name": "baloutchi"
     },
     {
-        "abbr_langue": "bm",
-        "langue_name": "bambara"
+        "abbr": "bm",
+        "name": "bambara"
     },
     {
-        "abbr_langue": "bax",
-        "langue_name": "bamoun"
+        "abbr": "bax",
+        "name": "bamoun"
     },
     {
-        "abbr_langue": "bjn",
-        "langue_name": "Banjar"
+        "abbr": "bjn",
+        "name": "Banjar"
     },
     {
-        "abbr_langue": "nds",
-        "langue_name": "bas-allemand"
+        "abbr": "nds",
+        "name": "bas-allemand"
     },
     {
-        "abbr_langue": "dsb",
-        "langue_name": "bas-sorabe"
+        "abbr": "dsb",
+        "name": "bas-sorabe"
     },
     {
-        "abbr_langue": "eu",
-        "langue_name": "basque"
+        "abbr": "eu",
+        "name": "basque"
     },
     {
-        "abbr_langue": "bas",
-        "langue_name": "bassa"
+        "abbr": "bas",
+        "name": "bassa"
     },
     {
-        "abbr_langue": "bbc",
-        "langue_name": "Batak Toba"
+        "abbr": "bbc",
+        "name": "Batak Toba"
     },
     {
-        "abbr_langue": "bar",
-        "langue_name": "Bavarian"
+        "abbr": "bar",
+        "name": "Bavarian"
     },
     {
-        "abbr_langue": "bej",
-        "langue_name": "bedja"
+        "abbr": "bej",
+        "name": "bedja"
     },
     {
-        "abbr_langue": "bem",
-        "langue_name": "bemba"
+        "abbr": "bem",
+        "name": "bemba"
     },
     {
-        "abbr_langue": "bez",
-        "langue_name": "béna"
+        "abbr": "bez",
+        "name": "béna"
     },
     {
-        "abbr_langue": "bn",
-        "langue_name": "bengali"
+        "abbr": "bn",
+        "name": "bengali"
     },
     {
-        "abbr_langue": "bew",
-        "langue_name": "Betawi"
+        "abbr": "bew",
+        "name": "Betawi"
     },
     {
-        "abbr_langue": "bho",
-        "langue_name": "bhojpuri"
+        "abbr": "bho",
+        "name": "bhojpuri"
     },
     {
-        "abbr_langue": "bi",
-        "langue_name": "bichelamar"
+        "abbr": "bi",
+        "name": "bichelamar"
     },
     {
-        "abbr_langue": "be",
-        "langue_name": "biélorusse"
+        "abbr": "be",
+        "name": "biélorusse"
     },
     {
-        "abbr_langue": "bik",
-        "langue_name": "bikol"
+        "abbr": "bik",
+        "name": "bikol"
     },
     {
-        "abbr_langue": "bin",
-        "langue_name": "bini"
+        "abbr": "bin",
+        "name": "bini"
     },
     {
-        "abbr_langue": "my",
-        "langue_name": "birman"
+        "abbr": "my",
+        "name": "birman"
     },
     {
-        "abbr_langue": "bpy",
-        "langue_name": "Bishnupriya"
+        "abbr": "bpy",
+        "name": "Bishnupriya"
     },
     {
-        "abbr_langue": "byn",
-        "langue_name": "blin"
+        "abbr": "byn",
+        "name": "blin"
     },
     {
-        "abbr_langue": "brx",
-        "langue_name": "bodo"
+        "abbr": "brx",
+        "name": "bodo"
     },
     {
-        "abbr_langue": "bs",
-        "langue_name": "bosniaque"
+        "abbr": "bs",
+        "name": "bosniaque"
     },
     {
-        "abbr_langue": "bum",
-        "langue_name": "boulou"
+        "abbr": "bum",
+        "name": "boulou"
     },
     {
-        "abbr_langue": "bua",
-        "langue_name": "bouriate"
+        "abbr": "bua",
+        "name": "bouriate"
     },
     {
-        "abbr_langue": "brh",
-        "langue_name": "Brahui"
+        "abbr": "brh",
+        "name": "Brahui"
     },
     {
-        "abbr_langue": "bra",
-        "langue_name": "braj"
+        "abbr": "bra",
+        "name": "braj"
     },
     {
-        "abbr_langue": "br",
-        "langue_name": "breton"
+        "abbr": "br",
+        "name": "breton"
     },
     {
-        "abbr_langue": "bug",
-        "langue_name": "bugi"
+        "abbr": "bug",
+        "name": "bugi"
     },
     {
-        "abbr_langue": "bg",
-        "langue_name": "bulgare"
+        "abbr": "bg",
+        "name": "bulgare"
     },
     {
-        "abbr_langue": "cad",
-        "langue_name": "caddo"
+        "abbr": "cad",
+        "name": "caddo"
     },
     {
-        "abbr_langue": "frc",
-        "langue_name": "Cajun French"
+        "abbr": "frc",
+        "name": "Cajun French"
     },
     {
-        "abbr_langue": "yue",
-        "langue_name": "cantonais"
+        "abbr": "yue",
+        "name": "cantonais"
     },
     {
-        "abbr_langue": "cps",
-        "langue_name": "Capiznon"
+        "abbr": "cps",
+        "name": "Capiznon"
     },
     {
-        "abbr_langue": "kea",
-        "langue_name": "capverdien"
+        "abbr": "kea",
+        "name": "capverdien"
     },
     {
-        "abbr_langue": "krl",
-        "langue_name": "carélien"
+        "abbr": "krl",
+        "name": "carélien"
     },
     {
-        "abbr_langue": "car",
-        "langue_name": "caribe"
+        "abbr": "car",
+        "name": "caribe"
     },
     {
-        "abbr_langue": "ca",
-        "langue_name": "catalan"
+        "abbr": "ca",
+        "name": "catalan"
     },
     {
-        "abbr_langue": "cay",
-        "langue_name": "cayuga"
+        "abbr": "cay",
+        "name": "cayuga"
     },
     {
-        "abbr_langue": "ceb",
-        "langue_name": "cebuano"
+        "abbr": "ceb",
+        "name": "cebuano"
     },
     {
-        "abbr_langue": "dtp",
-        "langue_name": "Central Dusun"
+        "abbr": "dtp",
+        "name": "Central Dusun"
     },
     {
-        "abbr_langue": "esu",
-        "langue_name": "Central Yupik"
+        "abbr": "esu",
+        "name": "Central Yupik"
     },
     {
-        "abbr_langue": "ksb",
-        "langue_name": "chambala"
+        "abbr": "ksb",
+        "name": "chambala"
     },
     {
-        "abbr_langue": "ch",
-        "langue_name": "chamorro"
+        "abbr": "ch",
+        "name": "chamorro"
     },
     {
-        "abbr_langue": "chr",
-        "langue_name": "cherokee"
+        "abbr": "chr",
+        "name": "cherokee"
     },
     {
-        "abbr_langue": "chy",
-        "langue_name": "cheyenne"
+        "abbr": "chy",
+        "name": "cheyenne"
     },
     {
-        "abbr_langue": "chb",
-        "langue_name": "chibcha"
+        "abbr": "chb",
+        "name": "chibcha"
     },
     {
-        "abbr_langue": "qug",
-        "langue_name": "Chimborazo Highland Quichua"
+        "abbr": "qug",
+        "name": "Chimborazo Highland Quichua"
     },
     {
-        "abbr_langue": "zh",
-        "langue_name": "chinois"
+        "abbr": "zh",
+        "name": "chinois"
     },
     {
-        "abbr_langue": "zh_Hans",
-        "langue_name": "chinois simplifié"
+        "abbr": "zh_Hans",
+        "name": "chinois simplifié"
     },
     {
-        "abbr_langue": "zh_Hant",
-        "langue_name": "chinois traditionnel"
+        "abbr": "zh_Hant",
+        "name": "chinois traditionnel"
     },
     {
-        "abbr_langue": "chp",
-        "langue_name": "chipewyan"
+        "abbr": "chp",
+        "name": "chipewyan"
     },
     {
-        "abbr_langue": "shi",
-        "langue_name": "chleuh"
+        "abbr": "shi",
+        "name": "chleuh"
     },
     {
-        "abbr_langue": "cho",
-        "langue_name": "choctaw"
+        "abbr": "cho",
+        "name": "choctaw"
     },
     {
-        "abbr_langue": "chk",
-        "langue_name": "chuuk"
+        "abbr": "chk",
+        "name": "chuuk"
     },
     {
-        "abbr_langue": "si",
-        "langue_name": "cinghalais"
+        "abbr": "si",
+        "name": "cinghalais"
     },
     {
-        "abbr_langue": "swb",
-        "langue_name": "comorien"
+        "abbr": "swb",
+        "name": "comorien"
     },
     {
-        "abbr_langue": "cop",
-        "langue_name": "copte"
+        "abbr": "cop",
+        "name": "copte"
     },
     {
-        "abbr_langue": "ko",
-        "langue_name": "coréen"
+        "abbr": "ko",
+        "name": "coréen"
     },
     {
-        "abbr_langue": "kw",
-        "langue_name": "cornique"
+        "abbr": "kw",
+        "name": "cornique"
     },
     {
-        "abbr_langue": "co",
-        "langue_name": "corse"
+        "abbr": "co",
+        "name": "corse"
     },
     {
-        "abbr_langue": "cr",
-        "langue_name": "cree"
+        "abbr": "cr",
+        "name": "cree"
     },
     {
-        "abbr_langue": "mus",
-        "langue_name": "creek"
+        "abbr": "mus",
+        "name": "creek"
     },
     {
-        "abbr_langue": "mfe",
-        "langue_name": "créole mauricien"
+        "abbr": "mfe",
+        "name": "créole mauricien"
     },
     {
-        "abbr_langue": "hr",
-        "langue_name": "croate"
+        "abbr": "hr",
+        "name": "croate"
     },
     {
-        "abbr_langue": "dak",
-        "langue_name": "dakota"
+        "abbr": "dak",
+        "name": "dakota"
     },
     {
-        "abbr_langue": "da",
-        "langue_name": "danois"
+        "abbr": "da",
+        "name": "danois"
     },
     {
-        "abbr_langue": "dar",
-        "langue_name": "dargwa"
+        "abbr": "dar",
+        "name": "dargwa"
     },
     {
-        "abbr_langue": "dzg",
-        "langue_name": "dazaga"
+        "abbr": "dzg",
+        "name": "dazaga"
     },
     {
-        "abbr_langue": "del",
-        "langue_name": "delaware"
+        "abbr": "del",
+        "name": "delaware"
     },
     {
-        "abbr_langue": "din",
-        "langue_name": "dinka"
+        "abbr": "din",
+        "name": "dinka"
     },
     {
-        "abbr_langue": "dyo",
-        "langue_name": "diola-fogny"
+        "abbr": "dyo",
+        "name": "diola-fogny"
     },
     {
-        "abbr_langue": "dyu",
-        "langue_name": "dioula"
+        "abbr": "dyu",
+        "name": "dioula"
     },
     {
-        "abbr_langue": "doi",
-        "langue_name": "dogri"
+        "abbr": "doi",
+        "name": "dogri"
     },
     {
-        "abbr_langue": "dgr",
-        "langue_name": "dogrib"
+        "abbr": "dgr",
+        "name": "dogrib"
     },
     {
-        "abbr_langue": "dua",
-        "langue_name": "douala"
+        "abbr": "dua",
+        "name": "douala"
     },
     {
-        "abbr_langue": "dz",
-        "langue_name": "dzongkha"
+        "abbr": "dz",
+        "name": "dzongkha"
     },
     {
-        "abbr_langue": "sco",
-        "langue_name": "écossais"
+        "abbr": "sco",
+        "name": "écossais"
     },
     {
-        "abbr_langue": "efi",
-        "langue_name": "efik"
+        "abbr": "efi",
+        "name": "efik"
     },
     {
-        "abbr_langue": "arz",
-        "langue_name": "Egyptian Arabic"
+        "abbr": "arz",
+        "name": "Egyptian Arabic"
     },
     {
-        "abbr_langue": "egy",
-        "langue_name": "égyptien ancien"
+        "abbr": "egy",
+        "name": "égyptien ancien"
     },
     {
-        "abbr_langue": "eka",
-        "langue_name": "ekajuk"
+        "abbr": "eka",
+        "name": "ekajuk"
     },
     {
-        "abbr_langue": "elx",
-        "langue_name": "élamite"
+        "abbr": "elx",
+        "name": "élamite"
     },
     {
-        "abbr_langue": "ebu",
-        "langue_name": "embou"
+        "abbr": "ebu",
+        "name": "embou"
     },
     {
-        "abbr_langue": "egl",
-        "langue_name": "Emilian"
+        "abbr": "egl",
+        "name": "Emilian"
     },
     {
-        "abbr_langue": "myv",
-        "langue_name": "erzya"
+        "abbr": "myv",
+        "name": "erzya"
     },
     {
-        "abbr_langue": "es",
-        "langue_name": "espagnol"
+        "abbr": "es",
+        "name": "espagnol"
     },
     {
-        "abbr_langue": "es_ES",
-        "langue_name": "espagnol européen"
+        "abbr": "es_ES",
+        "name": "espagnol européen"
     },
     {
-        "abbr_langue": "es_419",
-        "langue_name": "espagnol latino-américain"
+        "abbr": "es_419",
+        "name": "espagnol latino-américain"
     },
     {
-        "abbr_langue": "es_MX",
-        "langue_name": "espagnol mexicain"
+        "abbr": "es_MX",
+        "name": "espagnol mexicain"
     },
     {
-        "abbr_langue": "eo",
-        "langue_name": "espéranto"
+        "abbr": "eo",
+        "name": "espéranto"
     },
     {
-        "abbr_langue": "et",
-        "langue_name": "estonien"
+        "abbr": "et",
+        "name": "estonien"
     },
     {
-        "abbr_langue": "ee",
-        "langue_name": "éwé"
+        "abbr": "ee",
+        "name": "éwé"
     },
     {
-        "abbr_langue": "ewo",
-        "langue_name": "éwondo"
+        "abbr": "ewo",
+        "name": "éwondo"
     },
     {
-        "abbr_langue": "ext",
-        "langue_name": "Extremaduran"
+        "abbr": "ext",
+        "name": "Extremaduran"
     },
     {
-        "abbr_langue": "fan",
-        "langue_name": "fang"
+        "abbr": "fan",
+        "name": "fang"
     },
     {
-        "abbr_langue": "fat",
-        "langue_name": "fanti"
+        "abbr": "fat",
+        "name": "fanti"
     },
     {
-        "abbr_langue": "fo",
-        "langue_name": "féroïen"
+        "abbr": "fo",
+        "name": "féroïen"
     },
     {
-        "abbr_langue": "fj",
-        "langue_name": "fabbr_languejien"
+        "abbr": "fj",
+        "name": "fabbrjien"
     },
     {
-        "abbr_langue": "hif",
-        "langue_name": "Fiji Hindi"
+        "abbr": "hif",
+        "name": "Fiji Hindi"
     },
     {
-        "abbr_langue": "fil",
-        "langue_name": "filipino"
+        "abbr": "fil",
+        "name": "filipino"
     },
     {
-        "abbr_langue": "fi",
-        "langue_name": "finnois"
+        "abbr": "fi",
+        "name": "finnois"
     },
     {
-        "abbr_langue": "nl_BE",
-        "langue_name": "flamand"
+        "abbr": "nl_BE",
+        "name": "flamand"
     },
     {
-        "abbr_langue": "fon",
-        "langue_name": "fon"
+        "abbr": "fon",
+        "name": "fon"
     },
     {
-        "abbr_langue": "gur",
-        "langue_name": "Frafra"
+        "abbr": "gur",
+        "name": "Frafra"
     },
     {
-        "abbr_langue": "fr",
-        "langue_name": "français"
+        "abbr": "fr",
+        "name": "français"
     },
     {
-        "abbr_langue": "fr_CA",
-        "langue_name": "français canadien"
+        "abbr": "fr_CA",
+        "name": "français canadien"
     },
     {
-        "abbr_langue": "fr_CH",
-        "langue_name": "français suisse"
+        "abbr": "fr_CH",
+        "name": "français suisse"
     },
     {
-        "abbr_langue": "ksh",
-        "langue_name": "francique ripuaire"
+        "abbr": "ksh",
+        "name": "francique ripuaire"
     },
     {
-        "abbr_langue": "frp",
-        "langue_name": "franco-provençal"
+        "abbr": "frp",
+        "name": "franco-provençal"
     },
     {
-        "abbr_langue": "fur",
-        "langue_name": "frioulan"
+        "abbr": "fur",
+        "name": "frioulan"
     },
     {
-        "abbr_langue": "frr",
-        "langue_name": "frison du Nord"
+        "abbr": "frr",
+        "name": "frison du Nord"
     },
     {
-        "abbr_langue": "fy",
-        "langue_name": "frison occabbr_langueental"
+        "abbr": "fy",
+        "name": "frison occabbrental"
     },
     {
-        "abbr_langue": "frs",
-        "langue_name": "frison oriental"
+        "abbr": "frs",
+        "name": "frison oriental"
     },
     {
-        "abbr_langue": "gaa",
-        "langue_name": "ga"
+        "abbr": "gaa",
+        "name": "ga"
     },
     {
-        "abbr_langue": "gd",
-        "langue_name": "gaélique écossais"
+        "abbr": "gd",
+        "name": "gaélique écossais"
     },
     {
-        "abbr_langue": "gag",
-        "langue_name": "gagaouze"
+        "abbr": "gag",
+        "name": "gagaouze"
     },
     {
-        "abbr_langue": "gl",
-        "langue_name": "galicien"
+        "abbr": "gl",
+        "name": "galicien"
     },
     {
-        "abbr_langue": "cy",
-        "langue_name": "gallois"
+        "abbr": "cy",
+        "name": "gallois"
     },
     {
-        "abbr_langue": "gan",
-        "langue_name": "Gan Chinese"
+        "abbr": "gan",
+        "name": "Gan Chinese"
     },
     {
-        "abbr_langue": "lg",
-        "langue_name": "ganda"
+        "abbr": "lg",
+        "name": "ganda"
     },
     {
-        "abbr_langue": "gay",
-        "langue_name": "gayo"
+        "abbr": "gay",
+        "name": "gayo"
     },
     {
-        "abbr_langue": "gba",
-        "langue_name": "gbaya"
+        "abbr": "gba",
+        "name": "gbaya"
     },
     {
-        "abbr_langue": "ka",
-        "langue_name": "géorgien"
+        "abbr": "ka",
+        "name": "géorgien"
     },
     {
-        "abbr_langue": "aln",
-        "langue_name": "Gheg Albanian"
+        "abbr": "aln",
+        "name": "Gheg Albanian"
     },
     {
-        "abbr_langue": "bbj",
-        "langue_name": "ghomala"
+        "abbr": "bbj",
+        "name": "ghomala"
     },
     {
-        "abbr_langue": "glk",
-        "langue_name": "Gilaki"
+        "abbr": "glk",
+        "name": "Gilaki"
     },
     {
-        "abbr_langue": "gil",
-        "langue_name": "gilbertais"
+        "abbr": "gil",
+        "name": "gilbertais"
     },
     {
-        "abbr_langue": "gom",
-        "langue_name": "Goan Konkani"
+        "abbr": "gom",
+        "name": "Goan Konkani"
     },
     {
-        "abbr_langue": "gon",
-        "langue_name": "gondi"
+        "abbr": "gon",
+        "name": "gondi"
     },
     {
-        "abbr_langue": "gor",
-        "langue_name": "gorontalo"
+        "abbr": "gor",
+        "name": "gorontalo"
     },
     {
-        "abbr_langue": "got",
-        "langue_name": "gotique"
+        "abbr": "got",
+        "name": "gotique"
     },
     {
-        "abbr_langue": "grb",
-        "langue_name": "grebo"
+        "abbr": "grb",
+        "name": "grebo"
     },
     {
-        "abbr_langue": "el",
-        "langue_name": "grec"
+        "abbr": "el",
+        "name": "grec"
     },
     {
-        "abbr_langue": "grc",
-        "langue_name": "grec ancien"
+        "abbr": "grc",
+        "name": "grec ancien"
     },
     {
-        "abbr_langue": "kl",
-        "langue_name": "groenlandais"
+        "abbr": "kl",
+        "name": "groenlandais"
     },
     {
-        "abbr_langue": "gn",
-        "langue_name": "guarani"
+        "abbr": "gn",
+        "name": "guarani"
     },
     {
-        "abbr_langue": "gez",
-        "langue_name": "guèze"
+        "abbr": "gez",
+        "name": "guèze"
     },
     {
-        "abbr_langue": "gu",
-        "langue_name": "gujarati"
+        "abbr": "gu",
+        "name": "gujarati"
     },
     {
-        "abbr_langue": "guz",
-        "langue_name": "gusii"
+        "abbr": "guz",
+        "name": "gusii"
     },
     {
-        "abbr_langue": "gwi",
-        "langue_name": "gwichʼin"
+        "abbr": "gwi",
+        "name": "gwichʼin"
     },
     {
-        "abbr_langue": "hai",
-        "langue_name": "haabbr_languea"
+        "abbr": "hai",
+        "name": "haabbra"
     },
     {
-        "abbr_langue": "ht",
-        "langue_name": "haïtien"
+        "abbr": "ht",
+        "name": "haïtien"
     },
     {
-        "abbr_langue": "hak",
-        "langue_name": "Hakka Chinese"
+        "abbr": "hak",
+        "name": "Hakka Chinese"
     },
     {
-        "abbr_langue": "ha",
-        "langue_name": "haoussa"
+        "abbr": "ha",
+        "name": "haoussa"
     },
     {
-        "abbr_langue": "hsb",
-        "langue_name": "haut-sorabe"
+        "abbr": "hsb",
+        "name": "haut-sorabe"
     },
     {
-        "abbr_langue": "haw",
-        "langue_name": "hawaïen"
+        "abbr": "haw",
+        "name": "hawaïen"
     },
     {
-        "abbr_langue": "he",
-        "langue_name": "hébreu"
+        "abbr": "he",
+        "name": "hébreu"
     },
     {
-        "abbr_langue": "hz",
-        "langue_name": "héréro"
+        "abbr": "hz",
+        "name": "héréro"
     },
     {
-        "abbr_langue": "hil",
-        "langue_name": "hiligaynon"
+        "abbr": "hil",
+        "name": "hiligaynon"
     },
     {
-        "abbr_langue": "hi",
-        "langue_name": "hindi"
+        "abbr": "hi",
+        "name": "hindi"
     },
     {
-        "abbr_langue": "ho",
-        "langue_name": "hiri motu"
+        "abbr": "ho",
+        "name": "hiri motu"
     },
     {
-        "abbr_langue": "hit",
-        "langue_name": "hittite"
+        "abbr": "hit",
+        "name": "hittite"
     },
     {
-        "abbr_langue": "hmn",
-        "langue_name": "hmong"
+        "abbr": "hmn",
+        "name": "hmong"
     },
     {
-        "abbr_langue": "hu",
-        "langue_name": "hongrois"
+        "abbr": "hu",
+        "name": "hongrois"
     },
     {
-        "abbr_langue": "hup",
-        "langue_name": "hupa"
+        "abbr": "hup",
+        "name": "hupa"
     },
     {
-        "abbr_langue": "sah",
-        "langue_name": "iakoute"
+        "abbr": "sah",
+        "name": "iakoute"
     },
     {
-        "abbr_langue": "iba",
-        "langue_name": "iban"
+        "abbr": "iba",
+        "name": "iban"
     },
     {
-        "abbr_langue": "ibb",
-        "langue_name": "ibibio"
+        "abbr": "ibb",
+        "name": "ibibio"
     },
     {
-        "abbr_langue": "io",
-        "langue_name": "abbr_langueo"
+        "abbr": "io",
+        "name": "abbro"
     },
     {
-        "abbr_langue": "ig",
-        "langue_name": "igbo"
+        "abbr": "ig",
+        "name": "igbo"
     },
     {
-        "abbr_langue": "ilo",
-        "langue_name": "ilokano"
+        "abbr": "ilo",
+        "name": "ilokano"
     },
     {
-        "abbr_langue": "abbr_langue",
-        "langue_name": "indonésien"
+        "abbr": "abbr",
+        "name": "indonésien"
     },
     {
-        "abbr_langue": "inh",
-        "langue_name": "ingouche"
+        "abbr": "inh",
+        "name": "ingouche"
     },
     {
-        "abbr_langue": "izh",
-        "langue_name": "Ingrian"
+        "abbr": "izh",
+        "name": "Ingrian"
     },
     {
-        "abbr_langue": "ia",
-        "langue_name": "interlingua"
+        "abbr": "ia",
+        "name": "interlingua"
     },
     {
-        "abbr_langue": "ie",
-        "langue_name": "interlingue"
+        "abbr": "ie",
+        "name": "interlingue"
     },
     {
-        "abbr_langue": "iu",
-        "langue_name": "inuktitut"
+        "abbr": "iu",
+        "name": "inuktitut"
     },
     {
-        "abbr_langue": "ik",
-        "langue_name": "inupiaq"
+        "abbr": "ik",
+        "name": "inupiaq"
     },
     {
-        "abbr_langue": "ga",
-        "langue_name": "irlandais"
+        "abbr": "ga",
+        "name": "irlandais"
     },
     {
-        "abbr_langue": "is",
-        "langue_name": "islandais"
+        "abbr": "is",
+        "name": "islandais"
     },
     {
-        "abbr_langue": "it",
-        "langue_name": "italien"
+        "abbr": "it",
+        "name": "italien"
     },
     {
-        "abbr_langue": "jam",
-        "langue_name": "Jamaican Creole English"
+        "abbr": "jam",
+        "name": "Jamaican Creole English"
     },
     {
-        "abbr_langue": "ja",
-        "langue_name": "japonais"
+        "abbr": "ja",
+        "name": "japonais"
     },
     {
-        "abbr_langue": "chn",
-        "langue_name": "jargon chinook"
+        "abbr": "chn",
+        "name": "jargon chinook"
     },
     {
-        "abbr_langue": "jv",
-        "langue_name": "javanais"
+        "abbr": "jv",
+        "name": "javanais"
     },
     {
-        "abbr_langue": "kaj",
-        "langue_name": "jju"
+        "abbr": "kaj",
+        "name": "jju"
     },
     {
-        "abbr_langue": "jrb",
-        "langue_name": "judéo-arabe"
+        "abbr": "jrb",
+        "name": "judéo-arabe"
     },
     {
-        "abbr_langue": "jpr",
-        "langue_name": "judéo-persan"
+        "abbr": "jpr",
+        "name": "judéo-persan"
     },
     {
-        "abbr_langue": "jut",
-        "langue_name": "Jutish"
+        "abbr": "jut",
+        "name": "Jutish"
     },
     {
-        "abbr_langue": "quc",
-        "langue_name": "k’iche’"
+        "abbr": "quc",
+        "name": "k’iche’"
     },
     {
-        "abbr_langue": "kbd",
-        "langue_name": "kabardin"
+        "abbr": "kbd",
+        "name": "kabardin"
     },
     {
-        "abbr_langue": "kab",
-        "langue_name": "kabyle"
+        "abbr": "kab",
+        "name": "kabyle"
     },
     {
-        "abbr_langue": "kac",
-        "langue_name": "kachin"
+        "abbr": "kac",
+        "name": "kachin"
     },
     {
-        "abbr_langue": "csb",
-        "langue_name": "kachoube"
+        "abbr": "csb",
+        "name": "kachoube"
     },
     {
-        "abbr_langue": "kgp",
-        "langue_name": "Kaingang"
+        "abbr": "kgp",
+        "name": "Kaingang"
     },
     {
-        "abbr_langue": "kkj",
-        "langue_name": "kako"
+        "abbr": "kkj",
+        "name": "kako"
     },
     {
-        "abbr_langue": "kln",
-        "langue_name": "kalenjin"
+        "abbr": "kln",
+        "name": "kalenjin"
     },
     {
-        "abbr_langue": "xal",
-        "langue_name": "kalmouk"
+        "abbr": "xal",
+        "name": "kalmouk"
     },
     {
-        "abbr_langue": "kam",
-        "langue_name": "kamba"
+        "abbr": "kam",
+        "name": "kamba"
     },
     {
-        "abbr_langue": "kbl",
-        "langue_name": "kanembou"
+        "abbr": "kbl",
+        "name": "kanembou"
     },
     {
-        "abbr_langue": "kn",
-        "langue_name": "kannada"
+        "abbr": "kn",
+        "name": "kannada"
     },
     {
-        "abbr_langue": "kr",
-        "langue_name": "kanouri"
+        "abbr": "kr",
+        "name": "kanouri"
     },
     {
-        "abbr_langue": "kaa",
-        "langue_name": "karakalpak"
+        "abbr": "kaa",
+        "name": "karakalpak"
     },
     {
-        "abbr_langue": "krc",
-        "langue_name": "karatchaï balkar"
+        "abbr": "krc",
+        "name": "karatchaï balkar"
     },
     {
-        "abbr_langue": "ks",
-        "langue_name": "kashmiri"
+        "abbr": "ks",
+        "name": "kashmiri"
     },
     {
-        "abbr_langue": "kaw",
-        "langue_name": "kawi"
+        "abbr": "kaw",
+        "name": "kawi"
     },
     {
-        "abbr_langue": "kk",
-        "langue_name": "kazakh"
+        "abbr": "kk",
+        "name": "kazakh"
     },
     {
-        "abbr_langue": "ken",
-        "langue_name": "Kenyang"
+        "abbr": "ken",
+        "name": "Kenyang"
     },
     {
-        "abbr_langue": "kha",
-        "langue_name": "khasi"
+        "abbr": "kha",
+        "name": "khasi"
     },
     {
-        "abbr_langue": "km",
-        "langue_name": "khmer"
+        "abbr": "km",
+        "name": "khmer"
     },
     {
-        "abbr_langue": "kho",
-        "langue_name": "khotanais"
+        "abbr": "kho",
+        "name": "khotanais"
     },
     {
-        "abbr_langue": "khw",
-        "langue_name": "Khowar"
+        "abbr": "khw",
+        "name": "Khowar"
     },
     {
-        "abbr_langue": "cgg",
-        "langue_name": "kiga"
+        "abbr": "cgg",
+        "name": "kiga"
     },
     {
-        "abbr_langue": "ki",
-        "langue_name": "kikuyu"
+        "abbr": "ki",
+        "name": "kikuyu"
     },
     {
-        "abbr_langue": "kmb",
-        "langue_name": "kiMboundou"
+        "abbr": "kmb",
+        "name": "kiMboundou"
     },
     {
-        "abbr_langue": "krj",
-        "langue_name": "Kinaray-a"
+        "abbr": "krj",
+        "name": "Kinaray-a"
     },
     {
-        "abbr_langue": "ky",
-        "langue_name": "kirghize"
+        "abbr": "ky",
+        "name": "kirghize"
     },
     {
-        "abbr_langue": "kiu",
-        "langue_name": "Kirmanjki"
+        "abbr": "kiu",
+        "name": "Kirmanjki"
     },
     {
-        "abbr_langue": "tlh",
-        "langue_name": "klingon"
+        "abbr": "tlh",
+        "name": "klingon"
     },
     {
-        "abbr_langue": "bkm",
-        "langue_name": "kom"
+        "abbr": "bkm",
+        "name": "kom"
     },
     {
-        "abbr_langue": "kv",
-        "langue_name": "komi"
+        "abbr": "kv",
+        "name": "komi"
     },
     {
-        "abbr_langue": "koi",
-        "langue_name": "komi-permiak"
+        "abbr": "koi",
+        "name": "komi-permiak"
     },
     {
-        "abbr_langue": "kg",
-        "langue_name": "kongo"
+        "abbr": "kg",
+        "name": "kongo"
     },
     {
-        "abbr_langue": "kok",
-        "langue_name": "konkani"
+        "abbr": "kok",
+        "name": "konkani"
     },
     {
-        "abbr_langue": "kfo",
-        "langue_name": "koro"
+        "abbr": "kfo",
+        "name": "koro"
     },
     {
-        "abbr_langue": "avk",
-        "langue_name": "Kotava"
+        "abbr": "avk",
+        "name": "Kotava"
     },
     {
-        "abbr_langue": "kum",
-        "langue_name": "koumyk"
+        "abbr": "kum",
+        "name": "koumyk"
     },
     {
-        "abbr_langue": "khq",
-        "langue_name": "koyra chiini"
+        "abbr": "khq",
+        "name": "koyra chiini"
     },
     {
-        "abbr_langue": "ses",
-        "langue_name": "koyraboro senni"
+        "abbr": "ses",
+        "name": "koyraboro senni"
     },
     {
-        "abbr_langue": "kpe",
-        "langue_name": "kpellé"
+        "abbr": "kpe",
+        "name": "kpellé"
     },
     {
-        "abbr_langue": "kri",
-        "langue_name": "Krio"
+        "abbr": "kri",
+        "name": "Krio"
     },
     {
-        "abbr_langue": "kj",
-        "langue_name": "kuanyama"
+        "abbr": "kj",
+        "name": "kuanyama"
     },
     {
-        "abbr_langue": "ku",
-        "langue_name": "kurde"
+        "abbr": "ku",
+        "name": "kurde"
     },
     {
-        "abbr_langue": "kru",
-        "langue_name": "kurukh"
+        "abbr": "kru",
+        "name": "kurukh"
     },
     {
-        "abbr_langue": "kos",
-        "langue_name": "kusaien"
+        "abbr": "kos",
+        "name": "kusaien"
     },
     {
-        "abbr_langue": "kut",
-        "langue_name": "kutenai"
+        "abbr": "kut",
+        "name": "kutenai"
     },
     {
-        "abbr_langue": "nmg",
-        "langue_name": "kwasio"
+        "abbr": "nmg",
+        "name": "kwasio"
     },
     {
-        "abbr_langue": "lad",
-        "langue_name": "ladino"
+        "abbr": "lad",
+        "name": "ladino"
     },
     {
-        "abbr_langue": "lah",
-        "langue_name": "lahnda"
+        "abbr": "lah",
+        "name": "lahnda"
     },
     {
-        "abbr_langue": "lkt",
-        "langue_name": "lakota"
+        "abbr": "lkt",
+        "name": "lakota"
     },
     {
-        "abbr_langue": "lam",
-        "langue_name": "lamba"
+        "abbr": "lam",
+        "name": "lamba"
     },
     {
-        "abbr_langue": "lag",
-        "langue_name": "langi"
+        "abbr": "lag",
+        "name": "langi"
     },
     {
-        "abbr_langue": "und",
-        "langue_name": "langue indéterminée"
+        "abbr": "und",
+        "name": "langue indéterminée"
     },
     {
-        "abbr_langue": "lo",
-        "langue_name": "lao"
+        "abbr": "lo",
+        "name": "lao"
     },
     {
-        "abbr_langue": "ltg",
-        "langue_name": "Latgalian"
+        "abbr": "ltg",
+        "name": "Latgalian"
     },
     {
-        "abbr_langue": "la",
-        "langue_name": "latin"
+        "abbr": "la",
+        "name": "latin"
     },
     {
-        "abbr_langue": "lzz",
-        "langue_name": "Laz"
+        "abbr": "lzz",
+        "name": "Laz"
     },
     {
-        "abbr_langue": "lv",
-        "langue_name": "letton"
+        "abbr": "lv",
+        "name": "letton"
     },
     {
-        "abbr_langue": "lez",
-        "langue_name": "lezghien"
+        "abbr": "lez",
+        "name": "lezghien"
     },
     {
-        "abbr_langue": "lij",
-        "langue_name": "Ligurian"
+        "abbr": "lij",
+        "name": "Ligurian"
     },
     {
-        "abbr_langue": "li",
-        "langue_name": "limbourgeois"
+        "abbr": "li",
+        "name": "limbourgeois"
     },
     {
-        "abbr_langue": "ln",
-        "langue_name": "lingala"
+        "abbr": "ln",
+        "name": "lingala"
     },
     {
-        "abbr_langue": "lfn",
-        "langue_name": "Lingua Franca Nova"
+        "abbr": "lfn",
+        "name": "Lingua Franca Nova"
     },
     {
-        "abbr_langue": "lzh",
-        "langue_name": "Literary Chinese"
+        "abbr": "lzh",
+        "name": "Literary Chinese"
     },
     {
-        "abbr_langue": "lt",
-        "langue_name": "lituanien"
+        "abbr": "lt",
+        "name": "lituanien"
     },
     {
-        "abbr_langue": "liv",
-        "langue_name": "Livonian"
+        "abbr": "liv",
+        "name": "Livonian"
     },
     {
-        "abbr_langue": "jbo",
-        "langue_name": "lojban"
+        "abbr": "jbo",
+        "name": "lojban"
     },
     {
-        "abbr_langue": "lmo",
-        "langue_name": "Lombard"
+        "abbr": "lmo",
+        "name": "Lombard"
     },
     {
-        "abbr_langue": "sli",
-        "langue_name": "Lower Silesian"
+        "abbr": "sli",
+        "name": "Lower Silesian"
     },
     {
-        "abbr_langue": "loz",
-        "langue_name": "lozi"
+        "abbr": "loz",
+        "name": "lozi"
     },
     {
-        "abbr_langue": "lu",
-        "langue_name": "luba-katanga"
+        "abbr": "lu",
+        "name": "luba-katanga"
     },
     {
-        "abbr_langue": "lua",
-        "langue_name": "luba-lulua"
+        "abbr": "lua",
+        "name": "luba-lulua"
     },
     {
-        "abbr_langue": "lui",
-        "langue_name": "luiseno"
+        "abbr": "lui",
+        "name": "luiseno"
     },
     {
-        "abbr_langue": "lun",
-        "langue_name": "lunda"
+        "abbr": "lun",
+        "name": "lunda"
     },
     {
-        "abbr_langue": "luo",
-        "langue_name": "luo"
+        "abbr": "luo",
+        "name": "luo"
     },
     {
-        "abbr_langue": "lus",
-        "langue_name": "lushai"
+        "abbr": "lus",
+        "name": "lushai"
     },
     {
-        "abbr_langue": "lb",
-        "langue_name": "luxembourgeois"
+        "abbr": "lb",
+        "name": "luxembourgeois"
     },
     {
-        "abbr_langue": "mde",
-        "langue_name": "maba"
+        "abbr": "mde",
+        "name": "maba"
     },
     {
-        "abbr_langue": "mk",
-        "langue_name": "macédonien"
+        "abbr": "mk",
+        "name": "macédonien"
     },
     {
-        "abbr_langue": "jmc",
-        "langue_name": "machame"
+        "abbr": "jmc",
+        "name": "machame"
     },
     {
-        "abbr_langue": "mad",
-        "langue_name": "madurais"
+        "abbr": "mad",
+        "name": "madurais"
     },
     {
-        "abbr_langue": "maf",
-        "langue_name": "mafa"
+        "abbr": "maf",
+        "name": "mafa"
     },
     {
-        "abbr_langue": "mag",
-        "langue_name": "magahi"
+        "abbr": "mag",
+        "name": "magahi"
     },
     {
-        "abbr_langue": "vmf",
-        "langue_name": "Main-Franconian"
+        "abbr": "vmf",
+        "name": "Main-Franconian"
     },
     {
-        "abbr_langue": "mai",
-        "langue_name": "maithili"
+        "abbr": "mai",
+        "name": "maithili"
     },
     {
-        "abbr_langue": "mak",
-        "langue_name": "makassar"
+        "abbr": "mak",
+        "name": "makassar"
     },
     {
-        "abbr_langue": "mgh",
-        "langue_name": "makhuwa-meetto"
+        "abbr": "mgh",
+        "name": "makhuwa-meetto"
     },
     {
-        "abbr_langue": "kde",
-        "langue_name": "makonde"
+        "abbr": "kde",
+        "name": "makonde"
     },
     {
-        "abbr_langue": "ms",
-        "langue_name": "malais"
+        "abbr": "ms",
+        "name": "malais"
     },
     {
-        "abbr_langue": "ml",
-        "langue_name": "malayalam"
+        "abbr": "ml",
+        "name": "malayalam"
     },
     {
-        "abbr_langue": "dv",
-        "langue_name": "maldivien"
+        "abbr": "dv",
+        "name": "maldivien"
     },
     {
-        "abbr_langue": "mg",
-        "langue_name": "malgache"
+        "abbr": "mg",
+        "name": "malgache"
     },
     {
-        "abbr_langue": "mt",
-        "langue_name": "maltais"
+        "abbr": "mt",
+        "name": "maltais"
     },
     {
-        "abbr_langue": "mdr",
-        "langue_name": "mandar"
+        "abbr": "mdr",
+        "name": "mandar"
     },
     {
-        "abbr_langue": "mnc",
-        "langue_name": "mandchou"
+        "abbr": "mnc",
+        "name": "mandchou"
     },
     {
-        "abbr_langue": "man",
-        "langue_name": "mandingue"
+        "abbr": "man",
+        "name": "mandingue"
     },
     {
-        "abbr_langue": "mni",
-        "langue_name": "manipuri"
+        "abbr": "mni",
+        "name": "manipuri"
     },
     {
-        "abbr_langue": "gv",
-        "langue_name": "manx"
+        "abbr": "gv",
+        "name": "manx"
     },
     {
-        "abbr_langue": "mi",
-        "langue_name": "maori"
+        "abbr": "mi",
+        "name": "maori"
     },
     {
-        "abbr_langue": "mr",
-        "langue_name": "marathe"
+        "abbr": "mr",
+        "name": "marathe"
     },
     {
-        "abbr_langue": "chm",
-        "langue_name": "mari"
+        "abbr": "chm",
+        "name": "mari"
     },
     {
-        "abbr_langue": "mh",
-        "langue_name": "marshall"
+        "abbr": "mh",
+        "name": "marshall"
     },
     {
-        "abbr_langue": "mwr",
-        "langue_name": "marwarî"
+        "abbr": "mwr",
+        "name": "marwarî"
     },
     {
-        "abbr_langue": "mas",
-        "langue_name": "masai"
+        "abbr": "mas",
+        "name": "masai"
     },
     {
-        "abbr_langue": "mzn",
-        "langue_name": "Mazanderani"
+        "abbr": "mzn",
+        "name": "Mazanderani"
     },
     {
-        "abbr_langue": "byv",
-        "langue_name": "medumba"
+        "abbr": "byv",
+        "name": "medumba"
     },
     {
-        "abbr_langue": "men",
-        "langue_name": "mendé"
+        "abbr": "men",
+        "name": "mendé"
     },
     {
-        "abbr_langue": "mwv",
-        "langue_name": "Mentawai"
+        "abbr": "mwv",
+        "name": "Mentawai"
     },
     {
-        "abbr_langue": "mer",
-        "langue_name": "merou"
+        "abbr": "mer",
+        "name": "merou"
     },
     {
-        "abbr_langue": "mgo",
-        "langue_name": "méta’"
+        "abbr": "mgo",
+        "name": "méta’"
     },
     {
-        "abbr_langue": "mic",
-        "langue_name": "micmac"
+        "abbr": "mic",
+        "name": "micmac"
     },
     {
-        "abbr_langue": "nan",
-        "langue_name": "Min Nan Chinese"
+        "abbr": "nan",
+        "name": "Min Nan Chinese"
     },
     {
-        "abbr_langue": "min",
-        "langue_name": "minangkabau"
+        "abbr": "min",
+        "name": "minangkabau"
     },
     {
-        "abbr_langue": "xmf",
-        "langue_name": "Mingrelian"
+        "abbr": "xmf",
+        "name": "Mingrelian"
     },
     {
-        "abbr_langue": "mwl",
-        "langue_name": "mirandais"
+        "abbr": "mwl",
+        "name": "mirandais"
     },
     {
-        "abbr_langue": "moh",
-        "langue_name": "mohawk"
+        "abbr": "moh",
+        "name": "mohawk"
     },
     {
-        "abbr_langue": "mdf",
-        "langue_name": "moksa"
+        "abbr": "mdf",
+        "name": "moksa"
     },
     {
-        "abbr_langue": "ro_MD",
-        "langue_name": "moldave"
+        "abbr": "ro_MD",
+        "name": "moldave"
     },
     {
-        "abbr_langue": "lol",
-        "langue_name": "mongo"
+        "abbr": "lol",
+        "name": "mongo"
     },
     {
-        "abbr_langue": "mn",
-        "langue_name": "mongol"
+        "abbr": "mn",
+        "name": "mongol"
     },
     {
-        "abbr_langue": "mos",
-        "langue_name": "moré"
+        "abbr": "mos",
+        "name": "moré"
     },
     {
-        "abbr_langue": "ary",
-        "langue_name": "Moroccan Arabic"
+        "abbr": "ary",
+        "name": "Moroccan Arabic"
     },
     {
-        "abbr_langue": "enm",
-        "langue_name": "moyen anglais"
+        "abbr": "enm",
+        "name": "moyen anglais"
     },
     {
-        "abbr_langue": "frm",
-        "langue_name": "moyen français"
+        "abbr": "frm",
+        "name": "moyen français"
     },
     {
-        "abbr_langue": "gmh",
-        "langue_name": "moyen haut-allemand"
+        "abbr": "gmh",
+        "name": "moyen haut-allemand"
     },
     {
-        "abbr_langue": "mga",
-        "langue_name": "moyen irlandais"
+        "abbr": "mga",
+        "name": "moyen irlandais"
     },
     {
-        "abbr_langue": "dum",
-        "langue_name": "moyen néerlandais"
+        "abbr": "dum",
+        "name": "moyen néerlandais"
     },
     {
-        "abbr_langue": "mul",
-        "langue_name": "multilingue"
+        "abbr": "mul",
+        "name": "multilingue"
     },
     {
-        "abbr_langue": "mua",
-        "langue_name": "mundang"
+        "abbr": "mua",
+        "name": "mundang"
     },
     {
-        "abbr_langue": "ttt",
-        "langue_name": "Muslim Tat"
+        "abbr": "ttt",
+        "name": "Muslim Tat"
     },
     {
-        "abbr_langue": "mye",
-        "langue_name": "myènè"
+        "abbr": "mye",
+        "name": "myènè"
     },
     {
-        "abbr_langue": "nqo",
-        "langue_name": "n’ko"
+        "abbr": "nqo",
+        "name": "n’ko"
     },
     {
-        "abbr_langue": "naq",
-        "langue_name": "nama"
+        "abbr": "naq",
+        "name": "nama"
     },
     {
-        "abbr_langue": "nap",
-        "langue_name": "napolitain"
+        "abbr": "nap",
+        "name": "napolitain"
     },
     {
-        "abbr_langue": "na",
-        "langue_name": "nauruan"
+        "abbr": "na",
+        "name": "nauruan"
     },
     {
-        "abbr_langue": "nv",
-        "langue_name": "navaho"
+        "abbr": "nv",
+        "name": "navaho"
     },
     {
-        "abbr_langue": "nd",
-        "langue_name": "ndébélé du Nord"
+        "abbr": "nd",
+        "name": "ndébélé du Nord"
     },
     {
-        "abbr_langue": "nr",
-        "langue_name": "ndébélé du Sud"
+        "abbr": "nr",
+        "name": "ndébélé du Sud"
     },
     {
-        "abbr_langue": "ng",
-        "langue_name": "ndonga"
+        "abbr": "ng",
+        "name": "ndonga"
     },
     {
-        "abbr_langue": "nl",
-        "langue_name": "néerlandais"
+        "abbr": "nl",
+        "name": "néerlandais"
     },
     {
-        "abbr_langue": "ne",
-        "langue_name": "népalais"
+        "abbr": "ne",
+        "name": "népalais"
     },
     {
-        "abbr_langue": "new",
-        "langue_name": "newari"
+        "abbr": "new",
+        "name": "newari"
     },
     {
-        "abbr_langue": "nwc",
-        "langue_name": "newarî classique"
+        "abbr": "nwc",
+        "name": "newarî classique"
     },
     {
-        "abbr_langue": "sba",
-        "langue_name": "ngambay"
+        "abbr": "sba",
+        "name": "ngambay"
     },
     {
-        "abbr_langue": "nnh",
-        "langue_name": "ngiemboon"
+        "abbr": "nnh",
+        "name": "ngiemboon"
     },
     {
-        "abbr_langue": "jgo",
-        "langue_name": "ngomba"
+        "abbr": "jgo",
+        "name": "ngomba"
     },
     {
-        "abbr_langue": "yrl",
-        "langue_name": "Nheengatu"
+        "abbr": "yrl",
+        "name": "Nheengatu"
     },
     {
-        "abbr_langue": "nia",
-        "langue_name": "nias"
+        "abbr": "nia",
+        "name": "nias"
     },
     {
-        "abbr_langue": "niu",
-        "langue_name": "niué"
+        "abbr": "niu",
+        "name": "niué"
     },
     {
-        "abbr_langue": "nog",
-        "langue_name": "nogaï"
+        "abbr": "nog",
+        "name": "nogaï"
     },
     {
-        "abbr_langue": "no",
-        "langue_name": "norvégien"
+        "abbr": "no",
+        "name": "norvégien"
     },
     {
-        "abbr_langue": "nb",
-        "langue_name": "norvégien bokmål"
+        "abbr": "nb",
+        "name": "norvégien bokmål"
     },
     {
-        "abbr_langue": "nn",
-        "langue_name": "norvégien nynorsk"
+        "abbr": "nn",
+        "name": "norvégien nynorsk"
     },
     {
-        "abbr_langue": "nov",
-        "langue_name": "Novial"
+        "abbr": "nov",
+        "name": "Novial"
     },
     {
-        "abbr_langue": "nus",
-        "langue_name": "nuer"
+        "abbr": "nus",
+        "name": "nuer"
     },
     {
-        "abbr_langue": "nym",
-        "langue_name": "nyamwezi"
+        "abbr": "nym",
+        "name": "nyamwezi"
     },
     {
-        "abbr_langue": "ny",
-        "langue_name": "nyanja"
+        "abbr": "ny",
+        "name": "nyanja"
     },
     {
-        "abbr_langue": "nyn",
-        "langue_name": "nyankolé"
+        "abbr": "nyn",
+        "name": "nyankolé"
     },
     {
-        "abbr_langue": "nyo",
-        "langue_name": "nyoro"
+        "abbr": "nyo",
+        "name": "nyoro"
     },
     {
-        "abbr_langue": "nzi",
-        "langue_name": "nzema"
+        "abbr": "nzi",
+        "name": "nzema"
     },
     {
-        "abbr_langue": "oc",
-        "langue_name": "occitan"
+        "abbr": "oc",
+        "name": "occitan"
     },
     {
-        "abbr_langue": "oj",
-        "langue_name": "ojibwa"
+        "abbr": "oj",
+        "name": "ojibwa"
     },
     {
-        "abbr_langue": "luy",
-        "langue_name": "oluluyia"
+        "abbr": "luy",
+        "name": "oluluyia"
     },
     {
-        "abbr_langue": "or",
-        "langue_name": "oriya"
+        "abbr": "or",
+        "name": "oriya"
     },
     {
-        "abbr_langue": "om",
-        "langue_name": "oromo"
+        "abbr": "om",
+        "name": "oromo"
     },
     {
-        "abbr_langue": "osa",
-        "langue_name": "osage"
+        "abbr": "osa",
+        "name": "osage"
     },
     {
-        "abbr_langue": "os",
-        "langue_name": "ossète"
+        "abbr": "os",
+        "name": "ossète"
     },
     {
-        "abbr_langue": "udm",
-        "langue_name": "oudmourte"
+        "abbr": "udm",
+        "name": "oudmourte"
     },
     {
-        "abbr_langue": "uga",
-        "langue_name": "ougaritique"
+        "abbr": "uga",
+        "name": "ougaritique"
     },
     {
-        "abbr_langue": "ug",
-        "langue_name": "ouïghour"
+        "abbr": "ug",
+        "name": "ouïghour"
     },
     {
-        "abbr_langue": "ur",
-        "langue_name": "ourdou"
+        "abbr": "ur",
+        "name": "ourdou"
     },
     {
-        "abbr_langue": "uz",
-        "langue_name": "ouzbek"
+        "abbr": "uz",
+        "name": "ouzbek"
     },
     {
-        "abbr_langue": "ps",
-        "langue_name": "pachto"
+        "abbr": "ps",
+        "name": "pachto"
     },
     {
-        "abbr_langue": "pal",
-        "langue_name": "pahlavi"
+        "abbr": "pal",
+        "name": "pahlavi"
     },
     {
-        "abbr_langue": "pfl",
-        "langue_name": "Palatine German"
+        "abbr": "pfl",
+        "name": "Palatine German"
     },
     {
-        "abbr_langue": "pau",
-        "langue_name": "palau"
+        "abbr": "pau",
+        "name": "palau"
     },
     {
-        "abbr_langue": "pi",
-        "langue_name": "pali"
+        "abbr": "pi",
+        "name": "pali"
     },
     {
-        "abbr_langue": "pam",
-        "langue_name": "pampangan"
+        "abbr": "pam",
+        "name": "pampangan"
     },
     {
-        "abbr_langue": "pag",
-        "langue_name": "pangasinan"
+        "abbr": "pag",
+        "name": "pangasinan"
     },
     {
-        "abbr_langue": "pap",
-        "langue_name": "papiamento"
+        "abbr": "pap",
+        "name": "papiamento"
     },
     {
-        "abbr_langue": "pa",
-        "langue_name": "pendjabi"
+        "abbr": "pa",
+        "name": "pendjabi"
     },
     {
-        "abbr_langue": "pdc",
-        "langue_name": "Pennsylvania German"
+        "abbr": "pdc",
+        "name": "Pennsylvania German"
     },
     {
-        "abbr_langue": "fa",
-        "langue_name": "persan"
+        "abbr": "fa",
+        "name": "persan"
     },
     {
-        "abbr_langue": "peo",
-        "langue_name": "persan ancien"
+        "abbr": "peo",
+        "name": "persan ancien"
     },
     {
-        "abbr_langue": "ff",
-        "langue_name": "peul"
+        "abbr": "ff",
+        "name": "peul"
     },
     {
-        "abbr_langue": "phn",
-        "langue_name": "phénicien"
+        "abbr": "phn",
+        "name": "phénicien"
     },
     {
-        "abbr_langue": "pcd",
-        "langue_name": "Picard"
+        "abbr": "pcd",
+        "name": "Picard"
     },
     {
-        "abbr_langue": "pms",
-        "langue_name": "Piedmontese"
+        "abbr": "pms",
+        "name": "Piedmontese"
     },
     {
-        "abbr_langue": "pdt",
-        "langue_name": "Plautdietsch"
+        "abbr": "pdt",
+        "name": "Plautdietsch"
     },
     {
-        "abbr_langue": "pon",
-        "langue_name": "pohnpei"
+        "abbr": "pon",
+        "name": "pohnpei"
     },
     {
-        "abbr_langue": "pl",
-        "langue_name": "polonais"
+        "abbr": "pl",
+        "name": "polonais"
     },
     {
-        "abbr_langue": "pnt",
-        "langue_name": "Pontic"
+        "abbr": "pnt",
+        "name": "Pontic"
     },
     {
-        "abbr_langue": "pt",
-        "langue_name": "portugais"
+        "abbr": "pt",
+        "name": "portugais"
     },
     {
-        "abbr_langue": "pt_BR",
-        "langue_name": "portugais brésilien"
+        "abbr": "pt_BR",
+        "name": "portugais brésilien"
     },
     {
-        "abbr_langue": "pt_PT",
-        "langue_name": "portugais européen"
+        "abbr": "pt_PT",
+        "name": "portugais européen"
     },
     {
-        "abbr_langue": "pro",
-        "langue_name": "provençal ancien"
+        "abbr": "pro",
+        "name": "provençal ancien"
     },
     {
-        "abbr_langue": "prg",
-        "langue_name": "Prussian"
+        "abbr": "prg",
+        "name": "Prussian"
     },
     {
-        "abbr_langue": "qu",
-        "langue_name": "quechua"
+        "abbr": "qu",
+        "name": "quechua"
     },
     {
-        "abbr_langue": "root",
-        "langue_name": "racine"
+        "abbr": "root",
+        "name": "racine"
     },
     {
-        "abbr_langue": "raj",
-        "langue_name": "rajasthani"
+        "abbr": "raj",
+        "name": "rajasthani"
     },
     {
-        "abbr_langue": "rap",
-        "langue_name": "rapanui"
+        "abbr": "rap",
+        "name": "rapanui"
     },
     {
-        "abbr_langue": "rar",
-        "langue_name": "rarotongien"
+        "abbr": "rar",
+        "name": "rarotongien"
     },
     {
-        "abbr_langue": "rif",
-        "langue_name": "Riffian"
+        "abbr": "rif",
+        "name": "Riffian"
     },
     {
-        "abbr_langue": "rgn",
-        "langue_name": "Romagnol"
+        "abbr": "rgn",
+        "name": "Romagnol"
     },
     {
-        "abbr_langue": "rm",
-        "langue_name": "romanche"
+        "abbr": "rm",
+        "name": "romanche"
     },
     {
-        "abbr_langue": "rof",
-        "langue_name": "rombo"
+        "abbr": "rof",
+        "name": "rombo"
     },
     {
-        "abbr_langue": "rtm",
-        "langue_name": "Rotuman"
+        "abbr": "rtm",
+        "name": "Rotuman"
     },
     {
-        "abbr_langue": "ro",
-        "langue_name": "roumain"
+        "abbr": "ro",
+        "name": "roumain"
     },
     {
-        "abbr_langue": "rn",
-        "langue_name": "roundi"
+        "abbr": "rn",
+        "name": "roundi"
     },
     {
-        "abbr_langue": "rug",
-        "langue_name": "Roviana"
+        "abbr": "rug",
+        "name": "Roviana"
     },
     {
-        "abbr_langue": "ru",
-        "langue_name": "russe"
+        "abbr": "ru",
+        "name": "russe"
     },
     {
-        "abbr_langue": "rue",
-        "langue_name": "Rusyn"
+        "abbr": "rue",
+        "name": "Rusyn"
     },
     {
-        "abbr_langue": "rwk",
-        "langue_name": "rwa"
+        "abbr": "rwk",
+        "name": "rwa"
     },
     {
-        "abbr_langue": "rw",
-        "langue_name": "rwanda"
+        "abbr": "rw",
+        "name": "rwanda"
     },
     {
-        "abbr_langue": "ssy",
-        "langue_name": "saho"
+        "abbr": "ssy",
+        "name": "saho"
     },
     {
-        "abbr_langue": "saq",
-        "langue_name": "samburu"
+        "abbr": "saq",
+        "name": "samburu"
     },
     {
-        "abbr_langue": "smn",
-        "langue_name": "sami d’Inari"
+        "abbr": "smn",
+        "name": "sami d’Inari"
     },
     {
-        "abbr_langue": "smj",
-        "langue_name": "sami de Lule"
+        "abbr": "smj",
+        "name": "sami de Lule"
     },
     {
-        "abbr_langue": "se",
-        "langue_name": "sami du Nord"
+        "abbr": "se",
+        "name": "sami du Nord"
     },
     {
-        "abbr_langue": "sma",
-        "langue_name": "sami du Sud"
+        "abbr": "sma",
+        "name": "sami du Sud"
     },
     {
-        "abbr_langue": "sms",
-        "langue_name": "sami skolt"
+        "abbr": "sms",
+        "name": "sami skolt"
     },
     {
-        "abbr_langue": "sm",
-        "langue_name": "samoan"
+        "abbr": "sm",
+        "name": "samoan"
     },
     {
-        "abbr_langue": "sgs",
-        "langue_name": "Samogitian"
+        "abbr": "sgs",
+        "name": "Samogitian"
     },
     {
-        "abbr_langue": "sad",
-        "langue_name": "sandawe"
+        "abbr": "sad",
+        "name": "sandawe"
     },
     {
-        "abbr_langue": "sg",
-        "langue_name": "sangho"
+        "abbr": "sg",
+        "name": "sangho"
     },
     {
-        "abbr_langue": "sbp",
-        "langue_name": "sangu"
+        "abbr": "sbp",
+        "name": "sangu"
     },
     {
-        "abbr_langue": "zxx",
-        "langue_name": "sans contenu linguistique"
+        "abbr": "zxx",
+        "name": "sans contenu linguistique"
     },
     {
-        "abbr_langue": "sa",
-        "langue_name": "sanskrit"
+        "abbr": "sa",
+        "name": "sanskrit"
     },
     {
-        "abbr_langue": "sat",
-        "langue_name": "santal"
+        "abbr": "sat",
+        "name": "santal"
     },
     {
-        "abbr_langue": "sc",
-        "langue_name": "sarde"
+        "abbr": "sc",
+        "name": "sarde"
     },
     {
-        "abbr_langue": "sas",
-        "langue_name": "sasak"
+        "abbr": "sas",
+        "name": "sasak"
     },
     {
-        "abbr_langue": "sdc",
-        "langue_name": "Sassarese Sardinian"
+        "abbr": "sdc",
+        "name": "Sassarese Sardinian"
     },
     {
-        "abbr_langue": "stq",
-        "langue_name": "Saterland Frisian"
+        "abbr": "stq",
+        "name": "Saterland Frisian"
     },
     {
-        "abbr_langue": "saz",
-        "langue_name": "Saurashtra"
+        "abbr": "saz",
+        "name": "Saurashtra"
     },
     {
-        "abbr_langue": "sly",
-        "langue_name": "Selayar"
+        "abbr": "sly",
+        "name": "Selayar"
     },
     {
-        "abbr_langue": "sel",
-        "langue_name": "selkoupe"
+        "abbr": "sel",
+        "name": "selkoupe"
     },
     {
-        "abbr_langue": "seh",
-        "langue_name": "sena"
+        "abbr": "seh",
+        "name": "sena"
     },
     {
-        "abbr_langue": "see",
-        "langue_name": "seneca"
+        "abbr": "see",
+        "name": "seneca"
     },
     {
-        "abbr_langue": "sr",
-        "langue_name": "serbe"
+        "abbr": "sr",
+        "name": "serbe"
     },
     {
-        "abbr_langue": "sh",
-        "langue_name": "serbo-croate"
+        "abbr": "sh",
+        "name": "serbo-croate"
     },
     {
-        "abbr_langue": "srr",
-        "langue_name": "sérère"
+        "abbr": "srr",
+        "name": "sérère"
     },
     {
-        "abbr_langue": "sei",
-        "langue_name": "Seri"
+        "abbr": "sei",
+        "name": "Seri"
     },
     {
-        "abbr_langue": "st",
-        "langue_name": "sesotho"
+        "abbr": "st",
+        "name": "sesotho"
     },
     {
-        "abbr_langue": "shn",
-        "langue_name": "shan"
+        "abbr": "shn",
+        "name": "shan"
     },
     {
-        "abbr_langue": "sn",
-        "langue_name": "shona"
+        "abbr": "sn",
+        "name": "shona"
     },
     {
-        "abbr_langue": "scn",
-        "langue_name": "sicilien"
+        "abbr": "scn",
+        "name": "sicilien"
     },
     {
-        "abbr_langue": "sabbr_langue",
-        "langue_name": "sabbr_langueamo"
+        "abbr": "sabbr",
+        "name": "sabbramo"
     },
     {
-        "abbr_langue": "bla",
-        "langue_name": "siksika"
+        "abbr": "bla",
+        "name": "siksika"
     },
     {
-        "abbr_langue": "szl",
-        "langue_name": "Silesian"
+        "abbr": "szl",
+        "name": "Silesian"
     },
     {
-        "abbr_langue": "sd",
-        "langue_name": "sindhi"
+        "abbr": "sd",
+        "name": "sindhi"
     },
     {
-        "abbr_langue": "den",
-        "langue_name": "slavey"
+        "abbr": "den",
+        "name": "slavey"
     },
     {
-        "abbr_langue": "cu",
-        "langue_name": "slavon d’église"
+        "abbr": "cu",
+        "name": "slavon d’église"
     },
     {
-        "abbr_langue": "sk",
-        "langue_name": "slovaque"
+        "abbr": "sk",
+        "name": "slovaque"
     },
     {
-        "abbr_langue": "sl",
-        "langue_name": "slovène"
+        "abbr": "sl",
+        "name": "slovène"
     },
     {
-        "abbr_langue": "xog",
-        "langue_name": "soga"
+        "abbr": "xog",
+        "name": "soga"
     },
     {
-        "abbr_langue": "sog",
-        "langue_name": "sogdien"
+        "abbr": "sog",
+        "name": "sogdien"
     },
     {
-        "abbr_langue": "so",
-        "langue_name": "somali"
+        "abbr": "so",
+        "name": "somali"
     },
     {
-        "abbr_langue": "snk",
-        "langue_name": "soninké"
+        "abbr": "snk",
+        "name": "soninké"
     },
     {
-        "abbr_langue": "ckb",
-        "langue_name": "sorani"
+        "abbr": "ckb",
+        "name": "sorani"
     },
     {
-        "abbr_langue": "nso",
-        "langue_name": "sotho du Nord"
+        "abbr": "nso",
+        "name": "sotho du Nord"
     },
     {
-        "abbr_langue": "su",
-        "langue_name": "soundanais"
+        "abbr": "su",
+        "name": "soundanais"
     },
     {
-        "abbr_langue": "sus",
-        "langue_name": "soussou"
+        "abbr": "sus",
+        "name": "soussou"
     },
     {
-        "abbr_langue": "azb",
-        "langue_name": "South Azerbaijani"
+        "abbr": "azb",
+        "name": "South Azerbaijani"
     },
     {
-        "abbr_langue": "srn",
-        "langue_name": "sranan tongo"
+        "abbr": "srn",
+        "name": "sranan tongo"
     },
     {
-        "abbr_langue": "sv",
-        "langue_name": "suédois"
+        "abbr": "sv",
+        "name": "suédois"
     },
     {
-        "abbr_langue": "gsw",
-        "langue_name": "suisse allemand"
+        "abbr": "gsw",
+        "name": "suisse allemand"
     },
     {
-        "abbr_langue": "suk",
-        "langue_name": "sukuma"
+        "abbr": "suk",
+        "name": "sukuma"
     },
     {
-        "abbr_langue": "sux",
-        "langue_name": "sumérien"
+        "abbr": "sux",
+        "name": "sumérien"
     },
     {
-        "abbr_langue": "sw",
-        "langue_name": "swahili"
+        "abbr": "sw",
+        "name": "swahili"
     },
     {
-        "abbr_langue": "swc",
-        "langue_name": "swahili du Congo"
+        "abbr": "swc",
+        "name": "swahili du Congo"
     },
     {
-        "abbr_langue": "ss",
-        "langue_name": "swati"
+        "abbr": "ss",
+        "name": "swati"
     },
     {
-        "abbr_langue": "zbl",
-        "langue_name": "symboles Bliss"
+        "abbr": "zbl",
+        "name": "symboles Bliss"
     },
     {
-        "abbr_langue": "syr",
-        "langue_name": "syriaque"
+        "abbr": "syr",
+        "name": "syriaque"
     },
     {
-        "abbr_langue": "syc",
-        "langue_name": "syriaque classique"
+        "abbr": "syc",
+        "name": "syriaque classique"
     },
     {
-        "abbr_langue": "tg",
-        "langue_name": "tadjik"
+        "abbr": "tg",
+        "name": "tadjik"
     },
     {
-        "abbr_langue": "tl",
-        "langue_name": "tagalog"
+        "abbr": "tl",
+        "name": "tagalog"
     },
     {
-        "abbr_langue": "ty",
-        "langue_name": "tahitien"
+        "abbr": "ty",
+        "name": "tahitien"
     },
     {
-        "abbr_langue": "dav",
-        "langue_name": "taita"
+        "abbr": "dav",
+        "name": "taita"
     },
     {
-        "abbr_langue": "tly",
-        "langue_name": "Talysh"
+        "abbr": "tly",
+        "name": "Talysh"
     },
     {
-        "abbr_langue": "tmh",
-        "langue_name": "tamacheq"
+        "abbr": "tmh",
+        "name": "tamacheq"
     },
     {
-        "abbr_langue": "tzm",
-        "langue_name": "tamazight"
+        "abbr": "tzm",
+        "name": "tamazight"
     },
     {
-        "abbr_langue": "ta",
-        "langue_name": "tamoul"
+        "abbr": "ta",
+        "name": "tamoul"
     },
     {
-        "abbr_langue": "trv",
-        "langue_name": "taroko"
+        "abbr": "trv",
+        "name": "taroko"
     },
     {
-        "abbr_langue": "twq",
-        "langue_name": "tasawaq"
+        "abbr": "twq",
+        "name": "tasawaq"
     },
     {
-        "abbr_langue": "tt",
-        "langue_name": "tatar"
+        "abbr": "tt",
+        "name": "tatar"
     },
     {
-        "abbr_langue": "chg",
-        "langue_name": "tchaghataï"
+        "abbr": "chg",
+        "name": "tchaghataï"
     },
     {
-        "abbr_langue": "cs",
-        "langue_name": "tchèque"
+        "abbr": "cs",
+        "name": "tchèque"
     },
     {
-        "abbr_langue": "ce",
-        "langue_name": "tchétchène"
+        "abbr": "ce",
+        "name": "tchétchène"
     },
     {
-        "abbr_langue": "cv",
-        "langue_name": "tchouvache"
+        "abbr": "cv",
+        "name": "tchouvache"
     },
     {
-        "abbr_langue": "te",
-        "langue_name": "télougou"
+        "abbr": "te",
+        "name": "télougou"
     },
     {
-        "abbr_langue": "tem",
-        "langue_name": "temne"
+        "abbr": "tem",
+        "name": "temne"
     },
     {
-        "abbr_langue": "ter",
-        "langue_name": "tereno"
+        "abbr": "ter",
+        "name": "tereno"
     },
     {
-        "abbr_langue": "teo",
-        "langue_name": "teso"
+        "abbr": "teo",
+        "name": "teso"
     },
     {
-        "abbr_langue": "tet",
-        "langue_name": "tetum"
+        "abbr": "tet",
+        "name": "tetum"
     },
     {
-        "abbr_langue": "th",
-        "langue_name": "thaï"
+        "abbr": "th",
+        "name": "thaï"
     },
     {
-        "abbr_langue": "bo",
-        "langue_name": "tibétain"
+        "abbr": "bo",
+        "name": "tibétain"
     },
     {
-        "abbr_langue": "tig",
-        "langue_name": "tigré"
+        "abbr": "tig",
+        "name": "tigré"
     },
     {
-        "abbr_langue": "ti",
-        "langue_name": "tigrigna"
+        "abbr": "ti",
+        "name": "tigrigna"
     },
     {
-        "abbr_langue": "tiv",
-        "langue_name": "tiv"
+        "abbr": "tiv",
+        "name": "tiv"
     },
     {
-        "abbr_langue": "tli",
-        "langue_name": "tlingit"
+        "abbr": "tli",
+        "name": "tlingit"
     },
     {
-        "abbr_langue": "tpi",
-        "langue_name": "tok pisin"
+        "abbr": "tpi",
+        "name": "tok pisin"
     },
     {
-        "abbr_langue": "tkl",
-        "langue_name": "tokelau"
+        "abbr": "tkl",
+        "name": "tokelau"
     },
     {
-        "abbr_langue": "tog",
-        "langue_name": "tonga nyasa"
+        "abbr": "tog",
+        "name": "tonga nyasa"
     },
     {
-        "abbr_langue": "to",
-        "langue_name": "tonguien"
+        "abbr": "to",
+        "name": "tonguien"
     },
     {
-        "abbr_langue": "fit",
-        "langue_name": "Tornedalen Finnish"
+        "abbr": "fit",
+        "name": "Tornedalen Finnish"
     },
     {
-        "abbr_langue": "tyv",
-        "langue_name": "touva"
+        "abbr": "tyv",
+        "name": "touva"
     },
     {
-        "abbr_langue": "tkr",
-        "langue_name": "Tsakhur"
+        "abbr": "tkr",
+        "name": "Tsakhur"
     },
     {
-        "abbr_langue": "tsd",
-        "langue_name": "Tsakonian"
+        "abbr": "tsd",
+        "name": "Tsakonian"
     },
     {
-        "abbr_langue": "tsi",
-        "langue_name": "tsimshian"
+        "abbr": "tsi",
+        "name": "tsimshian"
     },
     {
-        "abbr_langue": "ts",
-        "langue_name": "tsonga"
+        "abbr": "ts",
+        "name": "tsonga"
     },
     {
-        "abbr_langue": "tn",
-        "langue_name": "tswana"
+        "abbr": "tn",
+        "name": "tswana"
     },
     {
-        "abbr_langue": "tcy",
-        "langue_name": "Tulu"
+        "abbr": "tcy",
+        "name": "Tulu"
     },
     {
-        "abbr_langue": "tum",
-        "langue_name": "tumbuka"
+        "abbr": "tum",
+        "name": "tumbuka"
     },
     {
-        "abbr_langue": "aeb",
-        "langue_name": "Tunisian Arabic"
+        "abbr": "aeb",
+        "name": "Tunisian Arabic"
     },
     {
-        "abbr_langue": "tr",
-        "langue_name": "turc"
+        "abbr": "tr",
+        "name": "turc"
     },
     {
-        "abbr_langue": "crh",
-        "langue_name": "turc de Crimée"
+        "abbr": "crh",
+        "name": "turc de Crimée"
     },
     {
-        "abbr_langue": "ota",
-        "langue_name": "turc ottoman"
+        "abbr": "ota",
+        "name": "turc ottoman"
     },
     {
-        "abbr_langue": "tk",
-        "langue_name": "turkmène"
+        "abbr": "tk",
+        "name": "turkmène"
     },
     {
-        "abbr_langue": "tru",
-        "langue_name": "Turoyo"
+        "abbr": "tru",
+        "name": "Turoyo"
     },
     {
-        "abbr_langue": "tvl",
-        "langue_name": "tuvalu"
+        "abbr": "tvl",
+        "name": "tuvalu"
     },
     {
-        "abbr_langue": "tw",
-        "langue_name": "twi"
+        "abbr": "tw",
+        "name": "twi"
     },
     {
-        "abbr_langue": "kcg",
-        "langue_name": "tyap"
+        "abbr": "kcg",
+        "name": "tyap"
     },
     {
-        "abbr_langue": "rom",
-        "langue_name": "tzigane"
+        "abbr": "rom",
+        "name": "tzigane"
     },
     {
-        "abbr_langue": "uk",
-        "langue_name": "ukrainien"
+        "abbr": "uk",
+        "name": "ukrainien"
     },
     {
-        "abbr_langue": "umb",
-        "langue_name": "umbundu"
+        "abbr": "umb",
+        "name": "umbundu"
     },
     {
-        "abbr_langue": "vai",
-        "langue_name": "vaï"
+        "abbr": "vai",
+        "name": "vaï"
     },
     {
-        "abbr_langue": "rup",
-        "langue_name": "valaque"
+        "abbr": "rup",
+        "name": "valaque"
     },
     {
-        "abbr_langue": "ve",
-        "langue_name": "venda"
+        "abbr": "ve",
+        "name": "venda"
     },
     {
-        "abbr_langue": "vec",
-        "langue_name": "Venetian"
+        "abbr": "vec",
+        "name": "Venetian"
     },
     {
-        "abbr_langue": "vep",
-        "langue_name": "Veps"
+        "abbr": "vep",
+        "name": "Veps"
     },
     {
-        "abbr_langue": "vi",
-        "langue_name": "vietnamien"
+        "abbr": "vi",
+        "name": "vietnamien"
     },
     {
-        "abbr_langue": "non",
-        "langue_name": "vieux norrois"
+        "abbr": "non",
+        "name": "vieux norrois"
     },
     {
-        "abbr_langue": "vo",
-        "langue_name": "volapuk"
+        "abbr": "vo",
+        "name": "volapuk"
     },
     {
-        "abbr_langue": "vro",
-        "langue_name": "Võro"
+        "abbr": "vro",
+        "name": "Võro"
     },
     {
-        "abbr_langue": "vot",
-        "langue_name": "vote"
+        "abbr": "vot",
+        "name": "vote"
     },
     {
-        "abbr_langue": "vun",
-        "langue_name": "vunjo"
+        "abbr": "vun",
+        "name": "vunjo"
     },
     {
-        "abbr_langue": "wal",
-        "langue_name": "walamo"
+        "abbr": "wal",
+        "name": "walamo"
     },
     {
-        "abbr_langue": "wa",
-        "langue_name": "wallon"
+        "abbr": "wa",
+        "name": "wallon"
     },
     {
-        "abbr_langue": "wae",
-        "langue_name": "walser"
+        "abbr": "wae",
+        "name": "walser"
     },
     {
-        "abbr_langue": "war",
-        "langue_name": "waray"
+        "abbr": "war",
+        "name": "waray"
     },
     {
-        "abbr_langue": "wbp",
-        "langue_name": "Warlpiri"
+        "abbr": "wbp",
+        "name": "Warlpiri"
     },
     {
-        "abbr_langue": "was",
-        "langue_name": "washo"
+        "abbr": "was",
+        "name": "washo"
     },
     {
-        "abbr_langue": "guc",
-        "langue_name": "Wayuu"
+        "abbr": "guc",
+        "name": "Wayuu"
     },
     {
-        "abbr_langue": "vls",
-        "langue_name": "West Flemish"
+        "abbr": "vls",
+        "name": "West Flemish"
     },
     {
-        "abbr_langue": "mrj",
-        "langue_name": "Western Mari"
+        "abbr": "mrj",
+        "name": "Western Mari"
     },
     {
-        "abbr_langue": "wo",
-        "langue_name": "wolof"
+        "abbr": "wo",
+        "name": "wolof"
     },
     {
-        "abbr_langue": "wuu",
-        "langue_name": "Wu Chinese"
+        "abbr": "wuu",
+        "name": "Wu Chinese"
     },
     {
-        "abbr_langue": "xh",
-        "langue_name": "xhosa"
+        "abbr": "xh",
+        "name": "xhosa"
     },
     {
-        "abbr_langue": "hsn",
-        "langue_name": "Xiang Chinese"
+        "abbr": "hsn",
+        "name": "Xiang Chinese"
     },
     {
-        "abbr_langue": "yav",
-        "langue_name": "yangben"
+        "abbr": "yav",
+        "name": "yangben"
     },
     {
-        "abbr_langue": "yao",
-        "langue_name": "yao"
+        "abbr": "yao",
+        "name": "yao"
     },
     {
-        "abbr_langue": "yap",
-        "langue_name": "yapois"
+        "abbr": "yap",
+        "name": "yapois"
     },
     {
-        "abbr_langue": "ybb",
-        "langue_name": "yemba"
+        "abbr": "ybb",
+        "name": "yemba"
     },
     {
-        "abbr_langue": "ii",
-        "langue_name": "yi du Sichuan"
+        "abbr": "ii",
+        "name": "yi du Sichuan"
     },
     {
-        "abbr_langue": "yi",
-        "langue_name": "yabbr_languedish"
+        "abbr": "yi",
+        "name": "yabbrdish"
     },
     {
-        "abbr_langue": "yo",
-        "langue_name": "yoruba"
+        "abbr": "yo",
+        "name": "yoruba"
     },
     {
-        "abbr_langue": "zap",
-        "langue_name": "zapotèque"
+        "abbr": "zap",
+        "name": "zapotèque"
     },
     {
-        "abbr_langue": "dje",
-        "langue_name": "zarma"
+        "abbr": "dje",
+        "name": "zarma"
     },
     {
-        "abbr_langue": "zza",
-        "langue_name": "zazaki"
+        "abbr": "zza",
+        "name": "zazaki"
     },
     {
-        "abbr_langue": "zea",
-        "langue_name": "Zeelandic"
+        "abbr": "zea",
+        "name": "Zeelandic"
     },
     {
-        "abbr_langue": "zen",
-        "langue_name": "zenaga"
+        "abbr": "zen",
+        "name": "zenaga"
     },
     {
-        "abbr_langue": "za",
-        "langue_name": "zhuang"
+        "abbr": "za",
+        "name": "zhuang"
     },
     {
-        "abbr_langue": "gbz",
-        "langue_name": "Zoroastrian Dari"
+        "abbr": "gbz",
+        "name": "Zoroastrian Dari"
     },
     {
-        "abbr_langue": "zu",
-        "langue_name": "zoulou"
+        "abbr": "zu",
+        "name": "zoulou"
     },
     {
-        "abbr_langue": "zun",
-        "langue_name": "zuni"
+        "abbr": "zun",
+        "name": "zuni"
     }
 ]

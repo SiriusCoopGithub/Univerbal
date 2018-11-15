@@ -35,15 +35,15 @@
                 <form method="POST" action="{{route('langues.actived', $langue->id)}}">
                     @method('PATCH')
                     @csrf
-                    <label for="{{$langue->langue_name}}">
-                        <input id="{{$langue->langue_name}}" name="active" type="checkbox" value="{{ old($langue->id) ? old($langue->id) : $langue->id}}"
+                    <label for="{{$langue->name}}">
+                        <input id="{{$langue->name}}" name="active" type="checkbox" value="{{ old($langue->id) ? old($langue->id) : $langue->id}}"
                             onChange="this.form.submit()" {{ $langue->active ? 'checked' : ''}} />
                         <span></span>
                     </label>
                 </form>
             </td>
-            <td>{{$langue->langue_name}}</td>
-            <td>{{$langue->abbr_langue}}</td>
+            <td>{{$langue->name}}</td>
+            <td>{{$langue->abbr}}</td>
             <td>{{$langue->dialect}}</td>
             <td>{{$langue->country}}</td>
             <td>{{$langue->description}}</td>
@@ -61,18 +61,18 @@
 
             <div class="row">
                 <div class="input-field col s6 m4 l6">
-                    <input name="langue_name" id="langue_name" type="text" class="validate" value="{{ old($langue->langue_name) ? old($langue->langue_name) : $langue->langue_name }}"
+                    <input name="name" id="name" type="text" class="validate" value="{{ old($langue->name) ? old($langue->name) : $langue->name }}"
                         required>
                     <label for="name">Name</label>
                 </div>
-                {!! $errors->first('langue_name', '<div class="invalid">:message</div>') !!}
+                {!! $errors->first('name', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l6">
-                    <input name="abbr_langue" id="abbr_langue" type="text" class="validate" value="{{ old($langue->abbr_langue) ? old($langue->abbr_langue) : $langue->abbr_langue }}"
+                    <input name="abbr" id="abbr" type="text" class="validate" value="{{ old($langue->abbr) ? old($langue->abbr) : $langue->abbr }}"
                         required>
-                    <label for="abbr_langue">Abbr</label>
+                    <label for="abbr">Abbr</label>
                 </div>
-                {!! $errors->first('abbr_langue', '<div class="invalid">:message</div>') !!}
+                {!! $errors->first('abbr', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l6">
                     <input name="dialect" id="dialect" type="text" class="validate" value="{{ old($langue->dialect) ? old($langue->dialect) : $langue->dialect }}">
