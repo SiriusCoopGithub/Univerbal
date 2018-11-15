@@ -37,17 +37,29 @@
             </div>
 
             <div class="row">
-                <div class="input-field col s6 m4 l6">
-                    <input name="organisation" id="organisation" type="text" class="validate" value="{{ old($user->organisation) ? old($user->organisation) : $user->organisation}}">
-                    <label for="organisation">Organisation</label>
-                </div>
-                {!! $errors->first('organisation', '<div class="invalid">:message</div>') !!}
 
                 <div class="input-field col s6 m4 l6">
-                    <input name="langue" id="langue" type="text" class="validate" value="{{ old($user->langue) ? old($user->langue) : $user->langue}}">
-                    <label for="langue">Langue</label>
+                    <select name="organisation">
+                        <option>{{ old($organisation->name) ? old($organisation->name) : $organisation->name}}</option>
+                        @foreach ($organisations as $organisation)
+                        <option value="{{$organisation->id}}">{{$organisation->name}}</option>
+                        @endforeach
+                    </select>
+                    <label for="organisation">Organisation</label>
                 </div>
-                {!! $errors->first('langue', '<div class="invalid">:message</div>') !!}
+                {{--
+                {!! $errors->first('organisation', '<div class="invalid">:message</div>') !!}
+                {!! $errors->first('langue', '<div class="invalid">:message</div>') !!} --}}
+
+                <div class="input-field col s6 m4 l6">
+                    <select name="langue">
+                        <option></option>
+                        @foreach ($langues as $langue)
+                        <option value="{{$langue->id}}">{{$langue->langue_name}}</option>
+                        @endforeach
+                    </select>
+                    <label for="langue">langue</label>
+                </div>
 
             </div>
 
@@ -172,15 +184,17 @@
 
 @endsection
 
-@section('script-create-user-password')
-{{-- <script>
-    const vueAdminCreateUserPassword = new Vue({
-        el: '#vue-admin-create-user',
-        data: {
-            msg: 'coucou',
-            // rolesSelected: "{!! old('roles') ? old('roles') : '' !!}",
-        }
-    });
+@section('script')
+<script>
+    // console.log('TEstfsqfqsf');
 
-</script> --}}
+    // var select = document.querySelectorAll('select');
+    // var instances = M.FormSelect.init(select, {});
+    // var instance = M.FormSelect.getInstance(instances);
+
+    // instance.getSelectedValues();
+
+    // console.log('instance : ', instance);
+
+</script>
 @endsection

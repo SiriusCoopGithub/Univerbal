@@ -15,8 +15,7 @@ class AdressesTableSeeder extends Seeder
       $json = File::get("database/data/adresses.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
-        App\Langue::create(array(
-          'id' => $obj->id,
+        App\Adresse::create(array(
           'city_name' => $obj->city_name,
           'country' => $obj->country,
           'postal_code' => $obj->postal_code,

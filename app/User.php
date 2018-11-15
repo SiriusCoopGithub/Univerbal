@@ -90,7 +90,7 @@ class User extends Authenticatable
     /**
      * Langue
      */
-    public function langue(){
+    public function langues(){
       return $this->belongsToMany(Langue::class);
     }
 

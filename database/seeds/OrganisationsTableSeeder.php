@@ -15,8 +15,7 @@ class OrganisationsTableSeeder extends Seeder
       $json = File::get("database/data/organisations.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
-        App\Langue::create(array(
-          'id' => $obj->id,
+        App\Organisation::create(array(
           'contact_id' => $obj->contact_id,
           'name' => $obj->name,
         ));

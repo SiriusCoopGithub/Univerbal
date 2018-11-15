@@ -27,13 +27,15 @@
 
     <tbody>
         @foreach ($organisations as $organisation)
-
+        {{-- {{dd($organisation->profilable)}} --}}
         <tr class="hoverable">
             <td>{{$organisation->id}}</td>
             <td>{{$organisation->name}}</td>
-            <td>{{$organisation->organisation_abbr}}</td>
-            <td>{{$organisation->email}}</td>
-            <td>{{$organisation->telephone}}</td>
+            @foreach ($organisation->profilable as $profile)
+            <td>{{$profile->organisation_abbr}}</td>
+            <td>{{$profile->email}}</td>
+            <td>{{$profile->telephone}}</td>
+            @endforeach
             <td>{{$organisation->contact_id}}</td>
             <td>
                 <a href="{{route('organisations.show', $organisation->id)}}" class="waves-effect waves-light btn-small">

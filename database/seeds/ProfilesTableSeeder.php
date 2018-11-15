@@ -15,8 +15,7 @@ class ProfilesTableSeeder extends Seeder
       $json = File::get("database/data/profiles.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
-        App\Langue::create(array(
-          'id' => $obj->id,
+        App\Profile::create(array(
           'email' => $obj->email,
           'first_name' => $obj->first_name,
           'genre' => $obj->genre,

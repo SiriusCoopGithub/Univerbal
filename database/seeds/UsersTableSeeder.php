@@ -21,8 +21,7 @@ class UsersTableSeeder extends Seeder
       $json = File::get("database/data/users.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
-        App\Langue::create(array(
-          'id' => $obj->id,
+        App\User::create(array(
           'active' => $obj->active,
           'email' => $obj->email,
           'name' => $obj->name,

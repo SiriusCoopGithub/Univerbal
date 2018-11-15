@@ -15,8 +15,7 @@ class RolesTableSeeder extends Seeder
       $json = File::get("database/data/roles.json");
       $data = json_decode($json);
       foreach ($data as $obj) {
-        App\Langue::create(array(
-          'id' => $obj->id,
+        Spatie\Permission\Models\Role::create(array(
           'guard_name' => $obj->guard_name,
           'name' => $obj->name,
         ));

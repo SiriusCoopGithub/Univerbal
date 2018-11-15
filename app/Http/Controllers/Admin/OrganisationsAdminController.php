@@ -18,8 +18,8 @@ class OrganisationsAdminController extends Controller
      */
     public function index()
     {
-      $organisations = Organisation::orderBy('id', 'asc')->get();
-      return view('admin.organisations.index')->withOrganisations($organisations);
+      $organisations = Organisation::with(['profilable', 'user'])->get();
+      return view('admin.organisations.index', compact('organisations'));
     }
 
     /**
@@ -88,8 +88,6 @@ class OrganisationsAdminController extends Controller
       $organisation = Organisation::with(['profilable', 'user'])->findOrFail($id);
 
       $profile = Profile::where('id', '=', $organisation['profilable'][0]->id )->first();
-
-      // dd($profile);
 
       $adresse = Adresse::where('id', '=', $organisation['profilable'][0]->id )->first();
 

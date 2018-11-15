@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\User;
+use App\Langue;
 use App\Adresse;
 use App\Profile;
 use App\Organisation;
@@ -89,9 +90,27 @@ class UsersAdminController extends Controller
         if (isset($roles)) {
           foreach ($roles as $role) {
             $role_r = Role::where('id', '=', $role)->firstOrFail();
-            $user->assignRole($role_r); //Assigning role to user
+            $user->assignRole($role_r);
             }
         }
+
+        $organisation = $request->input('organisation');
+
+      if (isset($organisation)) {
+        $user->organisations()->sync($organisation);
+      }
+      // else {
+      //   $user->organisations()->detach();
+      // }
+
+      $langue = $request->input('langue');
+
+      if (isset($langue)) {
+        $user->langues()->sync($langue);
+      }
+      // else {
+      //   $user->langues()->detach();
+      // }
 
         return view('admin.users.show', compact('user'));
     }
@@ -123,9 +142,10 @@ class UsersAdminController extends Controller
      */
     public function edit($id)
     {
-      $user = User::with(['roles' => function ($query) {
+      $user = User::with(['profilable', 'roles' => function ($query) {
         $query->where('name', 'NOT LIKE', '%'.'Admin')->get();
       }])->findOrFail($id);
+
 
       $profile = Profile::where('id', '=', $user['profilable'][0]->id )->first();
 
@@ -133,7 +153,12 @@ class UsersAdminController extends Controller
 
       $allRoles = Role::get();
 
-      return view('admin.users.edit', compact('user', 'allRoles', 'adresse', 'profile'));
+      $langues = Langue::where('active', '=', '1')->get();
+// dd($langues);
+      $organisations = Organisation::get();
+
+      // dd($user);
+      return view('admin.users.edit', compact('user', 'allRoles', 'adresse', 'profile', 'organisations' , 'langues'));
     }
 
     /**
@@ -185,7 +210,26 @@ class UsersAdminController extends Controller
         $user->roles()->detach();
       }
 
-      return view('admin.users.show', compact('user'));
+      $organisation = $request->input('organisation');
+
+      if (isset($organisation)) {
+        $user->organisations()->sync($organisation);
+      }
+      // else {
+      //   $user->organisations()->detach();
+      // }
+
+      $langue = $request->input('langue');
+
+      if (isset($langue)) {
+        $user->langues()->sync($langue);
+      }
+      // else {
+      //   $user->langues()->detach();
+      // }
+
+      return redirect()->route('users.show', $user->id);
+      // return view('admin.users.show', compact('user'));
     }
 
     /**
