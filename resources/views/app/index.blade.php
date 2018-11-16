@@ -2,6 +2,8 @@
 @section('title', 'Univerbal')
 @section('app-content')
 
-{{dd($profile)}}
+{{-- {{dd($profile)}} --}}
+
+
 
 @endsection

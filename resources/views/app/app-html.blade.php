@@ -2,7 +2,7 @@
 
 <body>
     {{-- Make vuejs covert the entire body --}}
-    <div id="vue-app">
+    <div id="app">
 
         @yield('app-content')
         {{-- @include('app._partials.app-navbar') --}}

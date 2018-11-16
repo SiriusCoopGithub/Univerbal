@@ -38,10 +38,6 @@ html {
   color: rgba(0, 0, 0, 0.87);
 }
 
-/**
-* The main css for the entire application (app & dashboard)
-*/
-
 body {
   width: 100%;
   height: 100%;
@@ -306,7 +302,7 @@ a.bouton1 {
   padding: 0;
 }
 
-img {
+.collapsible-header img {
   height: auto;
   width: 5.476rem;
 }
@@ -880,173 +876,5 @@ main .contact {
 
 .contact-header .organisation h6 {
   margin: 0;
-}
-
-/*FIN PAGE CLIENTS*/
-
-/*DASHBOARD CSS*/
-
-.left {
-  padding: 0;
-}
-
-input#search {
-  background-image: url(/images/icon_search.png?abf790d8f6d1265dca5869224d56f1c8);
-  background-repeat: no-repeat;
-  text-indent: 20px;
-  border: none;
-}
-
-#navbar-left {
-  background-color: #468DF0;
-  color: #FFFFFF;
-  margin-right: 0;
-  position: fixed;
-  width: 100%;
-  height: 3.8rem;
-  z-index: 9999;
-  margin-left: 15.8rem;
-  top: 0;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-}
-
-#navbar-left ul {
-  list-style: none;
-  padding: 4rem;
-  margin: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-#navbar-left li {
-  margin-left: 24rem;
-}
-
-#navbar-left img {
-  top: 0;
-  margin-top: -1rem;
-  position: absolute;
-}
-
-#navbar-left a {
-  color: #FFFFFF;
-  font-size: 1.4rem;
-  text-decoration: none;
-  top: 0;
-  position: absolute;
-  margin-top: -1rem;
-  margin-left: 14rem;
-}
-
-.navbar-left-ul {
-  float: right;
-  position: absolute;
-  top: 0;
-  margin-right: 4rem;
-}
-
-#linkref {
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 1.5rem;
-}
-
-.main-dashboard img {
-  width: 2.5rem;
-  height: auto;
-  margin-left: 2.5rem;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-}
-
-.main-dashboard .univerbal {
-  font-size: 1.5rem;
-  color: #468DF0;
-  font-family: Roboto-Bold;
-  margin-left: 5rem;
-  margin-top: -5rem;
-  position: fixed;
-  z-index: 9999;
-}
-
-.main-dashboard .univerbal span {
-  margin-top: -2rem;
-  padding-top: -22rem;
-  color: black;
-  font-size: 1rem;
-  font-family: Roboto-Light;
-  position: absolute;
-}
-
-.bashboard-nav-bar .bashboard-nav-bar-search input {
-  border: none;
-}
-
-/*.main-left-nav {
-  display: inline-block;
-  margin: 0;
-  border: 0px solid;
-  color: #707070;
-
-  box-shadow: 0px 2px 20px 3px rgba(0, 0, 0, 0.05);*/
-
-/*MAIN*/
-
-.main-dashboard {
-  margin: 0;
-}
-
-.logo-dashboard {
-  position: relative;
-}
-
-.main-dashboard-menu {
-  position: absolute;
-  background-color: #FFFFFF;
-  height: 100%;
-  position: fixed;
-  z-index: 9999;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
-}
-
-.main-dashboard-menu div {
-  padding: 1rem;
-}
-
-.main-dashboard-menu span {
-  margin-left: 1rem;
-}
-
-.main-dashboard-menu i {
-  font-size: 1.6rem;
-  color: #468DF0;
-}
-
-.main-dashboard-menu .active {
-  background-color: #E0E0E0;
-  color: #FF7920;
-}
-
-.validation {
-  padding-left: 21.5%;
-  font-size: 3.8rem;
-  font-family: Roboto-Thin;
-  color: #000000;
-}
-
-.class1 {
-  width: 78%;
-  margin-right: 0;
-  background-color: #FFFFFF;
-}
-
-.class1 .row div {
-  border-bottom: 0.5px solid #E4E4E4;
 }
 

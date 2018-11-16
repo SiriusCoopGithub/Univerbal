@@ -22,6 +22,11 @@ Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::namespace('App')->group(function(){
   Route::prefix('app')->group(function(){
+
+    // Route::get('/{any}', function(){
+    //   return view('vueapp');
+    // })->where('any', '.*');
+
     Route::get('/', 'AppController@index')->name('app.index');
     Route::resource('/missions', 'MissionsAppController');
     Route::get('/profile', 'AppController@profile')->name('app.profile');

@@ -1,9 +1,8 @@
 /**
  * We'll load Vue, Vue router and VueX
  */
-window.Vue = require('vue');
-window.Vuex = require('vuex');
-window.VueRouter = require('vue-router');
+// window.Vue = require('vue');
+// window.VueRouter = require('vue-router');
 
 
 /**

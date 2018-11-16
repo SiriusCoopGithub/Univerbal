@@ -10,28 +10,72 @@
 
 require('./app-bootstrap');
 
+// window.Vue = require('vue');
+// window.VueRouter = require('vue-router');
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
+import App from './components/App'
+import Formulaire from './components/Formulaire'
+import Mission from './components/Mission'
+import Option from './components/Option'
+import PageProfil from './components/PageProfil'
 
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-// const vueApp = new Vue({
-//     el: '#vue-app'
-// });
+
+const router = new VueRouter({
+    routes: [{
+            path: 'mission',
+            name: 'mission',
+            component: Mission,
+            props: {
+                title: 'THis is the Mission'
+            }
+        },
+        {
+            path: 'formulaire',
+            name: 'formulaire',
+            component: Formulaire,
+            props: {
+                formulaire: 'this is the formulaire'
+            }
+        },
+        {
+            path: 'option',
+            name: 'option',
+            component: Option,
+            props: {
+                formulaire: 'this is the Option'
+            }
+        },
+        {
+            path: 'pageprofil',
+            name: 'pageprofil',
+            component: PageProfil,
+            props: {
+                formulaire: 'this is the PageProfil'
+            }
+        }
+    ]
+})
+
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+const app = new Vue({
     el: '#app',
+    date: {
+        plus_icon: '/img/plus-icon.png',
+    },
     router,
     components: {
         App
     },
+    router,
     template: '<App/>'
 })
 
