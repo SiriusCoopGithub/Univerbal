@@ -19,7 +19,7 @@ class CreateOptionsTable extends Migration
             $table->boolean('active');
             $table->boolean('notification');
             $table->timestamps();
-
+            $table->softDeletes();
             // $table->foreign('user_id')
             //       ->references('id')
             //       ->on('users')

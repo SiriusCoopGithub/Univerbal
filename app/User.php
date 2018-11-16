@@ -9,12 +9,13 @@ use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Traits\HasRoles;
 use App\Http\Requests\CreateUserRequest;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable, HasRoles;
+    use SoftDeletes, Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.

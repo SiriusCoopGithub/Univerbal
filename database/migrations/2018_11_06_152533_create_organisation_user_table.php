@@ -31,7 +31,7 @@ class CreateOrganisationUserTable extends Migration
             //       ->onDelete('cascade');
 
             // $table->primary(['user_id', 'organisation_id']);
-
+            $table->softDeletes();
             $table->timestamps();
         });
     }

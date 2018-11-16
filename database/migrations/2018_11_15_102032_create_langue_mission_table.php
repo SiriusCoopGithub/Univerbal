@@ -19,6 +19,7 @@ class CreateLangueMissionTable extends Migration
             $table->unsignedInteger('mission_id');
             $table->unsignedInteger('langue_id');
 
+            $table->softDeletes();
             $table->timestamps();
         });
     }

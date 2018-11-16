@@ -30,6 +30,9 @@ class CreateLangueUserTable extends Migration
           //       ->on('langues')
           //       ->onUpdate('cascade')
           //       ->onDelete('cascade');
+
+          $table->softDeletes();
+
         });
     }
 
