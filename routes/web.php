@@ -23,7 +23,7 @@ Auth::routes();
 Route::namespace('App')->group(function(){
   Route::prefix('app')->group(function(){
     Route::get('/', 'AppController@index')->name('app.index');
-    Route::get('/missions', 'AppController@missions')->name('app.missions');
+    Route::resource('/missions', 'MissionsAppController');
     Route::get('/profile', 'AppController@profile')->name('app.profile');
     Route::get('/options', 'AppController@options')->name('app.options');
   });
@@ -37,7 +37,6 @@ Route::namespace('Admin')->group(function(){
     Route::get('/dashboard', 'DashboardAdminController@dashboard')->name('admin.dashboard');
 
     Route::resource('/users', 'UsersAdminController');
-
     Route::resource('/roles', 'RolesAdminController');
     Route::resource('/permissions', 'PermissionsAdminController');
     Route::patch('/langues/actived/{langue}', 'LanguesAdminController@actived')->name('langues.actived');

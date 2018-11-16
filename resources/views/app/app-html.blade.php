@@ -5,10 +5,11 @@
     <div id="vue-app">
 
         @yield('app-content')
-        @include('app._partials.app-navbar')
+        {{-- @include('app._partials.app-navbar') --}}
     </div>
 
     @include('app._includes.app-scripts')
+    @yield('script')
 </body>
 
 </html>

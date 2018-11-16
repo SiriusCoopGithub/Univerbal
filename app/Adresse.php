@@ -25,7 +25,8 @@ class Adresse extends Model
      *
      */
     public function profile(){
-      return $this->hasMany(Adresse::class);
+      // return $this->hasMany(Adresse::class);
+      return $this->belongsTo(Adresse::class);
     }
 
 

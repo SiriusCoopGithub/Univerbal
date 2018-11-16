@@ -12,7 +12,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 class MissionsAppController extends Controller
 {
-
   /**
    * Display a listing of the resource.
    *
@@ -22,9 +21,9 @@ class MissionsAppController extends Controller
   {
 
     $user = Auth::user();
-    // $missions = $user->missions;
-    $missions = Mission::with('langue')->orderBy('name', 'asc')->get();
-    dd($missions);
+    // $missions = $user->missions()->orderBy('name', 'asc')->get();
+    // $missions = Mission::with('langue')->orderBy('name', 'asc')->get();
+    dd($user->missions);
     return view('app.missions.index', compact('missions'));
   }
 
