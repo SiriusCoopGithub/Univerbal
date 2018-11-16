@@ -95,8 +95,20 @@ __webpack_require__(41);
  */
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-var vueApp = new Vue({
-  el: '#vue-app'
+// const vueApp = new Vue({
+//     el: '#vue-app'
+// });
+
+Vue.config.productionTip = false;
+
+/* eslint-disable no-new */
+new Vue({
+    el: '#app',
+    router: router,
+    components: {
+        App: App
+    },
+    template: '<App/>'
 });
 
 /**
@@ -104,16 +116,16 @@ var vueApp = new Vue({
  */
 $(document).ready(function () {
 
-  var colaps = document.querySelectorAll('.collapsible');
-  var colapsInstances = M.Collapsible.init(colaps, {
-    accordion: false,
-    inDuration: 300,
-    outDuration: 300
-  });
+    var colaps = document.querySelectorAll('.collapsible');
+    var colapsInstances = M.Collapsible.init(colaps, {
+        accordion: false,
+        inDuration: 300,
+        outDuration: 300
+    });
 
-  var selectForm = document.querySelectorAll('select');
-  var formInstances = M.FormSelect.init(selectForm, {});
-  console.log("App js loaded");
+    var selectForm = document.querySelectorAll('select');
+    var formInstances = M.FormSelect.init(selectForm, {});
+    console.log("App js loaded");
 });
 
 /***/ }),

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Langue extends Model
 {
 
-  use SoftDeletes;
+  // use SoftDeletes;
 
      /**
      * The attributes that are mass assignable.

@@ -23,7 +23,7 @@ class CreateLanguesTable extends Migration
             $table->boolean('active')->nullable()->default(false);
             $table->timestamps();
 
-            $table->softDeletes();
+            // $table->softDeletes();
 
             // $table->primary(['name', 'country']);
         });

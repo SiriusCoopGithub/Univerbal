@@ -29,7 +29,7 @@ class CreateMissionsTable extends Migration
           $table->unsignedInteger('interprete_id')->nullable();
           $table->unsignedInteger('created_by');
           $table->timestamps();
-          $table->softDeletes();
+          // $table->softDeletes();
 
           // $table->foreign('langue_1')
           //       ->references('name')

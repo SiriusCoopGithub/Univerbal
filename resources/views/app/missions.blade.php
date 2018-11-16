@@ -8,6 +8,8 @@
     </a>
 </div>
 
+{{-- {{dd($missions)}} --}}
+
 <header>
     <div class="menu-button">
         <div class="row">
