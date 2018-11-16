@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Route::namespace('App')->group(function(){
+//   Route::prefix('app')->group(function(){
+//     Route::get('/', 'AppController@index')->name('app.index');
+//     Route::get('/missions', 'AppController@missions')->name('app.missions');
+//     Route::get('/profile', 'AppController@profile')->name('app.profile');
+//     Route::get('/options', 'AppController@options')->name('app.options');
+//   });
+// });

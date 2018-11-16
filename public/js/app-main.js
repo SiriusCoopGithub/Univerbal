@@ -116,10 +116,6 @@ $(document).ready(function () {
   console.log("App js loaded");
 });
 
-// $('select').material_select();
-// M.updateTextFields();
-// $('select').not('.disabled').formSelect();
-
 /***/ }),
 
 /***/ 41:

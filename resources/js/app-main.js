@@ -19,9 +19,21 @@ require('./app-bootstrap');
  */
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const vueApp = new Vue({
-    el: '#vue-app'
-});
+// const vueApp = new Vue({
+//     el: '#vue-app'
+// });
+
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
+new Vue({
+    el: '#app',
+    router,
+    components: {
+        App
+    },
+    template: '<App/>'
+})
 
 
 /**
