@@ -11,7 +11,7 @@
 {{-- {{dd(route('users.store'))}} --}}
 <hr class="col s12 m4 l12">
 <div id="vue-admin-create-user">
-    <form class="col s6 m4 l6" action="{{route('users.store')}}" method="POST">
+    <form class="col s6 m4 l12" action="{{route('users.store')}}" method="POST">
         <div class="col s12 m4 l12">
             @csrf
 
@@ -39,16 +39,13 @@
 
                 <div class="input-field col s6 m4 l6">
                     <select name="organisation">
-                        <option>{{ old($organisation->name) ? old($organisation->name) : $organisation->name}}</option>
+                        <option></option>
                         @foreach ($organisations as $organisation)
                         <option value="{{$organisation->id}}">{{$organisation->name}}</option>
                         @endforeach
                     </select>
                     <label for="organisation">Organisation</label>
                 </div>
-                {{--
-                {!! $errors->first('organisation', '<div class="invalid">:message</div>') !!}
-                {!! $errors->first('langue', '<div class="invalid">:message</div>') !!} --}}
 
                 <div class="input-field col s6 m4 l6">
                     <select name="langue">

@@ -40,8 +40,9 @@ class UsersAdminController extends Controller
     public function create()
     {
       $roles = Role::where('name', 'NOT LIKE', '%'.'Admin')->get();
-      $organisation = Organisation::all();
-      return view('admin.users.create', compact('roles', 'organisation'));
+      $organisations = Organisation::all();
+      $langues = Langue::all();
+      return view('admin.users.create', compact('roles', 'organisations', 'langues'));
     }
 
     /**

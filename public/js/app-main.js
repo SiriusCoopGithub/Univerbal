@@ -15404,7 +15404,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "  Place Saint Paul, 4000 Liège\n                  "
+                        "  Place Saint Paul, 4000 Liège\r\n                  "
                       )
                     ]
                   )
@@ -16611,7 +16611,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s7" }, [
-                    _vm._v("\n                Disponible\n              ")
+                    _vm._v("\r\n                Disponible\r\n              ")
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s3" }, [
@@ -16643,7 +16643,9 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s7" }, [
-                    _vm._v("\n                Notifications\n              ")
+                    _vm._v(
+                      "\r\n                Notifications\r\n              "
+                    )
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s3" }, [
@@ -16675,7 +16677,7 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s10" }, [
-                    _vm._v("\n                Déconnection\n              ")
+                    _vm._v("\r\n                Déconnection\r\n              ")
                   ])
                 ])
               ])
