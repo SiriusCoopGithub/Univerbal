@@ -661,7 +661,11 @@ label {
     margin: 0.7rem 1rem;
 }
 
-/*page options*/
+/*DEBUT PAGES OPTIONS*/
+
+body {
+    background-color: #fff;
+}
 
 .option {
     position: relative;
@@ -678,6 +682,28 @@ label {
     margin: 0.7rem 1rem;
 }
 
+.bordure-option {
+
+    padding: 0 1rem;
+
+}
+
+.option-list {
+    display: flex;
+    font-family: Roboto-regular;
+    line-height: 1.5;
+    color: #757575;
+
+    font-size: 1.333rem;
+    border: none;
+}
+
+.icone-opt {
+    width: 2rem;
+    display: inline-block;
+    color: #757575;
+}
+
 .switch label input[type=checkbox]:checked+.lever {
     background-color: #ffaa8f;
 }
@@ -685,6 +711,7 @@ label {
 .switch label input[type=checkbox]:checked+.lever:after {
     background-color: #ff5722;
 }
+
 
 /*FIN PAGES OPTIONS*/
 

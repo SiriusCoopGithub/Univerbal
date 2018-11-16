@@ -33,7 +33,6 @@
 
 html {
   line-height: 1.5;
-  font-family: Roboto;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -678,7 +677,11 @@ label {
   margin: 0.7rem 1rem;
 }
 
-/*page options*/
+/*DEBUT PAGES OPTIONS*/
+
+body {
+  background-color: #fff;
+}
 
 .option {
   position: relative;
@@ -693,6 +696,27 @@ label {
 
 .option p {
   margin: 0.7rem 1rem;
+}
+
+.bordure-option {
+  padding: 0 1rem;
+}
+
+.option-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Roboto-regular;
+  line-height: 1.5;
+  color: #757575;
+  font-size: 1.333rem;
+  border: none;
+}
+
+.icone-opt {
+  width: 2rem;
+  display: inline-block;
+  color: #757575;
 }
 
 .switch label input[type=checkbox]:checked + .lever {

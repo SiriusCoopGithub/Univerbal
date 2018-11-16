@@ -529,10 +529,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Option___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_Option__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PageProfil__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PageProfil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_PageProfil__);
-var _ref;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 /**
  * The loader js for the app
  */
@@ -560,32 +556,44 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes: [{
-        path: 'mission',
-        name: 'mission',
+        path: '/',
+        name: 'Mission',
         component: __WEBPACK_IMPORTED_MODULE_4__components_Mission___default.a,
         props: {
-            title: 'THis is the Mission'
+            users: {
+                type: Object,
+                required: true
+            }
         }
-    }, {
+    },
+    // {
+    //     path: 'mission',
+    //     name: 'mission',
+    //     component: Mission,
+    //     props: {
+    //         // title: 'THis is the Mission'
+    //     }
+    // },
+    {
         path: 'formulaire',
-        name: 'formulaire',
+        name: 'Formulaire',
         component: __WEBPACK_IMPORTED_MODULE_3__components_Formulaire___default.a,
         props: {
-            formulaire: 'this is the formulaire'
+            // formulaire: 'this is the formulaire'
         }
     }, {
         path: 'option',
-        name: 'option',
+        name: 'Option',
         component: __WEBPACK_IMPORTED_MODULE_5__components_Option___default.a,
         props: {
-            formulaire: 'this is the Option'
+            // formulaire: 'this is the Option'
         }
     }, {
         path: 'pageprofil',
-        name: 'pageprofil',
+        name: 'PageProfil',
         component: __WEBPACK_IMPORTED_MODULE_6__components_PageProfil___default.a,
         props: {
-            formulaire: 'this is the PageProfil'
+            // formulaire: 'this is the PageProfil'
         }
     }]
 });
@@ -593,31 +601,23 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
 
 /* eslint-disable no-new */
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a((_ref = {
+var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
     date: {
         plus_icon: '/img/plus-icon.png'
     },
     router: router,
+    template: '<App/>',
     components: {
         App: __WEBPACK_IMPORTED_MODULE_2__components_App___default.a
     }
-}, _defineProperty(_ref, 'router', router), _defineProperty(_ref, 'template', '<App/>'), _ref));
+});
 
 /**
  * The App JQuery .ready(fonction)
  */
 $(document).ready(function () {
 
-    var colaps = document.querySelectorAll('.collapsible');
-    var colapsInstances = M.Collapsible.init(colaps, {
-        accordion: false,
-        inDuration: 300,
-        outDuration: 300
-    });
-
-    var selectForm = document.querySelectorAll('select');
-    var formInstances = M.FormSelect.init(selectForm, {});
     console.log("App js loaded");
 });
 
@@ -14588,10 +14588,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ["users"]
+    //   mounted() {
+    //     const colaps = document.querySelectorAll(".collapsible");
+    //     const colapsInstances = M.Collapsible.init(colaps, {
+    //       accordion: false,
+    //       inDuration: 300,
+    //       outDuration: 300
+    //     });
+    //     console.dir("colaps", colaps);
+
+    //     const selectForm = document.querySelectorAll("select");
+    //     const formInstances = M.FormSelect.init(selectForm, {});
+    //   }
+});
 
 /***/ }),
 /* 45 */
@@ -14604,75 +14616,70 @@ var render = function() {
   return _c(
     "section",
     [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("router-view"),
-      _vm._v(" "),
-      _c("div", { staticClass: "menu-nav" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col s4 icon-container" }, [
-            _c("ul", [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: { name: "mission" } } }, [
-                    _c("a", { attrs: { href: "" } }, [
-                      _c("i", { staticClass: "fas fa-list-ul active " })
+      _c("div", { staticClass: "app" }, [
+        _c("div", { staticClass: "menu-nav" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col s4 icon-container" }, [
+              _c("ul", [
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: { name: "Mission" } } }, [
+                      _c("a", { attrs: { href: "" } }, [
+                        _c("i", { staticClass: "fas fa-list-ul active " })
+                      ])
                     ])
-                  ])
-                ],
-                1
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col s4 icon-container" }, [
-            _c("ul", [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: { name: "pageprofil" } } }, [
-                    _c("a", { attrs: { href: "" } }, [
-                      _c("i", { staticClass: "fas fa-user" })
+                  ],
+                  1
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col s4 icon-container" }, [
+              _c("ul", [
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: { name: "PageProfil" } } },
+                      [
+                        _c("a", { attrs: { href: "" } }, [
+                          _c("i", { staticClass: "fas fa-user" })
+                        ])
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col s4 icon-container" }, [
+              _c("ul", [
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: { name: "Option" } } }, [
+                      _c("a", { attrs: { href: "" } }, [
+                        _c("i", { staticClass: "fas fa-sliders-h" })
+                      ])
                     ])
-                  ])
-                ],
-                1
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col s4 icon-container" }, [
-            _c("ul", [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: { name: "option" } } }, [
-                    _c("a", { attrs: { href: "" } }, [
-                      _c("i", { staticClass: "fas fa-sliders-h" })
-                    ])
-                  ])
-                ],
-                1
-              )
+                  ],
+                  1
+                )
+              ])
             ])
           ])
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _c("router-view")
     ],
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "contenu-app" }, [
-      _c("div", { staticClass: "contenu-header-main" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -15566,7 +15573,7 @@ exports = module.exports = __webpack_require__(34)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*\"C:/Users/Formareur/Desktop/univerbal/routetry/src/assets\" */\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*\"C:/Users/Formareur/Desktop/univerbal/routetry/src/assets\" */\n\n", ""]);
 
 // exports
 
@@ -15963,8 +15970,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Mission',
+    props: {
+        users: {
+            type: Object,
+            required: true
+        }
+    },
+    mounted: function mounted() {
+        var colaps = document.querySelectorAll(".collapsible");
+        var colapsInstances = M.Collapsible.init(colaps, {
+            accordion: false,
+            inDuration: 300,
+            outDuration: 300
+        });
+        console.dir("colaps", colaps);
+
+        var selectForm = document.querySelectorAll("select");
+        var formInstances = M.FormSelect.init(selectForm, {});
+    },
+
     data: function data() {
         return {
             missions: [{
@@ -15973,8 +16001,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }],
             newMission: "",
             filter: "all",
-            plus_icon: '/img/plus-icon.png',
-            profile_img: 'img/profile-image.png'
+            plus_icon: "/img/plus-icon.png",
+            profile_img: "img/profile-image.png"
         };
     },
     created: function created() {
@@ -16121,7 +16149,7 @@ var render = function() {
                     staticClass: "list-client-header collapsible-header view "
                   },
                   [
-                    _c("div", { staticClass: "container-fluid" }, [
+                    _c("div", { staticClass: "container" }, [
                       _c("div", { staticClass: "row" }, [
                         _c("div", { staticClass: "col-9" }, [
                           _c("p", { staticClass: "date" }, [
@@ -16566,7 +16594,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Option'
+});
 
 /***/ }),
 /* 58 */
@@ -16611,7 +16641,9 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s7" }, [
-                    _vm._v("\r\n                Disponible\r\n              ")
+                    _vm._v(
+                      "\n                                Disponible\n                            "
+                    )
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s3" }, [
@@ -16644,7 +16676,7 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("div", { staticClass: "col s7" }, [
                     _vm._v(
-                      "\r\n                Notifications\r\n              "
+                      "\n                                Notifications\n                            "
                     )
                   ]),
                   _vm._v(" "),
@@ -16677,7 +16709,9 @@ var staticRenderFns = [
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s10" }, [
-                    _vm._v("\r\n                Déconnection\r\n              ")
+                    _vm._v(
+                      "\n                                Déconnection\n                            "
+                    )
                   ])
                 ])
               ])
@@ -16846,28 +16880,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      profil: [],
-      newProfil: ""
-    };
-  },
-  created: function created() {
-    this.fetchData();
-  },
+    name: 'PageProfil',
+    data: function data() {
+        return {
+            profil: [],
+            newProfil: "",
+            profile_image: "/img/profile-image.png",
+            camera_solid: "/img/camera-solid.png"
+        };
+    },
+    created: function created() {
+        // this.fetchData();
+    },
 
-  methods: {
-    fetchData: function fetchData() {
-      var _this = this;
-
-      axios.get("/static/profil.json").then(function (response) {
-        _this.profil = response.data;
-      });
+    methods: {
+        // fetchData: function() {
+        //     axios.get("/static/profil.json").then(response => {
+        //         this.profil = response.data;
+        //     });
+        // }
     }
-  }
 });
 
 /***/ }),
@@ -16890,7 +16924,22 @@ var render = function() {
               _vm._m(0, true),
               _vm._v(" "),
               _c("div", { staticClass: "main-profile" }, [
-                _vm._m(1, true),
+                _c("div", { staticClass: "profile-image-container" }, [
+                  _c("div", { staticClass: "profile-image" }, [
+                    _c("img", {
+                      staticClass: "image",
+                      attrs: { src: _vm.profile_image, alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "camera-button" }, [
+                      _c("a", { attrs: { href: "javascript:void(0)" } }, [
+                        _c("img", {
+                          attrs: { src: _vm.camera_solid, alt: "camera-solid" }
+                        })
+                      ])
+                    ])
+                  ])
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "profile-name" }, [
                   _c("h1", [
@@ -16902,7 +16951,7 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._m(2, true)
+            _vm._m(1, true)
           ]
         )
       }),
@@ -16919,27 +16968,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "edit-button" }, [
       _c("i", { staticClass: "fas fa-pen" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "profile-image-container" }, [
-      _c("div", { staticClass: "profile-image" }, [
-        _c("img", {
-          staticClass: "image",
-          attrs: { src: "img/profile-image.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "camera-button" }, [
-          _c("a", { attrs: { href: "javascript:void(0)" } }, [
-            _c("img", {
-              attrs: { src: "img/camera-solid.png", alt: "camera-solid" }
-            })
-          ])
-        ])
-      ])
     ])
   },
   function() {

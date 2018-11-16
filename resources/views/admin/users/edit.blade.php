@@ -12,7 +12,7 @@
 
 <hr class="col s12 m4 l12">
 <div id="vue-admin-create-user">
-    <form class="col s6 m4 l6" action="{{route('users.update', $user->id)}}" method="POST">
+    <form class="col s6 m4 l12" action="{{route('users.update', $user->id)}}" method="POST">
         <div class="col s12 m4 l12">
             @csrf
             @method('PATCH')

@@ -38,7 +38,7 @@
                     <li class="list-client-li mission " v-for="mission in filteredMissions" :key="mission.id" :class="{completed: mission.completed}">
                         <!--il faut rajouter une propriété css qui renseigne "completed" si on veut -->
                         <div class="list-client-header collapsible-header view ">
-                            <div class="container-fluid">
+                            <div class="container">
                                 <div class="row">
 
                                     <div class="col-9">
@@ -120,11 +120,31 @@
         </div>
         <!--end contenu mission -->
 
+
     </section>
 </template>
 
 <script>
     export default {
+        name: 'Mission',
+        props: {
+            users: {
+                type: Object,
+                required: true,
+            },
+        },
+        mounted() {
+            const colaps = document.querySelectorAll(".collapsible");
+            const colapsInstances = M.Collapsible.init(colaps, {
+                accordion: false,
+                inDuration: 300,
+                outDuration: 300
+            });
+            console.dir("colaps", colaps);
+
+            const selectForm = document.querySelectorAll("select");
+            const formInstances = M.FormSelect.init(selectForm, {});
+        },
         data: function() {
             return {
                 missions: [{
@@ -133,8 +153,8 @@
                 }],
                 newMission: "",
                 filter: "all",
-                plus_icon: '/img/plus-icon.png',
-                profile_img: 'img/profile-image.png',
+                plus_icon: "/img/plus-icon.png",
+                profile_img: "img/profile-image.png"
             };
         },
         created() {

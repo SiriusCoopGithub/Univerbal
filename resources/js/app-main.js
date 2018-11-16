@@ -28,35 +28,46 @@ import PageProfil from './components/PageProfil'
 
 const router = new VueRouter({
     routes: [{
-            path: 'mission',
-            name: 'mission',
+            path: '/',
+            name: 'Mission',
             component: Mission,
             props: {
-                title: 'THis is the Mission'
-            }
+                users: {
+                    type: Object,
+                    required: true,
+                },
+            },
         },
+        // {
+        //     path: 'mission',
+        //     name: 'mission',
+        //     component: Mission,
+        //     props: {
+        //         // title: 'THis is the Mission'
+        //     }
+        // },
         {
             path: 'formulaire',
-            name: 'formulaire',
+            name: 'Formulaire',
             component: Formulaire,
             props: {
-                formulaire: 'this is the formulaire'
+                // formulaire: 'this is the formulaire'
             }
         },
         {
             path: 'option',
-            name: 'option',
+            name: 'Option',
             component: Option,
             props: {
-                formulaire: 'this is the Option'
+                // formulaire: 'this is the Option'
             }
         },
         {
             path: 'pageprofil',
-            name: 'pageprofil',
+            name: 'PageProfil',
             component: PageProfil,
             props: {
-                formulaire: 'this is the PageProfil'
+                // formulaire: 'this is the PageProfil'
             }
         }
     ]
@@ -72,11 +83,10 @@ const app = new Vue({
         plus_icon: '/img/plus-icon.png',
     },
     router,
+    template: '<App/>',
     components: {
         App
     },
-    router,
-    template: '<App/>'
 })
 
 
@@ -85,14 +95,6 @@ const app = new Vue({
  */
 $(document).ready(function() {
 
-    const colaps = document.querySelectorAll('.collapsible');
-    const colapsInstances = M.Collapsible.init(colaps, {
-        accordion: false,
-        inDuration: 300,
-        outDuration: 300
-    });
 
-    const selectForm = document.querySelectorAll('select');
-    const formInstances = M.FormSelect.init(selectForm, {});
     console.log("App js loaded");
 });
