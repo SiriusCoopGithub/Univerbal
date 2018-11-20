@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Auth;
 
 class AppController extends Controller
 {
+
+
     /**
      * Create a new controller instance.
      *

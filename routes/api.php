@@ -13,9 +13,30 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+
+
+Route::prefix('app')->group(function(){
+
+    Route::group(['middleware' => 'auth:api'], function(){
+
+        Route::post('login', 'UsersAppController@login');
+        Route::post('register', 'UsersAppController@register');
+        Route::resource('/', 'AppController');
+        // Route::get('/missions', 'AppController@missions')->name('app.missions');
+        // Route::get('/profile', 'AppController@profile')->name('app.profile');
+        // Route::get('/options', 'AppController@options')->name('app.options');
+    });
+
+
+    // Route::resource('/task', 'TasksController');
+    // Route::resource('/category', 'CategoryController');
+    // Route::get('/category/{category}/tasks', 'CategoryController@tasks');
 });
+
+
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 
 // Route::namespace('App')->group(function(){

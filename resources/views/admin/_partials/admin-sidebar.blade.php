@@ -15,7 +15,7 @@
 
             <div class="divider menu-sidebar"></div>
 
-            <a class="menu-link" href="dashboard.html" class="">
+            <a class="menu-link" href="{{route('missions.index')}}" class="">
                 <div class="menu-item hoverable valign-wrapper">
                     <span>
                         <i class="fas fa-hourglass-half"></i>
@@ -26,7 +26,7 @@
 
             <div class="divider divider-link"></div>
 
-            <a href="dashboard.html" class="">
+            <a href="{{route('missions.index')}}" class="">
                 <div class="menu-item hoverable valign-wrapper">
                     <span>
                         <i class="far fa-calendar-check"></i>

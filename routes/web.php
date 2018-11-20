@@ -28,9 +28,9 @@ Route::namespace('App')->group(function(){
     // })->where('any', '.*');
 
     Route::get('/', 'AppController@index')->name('app.index');
-    Route::resource('/missions', 'MissionsAppController');
-    Route::get('/profile', 'AppController@profile')->name('app.profile');
-    Route::get('/options', 'AppController@options')->name('app.options');
+    // Route::resource('/missions', 'MissionsAppController');
+    // Route::get('/profile', 'AppController@profile')->name('app.profile');
+    // Route::get('/options', 'AppController@options')->name('app.options');
   });
 });
 

@@ -2,84 +2,54 @@
 
 namespace App\Http\Controllers\App;
 
+use App\User;
+use Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 
 class UsersAppController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+    public function login()
+        {
+            $credentials = [
+                'email' => request('email'),
+                'password' => request('password')
+            ];
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+            if (Auth::attempt($credentials)) {
+                $success['token'] = Auth::user()->createToken('MyApp')->accessToken;
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+                return response()->json(['success' => $success]);
+            }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+            return response()->json(['error' => 'Unauthorised'], 401);
+        }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+        public function register(Request $request)
+        {
+            $validator = Validator::make($request->all(), [
+                'name' => 'required',
+                'email' => 'required|email',
+                'password' => 'required',
+            ]);
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+            if ($validator->fails()) {
+                return response()->json(['error' => $validator->errors()], 401);
+            }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+            $input = $request->all();
+            $input['password'] = bcrypt($input['password']);
+
+            $user = User::create($input);
+            $success['token'] = $user->createToken('MyApp')->accessToken;
+            $success['name'] = $user->name;
+
+            return response()->json(['success' => $success]);
+        }
+
+        public function getDetails()
+        {
+            return response()->json(['success' => Auth::user()]);
+        }
 }
